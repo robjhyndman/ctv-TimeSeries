@@ -4,7 +4,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 
 **Maintainer:** Dirk Eddelbuettel  
 **Contact:** Dirk.Eddelbuettel at R-project.org  
-**Version:** 2014-11-28  
+**Version:** 2014-11-29  
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
 
@@ -14,7 +14,7 @@ Several of the areas discussed in this Task View are undergoing rapid change. Pl
 
 Suggestions and corrections by Achim Zeileis, Markus Schmidberger, Martin Morgan, Max Kuhn, Tomas Radivoyevitch, Jochen Knaus, Tobias Verbeke, Hao Yu, David Rosenberg, Marco Enea, Ivo Welch, Jay Emerson, Wei-Chen Chen, Bill Cleveland, Ross Boylan, and Ramon Diaz-Uriarte (as well as others I may have forgotten to add here) are gratefully acknowledged.
 
-Contributions are always welcome, and encouraged. Since the start of this CRAN task view in October 2008, most contributions have arrived as email suggestions. This particular task view file now resides in a GitHub repository (see below) so that pull requests are also possibly.
+Contributions are always welcome, and encouraged. Since the start of this CRAN task view in October 2008, most contributions have arrived as email suggestions. The source file for this particular task view file now also reside in a GitHub repository (see below) so that pull requests are also possible.
 
 **Direct support in R started with release 2.14.0** which includes a new package **parallel** incorporating (slightly revised) copies of packages multicore and [snow](http://cran.rstudio.com/web/packages/snow/index.html). Some types of clusters are not handled directly by the base package 'parallel'. However, and as explained in the package vignette, the parts of parallel which provide [snow](http://cran.rstudio.com/web/packages/snow/index.html) -like functions will accept [snow](http://cran.rstudio.com/web/packages/snow/index.html) clusters including MPI clusters.
  The **parallel** package also contains support for multiple RNG streams following L'Ecuyer et al (2002), with support for both mclapply and snow clusters.
