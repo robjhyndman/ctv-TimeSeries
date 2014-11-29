@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2014-11-18</version>
+   <version>2014-11-28</version>
 
   <info>
     <p>
@@ -32,6 +32,12 @@
       Enea, Ivo Welch, Jay Emerson, Wei-Chen Chen, Bill Cleveland, 
       Ross Boylan, and Ramon Diaz-Uriarte
       (as well as others I may have forgotten to add here) are gratefully acknowledged. 
+    </p>
+    <p> 
+      Contributions are always welcome, and encouraged. Since the start of
+      this CRAN task view in October 2008, most contributions have arrived as
+      email suggestions. This particular task view file now resides in a
+      GitHub repository (see below) so that pull requests are also possibly.
     </p>
     <p>
       <strong>Direct support in R started with release 2.14.0</strong> 
@@ -628,6 +634,7 @@
     <a href="http://r-pbd.org">Programming with Big Data in R</a>
     <a href="http://www.datadr.org">RHIPE</a>
     <a href="http://www.bayesian-inference.com/software">LaplacesDemon</a>
+    <a href="https://github.com/eddelbuettel/ctv-hpc">GitHub repository for this Task View</a>
   </links>
 
 </CRANTaskView>
