@@ -516,7 +516,7 @@
         <pkg>aprof</pkg> package by Visser, can also be used to analyse
         profiling output. 
       </li>
-      <li> The <pkg>GUIProfile</pkg> package visualizes the results of
+      <li> The <pkg>GUIProfiler</pkg> package visualizes the results of
         profiling R programs.
       </li>
 

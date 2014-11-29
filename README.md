@@ -121,7 +121,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 -   The [profr](http://cran.rstudio.com/web/packages/profr/index.html) package by Wickham can visualize output from the `Rprof` interface for profiling.
 -   The [proftools](http://cran.rstudio.com/web/packages/proftools/index.html) package by Tierney, and the [aprof](http://cran.rstudio.com/web/packages/aprof/index.html) package by Visser, can also be used to analyse profiling output.
--   The [GUIProfile](http://cran.rstudio.com/web/packages/GUIProfile/index.html) package visualizes the results of profiling R programs.
+-   The [GUIProfiler](http://cran.rstudio.com/web/packages/GUIProfiler/index.html) package visualizes the results of profiling R programs.
 
 ### CRAN packages:
 
