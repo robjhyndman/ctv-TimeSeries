@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2014-11-29</version>
+   <version>2014-12-05</version>
 
   <info>
     <p>
@@ -151,10 +151,6 @@
         and offers another interface to Open MP using Fortran. The code is still
 	pre-alpha and available from the Google Code project <gcode>romp</gcode>.
 	An R-Forge project <rforge>romp</rforge> was initiated but there is no package, yet.
-      </li>
-      <li>The <pkg>fork</pkg> package by Warnes provides R-equivalents to low-level Unix system functions
-        like fork, signal, wait, kill and exit in order to spawn
-        sub-processes for parallel execution. 
       </li>
       <li>The R/parallel package by Vera, Jansen and Suppi offers a C++-based master-slave dispatch
         mechanism for parallel execution (<a href="http://www.rparallel.org/">link</a>)
@@ -549,7 +545,6 @@
     <pkg>ff</pkg>
     <pkg>ffbase</pkg>
     <pkg>foreach</pkg>
-    <pkg>fork</pkg>
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
     <pkg>Geneland</pkg>

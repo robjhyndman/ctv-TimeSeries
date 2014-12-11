@@ -4,7 +4,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 
 **Maintainer:** Dirk Eddelbuettel  
 **Contact:** Dirk.Eddelbuettel at R-project.org  
-**Version:** 2014-11-29  
+**Version:** 2014-12-05  
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
 
@@ -36,7 +36,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 -   The pnmath package by Tierney ( [link](http://www.stat.uiowa.edu/~luke/R/experimental/)) uses the Open MP parallel processing directives of recent compilers (such gcc 4.2 or later) for implicit parallelism by replacing a number of internal R functions with replacements that can make use of multiple cores --- without any explicit requests from the user. The alternate pnmath0 package offers the same functionality using Pthreads for environments in which the newer compilers are not available. Similar functionality is expected to become integrated into R 'eventually'.
 -   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [romp](http://code.google.com/p/romp/). An R-Forge project [romp](http://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
--   The [fork](http://cran.rstudio.com/web/packages/fork/index.html) package by Warnes provides R-equivalents to low-level Unix system functions like fork, signal, wait, kill and exit in order to spawn sub-processes for parallel execution.
 -   The R/parallel package by Vera, Jansen and Suppi offers a C++-based master-slave dispatch mechanism for parallel execution ( [link](http://www.rparallel.org/))
 -   The [Rdsm](http://cran.rstudio.com/web/packages/Rdsm/index.html) package provides a threads-like parallel computing environment, both on multicore machine and across the network by providing facilities inspired from distributed shared memory programming.
 -   The [RhpcBLASctl](http://cran.rstudio.com/web/packages/RhpcBLASctl/index.html) detects the number of available BLAS cores, and permits explicit selection of the number of cores.
@@ -149,7 +148,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [ff](http://cran.rstudio.com/web/packages/ff/index.html)
 -   [ffbase](http://cran.rstudio.com/web/packages/ffbase/index.html)
 -   [foreach](http://cran.rstudio.com/web/packages/foreach/index.html)
--   [fork](http://cran.rstudio.com/web/packages/fork/index.html)
 -   [GAMBoost](http://cran.rstudio.com/web/packages/GAMBoost/index.html)
 -   [gcbd](http://cran.rstudio.com/web/packages/gcbd/index.html)
 -   [Geneland](http://cran.rstudio.com/web/packages/Geneland/index.html)
