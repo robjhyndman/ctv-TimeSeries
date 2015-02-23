@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2014-12-05</version>
+   <version>2015-01-15</version>
 
   <info>
     <p>
@@ -339,11 +339,6 @@
       <li>The <gcode>bugsparallel</gcode> package uses <pkg>Rmpi</pkg> for distributed
           computing of multiple MCMC chains using WinBUGS. 
       </li>
-      <li>The <pkg>partDSA</pkg> package uses <pkg>nws</pkg> for generating a
-          piecewise constant estimation list of increasingly complex
-          predictors based on an intensive and comprehensive search over the
-          entire covariate space.
-      </li>
       <li>The <pkg>dclone</pkg> package provides a global optimization
 	approach and a variant of simulated annealing which exploits Bayesian
 	MCMC tools to get MLE point estimates and standard errors using low
@@ -563,7 +558,6 @@
     <pkg>nws</pkg>
     <pkg>orloca</pkg>
     <pkg>OpenCL</pkg>
-    <pkg>partDSA</pkg>
     <pkg>pbdBASE</pkg>
     <pkg>pbdDEMO</pkg>
     <pkg>pbdDMAT</pkg>

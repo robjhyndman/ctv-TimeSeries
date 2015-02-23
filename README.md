@@ -1,10 +1,20 @@
 CRAN Task View: High-Performance and Parallel Computing with R
 --------------------------------------------------------------
 
-
-**Maintainer:** Dirk Eddelbuettel  
-**Contact:** Dirk.Eddelbuettel at R-project.org  
-**Version:** 2014-12-05  
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Maintainer:</strong>
+Dirk Eddelbuettel</td>
+<td align="left"><strong>Contact:</strong>
+Dirk.Eddelbuettel at R-project.org</td>
+</tr>
+</tbody>
+</table>
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
 
@@ -79,7 +89,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [multtest](http://www.Bioconductor.ohttp://cran.rstudio.com/web/packages/release/bioc/html/multtest.html) package by Pollard et al. on Bioconductor can use [snow](http://cran.rstudio.com/web/packages/snow/index.html), [Rmpi](http://cran.rstudio.com/web/packages/Rmpi/index.html) or rpvm for resampling-based testing of multiple hypothesis.
 -   The [GAMBoost](http://cran.rstudio.com/web/packages/GAMBoost/index.html) package by Binder for `glm` and `gam` model fitting via boosting using b-splines, the [Geneland](http://cran.rstudio.com/web/packages/Geneland/index.html) package by Estoup, Guillot and Santos for structure detection from multilocus genetic data, the [Matching](http://cran.rstudio.com/web/packages/Matching/index.html) package by Sekhon for multivariate and propensity score matching, the [STAR](http://cran.rstudio.com/web/packages/STAR/index.html) package by Pouzat for spike train analysis, the [bnlearn](http://cran.rstudio.com/web/packages/bnlearn/index.html) package by Scutari for bayesian network structure learning, the [latentnet](http://cran.rstudio.com/web/packages/latentnet/index.html) package by Krivitsky and Handcock for latent position and cluster models, the [lga](http://cran.rstudio.com/web/packages/lga/index.html) package by Harrington for linear grouping analysis, the [peperr](http://cran.rstudio.com/web/packages/peperr/index.html) package by Porzelius and Binder for parallised estimation of prediction error, the [orloca](http://cran.rstudio.com/web/packages/orloca/index.html) package by Fernandez-Palacin and Munoz-Marquez for operations research locational analysis, the [rgenoud](http://cran.rstudio.com/web/packages/rgenoud/index.html) package by Mebane and Sekhon for genetic optimization using derivatives the [affyPara](http://www.Bioconductor.ohttp://cran.rstudio.com/web/packages/release/bioc/html/affyPara.html) package by Schmidberger, Vicedo and Mansmann for parallel normalization of Affymetrix microarrays, and the [puma](http://www.Bioconductor.ohttp://cran.rstudio.com/web/packages/release/bioc/html/puma.html) package by Pearson et al. which propagates uncertainty into standard microarray analyses such as differential expression all can use [snow](http://cran.rstudio.com/web/packages/snow/index.html) for parallelized operations using either one of the MPI, PVM, NWS or socket protocols supported by [snow](http://cran.rstudio.com/web/packages/snow/index.html).
 -   The [bugsparallel](http://code.google.com/p/bugsparallel/) package uses [Rmpi](http://cran.rstudio.com/web/packages/Rmpi/index.html) for distributed computing of multiple MCMC chains using WinBUGS.
--   The [partDSA](http://cran.rstudio.com/web/packages/partDSA/index.html) package uses [nws](http://cran.rstudio.com/web/packages/nws/index.html) for generating a piecewise constant estimation list of increasingly complex predictors based on an intensive and comprehensive search over the entire covariate space.
 -   The [dclone](http://cran.rstudio.com/web/packages/dclone/index.html) package provides a global optimization approach and a variant of simulated annealing which exploits Bayesian MCMC tools to get MLE point estimates and standard errors using low level functions for implementing maximum likelihood estimating procedures for complex models using data cloning and Bayesian Markov chain Monte Carlo methods with support for JAGS, WinBUGS and OpenBUGS; parallel computing is supported via the [snow](http://cran.rstudio.com/web/packages/snow/index.html) package.
 -   The [pmclust](http://cran.rstudio.com/web/packages/pmclust/index.html) package utilizes unsupervised model-based clustering for high dimensional (ultra) large data. The package uses [pbdMPI](http://cran.rstudio.com/web/packages/pbdMPI/index.html) to perform a parallel version of the EM algorithm for finite mixture Gaussian models.
 -   The [harvestr](http://cran.rstudio.com/web/packages/harvestr/index.html) package provides helper functions for (reproducible) simulations.
@@ -166,7 +175,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [nws](http://cran.rstudio.com/web/packages/nws/index.html)
 -   [OpenCL](http://cran.rstudio.com/web/packages/OpenCL/index.html)
 -   [orloca](http://cran.rstudio.com/web/packages/orloca/index.html)
--   [partDSA](http://cran.rstudio.com/web/packages/partDSA/index.html)
 -   [pbdBASE](http://cran.rstudio.com/web/packages/pbdBASE/index.html)
 -   [pbdDEMO](http://cran.rstudio.com/web/packages/pbdDEMO/index.html)
 -   [pbdDMAT](http://cran.rstudio.com/web/packages/pbdDMAT/index.html)
