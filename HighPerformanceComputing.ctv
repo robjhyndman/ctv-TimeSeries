@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-01-15</version>
+   <version>2015-03-27</version>
 
   <info>
     <p>
@@ -214,10 +214,6 @@
         manipulation, and plotting of large numbers of Histograms such
         as those created by Mappers in a MapReduce application.
       </li>
-      <li>
-        The <pkg>toaster</pkg> package by Teradata provides a set of tools to perform
-        in-database analytics with the Teradata Aster platform (which is required).
-      </li>
     </ul>	     
 
     <p>
@@ -225,7 +221,7 @@
     </p>
     <ul>	     
       <li>Random-number generators for parallel computing are available via
-        the <pkg>rsprng</pkg> package by Li, and the <pkg>rlecuyer</pkg>
+        the <pkg>rlecuyer</pkg>
         package by Sevcikova and Rossini.
       </li>
 
@@ -585,7 +581,6 @@
     <pkg>RProtoBuf</pkg>
     <pkg>rpud</pkg>
     <pkg>rredis</pkg>
-    <pkg>rsprng</pkg>
     <pkg priority="core">snow</pkg>
     <pkg>snowfall</pkg>
     <pkg>snowFT</pkg>
@@ -593,7 +588,6 @@
     <pkg>sqldf</pkg>
     <pkg>STAR</pkg>
     <pkg>tm</pkg>
-    <pkg>toaster</pkg>
     <pkg>varSelRF</pkg>
     <pkg>WideLM</pkg>
   </packagelist>
