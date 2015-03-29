@@ -30,7 +30,7 @@
       Schmidberger, Martin Morgan, Max Kuhn, Tomas Radivoyevitch,
       Jochen Knaus, Tobias Verbeke, Hao Yu, David Rosenberg, Marco
       Enea, Ivo Welch, Jay Emerson, Wei-Chen Chen, Bill Cleveland, 
-      Ross Boylan, and Ramon Diaz-Uriarte
+      Ross Boylan, Ramon Diaz-Uriarte, and Mark Zeligman
       (as well as others I may have forgotten to add here) are gratefully acknowledged. 
     </p>
     <p> 
@@ -129,6 +129,13 @@
         implementation with support for parellel execution and large
         memory. 
       </li>
+      <li>The <pkg>rpborist</pkg> package employs OpenMP pragmas to exploit 
+        predictor-level parallelism in the Random Forest algorithm which
+        promotes efficient use of multicore hardware in restaging data and in 
+        determining splitting criteria, both of which are performance 
+        bottlenecks in the algorithm.
+      </li>
+
     </ul>
 
     <p>
@@ -411,6 +418,12 @@
         inference in the context of RNA microarray studies on the GPU,
         it uses CUDA (>= 4.5)
       </li>
+      <li>
+        The <pkg>gmatrix<pkg> package enables the evaluation of matrix and vector 
+        operations using GPU coprocessors such that intermediate computations may be 
+        kept on the coprocessor and reused, with potentially significant performance 
+        enhancements by minimizing data movement.
+      </li>
     </ul>
 
     <p>
@@ -539,6 +552,7 @@
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
     <pkg>Geneland</pkg>
+    <pkg>gmatrix<pkg>
     <pkg>gputools</pkg>
     <pkg>GUIProfiler</pkg>
     <pkg>HadoopStreaming</pkg>
@@ -569,6 +583,7 @@
     <pkg>profr</pkg>
     <pkg>proftools</pkg>
     <pkg>pvclust</pkg>
+    <pkg>rborist</pkg>
     <pkg>Rcpp</pkg>
     <pkg>Rdsm</pkg>
     <pkg>rgenoud</pkg>
