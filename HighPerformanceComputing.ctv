@@ -129,7 +129,7 @@
         implementation with support for parellel execution and large
         memory. 
       </li>
-      <li>The <pkg>rpborist</pkg> package employs OpenMP pragmas to exploit 
+      <li>The <pkg>Rborist</pkg> package employs OpenMP pragmas to exploit 
         predictor-level parallelism in the Random Forest algorithm which
         promotes efficient use of multicore hardware in restaging data and in 
         determining splitting criteria, both of which are performance 
@@ -419,7 +419,7 @@
         it uses CUDA (>= 4.5)
       </li>
       <li>
-        The <pkg>gmatrix<pkg> package enables the evaluation of matrix and vector 
+        The <pkg>gmatrix</pkg> package enables the evaluation of matrix and vector 
         operations using GPU coprocessors such that intermediate computations may be 
         kept on the coprocessor and reused, with potentially significant performance 
         enhancements by minimizing data movement.
@@ -552,7 +552,7 @@
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
     <pkg>Geneland</pkg>
-    <pkg>gmatrix<pkg>
+    <pkg>gmatrix</pkg>
     <pkg>gputools</pkg>
     <pkg>GUIProfiler</pkg>
     <pkg>HadoopStreaming</pkg>
@@ -583,7 +583,7 @@
     <pkg>profr</pkg>
     <pkg>proftools</pkg>
     <pkg>pvclust</pkg>
-    <pkg>rborist</pkg>
+    <pkg>Rborist</pkg>
     <pkg>Rcpp</pkg>
     <pkg>Rdsm</pkg>
     <pkg>rgenoud</pkg>

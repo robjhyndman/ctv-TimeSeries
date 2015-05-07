@@ -22,7 +22,7 @@ Unless otherwise mentioned, all packages presented with hyperlinks are available
 
 Several of the areas discussed in this Task View are undergoing rapid change. Please send suggestions for additions and extensions for this task view to the [task view maintainer](mailto:Dirk.Eddelbuettel@R-project.org).
 
-Suggestions and corrections by Achim Zeileis, Markus Schmidberger, Martin Morgan, Max Kuhn, Tomas Radivoyevitch, Jochen Knaus, Tobias Verbeke, Hao Yu, David Rosenberg, Marco Enea, Ivo Welch, Jay Emerson, Wei-Chen Chen, Bill Cleveland, Ross Boylan, and Ramon Diaz-Uriarte (as well as others I may have forgotten to add here) are gratefully acknowledged.
+Suggestions and corrections by Achim Zeileis, Markus Schmidberger, Martin Morgan, Max Kuhn, Tomas Radivoyevitch, Jochen Knaus, Tobias Verbeke, Hao Yu, David Rosenberg, Marco Enea, Ivo Welch, Jay Emerson, Wei-Chen Chen, Bill Cleveland, Ross Boylan, Ramon Diaz-Uriarte, and Mark Zeligman (as well as others I may have forgotten to add here) are gratefully acknowledged.
 
 Contributions are always welcome, and encouraged. Since the start of this CRAN task view in October 2008, most contributions have arrived as email suggestions. The source file for this particular task view file now also reside in a GitHub repository (see below) so that pull requests are also possible.
 
@@ -41,6 +41,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [biopara](http://cran.rstudio.com/web/packages/biopara/index.html) package by Lazar and Schoenfeld offers socket-based parallel execution with some support for load-balancing and fault-tolerance.
 -   The [foreach](http://cran.rstudio.com/web/packages/foreach/index.html) package allows general iteration over elements in a collection without the use of an explicit loop counter. Using foreach without side effects also facilitates executing the loop in parallel which is possible via the [doMC](http://cran.rstudio.com/web/packages/doMC/index.html) (using parallel/multicore on single workstations), [doSNOW](http://cran.rstudio.com/web/packages/doSNOW/index.html) (using [snow](http://cran.rstudio.com/web/packages/snow/index.html), see above), [doMPI](http://cran.rstudio.com/web/packages/doMPI/index.html) (using [Rmpi](http://cran.rstudio.com/web/packages/Rmpi/index.html)) packages and [doRedis](http://cran.rstudio.com/web/packages/doRedis/index.html) (using [rredis](http://cran.rstudio.com/web/packages/rredis/index.html)) packages.
 -   The [bigrf](http://cran.rstudio.com/web/packages/bigrf/index.html) package provides a Random Forests implementation with support for parellel execution and large memory.
+-   The [Rborist](http://cran.rstudio.com/web/packages/Rborist/index.html) package employs OpenMP pragmas to exploit predictor-level parallelism in the Random Forest algorithm which promotes efficient use of multicore hardware in restaging data and in determining splitting criteria, both of which are performance bottlenecks in the algorithm.
 
 **Parallel computing: Implicit parallelism**
 
@@ -104,6 +105,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [WideLM](http://cran.rstudio.com/web/packages/WideLM/index.html) package use CUDA (4.1 or greater) to fit many 'skinny' regression models simultaneously from a single data set.
 -   The [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html) package provide High-Performance Linear Algebra for R using multi-core and/or GPU support using the PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
 -   The [permGPU](http://cran.rstudio.com/web/packages/permGPU/index.html) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (\>= 4.5)
+-   The [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
 
 **Large memory and out-of-memory data**
 
@@ -159,6 +161,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [GAMBoost](http://cran.rstudio.com/web/packages/GAMBoost/index.html)
 -   [gcbd](http://cran.rstudio.com/web/packages/gcbd/index.html)
 -   [Geneland](http://cran.rstudio.com/web/packages/Geneland/index.html)
+-   [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html)
 -   [gputools](http://cran.rstudio.com/web/packages/gputools/index.html)
 -   [GUIProfiler](http://cran.rstudio.com/web/packages/GUIProfiler/index.html)
 -   [HadoopStreaming](http://cran.rstudio.com/web/packages/HadoopStreaming/index.html)
@@ -189,6 +192,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [profr](http://cran.rstudio.com/web/packages/profr/index.html)
 -   [proftools](http://cran.rstudio.com/web/packages/proftools/index.html)
 -   [pvclust](http://cran.rstudio.com/web/packages/pvclust/index.html)
+-   [Rborist](http://cran.rstudio.com/web/packages/Rborist/index.html)
 -   [Rcpp](http://cran.rstudio.com/web/packages/Rcpp/index.html)
 -   [Rdsm](http://cran.rstudio.com/web/packages/Rdsm/index.html)
 -   [rgenoud](http://cran.rstudio.com/web/packages/rgenoud/index.html)
