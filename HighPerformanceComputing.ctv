@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-03-27</version>
+   <version>2015-07-01</version>
 
   <info>
     <p>
@@ -112,9 +112,6 @@
 	alternative to <pkg>snow</pkg>. Functions can be used in sequential or
 	parallel mode.
       </li>
-     <li>The <pkg>biopara</pkg> package by Lazar and Schoenfeld offers socket-based parallel
-        execution with some support for load-balancing and fault-tolerance.
-      </li>
       <li>The <pkg>foreach</pkg> package allows general iteration over
 	elements in a collection without the use of an explicit loop
 	counter. Using foreach without side effects also facilitates
@@ -214,12 +211,6 @@
         be used in R code to read data streams from other systems in a
         distributed MapReduce setting where data is serialized and
         passed back and forth between tasks.
-      </li>
-      <li>
-        The <pkg>HistogramTools</pkg> package provides a number of
-        routines useful for the construction, aggregation,
-        manipulation, and plotting of large numbers of Histograms such
-        as those created by Mappers in a MapReduce application.
       </li>
     </ul>	     
 
@@ -342,6 +333,11 @@
       <li>The <gcode>bugsparallel</gcode> package uses <pkg>Rmpi</pkg> for distributed
           computing of multiple MCMC chains using WinBUGS. 
       </li>
+      <li>The <pkg>partDSA</pkg> package uses <pkg>nws</pkg> for generating a
+          piecewise constant estimation list of increasingly complex
+          predictors based on an intensive and comprehensive search over the
+          entire covariate space.
+      </li>
       <li>The <pkg>dclone</pkg> package provides a global optimization
 	approach and a variant of simulated annealing which exploits Bayesian
 	MCMC tools to get MLE point estimates and standard errors using low
@@ -389,10 +385,6 @@
       <li>
         The rgpu package (see below for link) aims to speed up bioinformatics
         analysis by using the GPU.
-      </li>
-      <li>
-	The <pkg>magma</pkg> package provides an interface to the hybrid
-	GPU/CPU library Magma (see below for link).
       </li>
       <li>
 	The <pkg>gcbd</pkg> package implements a benchmarking framework for
@@ -535,7 +527,6 @@
     <pkg>biglm</pkg>
     <pkg>bigmemory</pkg>
     <pkg>bigrf</pkg>
-    <pkg>biopara</pkg>
     <pkg>bnlearn</pkg>
     <pkg>caret</pkg>
     <pkg>cudaBayesreg</pkg>
@@ -558,16 +549,15 @@
     <pkg>HadoopStreaming</pkg>
     <pkg>harvestr</pkg>
     <pkg>HiPLARM</pkg>
-    <pkg>HistogramTools</pkg>
     <pkg>inline</pkg>
     <pkg>latentnet</pkg>
     <pkg>lga</pkg>
-    <pkg>magma</pkg>
     <pkg>Matching</pkg>
     <pkg>MonetDB.R</pkg>
     <pkg>nws</pkg>
     <pkg>orloca</pkg>
     <pkg>OpenCL</pkg>
+    <pkg>partDSA</pkg>
     <pkg>pbdBASE</pkg>
     <pkg>pbdDEMO</pkg>
     <pkg>pbdDMAT</pkg>
