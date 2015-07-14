@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-07-01</version>
+   <version>2015-07-14</version>
 
   <info>
     <p>
@@ -122,6 +122,17 @@
 	above), <pkg>doMPI</pkg> (using <pkg>Rmpi</pkg>) packages and
 	<pkg>doRedis</pkg> (using <pkg>rredis</pkg>) packages.
       </li>
+      <li>The <pkg>future</pkg> package defines a Future API for R. 
+        A future is an abstraction for a value that may be available at
+        some point in the future. How and when futures are resolved varies
+        with implementation. The package implements "lazy" and "eager"
+        (synchronous) futures and a "multicore" (asynchronous) future, but
+        other types can/will be implemented by other packages. Futures can
+        be controlled explicitly via future-value calls or implicitly via
+        delayed assignment operators / promises.  Iteration over elements 
+        in a collection is supported and global variables are automatically
+        taken care of.
+   </li>
       <li>The <pkg>bigrf</pkg> package provides a Random Forests
         implementation with support for parellel execution and large
         memory. 
