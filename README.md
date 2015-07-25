@@ -156,6 +156,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [ff](http://cran.rstudio.com/web/packages/ff/index.html)
 -   [ffbase](http://cran.rstudio.com/web/packages/ffbase/index.html)
 -   [foreach](http://cran.rstudio.com/web/packages/foreach/index.html)
+-   [future](http://cran.rstudio.com/web/packages/future/index.html)
 -   [GAMBoost](http://cran.rstudio.com/web/packages/GAMBoost/index.html)
 -   [gcbd](http://cran.rstudio.com/web/packages/gcbd/index.html)
 -   [Geneland](http://cran.rstudio.com/web/packages/Geneland/index.html)

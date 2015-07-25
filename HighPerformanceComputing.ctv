@@ -546,6 +546,7 @@
     <pkg>ff</pkg>
     <pkg>ffbase</pkg>
     <pkg>foreach</pkg>
+    <pkg>future</pkg>
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
     <pkg>Geneland</pkg>
