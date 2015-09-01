@@ -63,6 +63,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The rmr package by Revolution Analytics also provides an interface between R and Hadoop for a Map/Reduce programming framework. ( [link](https://github.com/RevolutionAnalytics/RHadoop/wiki/rmr))
 -   A related package, segue package by Long, permits easy execution of embarassingly parallel task on Elastic Map Reduce (EMR) at Amazon. ( [link](http://code.google.com/p/segue/))
 -   The [RProtoBuf](http://cran.rstudio.com/web/packages/RProtoBuf/index.html) package provides an interface to Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. This package can be used in R code to read data streams from other systems in a distributed MapReduce setting where data is serialized and passed back and forth between tasks.
+-   The [HistogramTools](http://cran.rstudio.com/web/packages/HistogramTools/index.html) package provides a number of routines useful for the construction, aggregation, manipulation, and plotting of large numbers of Histograms such as those created by Mappers in a MapReduce application.
 
 **Parallel computing: Random numbers**
 
@@ -166,6 +167,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [HadoopStreaming](http://cran.rstudio.com/web/packages/HadoopStreaming/index.html)
 -   [harvestr](http://cran.rstudio.com/web/packages/harvestr/index.html)
 -   [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html)
+-   [HistogramTools](http://cran.rstudio.com/web/packages/HistogramTools/index.html)
 -   [inline](http://cran.rstudio.com/web/packages/inline/index.html)
 -   [latentnet](http://cran.rstudio.com/web/packages/latentnet/index.html)
 -   [lga](http://cran.rstudio.com/web/packages/lga/index.html)
