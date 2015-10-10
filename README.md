@@ -77,6 +77,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The sfCluster package by Knaus can be used with [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html). ( [link](http://www.imbi.uni-freiburg.de/parallel/)) but is currently limited to LAM/MPI.
 -   The [batch](http://cran.rstudio.com/web/packages/batch/index.html) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
 -   The [BatchJobs](http://cran.rstudio.com/web/packages/BatchJobs/index.html) package provides Map, Reduce and Filter variants to manage R jobs and their results on batch computing systems like PBS/Torque, LSF and Sun Grid Engine. Multicore and SSH systems are also supported. The [BatchExperiments](http://cran.rstudio.com/web/packages/BatchExperiments/index.html) package extends it with an abstraction layer for running statistical experiments.
+-   The [flowr](http://cran.rstudio.com/web/packages/flowr/index.html) package offers a scatter-gather approach to submit jobs lists (including dependencies) to the computing cluster via simple data.frames as inputs. It supports LSF, SGE, Torque and SLURM.
 
 **Parallel computing: Applications**
 
@@ -156,6 +157,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [doSNOW](http://cran.rstudio.com/web/packages/doSNOW/index.html)
 -   [ff](http://cran.rstudio.com/web/packages/ff/index.html)
 -   [ffbase](http://cran.rstudio.com/web/packages/ffbase/index.html)
+-   [flowr](http://cran.rstudio.com/web/packages/flowr/index.html)
 -   [foreach](http://cran.rstudio.com/web/packages/foreach/index.html)
 -   [future](http://cran.rstudio.com/web/packages/future/index.html)
 -   [GAMBoost](http://cran.rstudio.com/web/packages/GAMBoost/index.html)

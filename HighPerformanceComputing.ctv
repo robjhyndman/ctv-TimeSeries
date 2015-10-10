@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-07-31</version>
+   <version>2015-10-11</version>
 
   <info>
     <p>
@@ -277,6 +277,11 @@
 	Engine. Multicore and SSH systems are also supported. The
 	<pkg>BatchExperiments</pkg> package extends it with an
 	abstraction layer for running statistical experiments.
+      </li>
+      <li>
+        The <pkg>flowr</pkg> package offers a scatter-gather approach to submit jobs
+        lists (including dependencies) to the computing cluster via simple data.frames
+        as inputs. It supports LSF, SGE, Torque and SLURM.
       </li>
     </ul>
 
@@ -551,6 +556,7 @@
     <pkg>data.table</pkg>
     <pkg>ff</pkg>
     <pkg>ffbase</pkg>
+    <pkg>flowr</pkg>
     <pkg>foreach</pkg>
     <pkg>future</pkg>
     <pkg>GAMBoost</pkg>
