@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-10-11</version>
+   <version>2015-11-03</version>
 
   <info>
     <p>
@@ -224,6 +224,8 @@
         manipulation, and plotting of large numbers of Histograms such
         as those created by Mappers in a MapReduce application.
       </li>
+        The <pkg>toaster</pkg> package performs in-database computations
+        utilizing the parallel / distributed Teradata Aster analytical platform
     </ul>	     
 
     <p>
@@ -613,6 +615,7 @@
     <pkg>sqldf</pkg>
     <pkg>STAR</pkg>
     <pkg>tm</pkg>
+    <pkg>toaster</pkg>
     <pkg>varSelRF</pkg>
     <pkg>WideLM</pkg>
   </packagelist>

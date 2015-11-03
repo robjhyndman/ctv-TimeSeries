@@ -214,6 +214,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [sqldf](http://cran.rstudio.com/web/packages/sqldf/index.html)
 -   [STAR](http://cran.rstudio.com/web/packages/STAR/index.html)
 -   [tm](http://cran.rstudio.com/web/packages/tm/index.html)
+-   [toaster](http://cran.rstudio.com/web/packages/toaster/index.html)
 -   [varSelRF](http://cran.rstudio.com/web/packages/varSelRF/index.html)
 -   [WideLM](http://cran.rstudio.com/web/packages/WideLM/index.html)
 
