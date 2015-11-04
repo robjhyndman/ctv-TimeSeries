@@ -64,6 +64,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   A related package, segue package by Long, permits easy execution of embarassingly parallel task on Elastic Map Reduce (EMR) at Amazon. ( [link](http://code.google.com/p/segue/))
 -   The [RProtoBuf](http://cran.rstudio.com/web/packages/RProtoBuf/index.html) package provides an interface to Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. This package can be used in R code to read data streams from other systems in a distributed MapReduce setting where data is serialized and passed back and forth between tasks.
 -   The [HistogramTools](http://cran.rstudio.com/web/packages/HistogramTools/index.html) package provides a number of routines useful for the construction, aggregation, manipulation, and plotting of large numbers of Histograms such as those created by Mappers in a MapReduce application.
+-   The [toaster](http://cran.rstudio.com/web/packages/toaster/index.html) package performs in-database computations utilizing the parallel / distributed Teradata Aster analytical platform
 
 **Parallel computing: Random numbers**
 
@@ -72,7 +73,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 **Parallel computing: Resource managers and batch schedulers**
 
--   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs (written by a consortium led by Lawrence Livermore Labs) works well with MPI. ( [link](https://slurm.schedmd.com/))
+-   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs works well with MPI. ( [link](https://slurm.schedmd.com/))
 -   The Condor toolkit ( [link](http://www.cs.wisc.edu/condor/)) from the University of Wisconsin-Madison has been used with R as described in this [R News article](http://www.r-project.org/doc/Rnews/Rnews_2005-2.pdf).
 -   The sfCluster package by Knaus can be used with [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html). ( [link](http://www.imbi.uni-freiburg.de/parallel/)) but is currently limited to LAM/MPI.
 -   The [batch](http://cran.rstudio.com/web/packages/batch/index.html) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
@@ -231,7 +232,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   Bioconductor Package: [puma](http://www.Bioconductor.ohttp://cran.rstudio.com/web/packages/release/bioc/html/puma.html)
 -   Google Code Project: [romp](http://code.google.com/p/romp/)
 -   Google Code Project: [bugsparallel](http://code.google.com/p/bugsparallel/)
--   [Slurm project at Lawrence Livermore National Laboratory](https://computing.llnl.gov/linux/slurm/)
+-   [Slurm open-source workload manager](https://slurm.schedmd.com/)
 -   [Condor project at University of Wisconsin-Madison](http://www.cs.wisc.edu/condor/)
 -   [Parallel Computing in R with sfCluster/snowfall](http://www.imbi.uni-freiburg.de/parallel/)
 -   [Wikipedia: Message Passing Interface (MPI)](http://en.wikipedia.org/wiki/Message_Passing_Interface)

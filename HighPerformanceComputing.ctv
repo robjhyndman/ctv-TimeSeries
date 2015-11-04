@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-11-03</version>
+   <version>2015-11-04</version>
 
   <info>
     <p>
@@ -224,8 +224,10 @@
         manipulation, and plotting of large numbers of Histograms such
         as those created by Mappers in a MapReduce application.
       </li>
+      <li>
         The <pkg>toaster</pkg> package performs in-database computations
         utilizing the parallel / distributed Teradata Aster analytical platform
+      </li>
     </ul>	     
 
     <p>
@@ -253,8 +255,7 @@
        <li>
         Job-scheduling toolkits permit management of
 	parallel computing resources and tasks.  The slurm (Simple Linux
-        Utility for Resource Management) set of programs (written by a
-        consortium led by Lawrence Livermore Labs) works well with
+        Utility for Resource Management) set of programs  works well with
         MPI. (<a href="https://slurm.schedmd.com/">link</a>)
       </li>
       <li>
@@ -632,7 +633,7 @@
     <bioc>puma</bioc>
     <gcode>romp</gcode>
     <gcode>bugsparallel</gcode>
-    <a href="https://computing.llnl.gov/linux/slurm/">Slurm project at Lawrence Livermore National Laboratory</a>
+    <a href="https://slurm.schedmd.com/">Slurm open-source workload manager</a>
     <a href="http://www.cs.wisc.edu/condor/">Condor project at University of Wisconsin-Madison</a>
     <a href="http://www.imbi.uni-freiburg.de/parallel/">Parallel Computing in R with sfCluster/snowfall</a>
     <a href="http://en.wikipedia.org/wiki/Message_Passing_Interface">Wikipedia: Message Passing Interface (MPI)</a>
