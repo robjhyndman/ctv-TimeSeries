@@ -40,8 +40,8 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html) package by Knaus provides a more recent alternative to [snow](http://cran.rstudio.com/web/packages/snow/index.html). Functions can be used in sequential or parallel mode.
 -   The [foreach](http://cran.rstudio.com/web/packages/foreach/index.html) package allows general iteration over elements in a collection without the use of an explicit loop counter. Using foreach without side effects also facilitates executing the loop in parallel which is possible via the [doMC](http://cran.rstudio.com/web/packages/doMC/index.html) (using parallel/multicore on single workstations), [doSNOW](http://cran.rstudio.com/web/packages/doSNOW/index.html) (using [snow](http://cran.rstudio.com/web/packages/snow/index.html), see above), [doMPI](http://cran.rstudio.com/web/packages/doMPI/index.html) (using [Rmpi](http://cran.rstudio.com/web/packages/Rmpi/index.html)) packages and [doRedis](http://cran.rstudio.com/web/packages/doRedis/index.html) (using [rredis](http://cran.rstudio.com/web/packages/rredis/index.html)) packages.
 -   The [future](http://cran.rstudio.com/web/packages/future/index.html) package allows for synchroneous (sequential) and asynchronous (parallel) evaluations via abstraction of futures, either via function calls or implicitly via promises. Global variables are automatically identified. Iteration over elements in a collection is supported.
--   The [bigrf](http://cran.rstudio.com/web/packages/bigrf/index.html) package provides a Random Forests implementation with support for parellel execution and large memory.
 -   The [Rborist](http://cran.rstudio.com/web/packages/Rborist/index.html) package employs OpenMP pragmas to exploit predictor-level parallelism in the Random Forest algorithm which promotes efficient use of multicore hardware in restaging data and in determining splitting criteria, both of which are performance bottlenecks in the algorithm.
+-   The [h2o](http://cran.rstudio.com/web/packages/h2o/index.html) package connects to the h2o open source machine learning environment which has scalable implementations of random forests, GBM, GLM (with elastic net regularization), and deep learning.
 
 **Parallel computing: Implicit parallelism**
 
@@ -59,7 +59,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 **Parallel computing: Hadoop**
 
--   The RHIPE package, started by Saptarshi Guha and now developed by a core team via GitHub, provides an interface between R and Hadoop for analysis of large complex data wholly from within R using the Divide and Recombine approach to big data. ( [link](http://www.datadr.org))
+-   The RHIPE package, started by Saptarshi Guha and now developed by a core team via [GitHub](https://github.com/saptarshiguha/RHIPE/), provides an interface between R and Hadoop for analysis of large complex data wholly from within R using the Divide and Recombine approach to big data.
 -   The rmr package by Revolution Analytics also provides an interface between R and Hadoop for a Map/Reduce programming framework. ( [link](https://github.com/RevolutionAnalytics/RHadoop/wiki/rmr))
 -   A related package, segue package by Long, permits easy execution of embarassingly parallel task on Elastic Map Reduce (EMR) at Amazon. ( [link](http://code.google.com/p/segue/))
 -   The [RProtoBuf](http://cran.rstudio.com/web/packages/RProtoBuf/index.html) package provides an interface to Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. This package can be used in R code to read data streams from other systems in a distributed MapReduce setting where data is serialized and passed back and forth between tasks.
@@ -73,7 +73,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 **Parallel computing: Resource managers and batch schedulers**
 
--   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs works well with MPI. ( [link](https://slurm.schedmd.com/))
+-   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs works well with MPI. ( [link](http://slurm.schedmd.com/))
 -   The Condor toolkit ( [link](http://www.cs.wisc.edu/condor/)) from the University of Wisconsin-Madison has been used with R as described in this [R News article](http://www.r-project.org/doc/Rnews/Rnews_2005-2.pdf).
 -   The sfCluster package by Knaus can be used with [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html). ( [link](http://www.imbi.uni-freiburg.de/parallel/)) but is currently limited to LAM/MPI.
 -   The [batch](http://cran.rstudio.com/web/packages/batch/index.html) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
@@ -99,14 +99,12 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 
 **Parallel computing: GPUs**
 
--   The [gputools](http://cran.rstudio.com/web/packages/gputools/index.html) package by Buckner and Seligman provides several common data-mining algorithms which are implemented using a mixture of nVidia's CUDA langauge and cublas library. Given a computer with an nVidia GPU these functions may be substantially more efficient than native R routines. The [rpud](http://cran.rstudio.com/web/packages/rpud/index.html) package provides an optimised distance metric for NVidia-based GPUs.
+-   The [gputools](http://cran.rstudio.com/web/packages/gputools/index.html) package by Buckner and Seligman provides several common data-mining algorithms which are implemented using a mixture of nVidia's CUDA langauge and cublas library. Given a computer with an nVidia GPU these functions may be substantially more efficient than native R routines.
 -   The [cudaBayesreg](http://cran.rstudio.com/web/packages/cudaBayesreg/index.html) package by da Silva implements the `rhierLinearModel` from the [bayesm](http://cran.rstudio.com/web/packages/bayesm/index.html) package using nVidia's CUDA langauge and tools to provide high-performance statistical analysis of fMRI voxels.
 -   The rgpu package (see below for link) aims to speed up bioinformatics analysis by using the GPU.
 -   The [gcbd](http://cran.rstudio.com/web/packages/gcbd/index.html) package implements a benchmarking framework for BLAS and GPUs (using [gputools](http://cran.rstudio.com/web/packages/gputools/index.html)).
 -   The [OpenCL](http://cran.rstudio.com/web/packages/OpenCL/index.html) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
--   The [WideLM](http://cran.rstudio.com/web/packages/WideLM/index.html) package use CUDA (4.1 or greater) to fit many 'skinny' regression models simultaneously from a single data set.
 -   The [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html) package provide High-Performance Linear Algebra for R using multi-core and/or GPU support using the PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
--   The [permGPU](http://cran.rstudio.com/web/packages/permGPU/index.html) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (\>= 4.5)
 -   The [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
 
 **Large memory and out-of-memory data**
@@ -118,7 +116,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [HadoopStreaming](http://cran.rstudio.com/web/packages/HadoopStreaming/index.html) package provides a framework for writing map/reduce scripts for use in Hadoop Streaming; it also facilitates operating on data in a streaming fashion which does not require Hadoop.
 -   The [speedglm](http://cran.rstudio.com/web/packages/speedglm/index.html) package permits to fit (generalised) linear models to large data. For in-memory data sets, speedlm() or speedglm() can be used along with update.speedlm() which can update fitted models with new data. For out-of-memory data sets, shglm() is available; it works in the presence of factors and can check for singular matrices.
 -   The [biglars](http://cran.rstudio.com/web/packages/biglars/index.html) package by Seligman et al can use the [ff](http://cran.rstudio.com/web/packages/ff/index.html) to support large-than-memory datasets for least-angle regression, lasso and stepwise regression.
--   The [bigrf](http://cran.rstudio.com/web/packages/bigrf/index.html) package provides a Random Forests implementation with support for parellel execution and large memory.
 -   The [MonetDB.R](http://cran.rstudio.com/web/packages/MonetDB.R/index.html) package allows R to access the MonetDB column-oriented, open source database system as a backend.
 -   The [ffbase](http://cran.rstudio.com/web/packages/ffbase/index.html) package by de Jonge et al adds basic statistical functionality to the [ff](http://cran.rstudio.com/web/packages/ff/index.html) package.
 
@@ -145,7 +142,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [biglars](http://cran.rstudio.com/web/packages/biglars/index.html)
 -   [biglm](http://cran.rstudio.com/web/packages/biglm/index.html)
 -   [bigmemory](http://cran.rstudio.com/web/packages/bigmemory/index.html)
--   [bigrf](http://cran.rstudio.com/web/packages/bigrf/index.html)
 -   [bnlearn](http://cran.rstudio.com/web/packages/bnlearn/index.html)
 -   [caret](http://cran.rstudio.com/web/packages/caret/index.html)
 -   [cudaBayesreg](http://cran.rstudio.com/web/packages/cudaBayesreg/index.html)
@@ -167,6 +163,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html)
 -   [gputools](http://cran.rstudio.com/web/packages/gputools/index.html)
 -   [GUIProfiler](http://cran.rstudio.com/web/packages/GUIProfiler/index.html)
+-   [h2o](http://cran.rstudio.com/web/packages/h2o/index.html)
 -   [HadoopStreaming](http://cran.rstudio.com/web/packages/HadoopStreaming/index.html)
 -   [harvestr](http://cran.rstudio.com/web/packages/harvestr/index.html)
 -   [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html)
@@ -188,7 +185,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [pbdPROF](http://cran.rstudio.com/web/packages/pbdPROF/index.html)
 -   [pbdSLAP](http://cran.rstudio.com/web/packages/pbdSLAP/index.html)
 -   [peperr](http://cran.rstudio.com/web/packages/peperr/index.html)
--   [permGPU](http://cran.rstudio.com/web/packages/permGPU/index.html)
 -   [PGICA](http://cran.rstudio.com/web/packages/PGICA/index.html)
 -   [pls](http://cran.rstudio.com/web/packages/pls/index.html)
 -   [pmclust](http://cran.rstudio.com/web/packages/pmclust/index.html)
@@ -206,7 +202,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [rlecuyer](http://cran.rstudio.com/web/packages/rlecuyer/index.html)
 -   [Rmpi](http://cran.rstudio.com/web/packages/Rmpi/index.html) (core)
 -   [RProtoBuf](http://cran.rstudio.com/web/packages/RProtoBuf/index.html)
--   [rpud](http://cran.rstudio.com/web/packages/rpud/index.html)
 -   [rredis](http://cran.rstudio.com/web/packages/rredis/index.html)
 -   [snow](http://cran.rstudio.com/web/packages/snow/index.html) (core)
 -   [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html)
@@ -217,7 +212,6 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [tm](http://cran.rstudio.com/web/packages/tm/index.html)
 -   [toaster](http://cran.rstudio.com/web/packages/toaster/index.html)
 -   [varSelRF](http://cran.rstudio.com/web/packages/varSelRF/index.html)
--   [WideLM](http://cran.rstudio.com/web/packages/WideLM/index.html)
 
 ### Related links:
 
@@ -232,7 +226,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   Bioconductor Package: [puma](http://www.Bioconductor.ohttp://cran.rstudio.com/web/packages/release/bioc/html/puma.html)
 -   Google Code Project: [romp](http://code.google.com/p/romp/)
 -   Google Code Project: [bugsparallel](http://code.google.com/p/bugsparallel/)
--   [Slurm open-source workload manager](https://slurm.schedmd.com/)
+-   [Slurm open-source workload manager](http://slurm.schedmd.com/)
 -   [Condor project at University of Wisconsin-Madison](http://www.cs.wisc.edu/condor/)
 -   [Parallel Computing in R with sfCluster/snowfall](http://www.imbi.uni-freiburg.de/parallel/)
 -   [Wikipedia: Message Passing Interface (MPI)](http://en.wikipedia.org/wiki/Message_Passing_Interface)
@@ -244,6 +238,5 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [High Performance Statistical Computing for Data Intensive Research](http://thirteen-01.stat.iastate.edu/snoweye/hpsc/)
 -   [Rth: Parallel R through Thrust](http://heather.cs.ucdavis.edu/~matloff/rth.html)
 -   [Programming with Big Data in R](http://r-pbd.org)
--   [RHIPE](http://www.datadr.org)
--   [LaplacesDemon](http://www.bayesian-inference.com/software)
+-   [RHIPE](https://github.com/saptarshiguha/RHIPE/)
 -   [GitHub repository for this Task View](https://github.com/eddelbuettel/ctv-hpc)

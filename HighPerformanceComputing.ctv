@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-11-04</version>
+   <version>2015-12-03</version>
 
   <info>
     <p>
@@ -127,16 +127,16 @@
         either via function calls or implicitly via promises. Global variables
         are automatically identified. Iteration over elements in a collection
         is supported.
-   </li>
-      <li>The <pkg>bigrf</pkg> package provides a Random Forests
-        implementation with support for parellel execution and large
-        memory. 
       </li>
       <li>The <pkg>Rborist</pkg> package employs OpenMP pragmas to exploit 
         predictor-level parallelism in the Random Forest algorithm which
         promotes efficient use of multicore hardware in restaging data and in 
         determining splitting criteria, both of which are performance 
         bottlenecks in the algorithm.
+      </li>
+      <li>The <pkg>h2o</pkg> package connects to the h2o open source machine
+        learning environment which has scalable implementations of random
+        forests, GBM, GLM (with elastic net regularization), and deep learning.
       </li>
 
     </ul>
@@ -198,9 +198,10 @@
     </p>
     <ul>	     
       <li>
-	The RHIPE package, started by Saptarshi Guha and now developed by a core team via GitHub,   
+	The RHIPE package, started by Saptarshi Guha and now developed by a core team via
+	<a href="https://github.com/saptarshiguha/RHIPE/">GitHub</a>,   
         provides an interface between R and Hadoop for analysis of large complex data wholly from 
-	within R using the Divide and Recombine approach to big data. (<a href="http://www.datadr.org">link</a>)
+	within R using the Divide and Recombine approach to big data.
       </li>
       <li>
 	The rmr package by Revolution Analytics also provides an interface between R and Hadoop
@@ -256,7 +257,7 @@
         Job-scheduling toolkits permit management of
 	parallel computing resources and tasks.  The slurm (Simple Linux
         Utility for Resource Management) set of programs  works well with
-        MPI. (<a href="https://slurm.schedmd.com/">link</a>)
+        MPI. (<a href="http://slurm.schedmd.com/">link</a>)
       </li>
       <li>
         The Condor toolkit (<a href="http://www.cs.wisc.edu/condor/">link</a>) from 
@@ -393,8 +394,7 @@
         implemented using a mixture of nVidia's CUDA langauge and
         cublas library. Given a computer with an nVidia GPU these
         functions may be substantially more efficient than native R
-        routines.  The <pkg>rpud</pkg> package provides an optimised
-        distance metric for NVidia-based GPUs.
+        routines.
       </li>
       <li>
         The <pkg>cudaBayesreg</pkg> package by da Silva implements
@@ -416,19 +416,9 @@
 	GPU programming.
       </li>
       <li>
-        The <pkg>WideLM</pkg> package use CUDA (4.1 or greater) to fit
-        many 'skinny' regression models simultaneously from a single
-        data set.
-      </li>
-      <li>
         The <pkg>HiPLARM</pkg> package provide High-Performance Linear
         Algebra for R using multi-core and/or GPU support using the
         PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
-      </li>
-      <li>
-        The <pkg>permGPU</pkg> package computes permutation resampling
-        inference in the context of RNA microarray studies on the GPU,
-        it uses CUDA (>= 4.5)
       </li>
       <li>
         The <pkg>gmatrix</pkg> package enables the evaluation of matrix and vector 
@@ -476,10 +466,6 @@
 	The <pkg>biglars</pkg> package by Seligman et al can use the <pkg>ff</pkg>
 	to support large-than-memory datasets for least-angle regression,
 	lasso and stepwise regression.
-      </li>
-      <li>The <pkg>bigrf</pkg> package provides a Random Forests
-        implementation with support for parellel execution and large
-        memory. 
       </li>
       <li>The <pkg>MonetDB.R</pkg> package allows R to access the MonetDB 
          column-oriented, open source database system as a
@@ -546,7 +532,6 @@
     <pkg>biglars</pkg>
     <pkg>biglm</pkg>
     <pkg>bigmemory</pkg>
-    <pkg>bigrf</pkg>
     <pkg>bnlearn</pkg>
     <pkg>caret</pkg>
     <pkg>cudaBayesreg</pkg>
@@ -568,6 +553,7 @@
     <pkg>gmatrix</pkg>
     <pkg>gputools</pkg>
     <pkg>GUIProfiler</pkg>
+    <pkg>h2o</pkg>
     <pkg>HadoopStreaming</pkg>
     <pkg>harvestr</pkg>
     <pkg>HiPLARM</pkg>
@@ -589,7 +575,6 @@
     <pkg>pbdNCDF4</pkg>
     <pkg>pbdSLAP</pkg>
     <pkg>peperr</pkg>
-    <pkg>permGPU</pkg>
     <pkg>PGICA</pkg>
     <pkg>pls</pkg>
     <pkg>pmclust</pkg>
@@ -607,7 +592,6 @@
     <pkg>rlecuyer</pkg>
     <pkg priority="core">Rmpi</pkg>
     <pkg>RProtoBuf</pkg>
-    <pkg>rpud</pkg>
     <pkg>rredis</pkg>
     <pkg priority="core">snow</pkg>
     <pkg>snowfall</pkg>
@@ -618,7 +602,6 @@
     <pkg>tm</pkg>
     <pkg>toaster</pkg>
     <pkg>varSelRF</pkg>
-    <pkg>WideLM</pkg>
   </packagelist>
 
   <links>
@@ -633,7 +616,7 @@
     <bioc>puma</bioc>
     <gcode>romp</gcode>
     <gcode>bugsparallel</gcode>
-    <a href="https://slurm.schedmd.com/">Slurm open-source workload manager</a>
+    <a href="http://slurm.schedmd.com/">Slurm open-source workload manager</a>
     <a href="http://www.cs.wisc.edu/condor/">Condor project at University of Wisconsin-Madison</a>
     <a href="http://www.imbi.uni-freiburg.de/parallel/">Parallel Computing in R with sfCluster/snowfall</a>
     <a href="http://en.wikipedia.org/wiki/Message_Passing_Interface">Wikipedia: Message Passing Interface (MPI)</a>
@@ -645,8 +628,8 @@
     <a href="http://thirteen-01.stat.iastate.edu/snoweye/hpsc/">High Performance Statistical Computing for Data Intensive Research</a>
     <a href="http://heather.cs.ucdavis.edu/~matloff/rth.html">Rth: Parallel R through Thrust</a>
     <a href="http://r-pbd.org">Programming with Big Data in R</a>
-    <a href="http://www.datadr.org">RHIPE</a>
-    <a href="http://www.bayesian-inference.com/software">LaplacesDemon</a>
+    <a href="https://github.com/saptarshiguha/RHIPE/">RHIPE</a>
+    <!-- <a href="http://www.bayesian-inference.com/software">LaplacesDemon</a> -->
     <a href="https://github.com/eddelbuettel/ctv-hpc">GitHub repository for this Task View</a>
   </links>
 
