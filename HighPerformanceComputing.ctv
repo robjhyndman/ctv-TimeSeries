@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-12-03</version>
+   <version>2015-12-04</version>
 
   <info>
     <p>
@@ -426,6 +426,11 @@
         kept on the coprocessor and reused, with potentially significant performance 
         enhancements by minimizing data movement.
       </li>
+      <li>
+        The <pkg>gpuR</pkg> package offers GPU-enabled functions: New gpu*
+        and vcl* classes are provided to wrap typical R objects (e.g. vector,
+        matrix) mirroring typical R syntax without the need to know OpenCL. 
+      </li>
     </ul>
 
     <p>
@@ -552,6 +557,7 @@
     <pkg>Geneland</pkg>
     <pkg>gmatrix</pkg>
     <pkg>gputools</pkg>
+    <pkg>gpuR</pkg>
     <pkg>GUIProfiler</pkg>
     <pkg>h2o</pkg>
     <pkg>HadoopStreaming</pkg>

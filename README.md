@@ -106,6 +106,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [OpenCL](http://cran.rstudio.com/web/packages/OpenCL/index.html) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
 -   The [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html) package provide High-Performance Linear Algebra for R using multi-core and/or GPU support using the PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
 -   The [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
+-   The [gpuR](http://cran.rstudio.com/web/packages/gpuR/index.html) package offers GPU-enabled functions: New gpu\* and vcl\* classes are provided to wrap typical R objects (e.g. vector, matrix) mirroring typical R syntax without the need to know OpenCL.
 
 **Large memory and out-of-memory data**
 
@@ -161,6 +162,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [gcbd](http://cran.rstudio.com/web/packages/gcbd/index.html)
 -   [Geneland](http://cran.rstudio.com/web/packages/Geneland/index.html)
 -   [gmatrix](http://cran.rstudio.com/web/packages/gmatrix/index.html)
+-   [gpuR](http://cran.rstudio.com/web/packages/gpuR/index.html)
 -   [gputools](http://cran.rstudio.com/web/packages/gputools/index.html)
 -   [GUIProfiler](http://cran.rstudio.com/web/packages/GUIProfiler/index.html)
 -   [h2o](http://cran.rstudio.com/web/packages/h2o/index.html)
