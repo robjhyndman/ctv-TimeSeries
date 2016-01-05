@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2015-12-04</version>
+   <version>2016-01-05</version>
 
   <info>
     <p>
@@ -479,6 +479,9 @@
       <li>The <pkg>ffbase</pkg> package by de Jonge et al adds basic
         statistical functionality to the <pkg>ff</pkg> package.
       </li>
+      <li>The <pkg>LaF</pkg> package provides methods for fast access to
+        large ASCII files in csv or fixed-width format.
+      </li>
     </ul>
 
     <p>
@@ -565,6 +568,7 @@
     <pkg>HiPLARM</pkg>
     <pkg>HistogramTools</pkg>
     <pkg>inline</pkg>
+    <pkg>LaF</pkg>
     <pkg>latentnet</pkg>
     <pkg>lga</pkg>
     <pkg>Matching</pkg>

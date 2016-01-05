@@ -119,6 +119,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [biglars](http://cran.rstudio.com/web/packages/biglars/index.html) package by Seligman et al can use the [ff](http://cran.rstudio.com/web/packages/ff/index.html) to support large-than-memory datasets for least-angle regression, lasso and stepwise regression.
 -   The [MonetDB.R](http://cran.rstudio.com/web/packages/MonetDB.R/index.html) package allows R to access the MonetDB column-oriented, open source database system as a backend.
 -   The [ffbase](http://cran.rstudio.com/web/packages/ffbase/index.html) package by de Jonge et al adds basic statistical functionality to the [ff](http://cran.rstudio.com/web/packages/ff/index.html) package.
+-   The [LaF](http://cran.rstudio.com/web/packages/LaF/index.html) package provides methods for fast access to large ASCII files in csv or fixed-width format.
 
 **Easier interfaces for Compiled code**
 
@@ -171,6 +172,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [HiPLARM](http://cran.rstudio.com/web/packages/HiPLARM/index.html)
 -   [HistogramTools](http://cran.rstudio.com/web/packages/HistogramTools/index.html)
 -   [inline](http://cran.rstudio.com/web/packages/inline/index.html)
+-   [LaF](http://cran.rstudio.com/web/packages/LaF/index.html)
 -   [latentnet](http://cran.rstudio.com/web/packages/latentnet/index.html)
 -   [lga](http://cran.rstudio.com/web/packages/lga/index.html)
 -   [Matching](http://cran.rstudio.com/web/packages/Matching/index.html)
