@@ -42,6 +42,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [future](http://cran.rstudio.com/web/packages/future/index.html) package allows for synchroneous (sequential) and asynchronous (parallel) evaluations via abstraction of futures, either via function calls or implicitly via promises. Global variables are automatically identified. Iteration over elements in a collection is supported.
 -   The [Rborist](http://cran.rstudio.com/web/packages/Rborist/index.html) package employs OpenMP pragmas to exploit predictor-level parallelism in the Random Forest algorithm which promotes efficient use of multicore hardware in restaging data and in determining splitting criteria, both of which are performance bottlenecks in the algorithm.
 -   The [h2o](http://cran.rstudio.com/web/packages/h2o/index.html) package connects to the h2o open source machine learning environment which has scalable implementations of random forests, GBM, GLM (with elastic net regularization), and deep learning.
+-   The [randomForestSRC](http://cran.rstudio.com/web/packages/randomForestSRC/index.html) package can use both OpenMP as well as MPI for random forest extensions suitable for survival analysis, competing risks analysis, classification as well as regression
 
 **Parallel computing: Implicit parallelism**
 
@@ -195,6 +196,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [profr](http://cran.rstudio.com/web/packages/profr/index.html)
 -   [proftools](http://cran.rstudio.com/web/packages/proftools/index.html)
 -   [pvclust](http://cran.rstudio.com/web/packages/pvclust/index.html)
+-   [randomForestSRC](http://cran.rstudio.com/web/packages/randomForestSRC/index.html)
 -   [Rborist](http://cran.rstudio.com/web/packages/Rborist/index.html)
 -   [Rcpp](http://cran.rstudio.com/web/packages/Rcpp/index.html)
 -   [Rdsm](http://cran.rstudio.com/web/packages/Rdsm/index.html)

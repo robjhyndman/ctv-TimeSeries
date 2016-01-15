@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-01-05</version>
+   <version>2016-01-15</version>
 
   <info>
     <p>
@@ -137,6 +137,10 @@
       <li>The <pkg>h2o</pkg> package connects to the h2o open source machine
         learning environment which has scalable implementations of random
         forests, GBM, GLM (with elastic net regularization), and deep learning.
+      </li>
+      <li>The <pkg>randomForestSRC</pkg> package can use both OpenMP as well
+        as MPI for random forest extensions suitable for survival analysis,
+        competing risks analysis, classification as well as regression 
       </li>
 
     </ul>
@@ -591,6 +595,7 @@
     <pkg>profr</pkg>
     <pkg>proftools</pkg>
     <pkg>pvclust</pkg>
+    <pkg>randomForestSRC</pkg>    
     <pkg>Rborist</pkg>
     <pkg>Rcpp</pkg>
     <pkg>Rdsm</pkg>
