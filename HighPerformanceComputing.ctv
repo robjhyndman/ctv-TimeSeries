@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-01-15</version>
+   <version>2016-01-28</version>
 
   <info>
     <p>
@@ -386,6 +386,15 @@
         is <pkg>pls</pkg>, another is <pkg>PGICA</pkg> which can run ICA
         analysis in parallel on SGE or multicore platforms.
       </li>
+      <li>
+        The <pkg>sprint</pkg> (an acronym for "Simple Parallel R INTerface")
+        package provides a parallel computing framework for R making High
+        Performance Computing (HPC) accessible to users who are not familiar
+        with parallel programming and the use of HPC architectures. It
+        contains a library of parallelised R functions for correlation,
+        partitioning around medoids, apply, permutation testing,
+        bootstrapping, random forest, rank product and hamming distance. 
+      </li>
     </ul>
 
     <p>
@@ -612,6 +621,7 @@
     <pkg>snowfall</pkg>
     <pkg>snowFT</pkg>
     <pkg>speedglm</pkg>
+    <pkg>sprint</pkg>    
     <pkg>sqldf</pkg>
     <pkg>STAR</pkg>
     <pkg>tm</pkg>

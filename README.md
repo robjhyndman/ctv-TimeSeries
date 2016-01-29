@@ -97,6 +97,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   The [pmclust](http://cran.rstudio.com/web/packages/pmclust/index.html) package utilizes unsupervised model-based clustering for high dimensional (ultra) large data. The package uses [pbdMPI](http://cran.rstudio.com/web/packages/pbdMPI/index.html) to perform a parallel version of the EM algorithm for finite mixture Gaussian models.
 -   The [harvestr](http://cran.rstudio.com/web/packages/harvestr/index.html) package provides helper functions for (reproducible) simulations.
 -   Nowadays, many packages can use the facilities offered by the **parallel** package. One example is [pls](http://cran.rstudio.com/web/packages/pls/index.html), another is [PGICA](http://cran.rstudio.com/web/packages/PGICA/index.html) which can run ICA analysis in parallel on SGE or multicore platforms.
+-   The [sprint](http://cran.rstudio.com/web/packages/sprint/index.html) (an acronym for "Simple Parallel R INTerface") package provides a parallel computing framework for R making High Performance Computing (HPC) accessible to users who are not familiar with parallel programming and the use of HPC architectures. It contains a library of parallelised R functions for correlation, partitioning around medoids, apply, permutation testing, bootstrapping, random forest, rank product and hamming distance.
 
 **Parallel computing: GPUs**
 
@@ -213,6 +214,7 @@ Contributions are always welcome, and encouraged. Since the start of this CRAN t
 -   [snowfall](http://cran.rstudio.com/web/packages/snowfall/index.html)
 -   [snowFT](http://cran.rstudio.com/web/packages/snowFT/index.html)
 -   [speedglm](http://cran.rstudio.com/web/packages/speedglm/index.html)
+-   [sprint](http://cran.rstudio.com/web/packages/sprint/index.html)
 -   [sqldf](http://cran.rstudio.com/web/packages/sqldf/index.html)
 -   [STAR](http://cran.rstudio.com/web/packages/STAR/index.html)
 -   [tm](http://cran.rstudio.com/web/packages/tm/index.html)
