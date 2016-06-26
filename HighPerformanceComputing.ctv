@@ -514,6 +514,14 @@
         applications for faster and more direct data transfer.
       </li>
       <li>
+        The <pkg>RcppParallel</pkg> package by Allaire et al. bundles the
+        <a href="https://www.threadingbuildingblocks.org">Intel Threading Building Blocks</a>
+        and <a href="http://tinythreadpp.bitsnbites.eu">TinyThread</a>
+        libraries. Together with <pkg>Rcpp</pkg>, RcppParallel makes it
+        easy to write safe, performant, concurrently-executing C++ code,
+        and use that code within R and R packages.
+      </li>
+      <li>
 	The <pkg>rJava</pkg> package by Urbanek provides a low-level
 	interface to Java similar to the <code>.Call()</code> interface for C
 	and C++.
