@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-06-28</version>
+   <version>2016-07-06</version>
 
   <info>
     <p>
@@ -117,9 +117,10 @@
 	counter. Using foreach without side effects also facilitates
 	executing the loop in parallel which is possible via
 	the <pkg>doMC</pkg> (using parallel/multicore on single
-	workstations),
-	<pkg>doSNOW</pkg> (using <pkg>snow</pkg>, see
-	above), <pkg>doMPI</pkg> (using <pkg>Rmpi</pkg>) packages and
+	workstations), <pkg>doSNOW</pkg> (using <pkg>snow</pkg>, see
+	above), <pkg>doMPI</pkg> (using <pkg>Rmpi</pkg>) packages,
+        <pkg>doFuture</pkg> (using <pkg>future</pkg> or
+        <pkg>future.BatchJobs</pkg>), and
 	<pkg>doRedis</pkg> (using <pkg>rredis</pkg>) packages.
       </li>
       <li>The <pkg>future</pkg> package allows for synchroneous (sequential)
@@ -565,6 +566,7 @@
     <pkg>caret</pkg>
     <pkg>cudaBayesreg</pkg>
     <pkg>dclone</pkg>
+    <pkg>doFuture</pkg>
     <pkg>doMC</pkg>
     <pkg>doMPI</pkg>
     <pkg>doRedis</pkg>
@@ -576,6 +578,7 @@
     <pkg>flowr</pkg>
     <pkg>foreach</pkg>
     <pkg>future</pkg>
+    <pkg>future.BatchJobs</pkg>
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
     <pkg>Geneland</pkg>
@@ -615,6 +618,7 @@
     <pkg>randomForestSRC</pkg>    
     <pkg>Rborist</pkg>
     <pkg>Rcpp</pkg>
+    <pkg>RcppParallel</pkg>
     <pkg>Rdsm</pkg>
     <pkg>rgenoud</pkg>
     <pkg>Rhpc</pkg>
