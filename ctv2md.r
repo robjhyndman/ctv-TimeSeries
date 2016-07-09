@@ -16,7 +16,7 @@ suppressMessages(library(XML))          # called by ctv
 suppressMessages(library(ctv))
 
 r <- getOption("repos")                 # set CRAN mirror
-r["CRAN"] <- "http://cran.rstudio.com"
+r["CRAN"] <- "https://cloud.r-project.org"
 options(repos=r)
 
 check_ctv_packages(ctvfile)             # run the check
@@ -29,13 +29,13 @@ ctv2html(read.ctv(ctvfile), htmlfile)
 cmd <- paste0("cat ", htmlfile,
 ###  - in lines of the form  ^<a href="Word">Word.html</a>
 ###  - capture the 'Word' and insert it into a larger URL containing an absolute reference to task view 'Word'
-              " | sed -e 's|^<a href=\"\\([a-zA-Z]*\\)\\.html|<a href=\"http://cran.rstudio.com/web/views/\\1.html\"|' | ",
+              " | sed -e 's|^<a href=\"\\([a-zA-Z]*\\)\\.html|<a href=\"https://cloud.r-project.org/web/views/\\1.html\"|' | ",
 ###  - call pandoc, specifying html as input and github-flavoured markdown as output
               "pandoc -s -r html -w markdown_github | ",
 ###  - deal with the header by removing extra ||, replacing |** with ** and **| with **:              
               "sed -e's/||//g' -e's/|\\*\\*/\\*\\*/g' -e's/\\*\\*|/\\*\\* /g' -e's/|$/  /g' ",
 ###  - make the implicit URL to packages explicit
-              "-e's|../packages/|http://cran.rstudio.com/web/packages/|g' ",
+              "-e's|../packages/|https://cloud.r-project.org/web/packages/|g' ",
 ###  - write out mdfile
               "> ", mdfile)
 
