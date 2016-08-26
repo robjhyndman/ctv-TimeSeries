@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                    
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org   
-| **Version:**    | 2016-07-06                           
+| **Version:**    | 2016-08-18                           
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
 
@@ -98,6 +98,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [gcbd](https://cloud.r-project.org/web/packages/gcbd/index.html) package implements a benchmarking framework for BLAS and GPUs (using [gputools](https://cloud.r-project.org/web/packages/gputools/index.html)).
 -   The [OpenCL](https://cloud.r-project.org/web/packages/OpenCL/index.html) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
 -   The [HiPLARM](https://cloud.r-project.org/web/packages/HiPLARM/index.html) package provide High-Performance Linear Algebra for R using multi-core and/or GPU support using the PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
+-   The [permGPU](https://cloud.r-project.org/web/packages/permGPU/index.html) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (&gt;= 4.5)
 -   The [gmatrix](https://cloud.r-project.org/web/packages/gmatrix/index.html) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
 -   The [gpuR](https://cloud.r-project.org/web/packages/gpuR/index.html) package offers GPU-enabled functions: New gpu\* and vcl\* classes are provided to wrap typical R objects (e.g. vector, matrix) mirroring typical R syntax without the need to know OpenCL.
 
@@ -185,6 +186,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [pbdPROF](https://cloud.r-project.org/web/packages/pbdPROF/index.html)
 -   [pbdSLAP](https://cloud.r-project.org/web/packages/pbdSLAP/index.html)
 -   [peperr](https://cloud.r-project.org/web/packages/peperr/index.html)
+-   [permGPU](https://cloud.r-project.org/web/packages/permGPU/index.html)
 -   [PGICA](https://cloud.r-project.org/web/packages/PGICA/index.html)
 -   [pls](https://cloud.r-project.org/web/packages/pls/index.html)
 -   [pmclust](https://cloud.r-project.org/web/packages/pmclust/index.html)

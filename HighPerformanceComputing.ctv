@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-07-06</version>
+   <version>2016-08-18</version>
 
   <info>
     <p>
@@ -435,6 +435,11 @@
         PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
       </li>
       <li>
+        The <pkg>permGPU</pkg> package computes permutation resampling
+        inference in the context of RNA microarray studies on the GPU,
+        it uses CUDA (>= 4.5)
+      </li>
+      <li>
         The <pkg>gmatrix</pkg> package enables the evaluation of matrix and vector 
         operations using GPU coprocessors such that intermediate computations may be 
         kept on the coprocessor and reused, with potentially significant performance 
@@ -609,6 +614,7 @@
     <pkg>pbdNCDF4</pkg>
     <pkg>pbdSLAP</pkg>
     <pkg>peperr</pkg>
+    <pkg>permGPU</pkg>
     <pkg>PGICA</pkg>
     <pkg>pls</pkg>
     <pkg>pmclust</pkg>
