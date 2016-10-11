@@ -397,8 +397,8 @@
         bootstrapping, random forest, rank product and hamming distance. 
       </li>
       <li>
-        The <pkg>pbapply</pkg> offers a progress bar for vectorized R
-        function in the `*apply` family, and supports several backends.
+        The <pkg>pbapply</pkg> package offers a progress bar for vectorized R
+        functions in the `*apply` family, and supports several backends.
       </li>
         
     </ul>

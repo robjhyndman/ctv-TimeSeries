@@ -90,7 +90,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [harvestr](https://cloud.r-project.org/web/packages/harvestr/index.html) package provides helper functions for (reproducible) simulations.
 -   Nowadays, many packages can use the facilities offered by the **parallel** package. One example is [pls](https://cloud.r-project.org/web/packages/pls/index.html), another is [PGICA](https://cloud.r-project.org/web/packages/PGICA/index.html) which can run ICA analysis in parallel on SGE or multicore platforms.
 -   The [sprint](https://cloud.r-project.org/web/packages/sprint/index.html) (an acronym for "Simple Parallel R INTerface") package provides a parallel computing framework for R making High Performance Computing (HPC) accessible to users who are not familiar with parallel programming and the use of HPC architectures. It contains a library of parallelised R functions for correlation, partitioning around medoids, apply, permutation testing, bootstrapping, random forest, rank product and hamming distance.
--   The [pbapply](https://cloud.r-project.org/web/packages/pbapply/index.html) offers a progress bar for vectorized R function in the \`\*apply\` family, and supports several backends.
+-   The [pbapply](https://cloud.r-project.org/web/packages/pbapply/index.html) package offers a progress bar for vectorized R functions in the \`\*apply\` family, and supports several backends.
 
 **Parallel computing: GPUs**
 
