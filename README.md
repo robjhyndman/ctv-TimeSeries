@@ -1,11 +1,12 @@
 CRAN Task View: High-Performance and Parallel Computing with R
 --------------------------------------------------------------
 
-|                 |                                      
-|-----------------|------------------------------------  
-| **Maintainer:** | Dirk Eddelbuettel                    
-| **Contact:**    | Dirk.Eddelbuettel at R-project.org   
-| **Version:**    | 2016-08-18                           
+|                 |                                                              
+|-----------------|------------------------------------------------------------  
+| **Maintainer:** | Dirk Eddelbuettel                                            
+| **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
+| **Version:**    | 2016-10-10                                                   
+| **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
 
@@ -38,7 +39,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 **Parallel computing: Implicit parallelism**
 
 -   The pnmath package by Tierney ( [link](http://www.stat.uiowa.edu/~luke/R/experimental/)) uses the Open MP parallel processing directives of recent compilers (such gcc 4.2 or later) for implicit parallelism by replacing a number of internal R functions with replacements that can make use of multiple cores --- without any explicit requests from the user. The alternate pnmath0 package offers the same functionality using Pthreads for environments in which the newer compilers are not available. Similar functionality is expected to become integrated into R 'eventually'.
--   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [<span class="Gcode">romp</span>](http://code.google.com/p/romp/). An R-Forge project [<span class="Rforge">romp</span>](http://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
+-   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [<span class="Gcode">romp</span>](http://code.google.com/p/romp/). An R-Forge project [<span class="Rforge">romp</span>](https://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
 -   The R/parallel package by Vera, Jansen and Suppi offers a C++-based master-slave dispatch mechanism for parallel execution ( [link](http://www.rparallel.org/))
 -   The [Rdsm](https://cloud.r-project.org/web/packages/Rdsm/index.html) package provides a threads-like parallel computing environment, both on multicore machine and across the network by providing facilities inspired from distributed shared memory programming.
 -   The [RhpcBLASctl](https://cloud.r-project.org/web/packages/RhpcBLASctl/index.html) detects the number of available BLAS cores, and permits explicit selection of the number of cores.
@@ -47,7 +48,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 **Parallel computing: Grid computing**
 
 -   The multiR package by Grose was presented at useR! 2008 but has not been released. It may offer a snow-style framework on a grid computing platform.
--   The [<span class="Rforge">biocep-distrib</span>](http://R-Forge.R-project.org/projects/biocep-distrib/) project by Chine offers a Java-based framework for local, Grid, or Cloud computing. It is under active development.
+-   The [<span class="Rforge">biocep-distrib</span>](https://R-Forge.R-project.org/projects/biocep-distrib/) project by Chine offers a Java-based framework for local, Grid, or Cloud computing. It is under active development.
 
 **Parallel computing: Hadoop**
 
@@ -89,6 +90,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [harvestr](https://cloud.r-project.org/web/packages/harvestr/index.html) package provides helper functions for (reproducible) simulations.
 -   Nowadays, many packages can use the facilities offered by the **parallel** package. One example is [pls](https://cloud.r-project.org/web/packages/pls/index.html), another is [PGICA](https://cloud.r-project.org/web/packages/PGICA/index.html) which can run ICA analysis in parallel on SGE or multicore platforms.
 -   The [sprint](https://cloud.r-project.org/web/packages/sprint/index.html) (an acronym for "Simple Parallel R INTerface") package provides a parallel computing framework for R making High Performance Computing (HPC) accessible to users who are not familiar with parallel programming and the use of HPC architectures. It contains a library of parallelised R functions for correlation, partitioning around medoids, apply, permutation testing, bootstrapping, random forest, rank product and hamming distance.
+-   The [pbapply](https://cloud.r-project.org/web/packages/pbapply/index.html) offers a progress bar for vectorized R function in the \`\*apply\` family, and supports several backends.
 
 **Parallel computing: GPUs**
 
@@ -178,6 +180,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [OpenCL](https://cloud.r-project.org/web/packages/OpenCL/index.html)
 -   [orloca](https://cloud.r-project.org/web/packages/orloca/index.html)
 -   [partDSA](https://cloud.r-project.org/web/packages/partDSA/index.html)
+-   [pbapply](https://cloud.r-project.org/web/packages/pbapply/index.html)
 -   [pbdBASE](https://cloud.r-project.org/web/packages/pbdBASE/index.html)
 -   [pbdDEMO](https://cloud.r-project.org/web/packages/pbdDEMO/index.html)
 -   [pbdDMAT](https://cloud.r-project.org/web/packages/pbdDMAT/index.html)
@@ -224,7 +227,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [Mailing List: R Special Interest Group High Performance Computing](https://stat.ethz.ch/mailman/listinfo/r-sig-hpc/)
 -   [Schmidberger, Morgan, Eddelbuettel, Yu, Tierney and Mansmann (2009) paper on 'State of the Art in Parallel Computing with R'](http://www.jstatsoft.org/v31/i01/)
 -   [Luke Tierney's code directory for pnmath and pnmath0](http://www.stat.uiowa.edu/~luke/R/experimental/)
--   R-Forge Project: [<span class="Rforge">biocep-distrib</span>](http://R-Forge.R-project.org/projects/biocep-distrib/)
+-   R-Forge Project: [<span class="Rforge">biocep-distrib</span>](https://R-Forge.R-project.org/projects/biocep-distrib/)
 -   Bioconductor Package: [<span class="BioC">affyPara</span>](http://www.Bioconductor.ohttps://cloud.r-project.org/web/packages/release/bioc/html/affyPara.html)
 -   Bioconductor Package: [<span class="BioC">maanova</span>](http://www.Bioconductor.ohttps://cloud.r-project.org/web/packages/release/bioc/html/maanova.html)
 -   Bioconductor Package: [<span class="BioC">multtest</span>](http://www.Bioconductor.ohttps://cloud.r-project.org/web/packages/release/bioc/html/multtest.html)

@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-08-18</version>
+   <version>2016-10-10</version>
 
   <info>
     <p>
@@ -396,6 +396,11 @@
         partitioning around medoids, apply, permutation testing,
         bootstrapping, random forest, rank product and hamming distance. 
       </li>
+      <li>
+        The <pkg>pbapply</pkg> offers a progress bar for vectorized R
+        function in the `*apply` family, and supports several backends.
+      </li>
+        
     </ul>
 
     <p>
@@ -606,6 +611,7 @@
     <pkg>orloca</pkg>
     <pkg>OpenCL</pkg>
     <pkg>partDSA</pkg>
+    <pkg>pbapply</pkg>    
     <pkg>pbdBASE</pkg>
     <pkg>pbdDEMO</pkg>
     <pkg>pbdDMAT</pkg>
