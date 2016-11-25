@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2016-10-10</version>
+   <version>2016-11-25</version>
 
   <info>
     <p>
@@ -285,7 +285,8 @@
 	computing systems like PBS/Torque, LSF and Sun Grid
 	Engine. Multicore and SSH systems are also supported. The
 	<pkg>BatchExperiments</pkg> package extends it with an
-	abstraction layer for running statistical experiments.
+	abstraction layer for running statistical experiments. Package
+        <pkg>batchtools</pkg> is a successor / extension to both.
       </li>
       <li>
         The <pkg>flowr</pkg> package offers a scatter-gather approach to submit jobs
@@ -565,8 +566,9 @@
   <packagelist>
     <pkg>aprof</pkg>
     <pkg>batch</pkg>
-    <pkg>BatchJobs</pkg>
     <pkg>BatchExperiments</pkg>
+    <pkg>BatchJobs</pkg>
+    <pkg>batchtools</pkg>
     <pkg>bayesm</pkg>
     <pkg>bcp</pkg>
     <pkg>biglars</pkg>

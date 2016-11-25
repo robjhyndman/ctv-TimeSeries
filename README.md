@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2016-10-10                                                   
+| **Version:**    | 2016-11-25                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -70,7 +70,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The Condor toolkit ( [link](http://www.cs.wisc.edu/condor/)) from the University of Wisconsin-Madison has been used with R as described in this [R News article](http://www.r-project.org/doc/Rnews/Rnews_2005-2.pdf).
 -   The sfCluster package by Knaus can be used with [snowfall](https://cloud.r-project.org/web/packages/snowfall/index.html). ( [link](http://www.imbi.uni-freiburg.de/parallel/)) but is currently limited to LAM/MPI.
 -   The [batch](https://cloud.r-project.org/web/packages/batch/index.html) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
--   The [BatchJobs](https://cloud.r-project.org/web/packages/BatchJobs/index.html) package provides Map, Reduce and Filter variants to manage R jobs and their results on batch computing systems like PBS/Torque, LSF and Sun Grid Engine. Multicore and SSH systems are also supported. The [BatchExperiments](https://cloud.r-project.org/web/packages/BatchExperiments/index.html) package extends it with an abstraction layer for running statistical experiments.
+-   The [BatchJobs](https://cloud.r-project.org/web/packages/BatchJobs/index.html) package provides Map, Reduce and Filter variants to manage R jobs and their results on batch computing systems like PBS/Torque, LSF and Sun Grid Engine. Multicore and SSH systems are also supported. The [BatchExperiments](https://cloud.r-project.org/web/packages/BatchExperiments/index.html) package extends it with an abstraction layer for running statistical experiments. Package [batchtools](https://cloud.r-project.org/web/packages/batchtools/index.html) is a successor / extension to both.
 -   The [flowr](https://cloud.r-project.org/web/packages/flowr/index.html) package offers a scatter-gather approach to submit jobs lists (including dependencies) to the computing cluster via simple data.frames as inputs. It supports LSF, SGE, Torque and SLURM.
 
 **Parallel computing: Applications**
@@ -136,6 +136,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [batch](https://cloud.r-project.org/web/packages/batch/index.html)
 -   [BatchExperiments](https://cloud.r-project.org/web/packages/BatchExperiments/index.html)
 -   [BatchJobs](https://cloud.r-project.org/web/packages/BatchJobs/index.html)
+-   [batchtools](https://cloud.r-project.org/web/packages/batchtools/index.html)
 -   [bayesm](https://cloud.r-project.org/web/packages/bayesm/index.html)
 -   [bcp](https://cloud.r-project.org/web/packages/bcp/index.html)
 -   [biglars](https://cloud.r-project.org/web/packages/biglars/index.html)
