@@ -262,7 +262,8 @@
         Job-scheduling toolkits permit management of
 	parallel computing resources and tasks.  The slurm (Simple Linux
         Utility for Resource Management) set of programs  works well with
-        MPI. (<a href="http://slurm.schedmd.com/">link</a>)
+        MPI and slurm jobs can be submitted from R using the <pkg>rslurm</pkg> 
+        package. (<a href="http://slurm.schedmd.com/">link</a>)
       </li>
       <li>
         The Condor toolkit (<a href="http://www.cs.wisc.edu/condor/">link</a>) from 
@@ -643,6 +644,7 @@
     <pkg priority="core">Rmpi</pkg>
     <pkg>RProtoBuf</pkg>
     <pkg>rredis</pkg>
+    <pkg>rslurm</pkg>
     <pkg priority="core">snow</pkg>
     <pkg>snowfall</pkg>
     <pkg>snowFT</pkg>
