@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2016-11-25                                                   
+| **Version:**    | 2017-02-01                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -66,7 +66,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 
 **Parallel computing: Resource managers and batch schedulers**
 
--   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs works well with MPI. ( [link](http://slurm.schedmd.com/))
+-   Job-scheduling toolkits permit management of parallel computing resources and tasks. The slurm (Simple Linux Utility for Resource Management) set of programs works well with MPI and slurm jobs can be submitted from R using the [rslurm](https://cloud.r-project.org/web/packages/rslurm/index.html) package. ( [link](http://slurm.schedmd.com/))
 -   The Condor toolkit ( [link](http://www.cs.wisc.edu/condor/)) from the University of Wisconsin-Madison has been used with R as described in this [R News article](http://www.r-project.org/doc/Rnews/Rnews_2005-2.pdf).
 -   The sfCluster package by Knaus can be used with [snowfall](https://cloud.r-project.org/web/packages/snowfall/index.html). ( [link](http://www.imbi.uni-freiburg.de/parallel/)) but is currently limited to LAM/MPI.
 -   The [batch](https://cloud.r-project.org/web/packages/batch/index.html) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
@@ -211,6 +211,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [Rmpi](https://cloud.r-project.org/web/packages/Rmpi/index.html) (core)
 -   [RProtoBuf](https://cloud.r-project.org/web/packages/RProtoBuf/index.html)
 -   [rredis](https://cloud.r-project.org/web/packages/rredis/index.html)
+-   [rslurm](https://cloud.r-project.org/web/packages/rslurm/index.html)
 -   [snow](https://cloud.r-project.org/web/packages/snow/index.html) (core)
 -   [snowfall](https://cloud.r-project.org/web/packages/snowfall/index.html)
 -   [snowFT](https://cloud.r-project.org/web/packages/snowFT/index.html)
