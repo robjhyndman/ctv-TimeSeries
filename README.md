@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2017-02-01                                                   
+| **Version:**    | 2017-02-16                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -249,4 +249,5 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [Rth: Parallel R through Thrust](http://heather.cs.ucdavis.edu/~matloff/rth.html)
 -   [Programming with Big Data in R](http://r-pbd.org)
 -   [RHIPE](https://github.com/saptarshiguha/RHIPE/)
+-   [Beyond Single Core: Parallel Analysis in R](https://github.com/ljdursi/beyond-single-core-R)
 -   [GitHub repository for this Task View](https://github.com/eddelbuettel/ctv-hpc)
