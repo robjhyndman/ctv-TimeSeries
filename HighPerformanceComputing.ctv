@@ -41,7 +41,7 @@
       requests are also possible. 
     </p>
     <p>
-      The <pkg>ctv</pkg> package supports these Task Views. Its functions
+      The <code>ctv</code> package supports these Task Views. Its functions
       <code>install.views</code> and <code>update.views</code> allow,
       respectively, installation or update of packages from a given Task View;
       the option <code>coreOnly</code> can restrict operations to packages labeled as
