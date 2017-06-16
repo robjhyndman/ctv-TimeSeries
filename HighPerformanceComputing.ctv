@@ -593,6 +593,7 @@
     <pkg>bnlearn</pkg>
     <pkg>caret</pkg>
     <pkg>cudaBayesreg</pkg>
+    <pkg>data.table</pkg>
     <pkg>dclone</pkg>
     <pkg>doFuture</pkg>
     <pkg>doMC</pkg>
@@ -600,7 +601,6 @@
     <pkg>doRedis</pkg>
     <pkg>doRNG</pkg>
     <pkg>doSNOW</pkg>
-    <pkg>data.table</pkg>
     <pkg>drake</pkg>
     <pkg>ff</pkg>
     <pkg>ffbase</pkg>
