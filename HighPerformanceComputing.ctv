@@ -190,6 +190,16 @@
       <li>
         The <pkg>Rhpc</pkg> permits <code>*apply()</code> style dispatch via MPI.
       </li>
+      <li>
+        The <pkg>drake</pkg> package is an R-focused reproducible build system.
+        Similarly to <a href="https://www.gnu.org/software/make">Make</a>, it 
+        arranges the intermediate steps of a workflow and executes them in parallelizable stages. 
+        With three alternative backends
+        (powered by <code>parallel::mclapply()</code>, <code>parallel::parLapply()</code>,
+        and <a href="https://www.gnu.org/software/make">Makefiles</a>, respectivly)
+        <pkg>drake</pkg> supports implicit parallelism for both low-overhead single-node 
+        applications and true distributed computing workloads.
+      </li>
     </ul>
 
     <p>
@@ -591,6 +601,7 @@
     <pkg>doRNG</pkg>
     <pkg>doSNOW</pkg>
     <pkg>data.table</pkg>
+    <pkg>drake</pkg>
     <pkg>ff</pkg>
     <pkg>ffbase</pkg>
     <pkg>flowr</pkg>
