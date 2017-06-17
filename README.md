@@ -46,6 +46,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [Rdsm](https://cran.r-project.org/package=Rdsm) package provides a threads-like parallel computing environment, both on multicore machine and across the network by providing facilities inspired from distributed shared memory programming.
 -   The [RhpcBLASctl](https://cran.r-project.org/package=RhpcBLASctl) detects the number of available BLAS cores, and permits explicit selection of the number of cores.
 -   The [Rhpc](https://cran.r-project.org/package=Rhpc) permits `*apply()` style dispatch via MPI.
+-   The [drake](https://cran.r-project.org/package=drake) package is an R-focused reproducible build system. Similarly to [Make](https://www.gnu.org/software/make), it arranges the intermediate steps of a workflow and executes them in parallelizable stages. With three alternative backends (powered by `parallel::mclapply()`, `parallel::parLapply()`, and [Makefiles](https://www.gnu.org/software/make), respectivly) drake supports implicit parallelism both for low-overhead single-node applications and for true distributed computing workloads.
 
 **Parallel computing: Grid computing**
 
@@ -155,6 +156,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [doRedis](https://cran.r-project.org/package=doRedis)
 -   [doRNG](https://cran.r-project.org/package=doRNG)
 -   [doSNOW](https://cran.r-project.org/package=doSNOW)
+-   [drake](https://cran.r-project.org/package=drake)
 -   [ff](https://cran.r-project.org/package=ff)
 -   [ffbase](https://cran.r-project.org/package=ffbase)
 -   [flowr](https://cran.r-project.org/package=flowr)
