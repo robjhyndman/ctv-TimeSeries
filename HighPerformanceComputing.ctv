@@ -106,7 +106,7 @@
         via MPI profiling libraries, such as fpmpi, mpiP, or TAU.
       </li>
       <li>An alternative is provided by the <pkg>nws</pkg> (NetWorkSpaces)
-        packages from REvolution Computing.  It is the successor to the
+        packages from REvolution Computing. It is the successor to the
 	earlier LindaSpaces approach to parallel computing, and is
 	implemented on top of the Twisted networking toolkit for Python.
       </li>
@@ -184,7 +184,7 @@
 	programming.
       </li>
       <li>
-        The <pkg>RhpcBLASctl</pkg> detects the number of available
+        The <pkg>RhpcBLASctl</pkg> package detects the number of available
         BLAS cores, and permits explicit selection of the number of
         cores.
       </li>
