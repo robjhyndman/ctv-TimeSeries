@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2017-06-17                                                   
+| **Version:**    | 2017-08-15                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -44,7 +44,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [<span class="Gcode">romp</span>](http://code.google.com/p/romp/). An R-Forge project [<span class="Rforge">romp</span>](https://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
 -   The R/parallel package by Vera, Jansen and Suppi offers a C++-based master-slave dispatch mechanism for parallel execution ( [link](http://www.rparallel.org/))
 -   The [Rdsm](https://cran.r-project.org/package=Rdsm) package provides a threads-like parallel computing environment, both on multicore machine and across the network by providing facilities inspired from distributed shared memory programming.
--   The [RhpcBLASctl](https://cran.r-project.org/package=RhpcBLASctl) detects the number of available BLAS cores, and permits explicit selection of the number of cores.
+-   The [RhpcBLASctl](https://cran.r-project.org/package=RhpcBLASctl) package detects the number of available BLAS cores, and permits explicit selection of the number of cores.
 -   The [Rhpc](https://cran.r-project.org/package=Rhpc) permits `*apply()` style dispatch via MPI.
 -   The [drake](https://cran.r-project.org/package=drake) package is an R-focused reproducible build system. Similarly to [Make](https://www.gnu.org/software/make), it arranges the intermediate steps of a workflow and executes them in parallelizable stages. With three alternative backends (powered by `parallel::mclapply()`, `parallel::parLapply()`, and [Makefiles](https://www.gnu.org/software/make), respectivly) drake supports implicit parallelism both for low-overhead single-node applications and for true distributed computing workloads.
 
@@ -102,7 +102,6 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The rgpu package (see below for link) aims to speed up bioinformatics analysis by using the GPU.
 -   The [gcbd](https://cran.r-project.org/package=gcbd/index.html) package implements a benchmarking framework for BLAS and GPUs (using [gputools](../packages/gputools)).
 -   The [OpenCL](https://cran.r-project.org/package=OpenCL) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
--   The [HiPLARM](https://cran.r-project.org/package=HiPLARM) package provide High-Performance Linear Algebra for R using multi-core and/or GPU support using the PLASMA / MAGMA libraries from UTK, CUDA, and accelerated BLAS.
 -   The [permGPU](https://cran.r-project.org/package=permGPU) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (&gt;= 4.5)
 -   The [gmatrix](https://cran.r-project.org/package=gmatrix) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
 -   The [gpuR](https://cran.r-project.org/package=gpuR) package offers GPU-enabled functions: New gpu\* and vcl\* classes are provided to wrap typical R objects (e.g. vector, matrix) mirroring typical R syntax without the need to know OpenCL.
@@ -172,7 +171,6 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [h2o](https://cran.r-project.org/package=h2o)
 -   [HadoopStreaming](https://cran.r-project.org/package=HadoopStreaming)
 -   [harvestr](https://cran.r-project.org/package=harvestr)
--   [HiPLARM](https://cran.r-project.org/package=HiPLARM)
 -   [HistogramTools](https://cran.r-project.org/package=HistogramTools)
 -   [inline](https://cran.r-project.org/package=inline)
 -   [LaF](https://cran.r-project.org/package=LaF)
