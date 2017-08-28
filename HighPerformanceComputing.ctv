@@ -312,6 +312,12 @@
         lists (including dependencies) to the computing cluster via simple data.frames
         as inputs. It supports LSF, SGE, Torque and SLURM.
       </li>
+      <li>
+        The <pkg>clustermq</pkg> package lets you send function calls
+        as jobs on LSF, SGE and SLURM in a single line of code &amp; without
+        using network-mounted storage. It also supports transparent use of
+	remote clusters via SSH.
+      </li>
     </ul>
 
     <p>
