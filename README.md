@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2017-08-15                                                   
+| **Version:**    | 2017-08-29                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -75,6 +75,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [batch](https://cran.r-project.org/package=batch) package by Hoffmann can launch parallel computing requests onto a cluster and gather results.
 -   The [BatchJobs](https://cran.r-project.org/package=BatchJobs/index.html) package provides Map, Reduce and Filter variants to manage R jobs and their results on batch computing systems like PBS/Torque, LSF and Sun Grid Engine. Multicore and SSH systems are also supported. The [BatchExperiments](../packages/BatchExperiments/index.html) package extends it with an abstraction layer for running statistical experiments. Package [batchtools](../packages/batchtools) is a successor / extension to both.
 -   The [flowr](https://cran.r-project.org/package=flowr) package offers a scatter-gather approach to submit jobs lists (including dependencies) to the computing cluster via simple data.frames as inputs. It supports LSF, SGE, Torque and SLURM.
+-   The [clustermq](https://cran.r-project.org/package=clustermq) package sends function calls as jobs on LSF, SGE and SLURM via a single line of code without using network-mounted storage. It also supports use of remote clusters via SSH.
 
 **Parallel computing: Applications**
 
@@ -146,6 +147,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [bigmemory](https://cran.r-project.org/package=bigmemory)
 -   [bnlearn](https://cran.r-project.org/package=bnlearn)
 -   [caret](https://cran.r-project.org/package=caret)
+-   [clustermq](https://cran.r-project.org/package=clustermq)
 -   [cudaBayesreg](https://cran.r-project.org/package=cudaBayesreg)
 -   [data.table](https://cran.r-project.org/package=data.table)
 -   [dclone](https://cran.r-project.org/package=dclone)

@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2017-08-15</version>
+   <version>2017-08-29</version>
 
   <info>
     <p>
@@ -313,10 +313,9 @@
         as inputs. It supports LSF, SGE, Torque and SLURM.
       </li>
       <li>
-        The <pkg>clustermq</pkg> package lets you send function calls
-        as jobs on LSF, SGE and SLURM in a single line of code &amp; without
-        using network-mounted storage. It also supports transparent use of
-	remote clusters via SSH.
+        The <pkg>clustermq</pkg> package sends function calls as jobs on LSF,
+        SGE and SLURM via a single line of code without using network-mounted
+        storage. It also supports use of remote clusters via SSH.
       </li>
     </ul>
 
@@ -594,6 +593,7 @@
     <pkg>bigmemory</pkg>
     <pkg>bnlearn</pkg>
     <pkg>caret</pkg>
+    <pkg>clustermq</pkg>
     <pkg>cudaBayesreg</pkg>
     <pkg>data.table</pkg>
     <pkg>dclone</pkg>
