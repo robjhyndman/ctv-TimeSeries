@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2017-08-29                                                   
+| **Version:**    | 2017-09-20                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -95,6 +95,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   Nowadays, many packages can use the facilities offered by the **parallel** package. One example is [pls](https://cran.r-project.org/package=pls/index.html), another is [PGICA](../packages/PGICA) which can run ICA analysis in parallel on SGE or multicore platforms.
 -   The [sprint](https://cran.r-project.org/package=sprint) (an acronym for "Simple Parallel R INTerface") package provides a parallel computing framework for R making High Performance Computing (HPC) accessible to users who are not familiar with parallel programming and the use of HPC architectures. It contains a library of parallelised R functions for correlation, partitioning around medoids, apply, permutation testing, bootstrapping, random forest, rank product and hamming distance.
 -   The [pbapply](https://cran.r-project.org/package=pbapply) package offers a progress bar for vectorized R functions in the \`\*apply\` family, and supports several backends.
+-   The [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc) package simulates and estimates multidimensional Itô and Stratonovich stochastic differential equations in parallel.
 
 **Parallel computing: GPUs**
 
@@ -215,6 +216,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [RProtoBuf](https://cran.r-project.org/package=RProtoBuf)
 -   [rredis](https://cran.r-project.org/package=rredis)
 -   [rslurm](https://cran.r-project.org/package=rslurm)
+-   [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc)
 -   [snow](https://cran.r-project.org/package=snow) (core)
 -   [snowfall](https://cran.r-project.org/package=snowfall)
 -   [snowFT](https://cran.r-project.org/package=snowFT)
@@ -248,7 +250,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [rgpu project at nbic.nl](https://gforge.nbic.nl/projects/rgpu/)
 -   [Magma: Matrix Algebra on GPU and Multicore architectures](http://icl.cs.utk.edu/magma/)
 -   [Parallel R: Data Analysis in the Distributed World"](http://shop.oreilly.com/product/0636920021421.do)
--   [High Performance Statistical Computing for Data Intensive Research](http://thirteen-01.stat.iastate.edu/snoweye/hpsc/)
+-   [High Performance Statistical Computing for Data Intensive Research](https://snoweye.github.io/hpsc/)
 -   [Rth: Parallel R through Thrust](http://heather.cs.ucdavis.edu/~matloff/rth.html)
 -   [Programming with Big Data in R](http://r-pbd.org)
 -   [RHIPE](https://github.com/saptarshiguha/RHIPE/)
