@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2017-09-20</version>
+   <version>2017-11-10</version>
 
   <info>
     <p>
@@ -85,7 +85,7 @@
 	API, as well as a number of R-specific extensions.  <pkg>Rmpi</pkg>
         can be used with the LAM/MPI, MPICH / MPICH2, Open MPI, and Deino MPI 
         implementations. It should be noted that LAM/MPI is now in
-        maintenance mode, and new development is focussed on Open MPI.
+        maintenance mode, and new development is focused on Open MPI.
       </li>
       <li>
         The <pkg>pbdMPI</pkg> package provides S4 classes to directly interface 
@@ -131,7 +131,7 @@
         <pkg>future.BatchJobs</pkg>), and
 	<pkg>doRedis</pkg> (using <pkg>rredis</pkg>) packages.
       </li>
-      <li>The <pkg>future</pkg> package allows for synchroneous (sequential)
+      <li>The <pkg>future</pkg> package allows for synchronous (sequential)
         and asynchronous (parallel) evaluations via abstraction of futures,
         either via function calls or implicitly via promises. Global variables
         are automatically identified. Iteration over elements in a collection
@@ -150,6 +150,9 @@
       <li>The <pkg>randomForestSRC</pkg> package can use both OpenMP as well
         as MPI for random forest extensions suitable for survival analysis,
         competing risks analysis, classification as well as regression 
+      </li>
+      <li>The <pkg>parSim</pkg> package can perform simulation studies using
+        one or multiple cores, both locally and on HPC clusters.
       </li>
 
     </ul>
@@ -364,7 +367,7 @@
 	the <pkg>latentnet</pkg> package by Krivitsky and Handcock for latent
 	position and cluster models,
 	the <pkg>lga</pkg> package by Harrington for linear grouping analysis,
-	the <pkg>peperr</pkg> package by Porzelius and Binder for parallised
+	the <pkg>peperr</pkg> package by Porzelius and Binder for parallelised
 	estimation of prediction error,
 	the <pkg>orloca</pkg> package by Fernandez-Palacin and Munoz-Marquez
 	for operations research locational analysis,
@@ -437,7 +440,7 @@
       <li>
         The <pkg>gputools</pkg> package by Buckner and Seligman
         provides several common data-mining algorithms which are
-        implemented using a mixture of nVidia's CUDA langauge and
+        implemented using a mixture of nVidia's CUDA language and
         cublas library. Given a computer with an nVidia GPU these
         functions may be substantially more efficient than native R
         routines.
@@ -445,7 +448,7 @@
       <li>
         The <pkg>cudaBayesreg</pkg> package by da Silva implements
         the <code>rhierLinearModel</code> from the <pkg>bayesm</pkg> package 
-	using nVidia's CUDA langauge and tools to provide high-performance
+	using nVidia's CUDA language and tools to provide high-performance
         statistical analysis of fMRI voxels.
       </li>
       <li>
@@ -537,11 +540,11 @@
       <li>
 	The <pkg>inline</pkg> package by Sklyar et al eases adding code in C,
 	C++ or Fortran to R. It takes care of the compilation, linking and
-	loading of embeded code segments that are stored as R strings.
+	loading of embedded code segments that are stored as R strings.
       </li>
       <li>
 	The <pkg>Rcpp</pkg> package by Eddelbuettel and Francois offers a
-        number of C++ clases that makes transferring R objects to C++
+        number of C++ classes that makes transferring R objects to C++
         functions (and back) easier, and the <pkg>RInside</pkg> package
         by the same authors allows easy embedding of R itself into C++
         applications for faster and more direct data transfer.
@@ -633,6 +636,7 @@
     <pkg>nws</pkg>
     <pkg>orloca</pkg>
     <pkg>OpenCL</pkg>
+    <pkg>parSim</pkg>
     <pkg>partDSA</pkg>
     <pkg>pbapply</pkg>    
     <pkg>pbdBASE</pkg>
