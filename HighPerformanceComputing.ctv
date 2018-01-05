@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2017-11-10</version>
+   <version>2018-01-05</version>
 
   <info>
     <p>
@@ -438,14 +438,6 @@
     </p>
     <ul>	     
       <li>
-        The <pkg>gputools</pkg> package by Buckner and Seligman
-        provides several common data-mining algorithms which are
-        implemented using a mixture of nVidia's CUDA language and
-        cublas library. Given a computer with an nVidia GPU these
-        functions may be substantially more efficient than native R
-        routines.
-      </li>
-      <li>
         The <pkg>cudaBayesreg</pkg> package by da Silva implements
         the <code>rhierLinearModel</code> from the <pkg>bayesm</pkg> package 
 	using nVidia's CUDA language and tools to provide high-performance
@@ -457,7 +449,7 @@
       </li>
       <li>
 	The <pkg>gcbd</pkg> package implements a benchmarking framework for
-	BLAS and GPUs (using <pkg>gputools</pkg>).
+	BLAS and GPUs.
       </li>
       <li>
 	The <pkg>OpenCL</pkg> package provides an interface from R to
@@ -468,12 +460,6 @@
         The <pkg>permGPU</pkg> package computes permutation resampling
         inference in the context of RNA microarray studies on the GPU,
         it uses CUDA (>= 4.5)
-      </li>
-      <li>
-        The <pkg>gmatrix</pkg> package enables the evaluation of matrix and vector 
-        operations using GPU coprocessors such that intermediate computations may be 
-        kept on the coprocessor and reused, with potentially significant performance 
-        enhancements by minimizing data movement.
       </li>
       <li>
         The <pkg>gpuR</pkg> package offers GPU-enabled functions: New gpu*
@@ -619,8 +605,6 @@
     <pkg>future.BatchJobs</pkg>
     <pkg>GAMBoost</pkg>
     <pkg>gcbd</pkg>
-    <pkg>gmatrix</pkg>
-    <pkg>gputools</pkg>
     <pkg>gpuR</pkg>
     <pkg>GUIProfiler</pkg>
     <pkg>h2o</pkg>

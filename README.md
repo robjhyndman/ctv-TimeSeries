@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2017-11-10                                                   
+| **Version:**    | 2018-01-05                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -100,13 +100,11 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 
 **Parallel computing: GPUs**
 
--   The [gputools](https://cran.r-project.org/package=gputools) package by Buckner and Seligman provides several common data-mining algorithms which are implemented using a mixture of nVidia's CUDA language and cublas library. Given a computer with an nVidia GPU these functions may be substantially more efficient than native R routines.
 -   The [cudaBayesreg](https://cran.r-project.org/package=cudaBayesreg/index.html) package by da Silva implements the `rhierLinearModel` from the [bayesm](../packages/bayesm) package using nVidia's CUDA language and tools to provide high-performance statistical analysis of fMRI voxels.
 -   The rgpu package (see below for link) aims to speed up bioinformatics analysis by using the GPU.
--   The [gcbd](https://cran.r-project.org/package=gcbd/index.html) package implements a benchmarking framework for BLAS and GPUs (using [gputools](../packages/gputools)).
+-   The [gcbd](https://cran.r-project.org/package=gcbd) package implements a benchmarking framework for BLAS and GPUs.
 -   The [OpenCL](https://cran.r-project.org/package=OpenCL) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
 -   The [permGPU](https://cran.r-project.org/package=permGPU) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (&gt;= 4.5)
--   The [gmatrix](https://cran.r-project.org/package=gmatrix) package enables the evaluation of matrix and vector operations using GPU coprocessors such that intermediate computations may be kept on the coprocessor and reused, with potentially significant performance enhancements by minimizing data movement.
 -   The [gpuR](https://cran.r-project.org/package=gpuR) package offers GPU-enabled functions: New gpu\* and vcl\* classes are provided to wrap typical R objects (e.g. vector, matrix) mirroring typical R syntax without the need to know OpenCL.
 
 **Large memory and out-of-memory data**
@@ -168,9 +166,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [future.BatchJobs](https://cran.r-project.org/package=future.BatchJobs)
 -   [GAMBoost](https://cran.r-project.org/package=GAMBoost)
 -   [gcbd](https://cran.r-project.org/package=gcbd)
--   [gmatrix](https://cran.r-project.org/package=gmatrix)
 -   [gpuR](https://cran.r-project.org/package=gpuR)
--   [gputools](https://cran.r-project.org/package=gputools)
 -   [GUIProfiler](https://cran.r-project.org/package=GUIProfiler)
 -   [h2o](https://cran.r-project.org/package=h2o)
 -   [HadoopStreaming](https://cran.r-project.org/package=HadoopStreaming)
