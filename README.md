@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2018-01-05                                                   
+| **Version:**    | 2018-01-13                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -97,6 +97,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [sprint](https://cran.r-project.org/package=sprint) (an acronym for "Simple Parallel R INTerface") package provides a parallel computing framework for R making High Performance Computing (HPC) accessible to users who are not familiar with parallel programming and the use of HPC architectures. It contains a library of parallelised R functions for correlation, partitioning around medoids, apply, permutation testing, bootstrapping, random forest, rank product and hamming distance.
 -   The [pbapply](https://cran.r-project.org/package=pbapply) package offers a progress bar for vectorized R functions in the \`\*apply\` family, and supports several backends.
 -   The [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc) package simulates and estimates multidimensional Itô and Stratonovich stochastic differential equations in parallel.
+-   The [keras](https://cran.r-project.org/package=keras) package by by Allaire et al. provides a high-level neural networks API. It was developed with a focus on enabling fast experimentation for convolutional networks, recurrent networks, any combination of both, and custom neural network architectures.
 
 **Parallel computing: GPUs**
 
@@ -106,6 +107,8 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [OpenCL](https://cran.r-project.org/package=OpenCL) package provides an interface from R to OpenCL permitting hardware- and vendor neutral interfaces to GPU programming.
 -   The [permGPU](https://cran.r-project.org/package=permGPU) package computes permutation resampling inference in the context of RNA microarray studies on the GPU, it uses CUDA (&gt;= 4.5)
 -   The [gpuR](https://cran.r-project.org/package=gpuR) package offers GPU-enabled functions: New gpu\* and vcl\* classes are provided to wrap typical R objects (e.g. vector, matrix) mirroring typical R syntax without the need to know OpenCL.
+-   The [tensorflow](https://cran.r-project.org/package=tensorflow) package by by Allaire et al. provides access to the complete TensorFlow API from within R that enables numerical computation using data flow graphs. The flexible architecture allows users to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
+-   The [tfestimators](https://cran.r-project.org/package=tfestimators) package by by Tang et al. offers a high-level API that provides implementations of many different model types including linear models and deep neural networks. It also provides a flexible framework for defining arbitrary new model types as custom estimators with the distributed power of TensorFlow for free.
 
 **Large memory and out-of-memory data**
 
@@ -173,6 +176,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [harvestr](https://cran.r-project.org/package=harvestr)
 -   [HistogramTools](https://cran.r-project.org/package=HistogramTools)
 -   [inline](https://cran.r-project.org/package=inline)
+-   [keras](https://cran.r-project.org/package=keras)
 -   [LaF](https://cran.r-project.org/package=LaF)
 -   [latentnet](https://cran.r-project.org/package=latentnet)
 -   [lga](https://cran.r-project.org/package=lga)
@@ -222,6 +226,8 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [sprint](https://cran.r-project.org/package=sprint)
 -   [sqldf](https://cran.r-project.org/package=sqldf)
 -   [STAR](https://cran.r-project.org/package=STAR)
+-   [tensorflow](https://cran.r-project.org/package=tensorflow)
+-   [tfestimators](https://cran.r-project.org/package=tfestimators)
 -   [tm](https://cran.r-project.org/package=tm)
 -   [toaster](https://cran.r-project.org/package=toaster)
 -   [varSelRF](https://cran.r-project.org/package=varSelRF)
