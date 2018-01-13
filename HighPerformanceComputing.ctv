@@ -430,13 +430,16 @@
         multidimensional Itô and Stratonovich stochastic differential
         equations in parallel.
       </li>
+      <li>
+        The <pkg>keras</pkg> package by by Allaire et al. provides a high-level neural networks API. It was developed with a focus on enabling fast experimentation for convolutional networks, recurrent networks, any combination of both, and custom neural network architectures.
+      </li>
         
     </ul>
 
     <p>
     <strong>Parallel computing: GPUs</strong>
     </p>
-    <ul>	     
+    <ul>
       <li>
         The <pkg>cudaBayesreg</pkg> package by da Silva implements
         the <code>rhierLinearModel</code> from the <pkg>bayesm</pkg> package 
@@ -465,6 +468,12 @@
         The <pkg>gpuR</pkg> package offers GPU-enabled functions: New gpu*
         and vcl* classes are provided to wrap typical R objects (e.g. vector,
         matrix) mirroring typical R syntax without the need to know OpenCL. 
+      </li>
+      <li>
+        The <pkg>tensorflow</pkg> package by by Allaire et al. provides access to the complete TensorFlow API from within R that enables numerical computation using data flow graphs. The flexible architecture allows users to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. 
+      </li>
+      <li>
+        The <pkg>tfestimators</pkg> package by by Tang et al. offers a high-level API that provides implementations of many different model types including linear models and deep neural networks. It also provides a flexible framework for defining arbitrary new model types as custom estimators with the distributed power of TensorFlow for free.
       </li>
     </ul>
 
@@ -612,6 +621,7 @@
     <pkg>harvestr</pkg>
     <pkg>HistogramTools</pkg>
     <pkg>inline</pkg>
+    <pkg>keras</pkg>
     <pkg>LaF</pkg>
     <pkg>latentnet</pkg>
     <pkg>lga</pkg>
@@ -661,6 +671,8 @@
     <pkg>sprint</pkg>    
     <pkg>sqldf</pkg>
     <pkg>STAR</pkg>
+    <pkg>tensorflow</pkg>
+    <pkg>tfestimators</pkg>
     <pkg>tm</pkg>
     <pkg>toaster</pkg>
     <pkg>varSelRF</pkg>
