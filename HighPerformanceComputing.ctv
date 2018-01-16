@@ -384,6 +384,8 @@
       <li>The <gcode>bugsparallel</gcode> package uses <pkg>Rmpi</pkg> for distributed
           computing of multiple MCMC chains using WinBUGS. 
       </li>
+      <li>The <pkg>xgboost</pkg> package by Chen et al. is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. The same code runs on major distributed environment, such as Hadoop, SGE, and MPI.
+      </li>
       <li>The <pkg>partDSA</pkg> package uses <pkg>nws</pkg> for generating a
           piecewise constant estimation list of increasingly complex
           predictors based on an intensive and comprehensive search over the
@@ -571,6 +573,9 @@
 	interface to Java similar to the <code>.Call()</code> interface for C
 	and C++.
       </li>
+      <li>
+	The <pkg>reticulate</pkg> package by Allaire provides interface to Python modules, classes, and functions. It allows R users to access many high-performance Python packages such as <pkg>tensorflow</pkg> and <pkg>tfestimators</pkg> within R.
+      </li>
       <!-- <li>Fortran interfaces -->
       <!-- </li> -->
       <!-- <li> -->
@@ -667,6 +672,7 @@
     <pkg>Rcpp</pkg>
     <pkg>RcppParallel</pkg>
     <pkg>Rdsm</pkg>
+    <pkg>reticulate</pkg>
     <pkg>rgenoud</pkg>
     <pkg>Rhpc</pkg>
     <pkg>RhpcBLASctl</pkg>
@@ -690,6 +696,7 @@
     <pkg>tm</pkg>
     <pkg>toaster</pkg>
     <pkg>varSelRF</pkg>
+    <pkg>xgboost</pkg>
   </packagelist>
 
   <links>

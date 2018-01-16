@@ -89,6 +89,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [<span class="BioC">multtest</span>](http://www.Bioconductor.ohttps://cran.r-project.org/package=release/bioc/html/multtest.html) package by Pollard et al. on Bioconductor can use [snow](../packages/snow/index.html), [Rmpi](../packages/Rmpi) or rpvm for resampling-based testing of multiple hypothesis.
 -   The [GAMBoost](https://cran.r-project.org/package=GAMBoost/index.html) package by Binder for `glm` and `gam` model fitting via boosting using b-splines, the [Matching](../packages/Matching/index.html) package by Sekhon for multivariate and propensity score matching, the [STAR](../packages/STAR/index.html) package by Pouzat for spike train analysis, the [bnlearn](../packages/bnlearn/index.html) package by Scutari for bayesian network structure learning, the [latentnet](../packages/latentnet/index.html) package by Krivitsky and Handcock for latent position and cluster models, the [lga](../packages/lga/index.html) package by Harrington for linear grouping analysis, the [peperr](../packages/peperr/index.html) package by Porzelius and Binder for parallelised estimation of prediction error, the [orloca](../packages/orloca/index.html) package by Fernandez-Palacin and Munoz-Marquez for operations research locational analysis, the [rgenoud](../packages/rgenoud/index.html) package by Mebane and Sekhon for genetic optimization using derivatives the [<span class="BioC">affyPara</span>](http://www.Bioconductor.org/packages/release/bioc/html/affyPara.html) package by Schmidberger, Vicedo and Mansmann for parallel normalization of Affymetrix microarrays, and the [<span class="BioC">puma</span>](http://www.Bioconductor.org/packages/release/bioc/html/puma.html) package by Pearson et al. which propagates uncertainty into standard microarray analyses such as differential expression all can use [snow](../packages/snow/index.html) for parallelized operations using either one of the MPI, PVM, NWS or socket protocols supported by [snow](../packages/snow).
 -   The [<span class="Gcode">bugsparallel</span>](http://code.google.com/p/bugsparallel/) package uses [Rmpi](https://cran.r-project.org/package=Rmpi) for distributed computing of multiple MCMC chains using WinBUGS.
+-   The [xgboost](https://cran.r-project.org/package=xgboost) package by Chen et al. is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. The same code runs on major distributed environment, such as Hadoop, SGE, and MPI.
 -   The [partDSA](https://cran.r-project.org/package=partDSA/index.html) package uses [nws](../packages/nws) for generating a piecewise constant estimation list of increasingly complex predictors based on an intensive and comprehensive search over the entire covariate space.
 -   The [dclone](https://cran.r-project.org/package=dclone/index.html) package provides a global optimization approach and a variant of simulated annealing which exploits Bayesian MCMC tools to get MLE point estimates and standard errors using low level functions for implementing maximum likelihood estimating procedures for complex models using data cloning and Bayesian Markov chain Monte Carlo methods with support for JAGS, WinBUGS and OpenBUGS; parallel computing is supported via the [snow](../packages/snow) package.
 -   The [pmclust](https://cran.r-project.org/package=pmclust/index.html) package utilizes unsupervised model-based clustering for high dimensional (ultra) large data. The package uses [pbdMPI](../packages/pbdMPI) to perform a parallel version of the EM algorithm for finite mixture Gaussian models.
@@ -129,6 +130,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   The [Rcpp](https://cran.r-project.org/package=Rcpp/index.html) package by Eddelbuettel and Francois offers a number of C++ classes that makes transferring R objects to C++ functions (and back) easier, and the [RInside](../packages/RInside) package by the same authors allows easy embedding of R itself into C++ applications for faster and more direct data transfer.
 -   The [RcppParallel](https://cran.r-project.org/package=RcppParallel/index.html) package by Allaire et al. bundles the [Intel Threading Building Blocks](https://www.threadingbuildingblocks.org) and [TinyThread](http://tinythreadpp.bitsnbites.eu) libraries. Together with [Rcpp](../packages/Rcpp), RcppParallel makes it easy to write safe, performant, concurrently-executing C++ code, and use that code within R and R packages.
 -   The [rJava](https://cran.r-project.org/package=rJava) package by Urbanek provides a low-level interface to Java similar to the `.Call()` interface for C and C++.
+-   The [reticulate](https://cran.r-project.org/package=reticulate/index.html) package by Allaire provides interface to Python modules, classes, and functions. It allows R users to access many high-performance Python packages such as [tensorflow](../packages/tensorflow/index.html) and [tfestimators](../packages/tfestimators) within R.
 
 **Profiling tools**
 
@@ -208,6 +210,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [Rcpp](https://cran.r-project.org/package=Rcpp)
 -   [RcppParallel](https://cran.r-project.org/package=RcppParallel)
 -   [Rdsm](https://cran.r-project.org/package=Rdsm)
+-   [reticulate](https://cran.r-project.org/package=reticulate)
 -   [rgenoud](https://cran.r-project.org/package=rgenoud)
 -   [Rhpc](https://cran.r-project.org/package=Rhpc)
 -   [RhpcBLASctl](https://cran.r-project.org/package=RhpcBLASctl)
@@ -231,6 +234,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [tm](https://cran.r-project.org/package=tm)
 -   [toaster](https://cran.r-project.org/package=toaster)
 -   [varSelRF](https://cran.r-project.org/package=varSelRF)
+-   [xgboost](https://cran.r-project.org/package=xgboost)
 
 ### Related links:
 
