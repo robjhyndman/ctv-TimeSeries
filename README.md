@@ -5,7 +5,7 @@ CRAN Task View: High-Performance and Parallel Computing with R
 |-----------------|------------------------------------------------------------  
 | **Maintainer:** | Dirk Eddelbuettel                                            
 | **Contact:**    | Dirk.Eddelbuettel at R-project.org                           
-| **Version:**    | 2018-01-13                                                   
+| **Version:**    | 2018-01-19                                                   
 | **URL:**        | <https://CRAN.R-project.org/view=HighPerformanceComputing>   
 
 This CRAN task view contains a list of packages, grouped by topic, that are useful for high-performance computing (HPC) with R. In this context, we are defining 'high-performance computing' rather loosely as just about anything related to pushing R a little further: using compiled code, parallel computing (in both explicit and implicit modes), working with large objects as well as profiling.
@@ -42,12 +42,12 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 **Parallel computing: Implicit parallelism**
 
 -   The pnmath package by Tierney ( [link](http://www.stat.uiowa.edu/~luke/R/experimental/)) uses the Open MP parallel processing directives of recent compilers (such gcc 4.2 or later) for implicit parallelism by replacing a number of internal R functions with replacements that can make use of multiple cores --- without any explicit requests from the user. The alternate pnmath0 package offers the same functionality using Pthreads for environments in which the newer compilers are not available. Similar functionality is expected to become integrated into R 'eventually'.
--   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [<span class="Gcode">romp</span>](http://code.google.com/p/romp/). An R-Forge project [<span class="Rforge">romp</span>](https://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
+-   The romp package by Jamitzky was presented at useR! 2008 ( [slides](http://www.statistik.tu-dortmund.de/useR-2008/slides/Jamitzky.pdf)) and offers another interface to Open MP using Fortran. The code is still pre-alpha and available from the Google Code project [<span class="Gcode">romp</span>](https://code.google.com/p/romp/). An R-Forge project [<span class="Rforge">romp</span>](https://R-Forge.R-project.org/projects/romp/) was initiated but there is no package, yet.
 -   The R/parallel package by Vera, Jansen and Suppi offers a C++-based master-slave dispatch mechanism for parallel execution ( [link](http://www.rparallel.org/))
 -   The [Rdsm](https://cran.r-project.org/package=Rdsm) package provides a threads-like parallel computing environment, both on multicore machine and across the network by providing facilities inspired from distributed shared memory programming.
 -   The [RhpcBLASctl](https://cran.r-project.org/package=RhpcBLASctl) package detects the number of available BLAS cores, and permits explicit selection of the number of cores.
 -   The [Rhpc](https://cran.r-project.org/package=Rhpc) permits `*apply()` style dispatch via MPI.
--   The [drake](https://cran.r-project.org/package=drake) package is an R-focused [pipeline toolkit](https://github.com/pditommaso/awesome-pipeline) similar to [Make](https://www.gnu.org/software/make). Parallel computing relies on the `parallel`, `future`, `batchtools`, and `future.batchtools` packages, as well as [Makefiles](https://www.gnu.org/software/make). Drake uses code analysis to configure the user's workflow and make the parallelism implicit.
+-   The [drake](https://cran.r-project.org/package=drake) package is an R-focused pipeline similar to [Make](https://www.gnu.org/software/make). Parallel computing relies on the `parallel`, `future`, `batchtools`, and `future.batchtools` packages, as well as [Makefiles](https://www.gnu.org/software/make). Drake uses code analysis to configure the user's workflow and make the parallelism implicit.
 
 **Parallel computing: Grid computing**
 
@@ -56,7 +56,7 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 
 **Parallel computing: Hadoop**
 
--   The RHIPE package, started by Saptarshi Guha and now developed by a core team via [GitHub](https://github.com/saptarshiguha/RHIPE/), provides an interface between R and Hadoop for analysis of large complex data wholly from within R using the Divide and Recombine approach to big data.
+-   The [<span class="GitHub">RHIPE</span>](https://github.com/saptarshiguha/RHIPE/) package, started by Saptarshi Guha, provides an interface between R and Hadoop for analysis of large complex data wholly from within R using the Divide and Recombine approach to big data.
 -   The rmr package by Revolution Analytics also provides an interface between R and Hadoop for a Map/Reduce programming framework. ( [link](https://github.com/RevolutionAnalytics/RHadoop/wiki/rmr))
 -   A related package, segue package by Long, permits easy execution of embarassingly parallel task on Elastic Map Reduce (EMR) at Amazon. ( [link](http://code.google.com/p/segue/))
 -   The [RProtoBuf](https://cran.r-project.org/package=RProtoBuf) package provides an interface to Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. This package can be used in R code to read data streams from other systems in a distributed MapReduce setting where data is serialized and passed back and forth between tasks.
@@ -81,14 +81,14 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 **Parallel computing: Applications**
 
 -   The [caret](https://cran.r-project.org/package=caret) package by Kuhn can use various frameworks (MPI, NWS etc) to parallelized cross-validation and bootstrap characterizations of predictive models.
--   The [<span class="BioC">maanova</span>](http://www.Bioconductor.ohttps://cran.r-project.org/package=release/bioc/html/maanova.html) package on Bioconductor by Wu can use [snow](../packages/snow/index.html) and [Rmpi](../packages/Rmpi) for the analysis of micro-array experiments.
+-   The [<span class="BioC">maanova</span>](https://www.Bioconductor.ohttps://cran.r-project.org/package=release/bioc/html/maanova.html) package on Bioconductor by Wu can use [snow](../packages/snow/index.html) and [Rmpi](../packages/Rmpi) for the analysis of micro-array experiments.
 -   The [pvclust](https://cran.r-project.org/package=pvclust/index.html) package by Suzuki and Shimodaira can use [snow](../packages/snow/index.html) and [Rmpi](../packages/Rmpi) for hierarchical clustering via multiscale bootstraps.
 -   The [tm](https://cran.r-project.org/package=tm/index.html) package by Feinerer can use [snow](../packages/snow/index.html) and [Rmpi](../packages/Rmpi) for parallelized text mining.
 -   The [varSelRF](https://cran.r-project.org/package=varSelRF/index.html) package by Diaz-Uriarte can use [snow](../packages/snow/index.html) and [Rmpi](../packages/Rmpi) for parallelized use of variable selection via random forests.
 -   The [bcp](https://cran.r-project.org/package=bcp/index.html) package by Erdman and Emerson for the Bayesian analysis of change points can use [foreach](../packages/foreach) for parallelized operations.
--   The [<span class="BioC">multtest</span>](http://www.Bioconductor.ohttps://cran.r-project.org/package=release/bioc/html/multtest.html) package by Pollard et al. on Bioconductor can use [snow](../packages/snow/index.html), [Rmpi](../packages/Rmpi) or rpvm for resampling-based testing of multiple hypothesis.
--   The [GAMBoost](https://cran.r-project.org/package=GAMBoost/index.html) package by Binder for `glm` and `gam` model fitting via boosting using b-splines, the [Matching](../packages/Matching/index.html) package by Sekhon for multivariate and propensity score matching, the [STAR](../packages/STAR/index.html) package by Pouzat for spike train analysis, the [bnlearn](../packages/bnlearn/index.html) package by Scutari for bayesian network structure learning, the [latentnet](../packages/latentnet/index.html) package by Krivitsky and Handcock for latent position and cluster models, the [lga](../packages/lga/index.html) package by Harrington for linear grouping analysis, the [peperr](../packages/peperr/index.html) package by Porzelius and Binder for parallelised estimation of prediction error, the [orloca](../packages/orloca/index.html) package by Fernandez-Palacin and Munoz-Marquez for operations research locational analysis, the [rgenoud](../packages/rgenoud/index.html) package by Mebane and Sekhon for genetic optimization using derivatives the [<span class="BioC">affyPara</span>](http://www.Bioconductor.org/packages/release/bioc/html/affyPara.html) package by Schmidberger, Vicedo and Mansmann for parallel normalization of Affymetrix microarrays, and the [<span class="BioC">puma</span>](http://www.Bioconductor.org/packages/release/bioc/html/puma.html) package by Pearson et al. which propagates uncertainty into standard microarray analyses such as differential expression all can use [snow](../packages/snow/index.html) for parallelized operations using either one of the MPI, PVM, NWS or socket protocols supported by [snow](../packages/snow).
--   The [<span class="Gcode">bugsparallel</span>](http://code.google.com/p/bugsparallel/) package uses [Rmpi](https://cran.r-project.org/package=Rmpi) for distributed computing of multiple MCMC chains using WinBUGS.
+-   The [<span class="BioC">multtest</span>](https://www.Bioconductor.ohttps://cran.r-project.org/package=release/bioc/html/multtest.html) package by Pollard et al. on Bioconductor can use [snow](../packages/snow/index.html), [Rmpi](../packages/Rmpi) or rpvm for resampling-based testing of multiple hypothesis.
+-   The [GAMBoost](https://cran.r-project.org/package=GAMBoost/index.html) package by Binder for `glm` and `gam` model fitting via boosting using b-splines, the [Matching](../packages/Matching/index.html) package by Sekhon for multivariate and propensity score matching, the [STAR](../packages/STAR/index.html) package by Pouzat for spike train analysis, the [bnlearn](../packages/bnlearn/index.html) package by Scutari for bayesian network structure learning, the [latentnet](../packages/latentnet/index.html) package by Krivitsky and Handcock for latent position and cluster models, the [lga](../packages/lga/index.html) package by Harrington for linear grouping analysis, the [peperr](../packages/peperr/index.html) package by Porzelius and Binder for parallelised estimation of prediction error, the [orloca](../packages/orloca/index.html) package by Fernandez-Palacin and Munoz-Marquez for operations research locational analysis, the [rgenoud](../packages/rgenoud/index.html) package by Mebane and Sekhon for genetic optimization using derivatives the [<span class="BioC">affyPara</span>](https://www.Bioconductor.org/packages/release/bioc/html/affyPara.html) package by Schmidberger, Vicedo and Mansmann for parallel normalization of Affymetrix microarrays, and the [<span class="BioC">puma</span>](https://www.Bioconductor.org/packages/release/bioc/html/puma.html) package by Pearson et al. which propagates uncertainty into standard microarray analyses such as differential expression all can use [snow](../packages/snow/index.html) for parallelized operations using either one of the MPI, PVM, NWS or socket protocols supported by [snow](../packages/snow).
+-   The [<span class="Gcode">bugsparallel</span>](https://code.google.com/p/bugsparallel/) package uses [Rmpi](https://cran.r-project.org/package=Rmpi) for distributed computing of multiple MCMC chains using WinBUGS.
 -   The [xgboost](https://cran.r-project.org/package=xgboost) package by Chen et al. is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. The same code runs on major distributed environment, such as Hadoop, SGE, and MPI.
 -   The [partDSA](https://cran.r-project.org/package=partDSA/index.html) package uses [nws](../packages/nws) for generating a piecewise constant estimation list of increasingly complex predictors based on an intensive and comprehensive search over the entire covariate space.
 -   The [dclone](https://cran.r-project.org/package=dclone/index.html) package provides a global optimization approach and a variant of simulated annealing which exploits Bayesian MCMC tools to get MLE point estimates and standard errors using low level functions for implementing maximum likelihood estimating procedures for complex models using data cloning and Bayesian Markov chain Monte Carlo methods with support for JAGS, WinBUGS and OpenBUGS; parallel computing is supported via the [snow](../packages/snow) package.
@@ -243,12 +243,12 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [Schmidberger, Morgan, Eddelbuettel, Yu, Tierney and Mansmann (2009) paper on 'State of the Art in Parallel Computing with R'](http://www.jstatsoft.org/v31/i01/)
 -   [Luke Tierney's code directory for pnmath and pnmath0](http://www.stat.uiowa.edu/~luke/R/experimental/)
 -   R-Forge Project: [<span class="Rforge">biocep-distrib</span>](https://R-Forge.R-project.org/projects/biocep-distrib/)
--   Bioconductor Package: [<span class="BioC">affyPara</span>](http://www.Bioconductor.org/packages/release/bioc/html/affyPara.html)
--   Bioconductor Package: [<span class="BioC">maanova</span>](http://www.Bioconductor.org/packages/release/bioc/html/maanova.html)
--   Bioconductor Package: [<span class="BioC">multtest</span>](http://www.Bioconductor.org/packages/release/bioc/html/multtest.html)
--   Bioconductor Package: [<span class="BioC">puma</span>](http://www.Bioconductor.org/packages/release/bioc/html/puma.html)
--   Google Code Project: [<span class="Gcode">romp</span>](http://code.google.com/p/romp/)
--   Google Code Project: [<span class="Gcode">bugsparallel</span>](http://code.google.com/p/bugsparallel/)
+-   Bioconductor Package: [<span class="BioC">affyPara</span>](https://www.Bioconductor.org/packages/release/bioc/html/affyPara.html)
+-   Bioconductor Package: [<span class="BioC">maanova</span>](https://www.Bioconductor.org/packages/release/bioc/html/maanova.html)
+-   Bioconductor Package: [<span class="BioC">multtest</span>](https://www.Bioconductor.org/packages/release/bioc/html/multtest.html)
+-   Bioconductor Package: [<span class="BioC">puma</span>](https://www.Bioconductor.org/packages/release/bioc/html/puma.html)
+-   Google Code Project: [<span class="Gcode">romp</span>](https://code.google.com/p/romp/)
+-   Google Code Project: [<span class="Gcode">bugsparallel</span>](https://code.google.com/p/bugsparallel/)
 -   [Slurm open-source workload manager](http://slurm.schedmd.com/)
 -   [Condor project at University of Wisconsin-Madison](http://www.cs.wisc.edu/condor/)
 -   [Parallel Computing in R with sfCluster/snowfall](http://www.imbi.uni-freiburg.de/parallel/)
@@ -261,6 +261,6 @@ The version released for R 2.14.0 contains base functionality: higher-level conv
 -   [High Performance Statistical Computing for Data Intensive Research](https://snoweye.github.io/hpsc/)
 -   [Rth: Parallel R through Thrust](http://heather.cs.ucdavis.edu/~matloff/rth.html)
 -   [Programming with Big Data in R](http://r-pbd.org)
--   [RHIPE](https://github.com/saptarshiguha/RHIPE/)
--   [Beyond Single Core: Parallel Analysis in R](https://github.com/ljdursi/beyond-single-core-R)
+-   GitHub Project: [<span class="GitHub">RHIPE</span>](https://github.com/saptarshiguha/RHIPE/)
+-   GitHub Project: [<span class="GitHub">beyond-single-core-R</span>](https://github.com/ljdursi/beyond-single-core-R/)
 -   [GitHub repository for this Task View](https://github.com/eddelbuettel/ctv-hpc)

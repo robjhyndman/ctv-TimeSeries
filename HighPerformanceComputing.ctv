@@ -4,7 +4,7 @@
    <name>HighPerformanceComputing</name>
    <topic>High-Performance and Parallel Computing with R</topic>
    <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-   <version>2018-01-13</version>
+   <version>2018-01-19</version>
 
   <info>
     <p>
@@ -195,8 +195,7 @@
         The <pkg>Rhpc</pkg> permits <code>*apply()</code> style dispatch via MPI.
       </li>
       <li>
-        The <pkg>drake</pkg> package is an R-focused 
-        <a href="https://github.com/pditommaso/awesome-pipeline">pipeline toolkit</a> similar to
+        The <pkg>drake</pkg> package is an R-focused pipeline similar to
         <a href="https://www.gnu.org/software/make">Make</a>. Parallel computing relies on the
         <code>parallel</code>, <code>future</code>, <code>batchtools</code>,
         and <code>future.batchtools</code> packages, as well as 
@@ -223,8 +222,7 @@
     </p>
     <ul>	     
       <li>
-	The RHIPE package, started by Saptarshi Guha and now developed by a core team via
-	<a href="https://github.com/saptarshiguha/RHIPE/">GitHub</a>,   
+	The <github>saptarshiguha/RHIPE</github> package, started by Saptarshi Guha,
         provides an interface between R and Hadoop for analysis of large complex data wholly from 
 	within R using the Divide and Recombine approach to big data.
       </li>
@@ -723,9 +721,9 @@
     <a href="https://snoweye.github.io/hpsc/">High Performance Statistical Computing for Data Intensive Research</a>
     <a href="http://heather.cs.ucdavis.edu/~matloff/rth.html">Rth: Parallel R through Thrust</a>
     <a href="http://r-pbd.org">Programming with Big Data in R</a>
-    <a href="https://github.com/saptarshiguha/RHIPE/">RHIPE</a>
+    <github>saptarshiguha/RHIPE</github>
     <!-- <a href="http://www.bayesian-inference.com/software">LaplacesDemon</a> -->
-    <a href="https://github.com/ljdursi/beyond-single-core-R">Beyond Single Core: Parallel Analysis in R</a>
+    <github>ljdursi/beyond-single-core-R</github>
     <a href="https://github.com/eddelbuettel/ctv-hpc">GitHub repository for this Task View</a>
   </links>
 
