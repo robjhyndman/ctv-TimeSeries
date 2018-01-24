@@ -855,5 +855,6 @@
     <a href="http://data.is/TSDLdemo">Time Series Data Library</a>
     <a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN Project</a>
     <a href="http://www.quandl.com/">Quandl</a>
+    <a href="https://github.com/robjhyndman/ctv-TimeSeries">GitHub repository for this Task View</a>
 </links>
 </CRANTaskView>
