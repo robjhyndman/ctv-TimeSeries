@@ -3,8 +3,9 @@
 ##
 ## Copyright 2014 - 2017  Dirk Eddelbuettel
 ## Released under GPL-2 or later
+## Modified by Rob Hyndman for use with TimeSeries.ctv
 
-ctv <- "HighPerformanceComputing"
+ctv <- "TimeSeries"
 
 ctvfile  <- paste0(ctv, ".ctv")
 htmlfile <- paste0(ctv, ".html")
