@@ -446,3 +446,4 @@ Base R ships with a lot of functionality useful for time series, in particular i
 -   [Time Series Data Library](http://data.is/TSDLdemo)
 -   [TISEAN Project](http://www.mpipks-dresden.mpg.de/~tisean/)
 -   [Quandl](http://www.quandl.com/)
+-   [GitHub repository for this Task View](https://github.com/robjhyndman/ctv-TimeSeries)
