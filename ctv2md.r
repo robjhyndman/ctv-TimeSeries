@@ -33,7 +33,7 @@ cmd <- paste0(
   ###  - capture the 'Word' and insert it into a larger URL containing an absolute reference to task view 'Word'
   " | sed -e 's|^<a href=\"\\([a-zA-Z]*\\)\\.html|<a href=\"https://cran.r-project.org/web/views/\\1.html\"|' | ",
   ###  - call pandoc, specifying html as input and github-flavoured markdown as output
-  "pandoc -s -r html -w gfm | ",
+  "pandoc -s -r html -w markdown_github | ",
   ###  - deal with the header by removing extra ||, replacing |** with ** and **| with **:
   "sed -e's/||//g' -e's/|\\*\\*/\\*\\*/g' -e's/\\*\\*|/\\*\\* /g' -e's/|$/  /g' ",
   ###  - make the implicit URL to packages explicit
