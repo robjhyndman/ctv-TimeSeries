@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-01-24</version>
+<version>2018-03-07</version>
 
 <info>
 <p>
@@ -187,8 +187,7 @@
   </li>
   <li><i>Change point detection</i>
     is provided in <pkg>strucchange</pkg> (using linear regression models),
-    in <pkg>trend</pkg> (using nonparametric tests),
-    and in <pkg>wbsts</pkg> (using wild binary segmentation).
+    and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
@@ -233,7 +232,6 @@
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
-    <pkg>biwavelet</pkg> can be used to plot and compute the wavelet spectra, cross-wavelet spectra, and wavelet coherence of non-stationary time series. It also includes functions to cluster time series based on the (dis)similarities in their spectrum.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg> and <pkg>mvcwt</pkg>.
   </li>
@@ -400,10 +398,9 @@
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
   </li>
   <li><i>Multivariate state space models</i>
-    are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package. This provides relatively flexible state space models via the <code>fkf()</code> function: state-space parameters are allowed to be time-varying and intercepts are included in both equations.
-    An alternative implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
+    An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
-    <pkg>dlmodeler</pkg> provides a unified interface for <pkg>dlm</pkg>, <pkg>KFAS</pkg> and <pkg>FKF</pkg>.
+    <pkg>dlmodeler</pkg> provides a unified interface for <pkg>dlm</pkg> and <pkg>KFAS</pkg>.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
@@ -484,7 +481,7 @@
     <i>Forecasting: principles and practice</i> (2nd ed) are in the <pkg>fpp2</pkg> package.
   </li>
   <li>Data from the M-competition and M3-competition
-      are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>, while <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
+      are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
   <li><pkg>pdfetch</pkg>
     provides facilities for downloading economic and financial time series from public sources.
@@ -614,7 +611,6 @@
   <pkg>bfast</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
-  <pkg>biwavelet</pkg>
   <pkg>BNPTSclust</pkg>
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
@@ -664,7 +660,6 @@
   <pkg>FGN</pkg>
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
-  <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
@@ -706,7 +701,6 @@
   <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
-  <pkg>M4comp</pkg>
   <pkg>mafs</pkg>
   <pkg>MAPA</pkg>
   <pkg>MAR1</pkg>
@@ -834,7 +828,6 @@
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>
-  <pkg>wbsts</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
   <pkg>wmtsa</pkg>
