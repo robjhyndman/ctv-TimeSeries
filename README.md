@@ -1,7 +1,7 @@
 CRAN Task View: Time Series Analysis
 ------------------------------------
 
-|                 |                                                
+
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
