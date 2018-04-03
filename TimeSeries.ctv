@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-03-07</version>
+<version>2018-04-03</version>
 
 <info>
 <p>
@@ -27,6 +27,7 @@
     <pkg>Wats</pkg> implements wrap-around time series graphics.
     <pkg>ggseas</pkg> provides ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
+    <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
     Basic fan plots of forecast distributions are provided by <pkg>forecast</pkg> and <pkg>vars</pkg>. More flexible fan plots of any sequential distributions are implemented in <pkg>fanplot</pkg>.
   </li>
@@ -54,8 +55,12 @@
     However, the time zone computations require some care and might be system-dependent.
     Internally, <code>"POSIXct"</code> objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations.
-    The <pkg>timetk</pkg> package contains a collection of tools for working with time series including coercing between time-based tibbles, xts, zoo and ts objects.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
+  </li>
+  <li>Several packages aim to handle time-based tibbles:
+    <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
+    <pkg>tibbletime</pkg> handles time aware tibbles;
+    <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
   </li>
   <li>Class <code>"timeDate"</code>
     is provided in the <pkg>timeDate</pkg> package (previously: fCalendar).
@@ -134,6 +139,7 @@
     <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models.
     It is enhanced in the <pkg>forecast</pkg> package via the function <code>Arima()</code> along with <code>auto.arima()</code> for automatic order selection.
     <code>arma()</code> in the <pkg>tseries</pkg> package provides different algorithms for ARMA and subset ARMA models.
+    Other estimation methods including the innovations algorithm are provided by <pkg>itsmr</pkg>.
     <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
     Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series simulation.
     Robust ARIMA modeling is provided in the <pkg>robustarima</pkg> package.
@@ -197,6 +203,7 @@
   <li><i>Time series imputation</i>
     is provided by the <pkg>imputeTS</pkg> package.
     Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.
+    <pkg>mtsdi</pkg> implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
   </li>
   <li>Forecasts can be combined
     using <pkg>ForecastComb</pkg> which supports many forecast combination methods including simple, geometric and regression-based combinations.
@@ -300,6 +307,7 @@
     Alternative implementations of the ADF and KPSS tests are in the <pkg>urca</pkg> package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests.
     <pkg>uroot</pkg> provides seasonal unit root tests.
     <pkg>CADFtest</pkg> provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
+    <pkg>MultipleBubbles</pkg> tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
   </li>
   <li><i>Local stationarity</i>:
     <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance.
@@ -313,6 +321,7 @@
     <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
     <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.
     Parameter estimation and inference in a cointegrating regression are implemented in <pkg>cointReg</pkg>.
+    <pkg>nardl</pkg> estimates nonlinear cointegrating autoregressive distributed lag models.
   </li>
 </ul>
 
@@ -352,7 +361,7 @@
     More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.
     Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood, Kalman filtering/smoothing and Bayesian methods),
     or using <pkg>bsts</pkg> which uses MCMC.
-    <pkg>dLagM</pkg> provides time series regression with distributed lags. 
+    <pkg>dLagM</pkg> provides time series regression with distributed lags.
     Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>.
   </li>
   <li><i>Time-varying parameter</i> models
@@ -420,6 +429,7 @@
   <li><pkg>TSdist</pkg>
     provides distance measures for time series data.
   </li>
+  <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
   <li><pkg>jmotif</pkg>
     implements tools based on time series symbolic discretization for finding motifs in time series and facilitates interpretable time series classification.
   </li>
@@ -554,7 +564,7 @@
   </li>
   <li><pkg>PSF</pkg>:
     Forecasting univariate time series using pattern-sequences.
-  </li> 
+  </li>
   <li><pkg>ptw</pkg>:
     Parametric time warping.
   </li>
@@ -587,6 +597,9 @@
   </li>
   <li><pkg>tiger</pkg>:
     Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.
+  </li>
+  <li><pkg>tsfknn</pkg>:
+    Time series forecasting with k-nearest-neighbours.
   </li>
   <li><pkg>TSMining</pkg>:
     Mining Univariate and Multivariate Motifs in Time-Series Data.
@@ -691,6 +704,7 @@
   <pkg>imputeTS</pkg>
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
+  <pkg>itsmr</pkg>
   <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
@@ -716,8 +730,11 @@
   <pkg>MSBVAR</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
+  <pkg>mtsdi</pkg>
+  <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
   <pkg>mvcwt</pkg>
+  <pkg>nardl</pkg>
   <pkg>nets</pkg>
   <pkg>nlts</pkg>
   <pkg>nnfor</pkg>
@@ -787,14 +804,15 @@
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
+  <pkg>tibbletime</pkg>
   <pkg>Tides</pkg>
   <pkg>tiger</pkg>
   <pkg>timeDate</pkg>
   <pkg>TimeProjection</pkg>
   <pkg>timesboot</pkg>
   <pkg>timeSeries</pkg>
-  <pkg>timsac</pkg>
   <pkg>timetk</pkg>
+  <pkg>timsac</pkg>
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
@@ -811,11 +829,15 @@
   <pkg>tseriesChaos</pkg>
   <pkg>tseriesEntropy</pkg>
   <pkg>tsfa</pkg>
+  <pkg>tsfknn</pkg>
+  <pkg>tsibble</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>TSMining</pkg>
   <pkg>tsModel</pkg>
   <pkg>tsoutliers</pkg>
   <pkg>tsPI</pkg>
+  <pkg>TSrepr</pkg>
+  <pkg>TSstudio</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tswge</pkg>
   <pkg>urca</pkg>
