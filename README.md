@@ -654,6 +654,8 @@ list, please let us know.
     [dataseries](https://cran.r-project.org/package=dataseries).
 -   [BETS](https://cran.r-project.org/package=BETS) provides access to the most
     important economic time series in Brazil.
+-   [rbcb](https://cran.r-project.org/package=rbcb) R interface to Brazilian Central Bank
+    web services.
 -   Data from Cryer and Chan (2010) are in the
     [TSA](https://cran.r-project.org/package=TSA) package.
 -   Data from Shumway and Stoffer (2011) are in the
