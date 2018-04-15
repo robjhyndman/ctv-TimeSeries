@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-04-03                                     
+| **Version:**    | 2018-04-15                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -654,6 +654,8 @@ list, please let us know.
     [dataseries](https://cran.r-project.org/package=dataseries).
 -   [BETS](https://cran.r-project.org/package=BETS) provides access to the most
     important economic time series in Brazil.
+    [rbcb](https://cran.r-project.org/package=rbcb) is an R interface to access
+    Brazilian Central Bank time series and other data.
 -   Data from Cryer and Chan (2010) are in the
     [TSA](https://cran.r-project.org/package=TSA) package.
 -   Data from Shumway and Stoffer (2011) are in the
@@ -881,6 +883,7 @@ list, please let us know.
 -   [ptw](https://cran.r-project.org/package=ptw)
 -   [Quandl](https://cran.r-project.org/package=Quandl)
 -   [quantspec](https://cran.r-project.org/package=quantspec)
+-   [rbcb](https://cran.r-project.org/package=rbcb)
 -   [rdatamarket](https://cran.r-project.org/package=rdatamarket)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
 -   [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)

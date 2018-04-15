@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-04-03</version>
+<version>2018-04-15</version>
 
 <info>
 <p>
@@ -506,6 +506,7 @@
       can be downloaded and imported using <pkg>dataseries</pkg>.
   </li>
   <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
+  <pkg>rbcb</pkg> is an R interface to access Brazilian Central Bank time series and other data.
   </li>
   <li>Data from Cryer and Chan (2010)
   	  are in the <pkg>TSA</pkg> package.
@@ -760,6 +761,7 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
+  <pkg>rbcb</pkg>
   <pkg>rdatamarket</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>Rlibeemd</pkg>
