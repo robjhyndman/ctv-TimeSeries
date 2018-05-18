@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-04-15</version>
+<version>2018-05-18</version>
 
 <info>
 <p>
@@ -55,12 +55,14 @@
     However, the time zone computations require some care and might be system-dependent.
     Internally, <code>"POSIXct"</code> objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations.
+    <pkg>timechange</pkg> allows for efficient manipulation of date-times  accounting for time zones and daylight saving times.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
   </li>
   <li>Several packages aim to handle time-based tibbles:
     <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
     <pkg>tibbletime</pkg> handles time aware tibbles;
     <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
+    <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
   </li>
   <li>Class <code>"timeDate"</code>
     is provided in the <pkg>timeDate</pkg> package (previously: fCalendar).
@@ -126,7 +128,7 @@
     The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
   </li>
   <li><pkg>prophet</pkg>
-    forecasts time series based on an additive model where non-linear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
+    forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
   </li>
   <li>The theta method
     is implemented in the <code>thetaf</code> function from the <pkg>forecast</pkg> package.
@@ -159,7 +161,9 @@
     are provided by the <code>arimax</code> function in the <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.
   </li>
   <li>Outlier detection
-    following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
+    following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>. 
+    The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.  
+    <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
   </li>
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
@@ -169,6 +173,7 @@
   <li>Non-Gaussian time series
     can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
     Conditional Auto-Regression models  using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
+    Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
   </li>
   <li><i>GARCH models</i>:
     <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models.
@@ -264,7 +269,7 @@
     <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
   </li>
   <li><i>Singular Spectrum Analysis</i>
-    is implemented in <pkg>Rssa</pkg> and <pkg>spectral.methods</pkg>.
+    is implemented in <pkg>Rssa</pkg>, <pkg>ASSA</pkg> and <pkg>spectral.methods</pkg>.
   </li>
   <li><i>Empirical Mode Decomposition</i> (EMD)
     and Hilbert spectral analysis is provided by <pkg>EMD</pkg>.
@@ -330,6 +335,7 @@
   <li><i>Nonlinear autoregression</i>:
     Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. Neural network autoregression is also provided in <pkg>GMDH</pkg>.
     <pkg>nnfor</pkg> provides time series forecasting with neural networks.
+    <pkg>NlinTS</pkg> includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
     <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
     <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
   </li>
@@ -362,7 +368,7 @@
     Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood, Kalman filtering/smoothing and Bayesian methods),
     or using <pkg>bsts</pkg> which uses MCMC.
     <pkg>dLagM</pkg> provides time series regression with distributed lags.
-    Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>.
+    Functions for distributed lag nonlinear modelling are provided in <pkg>dlnm</pkg>.
   </li>
   <li><i>Time-varying parameter</i> models
     can be fitted using the <pkg>tpr</pkg> package.
@@ -391,6 +397,7 @@
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
+    <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
     are provided in the <pkg>dse</pkg> package.
@@ -615,8 +622,10 @@
 <packagelist>
   <pkg>acp</pkg>
   <pkg>AER</pkg>
+  <pkg>anomalize</pkg>
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
+  <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
   <pkg>autovarCore</pkg>
   <pkg>BAYSTAR</pkg>
@@ -630,6 +639,7 @@
   <pkg>BootPR</pkg>
   <pkg>brainwaver</pkg>
   <pkg>bspec</pkg>
+  <pkg>bssm</pkg>
   <pkg>bsts</pkg>
   <pkg>CADFtest</pkg>
   <pkg>carfima</pkg>
@@ -737,11 +747,13 @@
   <pkg>mvcwt</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
+  <pkg>NlinTS</pkg>
   <pkg>nlts</pkg>
   <pkg>nnfor</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
   <pkg>odpc</pkg>
+  <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>paleoTS</pkg>
@@ -809,6 +821,7 @@
   <pkg>tibbletime</pkg>
   <pkg>Tides</pkg>
   <pkg>tiger</pkg>
+  <pkg>timechange</pkg>
   <pkg>timeDate</pkg>
   <pkg>TimeProjection</pkg>
   <pkg>timesboot</pkg>
@@ -819,6 +832,7 @@
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
   <pkg>TSA</pkg>
+  <pkg>tsbox</pkg>
   <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>

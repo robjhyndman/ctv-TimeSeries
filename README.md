@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-04-15                                     
+| **Version:**    | 2018-05-18                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -83,15 +83,18 @@ list, please let us know.
     objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package [lubridate](https://cran.r-project.org/package=lubridate) provides
     functions that facilitate certain POSIX-based computations.
-    [wktmo](https://cran.r-project.org/package=wktmo) converts weekly data to
-    monthly data in several different ways.
+    [timechange](https://cran.r-project.org/package=timechange) allows for efficient
+    manipulation of date-times accounting for time zones and daylight
+    saving times. [wktmo](https://cran.r-project.org/package=wktmo) converts weekly
+    data to monthly data in several different ways.
 -   Several packages aim to handle time-based tibbles:
     [tsibble](https://cran.r-project.org/package=tsibble) provides tidy temporal
     data frames and associated tools;
     [tibbletime](https://cran.r-project.org/package=tibbletime) handles time aware
     tibbles; [timetk](https://cran.r-project.org/package=timetk) contains tools for
     working with and coercing between time-based tibbles, xts, zoo and
-    ts objects.
+    ts objects. [tsbox](https://cran.r-project.org/package=tsbox) is another toolkit
+    for converting between various time series data classes.
 -   Class `"timeDate"` is provided in the
     [timeDate](https://cran.r-project.org/package=timeDate) package (previously:
     fCalendar). It is aimed at financial time/date information and deals
@@ -158,7 +161,7 @@ list, please let us know.
     smoothing models at different levels of temporal aggregation to
     improve forecast accuracy.
 -   [prophet](https://cran.r-project.org/package=prophet) forecasts time series
-    based on an additive model where non-linear trends are fit with
+    based on an additive model where nonlinear trends are fit with
     yearly and weekly seasonality, plus holidays. It works best with
     daily data.
 -   The theta method is implemented in the `thetaf` function from the
@@ -203,7 +206,12 @@ list, please let us know.
     the [TSA](https://cran.r-project.org/package=TSA) package, and the `arfima`
     function in the [arfima](https://cran.r-project.org/package=arfima) package.
 -   Outlier detection following the Chen-Liu approach is provided by
-    [tsoutliers](https://cran.r-project.org/package=tsoutliers).
+    [tsoutliers](https://cran.r-project.org/package=tsoutliers). The `tsoutliers`
+    and `tsclean` functions in the
+    [forecast](https://cran.r-project.org/package=forecast) package provide some
+    simple heuristic methods for identifying and correcting outliers.
+    [anomalize](https://cran.r-project.org/package=anomalize) provides some
+    additional outlier detection methods in a tidy data framework.
 -   *Structural models* are implemented in `StructTS()` in stats, and in
     [stsm](https://cran.r-project.org/package=stsm) and
     [stsm.class](https://cran.r-project.org/package=stsm.class).
@@ -216,7 +224,9 @@ list, please let us know.
     Generalized Autoregressive Score models in the
     [GAS](https://cran.r-project.org/package=GAS) package. Conditional
     Auto-Regression models using Monte Carlo Likelihood methods are
-    implemented in [mclcar](https://cran.r-project.org/package=mclcar).
+    implemented in [mclcar](https://cran.r-project.org/package=mclcar). Efficient
+    Bayesian inference for nonlinear and non-Gaussian state space models
+    is provided in [bssm](https://cran.r-project.org/package=bssm).
 -   *GARCH models* : `garch()` from
     [tseries](https://cran.r-project.org/package=tseries) fits basic GARCH models.
     Many variations on GARCH models are provided by
@@ -349,7 +359,8 @@ list, please let us know.
     [rmaf](https://cran.r-project.org/package=rmaf) uses a refined moving average
     filter for decomposition.
 -   *Singular Spectrum Analysis* is implemented in
-    [Rssa](https://cran.r-project.org/package=Rssa) and
+    [Rssa](https://cran.r-project.org/package=Rssa),
+    [ASSA](https://cran.r-project.org/package=ASSA) and
     [spectral.methods](https://cran.r-project.org/package=spectral.methods).
 -   *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis
     is provided by [EMD](https://cran.r-project.org/package=EMD). Additional tools,
@@ -436,6 +447,9 @@ list, please let us know.
     [GMDH](https://cran.r-project.org/package=GMDH).
     [nnfor](https://cran.r-project.org/package=nnfor) provides time series
     forecasting with neural networks.
+    [NlinTS](https://cran.r-project.org/package=NlinTS) includes neural network VAR,
+    and a nonlinear version of the Granger causality test based on
+    feedforward neural networks.
     [bentcableAR](https://cran.r-project.org/package=bentcableAR) implements
     Bent-Cable autoregression. [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
     provides Bayesian analysis of threshold autoregressive models.
@@ -474,7 +488,7 @@ list, please let us know.
     methods), or using [bsts](https://cran.r-project.org/package=bsts) which uses
     MCMC. [dLagM](https://cran.r-project.org/package=dLagM) provides time series
     regression with distributed lags. Functions for distributed lag
-    non-linear modelling are provided in
+    nonlinear modelling are provided in
     [dlnm](https://cran.r-project.org/package=dlnm).
 -   *Time-varying parameter* models can be fitted using the
     [tpr](https://cran.r-project.org/package=tpr) package.
@@ -520,6 +534,8 @@ list, please let us know.
     generalized dynamic principal components.
     [pcdpca](https://cran.r-project.org/package=pcdpca) extends dynamic principal
     components to periodically correlated multivariate time series.
+    [onlineVAR](https://cran.r-project.org/package=onlineVAR) implements online
+    fitting of time-adaptive lasso VARs.
 -   *VARIMA models* and *state space models* are provided in the
     [dse](https://cran.r-project.org/package=dse) package.
     [EvalEst](https://cran.r-project.org/package=EvalEst) facilitates Monte Carlo
@@ -737,8 +753,10 @@ list, please let us know.
 
 -   [acp](https://cran.r-project.org/package=acp)
 -   [AER](https://cran.r-project.org/package=AER)
+-   [anomalize](https://cran.r-project.org/package=anomalize)
 -   [ArDec](https://cran.r-project.org/package=ArDec)
 -   [arfima](https://cran.r-project.org/package=arfima)
+-   [ASSA](https://cran.r-project.org/package=ASSA)
 -   [astsa](https://cran.r-project.org/package=astsa)
 -   [autovarCore](https://cran.r-project.org/package=autovarCore)
 -   [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
@@ -752,6 +770,7 @@ list, please let us know.
 -   [BootPR](https://cran.r-project.org/package=BootPR)
 -   [brainwaver](https://cran.r-project.org/package=brainwaver)
 -   [bspec](https://cran.r-project.org/package=bspec)
+-   [bssm](https://cran.r-project.org/package=bssm)
 -   [bsts](https://cran.r-project.org/package=bsts)
 -   [CADFtest](https://cran.r-project.org/package=CADFtest)
 -   [carfima](https://cran.r-project.org/package=carfima)
@@ -859,11 +878,13 @@ list, please let us know.
 -   [mvcwt](https://cran.r-project.org/package=mvcwt)
 -   [nardl](https://cran.r-project.org/package=nardl)
 -   [nets](https://cran.r-project.org/package=nets)
+-   [NlinTS](https://cran.r-project.org/package=NlinTS)
 -   [nlts](https://cran.r-project.org/package=nlts)
 -   [nnfor](https://cran.r-project.org/package=nnfor)
 -   [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries)
 -   [npst](https://cran.r-project.org/package=npst)
 -   [odpc](https://cran.r-project.org/package=odpc)
+-   [onlineVAR](https://cran.r-project.org/package=onlineVAR)
 -   [opera](https://cran.r-project.org/package=opera)
 -   [orderedLasso](https://cran.r-project.org/package=orderedLasso)
 -   [paleoTS](https://cran.r-project.org/package=paleoTS)
@@ -931,6 +952,7 @@ list, please let us know.
 -   [tibbletime](https://cran.r-project.org/package=tibbletime)
 -   [Tides](https://cran.r-project.org/package=Tides)
 -   [tiger](https://cran.r-project.org/package=tiger)
+-   [timechange](https://cran.r-project.org/package=timechange)
 -   [timeDate](https://cran.r-project.org/package=timeDate)
 -   [TimeProjection](https://cran.r-project.org/package=TimeProjection)
 -   [timesboot](https://cran.r-project.org/package=timesboot)
@@ -941,6 +963,7 @@ list, please let us know.
 -   [tpr](https://cran.r-project.org/package=tpr)
 -   [trend](https://cran.r-project.org/package=trend)
 -   [TSA](https://cran.r-project.org/package=TSA)
+-   [tsbox](https://cran.r-project.org/package=tsbox)
 -   [tsbugs](https://cran.r-project.org/package=tsbugs)
 -   [TSclust](https://cran.r-project.org/package=TSclust)
 -   [tscount](https://cran.r-project.org/package=tscount)
