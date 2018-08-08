@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-05-18                                     
+| **Version:**    | 2018-08-08                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -29,8 +29,13 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast), and `rollmean` from
     [zoo](https://cran.r-project.org/package=zoo). The latter also provides a
     general function `rollapply`, along with other specific rolling
-    statistics functions. [roll](https://cran.r-project.org/package=roll) provides
-    parallel functions for computing rolling statistics.
+    statistics functions. [tsibble](https://cran.r-project.org/package=tsibble)
+    provides `slide()` for rolling statistics, `tile()` for
+    non-overlapping sliding windows, and `stretch()` for expanding
+    windows. [roll](https://cran.r-project.org/package=roll) provides parallel
+    functions for computing rolling statistics. Fast rolling and
+    expanding window regressions are provided by
+    [rollRegres](https://cran.r-project.org/package=rollRegres).
 -   *Graphics* : Time series plots are obtained with `plot()` applied to
     `ts` objects. (Partial) autocorrelation functions plots are
     implemented in `acf()` and `pacf()`. Alternative versions are
@@ -199,9 +204,7 @@ list, please let us know.
     [fracdiff](https://cran.r-project.org/package=fracdiff) package. The
     [arfima](https://cran.r-project.org/package=arfima) package has more advanced
     and general facilities for ARFIMA and ARIMA models, including
-    dynamic regression (transfer function) models. Fractional Gaussian
-    noise and simple models for hyperbolic decay time series are handled
-    in the [FGN](https://cran.r-project.org/package=FGN) package.
+    dynamic regression (transfer function) models.
 -   *Transfer function* models are provided by the `arimax` function in
     the [TSA](https://cran.r-project.org/package=TSA) package, and the `arfima`
     function in the [arfima](https://cran.r-project.org/package=arfima) package.
@@ -270,6 +273,8 @@ list, please let us know.
     [imputeTS](https://cran.r-project.org/package=imputeTS) package. Some more
     limited facilities are available using `na.interp()` from the
     [forecast](https://cran.r-project.org/package=forecast) package.
+    [imputeTestbench](https://cran.r-project.org/package=imputeTestbench) provides
+    tools for testing and comparing imputation methods.
     [mtsdi](https://cran.r-project.org/package=mtsdi) implements an EM algorithm for
     imputing missing values in multivariate normal time series,
     accounting for spatial and temporal correlations.
@@ -287,7 +292,12 @@ list, please let us know.
 -   Forecast evaluation is provided in the `accuracy()` function from
     [forecast](https://cran.r-project.org/package=forecast). Distributional forecast
     evaluation using scoring rules is available in
-    [scoringRules](https://cran.r-project.org/package=scoringRules)
+    [scoringRules](https://cran.r-project.org/package=scoringRules). The
+    Diebold-Mariano test for comparing the forecast accuracy of two
+    models is implemented in the `dm.test()` function in
+    [forecast](https://cran.r-project.org/package=forecast). A multivariate version
+    of the Diebold-Mariano test is provided by
+    [multDM](https://cran.r-project.org/package=multDM).
 -   Tidy tools for forecasting are provided by
     [sweep](https://cran.r-project.org/package=sweep), converting objects produced
     in [forecast](https://cran.r-project.org/package=forecast) to "tidy" data
@@ -344,13 +354,10 @@ list, please let us know.
     autoregressive and moving average linear filtering of multiple
     univariate time series. The
     [robfilter](https://cran.r-project.org/package=robfilter) package provides
-    several robust time series filters, while
-    [mFilter](https://cran.r-project.org/package=mFilter) includes miscellaneous
-    time series filters useful for smoothing and extracting trend and
-    cyclical components. `smooth()` from the stats package computes
-    Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
-    [sleekts](https://cran.r-project.org/package=sleekts) computes the 4253H twice
-    smoothing method.
+    several robust time series filters. `smooth()` from the stats
+    package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R,
+    etc. [sleekts](https://cran.r-project.org/package=sleekts) computes the 4253H
+    twice smoothing method.
 -   *Decomposition* : Seasonal decomposition is discussed below.
     Autoregressive-based decomposition is provided by
     [ArDec](https://cran.r-project.org/package=ArDec).
@@ -523,9 +530,8 @@ list, please let us know.
     [autovarCore](https://cran.r-project.org/package=autovarCore). More elaborate
     models are provided in package [vars](https://cran.r-project.org/package=vars),
     [tsDyn](https://cran.r-project.org/package=tsDyn), `estVARXls()` in
-    [dse](https://cran.r-project.org/package=dse), and a Bayesian approach is
-    available in [MSBVAR](https://cran.r-project.org/package=MSBVAR). Another
-    implementation with bootstrapped prediction intervals is given in
+    [dse](https://cran.r-project.org/package=dse). Another implementation with
+    bootstrapped prediction intervals is given in
     [VAR.etp](https://cran.r-project.org/package=VAR.etp).
     [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
     autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
@@ -536,6 +542,8 @@ list, please let us know.
     components to periodically correlated multivariate time series.
     [onlineVAR](https://cran.r-project.org/package=onlineVAR) implements online
     fitting of time-adaptive lasso VARs.
+    [mgm](https://cran.r-project.org/package=mgm) estimates time-varying mixed
+    graphical models and mixed VAR models via regularized regression.
 -   *VARIMA models* and *state space models* are provided in the
     [dse](https://cran.r-project.org/package=dse) package.
     [EvalEst](https://cran.r-project.org/package=EvalEst) facilitates Monte Carlo
@@ -563,9 +571,6 @@ list, please let us know.
     forecasting. Yet another implementation is given in the
     [dlm](https://cran.r-project.org/package=dlm) package which also contains tools
     for converting other multivariate models into state space form.
-    [dlmodeler](https://cran.r-project.org/package=dlmodeler) provides a unified
-    interface for [dlm](https://cran.r-project.org/package=dlm) and
-    [KFAS](https://cran.r-project.org/package=KFAS).
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
     unconstrained multivariate autoregressive state-space models using
     an EM algorithm. All of these packages assume the observational and
@@ -789,7 +794,6 @@ list, please let us know.
 -   [deseasonalize](https://cran.r-project.org/package=deseasonalize)
 -   [dLagM](https://cran.r-project.org/package=dLagM)
 -   [dlm](https://cran.r-project.org/package=dlm)
--   [dlmodeler](https://cran.r-project.org/package=dlmodeler)
 -   [dlnm](https://cran.r-project.org/package=dlnm)
 -   [dse](https://cran.r-project.org/package=dse)
 -   [dtw](https://cran.r-project.org/package=dtw)
@@ -812,7 +816,6 @@ list, please let us know.
 -   [fanplot](https://cran.r-project.org/package=fanplot)
 -   [FeedbackTS](https://cran.r-project.org/package=FeedbackTS)
 -   [fGarch](https://cran.r-project.org/package=fGarch)
--   [FGN](https://cran.r-project.org/package=FGN)
 -   [FitAR](https://cran.r-project.org/package=FitAR)
 -   [FitARMA](https://cran.r-project.org/package=FitARMA)
 -   [fma](https://cran.r-project.org/package=fma)
@@ -843,6 +846,7 @@ list, please let us know.
 -   [hht](https://cran.r-project.org/package=hht)
 -   [hts](https://cran.r-project.org/package=hts)
 -   [hwwntest](https://cran.r-project.org/package=hwwntest)
+-   [imputeTestbench](https://cran.r-project.org/package=imputeTestbench)
 -   [imputeTS](https://cran.r-project.org/package=imputeTS)
 -   [influxdbr](https://cran.r-project.org/package=influxdbr)
 -   [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint)
@@ -866,13 +870,13 @@ list, please let us know.
 -   [mclcar](https://cran.r-project.org/package=mclcar)
 -   [Mcomp](https://cran.r-project.org/package=Mcomp)
 -   [meboot](https://cran.r-project.org/package=meboot)
--   [mFilter](https://cran.r-project.org/package=mFilter)
+-   [mgm](https://cran.r-project.org/package=mgm)
 -   [mlVAR](https://cran.r-project.org/package=mlVAR)
 -   [mondate](https://cran.r-project.org/package=mondate)
--   [MSBVAR](https://cran.r-project.org/package=MSBVAR)
 -   [MSwM](https://cran.r-project.org/package=MSwM)
 -   [MTS](https://cran.r-project.org/package=MTS)
 -   [mtsdi](https://cran.r-project.org/package=mtsdi)
+-   [multDM](https://cran.r-project.org/package=multDM)
 -   [MultipleBubbles](https://cran.r-project.org/package=MultipleBubbles)
 -   [multitaper](https://cran.r-project.org/package=multitaper)
 -   [mvcwt](https://cran.r-project.org/package=mvcwt)
@@ -914,6 +918,7 @@ list, please let us know.
 -   [robfilter](https://cran.r-project.org/package=robfilter)
 -   [robustarima](https://cran.r-project.org/package=robustarima)
 -   [roll](https://cran.r-project.org/package=roll)
+-   [rollRegres](https://cran.r-project.org/package=rollRegres)
 -   [RSEIS](https://cran.r-project.org/package=RSEIS)
 -   [Rssa](https://cran.r-project.org/package=Rssa)
 -   [rts](https://cran.r-project.org/package=rts)

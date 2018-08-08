@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-05-18</version>
+<version>2018-08-08</version>
 
 <info>
 <p>
@@ -17,7 +17,9 @@
   </li>
   <li><i>Rolling statistics</i>:
     Moving averages are computed by <code>ma</code> from <pkg>forecast</pkg>, and <code>rollmean</code> from <pkg>zoo</pkg>. The latter also provides a general function <code>rollapply</code>, along with other specific rolling statistics functions.
+    <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
     <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
+    Fast rolling and expanding window regressions are provided by <pkg>rollRegres</pkg>.
   </li>
   <li><i>Graphics</i>:
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
@@ -206,7 +208,8 @@
   </li>
   <li><i>Time series imputation</i>
     is provided by the <pkg>imputeTS</pkg> package.
-    Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.
+    Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package. 
+    <pkg>imputeTestbench</pkg> provides tools for testing and comparing imputation methods.
     <pkg>mtsdi</pkg> implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
   </li>
   <li>Forecasts can be combined
@@ -217,7 +220,8 @@
   </li>
   <li>Forecast evaluation
     is provided in the <code>accuracy()</code> function from <pkg>forecast</pkg>.
-    Distributional forecast evaluation using scoring rules is available in <pkg>scoringRules</pkg>
+    Distributional forecast evaluation using scoring rules is available in <pkg>scoringRules</pkg>.
+    The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>. A multivariate version of the Diebold-Mariano test is provided by <pkg>multDM</pkg>.
   </li>
   <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
   <li><i>Miscellaneous</i>:
@@ -396,6 +400,7 @@
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
     <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
+    <pkg>mgm</pkg> estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
     are provided in the <pkg>dse</pkg> package.
@@ -708,6 +713,7 @@
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
   <pkg>imputeTS</pkg>
+  <pkg>imputeTestbench</pkg>
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>itsmr</pkg>
@@ -730,11 +736,13 @@
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
+  <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
+  <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
   <pkg>mvcwt</pkg>
@@ -776,6 +784,7 @@
   <pkg>robfilter</pkg>
   <pkg>robustarima</pkg>
   <pkg>roll</pkg>
+  <pkg>rollRegres</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
   <pkg>rts</pkg>
