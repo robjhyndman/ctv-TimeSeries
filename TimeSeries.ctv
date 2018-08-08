@@ -155,7 +155,6 @@
   <li><i>ARFIMA models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
     The <pkg>arfima</pkg> package has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic regression (transfer function) models.
-    Fractional Gaussian noise and simple models for hyperbolic decay time series are handled in the <pkg>FGN</pkg> package.
   </li>
   <li><i>Transfer function</i> models
     are provided by the <code>arimax</code> function in the <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.
@@ -257,8 +256,7 @@
 <ul>
   <li><i>Filters and smoothing</i>:
     <code>filter()</code> in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
-    The <pkg>robfilter</pkg> package provides several robust time series filters,
-    while <pkg>mFilter</pkg> includes miscellaneous time series filters useful for smoothing and extracting trend and cyclical components.
+    The <pkg>robfilter</pkg> package provides several robust time series filters.
     <code>smooth()</code> from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
     <pkg>sleekts</pkg> computes the 4253H twice smoothing method.
   </li>
@@ -391,7 +389,7 @@
     <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
     while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties and  <pkg>svars</pkg> implements data-driven structural VARs.
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
-    More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
+    More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
@@ -416,7 +414,6 @@
   <li><i>Multivariate state space models</i>
     An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
-    <pkg>dlmodeler</pkg> provides a unified interface for <pkg>dlm</pkg> and <pkg>KFAS</pkg>.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
@@ -658,7 +655,6 @@
   <pkg>deseasonalize</pkg>
   <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
-  <pkg>dlmodeler</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
@@ -681,7 +677,6 @@
   <pkg>fanplot</pkg>
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
-  <pkg>FGN</pkg>
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
   <pkg>fma</pkg>
@@ -735,10 +730,8 @@
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
-  <pkg>mFilter</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
-  <pkg>MSBVAR</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
