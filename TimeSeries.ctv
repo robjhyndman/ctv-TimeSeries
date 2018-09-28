@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-08-08</version>
+<version>2018-09-28</version>
 
 <info>
 <p>
@@ -18,6 +18,7 @@
   <li><i>Rolling statistics</i>:
     Moving averages are computed by <code>ma</code> from <pkg>forecast</pkg>, and <code>rollmean</code> from <pkg>zoo</pkg>. The latter also provides a general function <code>rollapply</code>, along with other specific rolling statistics functions.
     <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
+    <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
     <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
     Fast rolling and expanding window regressions are provided by <pkg>rollRegres</pkg>.
   </li>
@@ -27,7 +28,10 @@
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
     <pkg>Wats</pkg> implements wrap-around time series graphics.
-    <pkg>ggseas</pkg> provides ggplot2 graphics for seasonally adjusted series and rolling statistics.
+    Some facilities for ggplot2 graphics are provided in <pkg>forecast</pkg> including <code>autoplot()</code>, <code>ggAcf()</code>, <code>ggPacf()</code>, <code>ggseasonplot()</code> and <code>ggsubseriesplot</code>.
+    <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
+    <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
+    calendar plots are implemented in <pkg>sugrrants</pkg>.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
@@ -192,6 +196,7 @@
   </li>
   <li><i>Censored time series</i>
    can be modelled using <pkg>cents</pkg> and <pkg>carx</pkg>.
+   <pkg>ARCensReg</pkg> fits univariate censored regression models with autoregressive errors.
   </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
@@ -208,7 +213,7 @@
   </li>
   <li><i>Time series imputation</i>
     is provided by the <pkg>imputeTS</pkg> package.
-    Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package. 
+    Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.
     <pkg>imputeTestbench</pkg> provides tools for testing and comparing imputation methods.
     <pkg>mtsdi</pkg> implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
   </li>
@@ -263,6 +268,7 @@
     The <pkg>robfilter</pkg> package provides several robust time series filters.
     <code>smooth()</code> from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
     <pkg>sleekts</pkg> computes the 4253H twice smoothing method.
+    <pkg>mFilter</pkg> implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
   </li>
   <li><i>Decomposition</i>:
     Seasonal decomposition is discussed below.
@@ -397,6 +403,9 @@
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
+    <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
+    <pkg>GNAR</pkg> provides methods for fitting network AR models, while
+    <pkg>graphicalVAR</pkg> estimates graphical VAR models.
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
     <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
@@ -418,6 +427,7 @@
   </li>
   <li><i>Multivariate state space models</i>
     An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
+    <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
     All of these packages assume the observational and state error terms are uncorrelated.
@@ -556,6 +566,9 @@
   <li><pkg>FeedbackTS</pkg>:
     Analysis of fragmented time directionality to investigate feedback in time series.
   </li>
+  <li><pkg>imputePSF</pkg>:
+    imputes missing data using pattern sequences.
+  </li>
   <li><pkg>LPStimeSeries</pkg>
     aims to find "learned pattern similarity" for time series.
   </li>
@@ -624,6 +637,7 @@
   <pkg>acp</pkg>
   <pkg>AER</pkg>
   <pkg>anomalize</pkg>
+  <pkg>ARCensReg</pkg>
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
@@ -683,6 +697,7 @@
   <pkg>fGarch</pkg>
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
+  <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
@@ -690,29 +705,34 @@
   <pkg priority="core">forecast</pkg>
   <pkg>forecastHybrid</pkg>
   <pkg>forecTheta</pkg>
-  <pkg>fpp</pkg>
   <pkg>fpp2</pkg>
+  <pkg>fpp</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
   <pkg>fractalrock</pkg>
-  <pkg>freqdom</pkg>
   <pkg>freqdom.fda</pkg>
+  <pkg>freqdom</pkg>
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggseas</pkg>
+  <pkg>ggTimeSeries</pkg>
   <pkg>glarma</pkg>
   <pkg>GMDH</pkg>
+  <pkg>gmvarkit</pkg>
+  <pkg>GNAR</pkg>
+  <pkg>graphicalVAR</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
   <pkg>hht</pkg>
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
-  <pkg>imputeTS</pkg>
+  <pkg>imputePSF</pkg>
   <pkg>imputeTestbench</pkg>
+  <pkg>imputeTS</pkg>
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>itsmr</pkg>
@@ -735,6 +755,7 @@
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
+  <pkg>mFilter</pkg>
   <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
@@ -801,8 +822,8 @@
   <pkg>sleekts</pkg>
   <pkg>smooth</pkg>
   <pkg>sparsevar</pkg>
-  <pkg>spectral</pkg>
   <pkg>spectral.methods</pkg>
+  <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
   <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
@@ -810,9 +831,11 @@
   <pkg>strucchange</pkg>
   <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
+  <pkg>sugrrants</pkg>
   <pkg>surveillance</pkg>
   <pkg>svars</pkg>
   <pkg>sweep</pkg>
+  <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
@@ -846,7 +869,7 @@
   <pkg>tseriesEntropy</pkg>
   <pkg>tsfa</pkg>
   <pkg>tsfknn</pkg>
-  <pkg>tsibble</pkg>
+  <pkg priority='core'>tsibble</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>TSMining</pkg>
   <pkg>tsModel</pkg>
