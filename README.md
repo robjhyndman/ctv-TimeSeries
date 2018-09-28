@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-08-08                                     
+| **Version:**    | 2018-09-28                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -32,7 +32,9 @@ list, please let us know.
     statistics functions. [tsibble](https://cran.r-project.org/package=tsibble)
     provides `slide()` for rolling statistics, `tile()` for
     non-overlapping sliding windows, and `stretch()` for expanding
-    windows. [roll](https://cran.r-project.org/package=roll) provides parallel
+    windows. [tbrf](https://cran.r-project.org/package=tbrf) provides rolling
+    functions based on date and time windows instead of n-lagged
+    observations. [roll](https://cran.r-project.org/package=roll) provides parallel
     functions for computing rolling statistics. Fast rolling and
     expanding window regressions are provided by
     [rollRegres](https://cran.r-project.org/package=rollRegres).
@@ -49,10 +51,17 @@ list, please let us know.
     in stats and `seasonplot` in
     [forecast](https://cran.r-project.org/package=forecast).
     [Wats](https://cran.r-project.org/package=Wats) implements wrap-around time
-    series graphics. [ggseas](https://cran.r-project.org/package=ggseas) provides
-    ggplot2 graphics for seasonally adjusted series and rolling
-    statistics. [dygraphs](https://cran.r-project.org/package=dygraphs) provides an
-    interface to the Dygraphs interactive time series charting library.
+    series graphics. Some facilities for ggplot2 graphics are provided
+    in [forecast](https://cran.r-project.org/package=forecast) including
+    `autoplot()`, `ggAcf()`, `ggPacf()`, `ggseasonplot()` and
+    `ggsubseriesplot`. [ggseas](https://cran.r-project.org/package=ggseas) provides
+    additional ggplot2 graphics for seasonally adjusted series and
+    rolling statistics.
+    [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries) provides further
+    visualizations including calendar heat maps, while calendar plots
+    are implemented in [sugrrants](https://cran.r-project.org/package=sugrrants).
+    [dygraphs](https://cran.r-project.org/package=dygraphs) provides an interface to
+    the Dygraphs interactive time series charting library.
     [TSstudio](https://cran.r-project.org/package=TSstudio) provides some
     interactive visualization tools for time series.
     [ZRA](https://cran.r-project.org/package=ZRA) plots forecast objects from the
@@ -252,6 +261,8 @@ list, please let us know.
 -   *Censored time series* can be modelled using
     [cents](https://cran.r-project.org/package=cents) and
     [carx](https://cran.r-project.org/package=carx).
+    [ARCensReg](https://cran.r-project.org/package=ARCensReg) fits univariate
+    censored regression models with autoregressive errors.
 -   *Portmanteau tests* are provided via `Box.test()` in the stats
     package. Additional tests are given by
     [portes](https://cran.r-project.org/package=portes) and
@@ -357,7 +368,10 @@ list, please let us know.
     several robust time series filters. `smooth()` from the stats
     package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R,
     etc. [sleekts](https://cran.r-project.org/package=sleekts) computes the 4253H
-    twice smoothing method.
+    twice smoothing method. [mFilter](https://cran.r-project.org/package=mFilter)
+    implements several filters for smoothing and extracting trend and
+    cyclical components including Hodrick-Prescott and Butterworth
+    filters.
 -   *Decomposition* : Seasonal decomposition is discussed below.
     Autoregressive-based decomposition is provided by
     [ArDec](https://cran.r-project.org/package=ArDec).
@@ -536,7 +550,11 @@ list, please let us know.
     [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
     autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
     routines for identifying structural shocks in VAR models using sign
-    restrictions. [gdpc](https://cran.r-project.org/package=gdpc) implements
+    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
+    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
+    provides methods for fitting network AR models, while
+    [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
+    graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.
     [pcdpca](https://cran.r-project.org/package=pcdpca) extends dynamic principal
     components to periodically correlated multivariate time series.
@@ -568,7 +586,9 @@ list, please let us know.
 -   *Multivariate state space models* An implementation is provided by
     the [KFAS](https://cran.r-project.org/package=KFAS) package which provides a
     fast multivariate Kalman filter, smoother, simulation smoother and
-    forecasting. Yet another implementation is given in the
+    forecasting. [FKF](https://cran.r-project.org/package=FKF) provides a fast and
+    flexible implementation of the Kalman filter, which can deal with
+    missing values. Yet another implementation is given in the
     [dlm](https://cran.r-project.org/package=dlm) package which also contains tools
     for converting other multivariate models into state space form.
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
@@ -675,8 +695,6 @@ list, please let us know.
     [dataseries](https://cran.r-project.org/package=dataseries).
 -   [BETS](https://cran.r-project.org/package=BETS) provides access to the most
     important economic time series in Brazil.
-    [rbcb](https://cran.r-project.org/package=rbcb) is an R interface to access
-    Brazilian Central Bank time series and other data.
 -   Data from Cryer and Chan (2010) are in the
     [TSA](https://cran.r-project.org/package=TSA) package.
 -   Data from Shumway and Stoffer (2011) are in the
@@ -709,6 +727,8 @@ list, please let us know.
 -   [FeedbackTS](https://cran.r-project.org/package=FeedbackTS): Analysis of
     fragmented time directionality to investigate feedback in time
     series.
+-   [imputePSF](https://cran.r-project.org/package=imputePSF): imputes missing data
+    using pattern sequences.
 -   [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries) aims to find
     "learned pattern similarity" for time series.
 -   [MAR1](https://cran.r-project.org/package=MAR1) provides tools for preparing
@@ -759,6 +779,7 @@ list, please let us know.
 -   [acp](https://cran.r-project.org/package=acp)
 -   [AER](https://cran.r-project.org/package=AER)
 -   [anomalize](https://cran.r-project.org/package=anomalize)
+-   [ARCensReg](https://cran.r-project.org/package=ARCensReg)
 -   [ArDec](https://cran.r-project.org/package=ArDec)
 -   [arfima](https://cran.r-project.org/package=arfima)
 -   [ASSA](https://cran.r-project.org/package=ASSA)
@@ -818,6 +839,7 @@ list, please let us know.
 -   [fGarch](https://cran.r-project.org/package=fGarch)
 -   [FitAR](https://cran.r-project.org/package=FitAR)
 -   [FitARMA](https://cran.r-project.org/package=FitARMA)
+-   [FKF](https://cran.r-project.org/package=FKF)
 -   [fma](https://cran.r-project.org/package=fma)
 -   [fNonlinear](https://cran.r-project.org/package=fNonlinear)
 -   [ForeCA](https://cran.r-project.org/package=ForeCA)
@@ -838,14 +860,19 @@ list, please let us know.
 -   [GAS](https://cran.r-project.org/package=GAS)
 -   [gdpc](https://cran.r-project.org/package=gdpc)
 -   [ggseas](https://cran.r-project.org/package=ggseas)
+-   [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries)
 -   [glarma](https://cran.r-project.org/package=glarma)
 -   [GMDH](https://cran.r-project.org/package=GMDH)
+-   [gmvarkit](https://cran.r-project.org/package=gmvarkit)
+-   [GNAR](https://cran.r-project.org/package=GNAR)
+-   [graphicalVAR](https://cran.r-project.org/package=graphicalVAR)
 -   [gsarima](https://cran.r-project.org/package=gsarima)
 -   [gtop](https://cran.r-project.org/package=gtop)
 -   [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression)
 -   [hht](https://cran.r-project.org/package=hht)
 -   [hts](https://cran.r-project.org/package=hts)
 -   [hwwntest](https://cran.r-project.org/package=hwwntest)
+-   [imputePSF](https://cran.r-project.org/package=imputePSF)
 -   [imputeTestbench](https://cran.r-project.org/package=imputeTestbench)
 -   [imputeTS](https://cran.r-project.org/package=imputeTS)
 -   [influxdbr](https://cran.r-project.org/package=influxdbr)
@@ -870,6 +897,7 @@ list, please let us know.
 -   [mclcar](https://cran.r-project.org/package=mclcar)
 -   [Mcomp](https://cran.r-project.org/package=Mcomp)
 -   [meboot](https://cran.r-project.org/package=meboot)
+-   [mFilter](https://cran.r-project.org/package=mFilter)
 -   [mgm](https://cran.r-project.org/package=mgm)
 -   [mlVAR](https://cran.r-project.org/package=mlVAR)
 -   [mondate](https://cran.r-project.org/package=mondate)
@@ -908,7 +936,6 @@ list, please let us know.
 -   [ptw](https://cran.r-project.org/package=ptw)
 -   [Quandl](https://cran.r-project.org/package=Quandl)
 -   [quantspec](https://cran.r-project.org/package=quantspec)
--   [rbcb](https://cran.r-project.org/package=rbcb)
 -   [rdatamarket](https://cran.r-project.org/package=rdatamarket)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
 -   [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
@@ -946,9 +973,11 @@ list, please let us know.
 -   [strucchange](https://cran.r-project.org/package=strucchange)
 -   [stsm](https://cran.r-project.org/package=stsm)
 -   [stsm.class](https://cran.r-project.org/package=stsm.class)
+-   [sugrrants](https://cran.r-project.org/package=sugrrants)
 -   [surveillance](https://cran.r-project.org/package=surveillance)
 -   [svars](https://cran.r-project.org/package=svars)
 -   [sweep](https://cran.r-project.org/package=sweep)
+-   [tbrf](https://cran.r-project.org/package=tbrf)
 -   [Tcomp](https://cran.r-project.org/package=Tcomp)
 -   [TED](https://cran.r-project.org/package=TED)
 -   [tempdisagg](https://cran.r-project.org/package=tempdisagg)
@@ -982,7 +1011,7 @@ list, please let us know.
 -   [tseriesEntropy](https://cran.r-project.org/package=tseriesEntropy)
 -   [tsfa](https://cran.r-project.org/package=tsfa)
 -   [tsfknn](https://cran.r-project.org/package=tsfknn)
--   [tsibble](https://cran.r-project.org/package=tsibble)
+-   [tsibble](https://cran.r-project.org/package=tsibble) (core)
 -   [tsintermittent](https://cran.r-project.org/package=tsintermittent)
 -   [TSMining](https://cran.r-project.org/package=TSMining)
 -   [tsModel](https://cran.r-project.org/package=tsModel)
