@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-09-28</version>
+<version>2018-10-30</version>
 
 <info>
 <p>
@@ -297,6 +297,8 @@
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
     An alternative interface is provided by <pkg>x12</pkg>, with an associated alternative GUI provided by <pkg>x12GUI</pkg>.
   </li>
+  <li>Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by <pkg>dsa</pkg>.
+  </li>
   <li><i>Analysis of seasonality</i>:
     the <pkg>bfast</pkg> package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
     <pkg>npst</pkg> provides a generalization of Hewitt's seasonality test.
@@ -367,6 +369,17 @@
   </li>
 </ul>
 
+<p><strong>Entropy</strong></p>
+<ul>
+  <li>Shannon entropy based on the spectral density is computed using <pkg>ForeCA</pkg>. </li>
+  <li><pkg>RTransferEntropy</pkg> measures information flow between time series with Shannon and Renyi transfer entropy.
+  </li>
+  <li>An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in <pkg>tseriesEntropy</pkg>.
+  </li>
+  <li>Various approximate and sample entropies are computed using <pkg>TSEntropies</pkg>.
+  </li>
+</ul>
+
 <p><strong>Dynamic Regression Models</strong></p>
 <ul>
   <li><i>Dynamic linear models</i>:
@@ -377,6 +390,7 @@
     or using <pkg>bsts</pkg> which uses MCMC.
     <pkg>dLagM</pkg> provides time series regression with distributed lags.
     Functions for distributed lag nonlinear modelling are provided in <pkg>dlnm</pkg>.
+    <pkg>sym.arma</pkg> will fit ARMA models with regressors where the observations follow a conditional symmetric distribution.
   </li>
   <li><i>Time-varying parameter</i> models
     can be fitted using the <pkg>tpr</pkg> package.
@@ -674,6 +688,7 @@
   <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
+  <pkg>dsa</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dtwclust</pkg>
@@ -806,6 +821,7 @@
   <pkg>rollRegres</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
+  <pkg>RTransferEntropy</pkg>
   <pkg>rts</pkg>
   <pkg>rucrdtw</pkg>
   <pkg>rugarch</pkg>
@@ -835,6 +851,7 @@
   <pkg>surveillance</pkg>
   <pkg>svars</pkg>
   <pkg>sweep</pkg>
+  <pkg>sym.arma</pkg>
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>TED</pkg>
@@ -867,6 +884,7 @@
   <pkg priority="core">tseries</pkg>
   <pkg>tseriesChaos</pkg>
   <pkg>tseriesEntropy</pkg>
+  <pkg>TSEntropies</pkg>
   <pkg>tsfa</pkg>
   <pkg>tsfknn</pkg>
   <pkg priority='core'>tsibble</pkg>

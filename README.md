@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-09-28                                     
+| **Version:**    | 2018-10-30                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -405,6 +405,9 @@ list, please let us know.
     GUI. An alternative interface is provided by
     [x12](https://cran.r-project.org/package=x12), with an associated alternative
     GUI provided by [x12GUI](https://cran.r-project.org/package=x12GUI).
+-   Seasonal adjustment of daily time series, allowing for day-of-week,
+    time-of-month, time-of-year and holiday effects is provided by
+    [dsa](https://cran.r-project.org/package=dsa).
 -   *Analysis of seasonality* : the
     [bfast](https://cran.r-project.org/package=bfast) package provides methods for
     detecting and characterizing abrupt changes within the trend and
@@ -495,6 +498,19 @@ list, please let us know.
     [fractalrock](https://cran.r-project.org/package=fractalrock) generates fractal
     time series with non-normal returns distributions.
 
+**Entropy**
+
+-   Shannon entropy based on the spectral density is computed using
+    [ForeCA](https://cran.r-project.org/package=ForeCA).
+-   [RTransferEntropy](https://cran.r-project.org/package=RTransferEntropy) measures
+    information flow between time series with Shannon and Renyi transfer
+    entropy.
+-   An entropy measure based on the Bhattacharya-Hellinger-Matusita
+    distance is implemented in
+    [tseriesEntropy](https://cran.r-project.org/package=tseriesEntropy).
+-   Various approximate and sample entropies are computed using
+    [TSEntropies](https://cran.r-project.org/package=TSEntropies).
+
 **Dynamic Regression Models**
 
 -   *Dynamic linear models* : A convenient interface for fitting dynamic
@@ -511,6 +527,9 @@ list, please let us know.
     regression with distributed lags. Functions for distributed lag
     nonlinear modelling are provided in
     [dlnm](https://cran.r-project.org/package=dlnm).
+    [sym.arma](https://cran.r-project.org/package=sym.arma) will fit ARMA models
+    with regressors where the observations follow a conditional
+    symmetric distribution.
 -   *Time-varying parameter* models can be fitted using the
     [tpr](https://cran.r-project.org/package=tpr) package.
 -   [orderedLasso](https://cran.r-project.org/package=orderedLasso) fits a sparse
@@ -816,6 +835,7 @@ list, please let us know.
 -   [dLagM](https://cran.r-project.org/package=dLagM)
 -   [dlm](https://cran.r-project.org/package=dlm)
 -   [dlnm](https://cran.r-project.org/package=dlnm)
+-   [dsa](https://cran.r-project.org/package=dsa)
 -   [dse](https://cran.r-project.org/package=dse)
 -   [dtw](https://cran.r-project.org/package=dtw)
 -   [dtwclust](https://cran.r-project.org/package=dtwclust)
@@ -948,6 +968,7 @@ list, please let us know.
 -   [rollRegres](https://cran.r-project.org/package=rollRegres)
 -   [RSEIS](https://cran.r-project.org/package=RSEIS)
 -   [Rssa](https://cran.r-project.org/package=Rssa)
+-   [RTransferEntropy](https://cran.r-project.org/package=RTransferEntropy)
 -   [rts](https://cran.r-project.org/package=rts)
 -   [rucrdtw](https://cran.r-project.org/package=rucrdtw)
 -   [rugarch](https://cran.r-project.org/package=rugarch)
@@ -977,6 +998,7 @@ list, please let us know.
 -   [surveillance](https://cran.r-project.org/package=surveillance)
 -   [svars](https://cran.r-project.org/package=svars)
 -   [sweep](https://cran.r-project.org/package=sweep)
+-   [sym.arma](https://cran.r-project.org/package=sym.arma)
 -   [tbrf](https://cran.r-project.org/package=tbrf)
 -   [Tcomp](https://cran.r-project.org/package=Tcomp)
 -   [TED](https://cran.r-project.org/package=TED)
@@ -1006,6 +1028,7 @@ list, please let us know.
 -   [tsdisagg2](https://cran.r-project.org/package=tsdisagg2)
 -   [TSdist](https://cran.r-project.org/package=TSdist)
 -   [tsDyn](https://cran.r-project.org/package=tsDyn)
+-   [TSEntropies](https://cran.r-project.org/package=TSEntropies)
 -   [tseries](https://cran.r-project.org/package=tseries) (core)
 -   [tseriesChaos](https://cran.r-project.org/package=tseriesChaos)
 -   [tseriesEntropy](https://cran.r-project.org/package=tseriesEntropy)
