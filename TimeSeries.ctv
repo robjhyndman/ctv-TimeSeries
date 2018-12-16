@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-10-30</version>
+<version>2018-12-16</version>
 
 <info>
 <p>
@@ -207,6 +207,7 @@
     and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
+    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
   </li>
   <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
@@ -343,6 +344,7 @@
 <p><strong>Nonlinear Time Series Analysis</strong></p>
 <ul>
   <li><i>Nonlinear autoregression</i>:
+    Tools for nonlinear time series analysis are provided in <pkg>NTS</pkg> including threshold autoregressive models, Markov-switching models, convolutional functional autoregressive models, and nonlinearity tests.
     Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. Neural network autoregression is also provided in <pkg>GMDH</pkg>.
     <pkg>nnfor</pkg> provides time series forecasting with neural networks.
     <pkg>NlinTS</pkg> includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
@@ -675,6 +677,7 @@
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint</pkg>
+  <pkg>changepoint.mv</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
   <pkg>CommonTrend</pkg>
@@ -788,6 +791,7 @@
   <pkg>nnfor</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
+  <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>

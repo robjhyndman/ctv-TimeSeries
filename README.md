@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-10-30                                     
+| **Version:**    | 2018-12-16                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -275,6 +275,8 @@ list, please let us know.
     many popular changepoint methods, and
     [ecp](https://cran.r-project.org/package=ecp) does nonparametric changepoint
     detection for univariate and multivariate series.
+    [changepoint.mv](https://cran.r-project.org/package=changepoint.mv) detects
+    changepoints in multivariate time series.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series.
@@ -463,8 +465,11 @@ list, please let us know.
 
 **Nonlinear Time Series Analysis**
 
--   *Nonlinear autoregression* : Various forms of nonlinear
-    autoregression are available in
+-   *Nonlinear autoregression* : Tools for nonlinear time series
+    analysis are provided in [NTS](https://cran.r-project.org/package=NTS) including
+    threshold autoregressive models, Markov-switching models,
+    convolutional functional autoregressive models, and nonlinearity
+    tests. Various forms of nonlinear autoregression are available in
     [tsDyn](https://cran.r-project.org/package=tsDyn) including additive AR, neural
     nets, SETAR and LSTAR models, threshold VAR and VECM. Neural network
     autoregression is also provided in
@@ -822,6 +827,7 @@ list, please let us know.
 -   [carx](https://cran.r-project.org/package=carx)
 -   [cents](https://cran.r-project.org/package=cents)
 -   [changepoint](https://cran.r-project.org/package=changepoint)
+-   [changepoint.mv](https://cran.r-project.org/package=changepoint.mv)
 -   [chron](https://cran.r-project.org/package=chron)
 -   [cointReg](https://cran.r-project.org/package=cointReg)
 -   [CommonTrend](https://cran.r-project.org/package=CommonTrend)
@@ -935,6 +941,7 @@ list, please let us know.
 -   [nnfor](https://cran.r-project.org/package=nnfor)
 -   [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries)
 -   [npst](https://cran.r-project.org/package=npst)
+-   [NTS](https://cran.r-project.org/package=NTS)
 -   [odpc](https://cran.r-project.org/package=odpc)
 -   [onlineVAR](https://cran.r-project.org/package=onlineVAR)
 -   [opera](https://cran.r-project.org/package=opera)
