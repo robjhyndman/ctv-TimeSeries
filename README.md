@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2019-02-11                                     
+| **Version:**    | 2019-02-12                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -326,7 +326,8 @@ list, please let us know.
 -   *Spectral density estimation* is provided by `spectrum()` in the
     stats package, including the periodogram, smoothed periodogram and
     AR estimates. Bayesian spectral inference is provided by
-    [bspec](https://cran.r-project.org/package=bspec).
+    [bspec](https://cran.r-project.org/package=bspec) and
+    [regspec](https://cran.r-project.org/package=regspec).
     [quantspec](https://cran.r-project.org/package=quantspec) includes methods to
     compute and plot Laplace periodograms for univariate time series.
     The Lomb-Scargle periodogram for unevenly sampled time series is
@@ -965,6 +966,7 @@ list, please let us know.
 -   [Quandl](https://cran.r-project.org/package=Quandl)
 -   [quantspec](https://cran.r-project.org/package=quantspec)
 -   [rdatamarket](https://cran.r-project.org/package=rdatamarket)
+-   [regspec](https://cran.r-project.org/package=regspec)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
 -   [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
 -   [rmaf](https://cran.r-project.org/package=rmaf)

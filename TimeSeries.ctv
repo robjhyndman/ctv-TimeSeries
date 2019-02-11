@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-02-11</version>
+<version>2019-02-12</version>
 
 <info>
 <p>
@@ -241,7 +241,7 @@
 <ul>
   <li><i>Spectral density estimation</i>
     is provided by <code>spectrum()</code> in the stats package, including the periodogram, smoothed periodogram and AR estimates.
-    Bayesian spectral inference is provided by <pkg>bspec</pkg>.
+    Bayesian spectral inference is provided by <pkg>bspec</pkg> and <pkg>regspec</pkg>.
     <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
     The Lomb-Scargle periodogram for unevenly sampled time series is computed by <pkg>lomb</pkg>.
     <pkg>spectral</pkg> uses Fourier and Hilbert transforms for spectral filtering.
@@ -813,6 +813,7 @@
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
   <pkg>rdatamarket</pkg>
+  <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
