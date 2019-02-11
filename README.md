@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2018-12-16                                     
+| **Version:**    | 2019-02-11                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -628,6 +628,10 @@ list, please let us know.
 
 **Analysis of large groups of time series**
 
+-   *Time series features* are computed from a list or matrix of time
+    series using [tsfeatures](https://cran.r-project.org/package=tsfeatures). Many
+    built-in feature functions are included, and users can add their
+    own.
 -   *Time series clustering* is implemented in
     [TSclust](https://cran.r-project.org/package=TSclust),
     [dtwclust](https://cran.r-project.org/package=dtwclust),
@@ -755,8 +759,6 @@ list, please let us know.
     using pattern sequences.
 -   [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries) aims to find
     "learned pattern similarity" for time series.
--   [MAR1](https://cran.r-project.org/package=MAR1) provides tools for preparing
-    ecological community time series data for multivariate AR modeling.
 -   [nets](https://cran.r-project.org/package=nets): routines for the estimation of
     sparse long run partial correlation networks for time series data.
 -   [paleoTS](https://cran.r-project.org/package=paleoTS): Modeling evolution in
@@ -917,7 +919,6 @@ list, please let us know.
 -   [mafs](https://cran.r-project.org/package=mafs)
 -   [MAPA](https://cran.r-project.org/package=MAPA)
 -   [mAr](https://cran.r-project.org/package=mAr)
--   [MAR1](https://cran.r-project.org/package=MAR1)
 -   [mar1s](https://cran.r-project.org/package=mar1s)
 -   [MARSS](https://cran.r-project.org/package=MARSS)
 -   [mclcar](https://cran.r-project.org/package=mclcar)
@@ -1040,6 +1041,7 @@ list, please let us know.
 -   [tseriesChaos](https://cran.r-project.org/package=tseriesChaos)
 -   [tseriesEntropy](https://cran.r-project.org/package=tseriesEntropy)
 -   [tsfa](https://cran.r-project.org/package=tsfa)
+-   [tsfeatures](https://cran.r-project.org/package=tsfeatures)
 -   [tsfknn](https://cran.r-project.org/package=tsfknn)
 -   [tsibble](https://cran.r-project.org/package=tsibble) (core)
 -   [tsintermittent](https://cran.r-project.org/package=tsintermittent)
