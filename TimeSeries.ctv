@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-12-16</version>
+<version>2019-01-26</version>
 
 <info>
 <p>
@@ -588,9 +588,6 @@
   <li><pkg>LPStimeSeries</pkg>
     aims to find "learned pattern similarity" for time series.
   </li>
-  <li><pkg>MAR1</pkg>
-    provides tools for preparing ecological community time series data for multivariate AR modeling.
-  </li>
   <li><pkg>nets</pkg>:
     routines for the estimation of sparse long run partial correlation networks for time series data.
   </li>
@@ -766,7 +763,6 @@
   <pkg>lubridate</pkg>
   <pkg>mafs</pkg>
   <pkg>MAPA</pkg>
-  <pkg>MAR1</pkg>
   <pkg>mar1s</pkg>
   <pkg>mAr</pkg>
   <pkg>MARSS</pkg>
