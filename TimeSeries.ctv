@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-03-12</version>
+<version>2019-03-13</version>
 
 <info>
 <p>
@@ -132,6 +132,7 @@
     <pkg>robets</pkg> provides a robust alternative to the <code>ets()</code> function.
     <pkg>smooth</pkg> implements some generalizations of exponential smoothing.
     The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
+    Some Bayesian extensions of exponential smoothing are contained in <pkg>Rlgt</pkg>.
   </li>
   <li><pkg>prophet</pkg>
     forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
@@ -161,6 +162,7 @@
   <li><i>ARFIMA models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
     The <pkg>arfima</pkg> package has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic regression (transfer function) models.
+    <pkg>LongMemoryTS</pkg> provides a collection of functions for analysing long memory time series.
   </li>
   <li><i>Transfer function</i> models
     are provided by the <code>arimax</code> function in the <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.
@@ -252,7 +254,10 @@
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
+    <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
+    Multivariate, locally stationary wavelet analysis tools are provided by <pkg>mvLSW</pkg>.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
+    Wavelet scalogram tools are contained in <pkg>wavScalogram</pkg>.
     Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg> and <pkg>mvcwt</pkg>.
   </li>
   <li><i>Harmonic regression</i>
@@ -293,9 +298,11 @@
     Enhanced STL decomposition is available in <pkg>stlplus</pkg>.
     <pkg>stR</pkg> provides Seasonal-Trend decomposition based on Regression.
   </li>
-  <li> X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
+  <li>X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
     An alternative interface is provided by <pkg>x12</pkg>, with an associated alternative GUI provided by <pkg>x12GUI</pkg>.
+  </li>
+  <li>An interface to the JDemetra+ seasonal adjustment software is provided by <pkg>RJDemetra</pkg>.
   </li>
   <li>Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by <pkg>dsa</pkg>.
   </li>
@@ -661,6 +668,7 @@
   <pkg>bfast</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
+  <pkg>biwavelet</pkg>
   <pkg>BNPTSclust</pkg>
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
@@ -672,8 +680,8 @@
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
-  <pkg>changepoint</pkg>
   <pkg>changepoint.mv</pkg>
+  <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
   <pkg>CommonTrend</pkg>
@@ -714,8 +722,8 @@
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
-  <pkg>ForecastComb</pkg>
   <pkg priority="core">forecast</pkg>
+  <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
   <pkg>forecTheta</pkg>
   <pkg>fpp2</pkg>
@@ -755,6 +763,7 @@
   <pkg>kza</pkg>
   <pkg>locits</pkg>
   <pkg>lomb</pkg>
+  <pkg>LongMemoryTS</pkg>
   <pkg>LPStimeSeries</pkg>
   <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
@@ -778,6 +787,7 @@
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
   <pkg>mvcwt</pkg>
+  <pkg>mvLSW</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
   <pkg>NlinTS</pkg>
@@ -810,6 +820,8 @@
   <pkg>rdatamarket</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
+  <pkg>RJDemetra</pkg>
+  <pkg>Rlgt</pkg>
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
@@ -880,9 +892,9 @@
   <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
+  <pkg>TSEntropies</pkg>
   <pkg>tseriesChaos</pkg>
   <pkg>tseriesEntropy</pkg>
-  <pkg>TSEntropies</pkg>
   <pkg>tsfa</pkg>
   <pkg>tsfeatures</pkg>
   <pkg>tsfknn</pkg>
@@ -906,6 +918,7 @@
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>
+  <pkg>wavScalogram</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
   <pkg>wmtsa</pkg>

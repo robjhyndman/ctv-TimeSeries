@@ -5,7 +5,7 @@ CRAN Task View: Time Series Analysis
 |-----------------|----------------------------------------------  
 | **Maintainer:** | Rob J Hyndman                                  
 | **Contact:**    | Rob.Hyndman at monash.edu                      
-| **Version:**    | 2019-02-12                                     
+| **Version:**    | 2019-03-13                                     
 | **URL:**        | <https://CRAN.R-project.org/view=TimeSeries>   
 
 Base R ships with a lot of functionality useful for time series, in
@@ -173,7 +173,8 @@ list, please let us know.
     generalizations of exponential smoothing. The
     [MAPA](https://cran.r-project.org/package=MAPA) package combines exponential
     smoothing models at different levels of temporal aggregation to
-    improve forecast accuracy.
+    improve forecast accuracy. Some Bayesian extensions of exponential
+    smoothing are contained in [Rlgt](https://cran.r-project.org/package=Rlgt).
 -   [prophet](https://cran.r-project.org/package=prophet) forecasts time series
     based on an additive model where nonlinear trends are fit with
     yearly and weekly seasonality, plus holidays. It works best with
@@ -214,6 +215,8 @@ list, please let us know.
     [arfima](https://cran.r-project.org/package=arfima) package has more advanced
     and general facilities for ARFIMA and ARIMA models, including
     dynamic regression (transfer function) models.
+    [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
+    collection of functions for analysing long memory time series.
 -   *Transfer function* models are provided by the `arimax` function in
     the [TSA](https://cran.r-project.org/package=TSA) package, and the `arfima`
     function in the [arfima](https://cran.r-project.org/package=arfima) package.
@@ -318,8 +321,7 @@ list, please let us know.
 -   *Miscellaneous* : [ltsa](https://cran.r-project.org/package=ltsa) contains
     methods for linear time series analysis,
     [timsac](https://cran.r-project.org/package=timsac) for time series analysis and
-    control, and [tsbugs](https://cran.r-project.org/package=tsbugs) for time series
-    BUGS models.
+    control.
 
 **Frequency analysis**
 
@@ -348,9 +350,15 @@ list, please let us know.
     [WaveletComp](https://cran.r-project.org/package=WaveletComp) provides some
     tools for wavelet-based analysis of univariate and bivariate time
     series including cross-wavelets, phase-difference and significance
-    tests. Tests of white noise using wavelets are provided by
-    [hwwntest](https://cran.r-project.org/package=hwwntest). Further wavelet methods
-    can be found in the packages
+    tests. [biwavelet](https://cran.r-project.org/package=biwavelet) is a port of
+    the WTC Matlab package for univariate and bivariate wavelet
+    analyses. Multivariate, locally stationary wavelet analysis tools
+    are provided by [mvLSW](https://cran.r-project.org/package=mvLSW). Tests of
+    white noise using wavelets are provided by
+    [hwwntest](https://cran.r-project.org/package=hwwntest). Wavelet scalogram tools
+    are contained in
+    [wavScalogram](https://cran.r-project.org/package=wavScalogram). Further wavelet
+    methods can be found in the packages
     [brainwaver](https://cran.r-project.org/package=brainwaver),
     [rwt](https://cran.r-project.org/package=rwt),
     [waveslim](https://cran.r-project.org/package=waveslim),
@@ -408,6 +416,8 @@ list, please let us know.
     GUI. An alternative interface is provided by
     [x12](https://cran.r-project.org/package=x12), with an associated alternative
     GUI provided by [x12GUI](https://cran.r-project.org/package=x12GUI).
+-   An interface to the JDemetra+ seasonal adjustment software is
+    provided by [RJDemetra](https://cran.r-project.org/package=RJDemetra).
 -   Seasonal adjustment of daily time series, allowing for day-of-week,
     time-of-month, time-of-year and holiday effects is provided by
     [dsa](https://cran.r-project.org/package=dsa).
@@ -542,10 +552,6 @@ list, please let us know.
     linear model with an order constraint on the coefficients in order
     to handle lagged regressors where the coefficients decay as the lag
     increases.
--   Dynamic modeling of various kinds is available in
-    [dynr](https://cran.r-project.org/package=dynr) including discrete and
-    continuous time, linear and nonlinear models, and different types of
-    latent variables.
 
 **Multivariate Time Series Models**
 
@@ -818,6 +824,7 @@ list, please let us know.
 -   [bfast](https://cran.r-project.org/package=bfast)
 -   [bigtime](https://cran.r-project.org/package=bigtime)
 -   [BigVAR](https://cran.r-project.org/package=BigVAR)
+-   [biwavelet](https://cran.r-project.org/package=biwavelet)
 -   [BNPTSclust](https://cran.r-project.org/package=BNPTSclust)
 -   [boot](https://cran.r-project.org/package=boot)
 -   [BootPR](https://cran.r-project.org/package=BootPR)
@@ -851,7 +858,6 @@ list, please let us know.
 -   [dygraphs](https://cran.r-project.org/package=dygraphs)
 -   [dyn](https://cran.r-project.org/package=dyn)
 -   [dynlm](https://cran.r-project.org/package=dynlm)
--   [dynr](https://cran.r-project.org/package=dynr)
 -   [earlywarnings](https://cran.r-project.org/package=earlywarnings)
 -   [Ecdat](https://cran.r-project.org/package=Ecdat)
 -   [ecm](https://cran.r-project.org/package=ecm)
@@ -913,6 +919,7 @@ list, please let us know.
 -   [kza](https://cran.r-project.org/package=kza)
 -   [locits](https://cran.r-project.org/package=locits)
 -   [lomb](https://cran.r-project.org/package=lomb)
+-   [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS)
 -   [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries)
 -   [LSTS](https://cran.r-project.org/package=LSTS)
 -   [ltsa](https://cran.r-project.org/package=ltsa)
@@ -936,6 +943,7 @@ list, please let us know.
 -   [MultipleBubbles](https://cran.r-project.org/package=MultipleBubbles)
 -   [multitaper](https://cran.r-project.org/package=multitaper)
 -   [mvcwt](https://cran.r-project.org/package=mvcwt)
+-   [mvLSW](https://cran.r-project.org/package=mvLSW)
 -   [nardl](https://cran.r-project.org/package=nardl)
 -   [nets](https://cran.r-project.org/package=nets)
 -   [NlinTS](https://cran.r-project.org/package=NlinTS)
@@ -968,6 +976,8 @@ list, please let us know.
 -   [rdatamarket](https://cran.r-project.org/package=rdatamarket)
 -   [regspec](https://cran.r-project.org/package=regspec)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
+-   [RJDemetra](https://cran.r-project.org/package=RJDemetra)
+-   [Rlgt](https://cran.r-project.org/package=Rlgt)
 -   [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
 -   [rmaf](https://cran.r-project.org/package=rmaf)
 -   [RMAWGEN](https://cran.r-project.org/package=RMAWGEN)
@@ -1030,7 +1040,6 @@ list, please let us know.
 -   [trend](https://cran.r-project.org/package=trend)
 -   [TSA](https://cran.r-project.org/package=TSA)
 -   [tsbox](https://cran.r-project.org/package=tsbox)
--   [tsbugs](https://cran.r-project.org/package=tsbugs)
 -   [TSclust](https://cran.r-project.org/package=TSclust)
 -   [tscount](https://cran.r-project.org/package=tscount)
 -   [TSdbi](https://cran.r-project.org/package=TSdbi)
@@ -1065,6 +1074,7 @@ list, please let us know.
 -   [wavelets](https://cran.r-project.org/package=wavelets)
 -   [waveslim](https://cran.r-project.org/package=waveslim)
 -   [wavethresh](https://cran.r-project.org/package=wavethresh)
+-   [wavScalogram](https://cran.r-project.org/package=wavScalogram)
 -   [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest)
 -   [wktmo](https://cran.r-project.org/package=wktmo)
 -   [wmtsa](https://cran.r-project.org/package=wmtsa)
