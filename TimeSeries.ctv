@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-02-12</version>
+<version>2019-03-12</version>
 
 <info>
 <p>
@@ -232,8 +232,7 @@
   <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
   <li><i>Miscellaneous</i>:
     <pkg>ltsa</pkg> contains methods for linear time series analysis,
-    <pkg>timsac</pkg> for time series analysis and control,
-    and <pkg>tsbugs</pkg> for time series BUGS models.
+    <pkg>timsac</pkg> for time series analysis and control.
   </li>
 </ul>
 
@@ -399,9 +398,6 @@
   </li>
   <li><pkg>orderedLasso</pkg>
     fits a sparse linear model with an order constraint on the coefficients in order to handle lagged regressors where the coefficients decay as the lag increases.
-  </li>
-  <li>Dynamic modeling
-    of various kinds is available in <pkg>dynr</pkg> including discrete and continuous time, linear and nonlinear models, and different types of latent variables.
   </li>
 </ul>
 
@@ -698,7 +694,6 @@
   <pkg>dygraphs</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
-  <pkg>dynr</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ecm</pkg>
@@ -877,7 +872,6 @@
   <pkg>trend</pkg>
   <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
-  <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
