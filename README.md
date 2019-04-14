@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-03-13                                     
+**Version:**    2019-04-14                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -39,6 +39,8 @@ list, please let us know.
     functions for computing rolling statistics. Fast rolling and
     expanding window regressions are provided by
     [rollRegres](https://cran.r-project.org/package=rollRegres).
+    [runstats](https://cran.r-project.org/package=runstats) provides fast
+    computational methods for some running sample statistics.
   - *Graphics* : Time series plots are obtained with `plot()` applied to
     `ts` objects. (Partial) autocorrelation functions plots are
     implemented in `acf()` and `pacf()`. Alternative versions are
@@ -229,6 +231,8 @@ list, please let us know.
     simple heuristic methods for identifying and correcting outliers.
     [anomalize](https://cran.r-project.org/package=anomalize) provides some
     additional outlier detection methods in a tidy data framework.
+    [otsad](https://cran.r-project.org/package=otsad) implements a set of online
+    anomaly detectors for time series.
   - *Structural models* are implemented in `StructTS()` in stats, and in
     [stsm](https://cran.r-project.org/package=stsm) and
     [stsm.class](https://cran.r-project.org/package=stsm.class).
@@ -703,51 +707,55 @@ list, please let us know.
 
 **Time Series Data**
 
-  - Data from Makridakis, Wheelwright and Hyndman (1998) *Forecasting:
-    methods and applications* are provided in the
-    [fma](https://cran.r-project.org/package=fma) package.
+  - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
+    applications in R* are in the [TSA](https://cran.r-project.org/package=TSA)
+    package.
+  - Data from Hyndman and Athanasopoulos (2013) *Forecasting: principles
+    and practice* are in the [fpp](https://cran.r-project.org/package=fpp) package.
+  - Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
+    principles and practice* are in the
+    [fpp2](https://cran.r-project.org/package=fpp2) package.
   - Data from Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with
     exponential smoothing* are in the
     [expsmooth](https://cran.r-project.org/package=expsmooth) package.
-  - Data from Hyndman and Athanasopoulos (2013) *Forecasting: principles
-    and practice* are in the [fpp](https://cran.r-project.org/package=fpp) package.
-  - Data from Hyndman and Athanasopoulos (2017) *Forecasting: principles
-    and practice* (2nd ed) are in the
-    [fpp2](https://cran.r-project.org/package=fpp2) package.
+  - Data from Makridakis, Wheelwright and Hyndman (1998, 3rd ed)
+    *Forecasting: methods and applications* are in the
+    [fma](https://cran.r-project.org/package=fma) package.
+  - Data from Shumway and Stoffer (2017, 4th ed) *Time Series Analysis
+    and Its Applications: With R Examples* are in the
+    [astsa](https://cran.r-project.org/package=astsa) package.
+  - Data from Tsay (2005, 2nd ed) *Analysis of Financial Time Series*
+    are in the [FinTS](https://cran.r-project.org/package=FinTS) package.
+  - Data from Woodward, Gray, and Elliott (2016, 2nd ed) *Applied Time
+    Series Analysis with R* are in the
+    [tswge](https://cran.r-project.org/package=tswge) package.
+  - [AER](https://cran.r-project.org/package=AER) and
+    [Ecdat](https://cran.r-project.org/package=Ecdat) both contain many data sets
+    (including time series data) from many econometrics text books
   - Data from the M-competition and M3-competition are provided in the
     [Mcomp](https://cran.r-project.org/package=Mcomp) package.
     [Tcomp](https://cran.r-project.org/package=Tcomp) provides data from the 2010
     IJF Tourism Forecasting Competition.
-  - [pdfetch](https://cran.r-project.org/package=pdfetch) provides facilities for
-    downloading economic and financial time series from public sources.
-  - Data from the [Quandl](http://www.quandl.com) online portal to
-    financial, economical and social datasets can be queried
-    interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
-    package.
+  - [BETS](https://cran.r-project.org/package=BETS) provides access to the most
+    important economic time series in Brazil.
   - Data from the [Datamarket](http://datamarket.com/data/) online
     portal can be fetched using the
     [rdatamarket](https://cran.r-project.org/package=rdatamarket) package.
   - Data from Switzerland via [dataseries.org](http://dataseries.org)
     can be downloaded and imported using
     [dataseries](https://cran.r-project.org/package=dataseries).
-  - [BETS](https://cran.r-project.org/package=BETS) provides access to the most
-    important economic time series in Brazil.
-  - Data from Cryer and Chan (2010) are in the
-    [TSA](https://cran.r-project.org/package=TSA) package.
-  - Data from Shumway and Stoffer (2011) are in the
-    [astsa](https://cran.r-project.org/package=astsa) package.
-  - [tswge](https://cran.r-project.org/package=tswge) accompanies the text *Applied
-    Time Series Analysis with R* , 2nd edition by Woodward, Gray, and
-    Elliott.
-  - [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common interface to
-    time series databases.
   - [fame](https://cran.r-project.org/package=fame) provides an interface for FAME
     time series databases
   - [influxdbr](https://cran.r-project.org/package=influxdbr) provides an interface
     to the InfluxDB time series database.
-  - [AER](https://cran.r-project.org/package=AER) and
-    [Ecdat](https://cran.r-project.org/package=Ecdat) both contain many data sets
-    (including time series data) from many econometrics text books
+  - [pdfetch](https://cran.r-project.org/package=pdfetch) provides facilities for
+    downloading economic and financial time series from public sources.
+  - Data from the [Quandl](http://www.quandl.com) online portal to
+    financial, economical and social datasets can be queried
+    interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
+    package.
+  - [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common interface to
+    time series databases.
 
 **Miscellaneous**
 
@@ -876,6 +884,7 @@ list, please let us know.
   - [fanplot](https://cran.r-project.org/package=fanplot)
   - [FeedbackTS](https://cran.r-project.org/package=FeedbackTS)
   - [fGarch](https://cran.r-project.org/package=fGarch)
+  - [FinTS](https://cran.r-project.org/package=FinTS)
   - [FitAR](https://cran.r-project.org/package=FitAR)
   - [FitARMA](https://cran.r-project.org/package=FitARMA)
   - [FKF](https://cran.r-project.org/package=FKF)
@@ -960,6 +969,7 @@ list, please let us know.
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
   - [opera](https://cran.r-project.org/package=opera)
   - [orderedLasso](https://cran.r-project.org/package=orderedLasso)
+  - [otsad](https://cran.r-project.org/package=otsad)
   - [paleoTS](https://cran.r-project.org/package=paleoTS)
   - [partsm](https://cran.r-project.org/package=partsm)
   - [pastecs](https://cran.r-project.org/package=pastecs)
@@ -996,6 +1006,7 @@ list, please let us know.
   - [rts](https://cran.r-project.org/package=rts)
   - [rucrdtw](https://cran.r-project.org/package=rucrdtw)
   - [rugarch](https://cran.r-project.org/package=rugarch)
+  - [runstats](https://cran.r-project.org/package=runstats)
   - [rwt](https://cran.r-project.org/package=rwt)
   - [sae2](https://cran.r-project.org/package=sae2)
   - [scoringRules](https://cran.r-project.org/package=scoringRules)

@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-03-13</version>
+<version>2019-04-14</version>
 
 <info>
 <p>
@@ -21,6 +21,7 @@
     <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
     <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
     Fast rolling and expanding window regressions are provided by <pkg>rollRegres</pkg>.
+    <pkg>runstats</pkg> provides fast computational methods for some running sample statistics.
   </li>
   <li><i>Graphics</i>:
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
@@ -171,6 +172,7 @@
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
     The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
     <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
+    <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
   </li>
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
@@ -519,26 +521,45 @@
 
 <p><strong>Time Series Data</strong></p>
 <ul>
-  <li>Data from Makridakis, Wheelwright and Hyndman (1998)
-    <i>Forecasting: methods and applications</i> are provided in the <pkg>fma</pkg> package.
-  </li>
-  <li>Data from Hyndman, Koehler, Ord and Snyder (2008)
-    <i>Forecasting with exponential smoothing</i> are in the <pkg>expsmooth</pkg> package.
+  <li>Data from Cryer and Chan (2010, 2nd ed)
+      <i>Time series analysis with applications in R</i>
+      are in the <pkg>TSA</pkg> package.
   </li>
   <li>Data from Hyndman and Athanasopoulos (2013)
-    <i>Forecasting: principles and practice</i> are in the <pkg>fpp</pkg> package.
+      <i>Forecasting: principles and practice</i>
+      are in the <pkg>fpp</pkg> package.
   </li>
-  <li>Data from Hyndman and Athanasopoulos (2017)
-    <i>Forecasting: principles and practice</i> (2nd ed) are in the <pkg>fpp2</pkg> package.
+  <li>Data from Hyndman and Athanasopoulos (2018, 2nd ed)
+      <i>Forecasting: principles and practice</i>
+      are in the <pkg>fpp2</pkg> package.
+  </li>
+  <li>Data from Hyndman, Koehler, Ord and Snyder (2008)
+      <i>Forecasting with exponential smoothing</i>
+      are in the <pkg>expsmooth</pkg> package.
+  </li>
+  <li>Data from Makridakis, Wheelwright and Hyndman (1998, 3rd ed)
+      <i>Forecasting: methods and applications</i>
+      are in the <pkg>fma</pkg> package.
+  </li>
+  <li>Data from Shumway and Stoffer (2017, 4th ed)
+      <i>Time Series Analysis and Its Applications: With R Examples</i>
+      are in the <pkg>astsa</pkg> package.
+  </li>
+  <li>Data from Tsay (2005, 2nd ed)
+      <i>Analysis of Financial Time Series</i>
+      are in the <pkg>FinTS</pkg> package.
+  </li>
+  <li>Data from Woodward, Gray, and Elliott (2016, 2nd ed)
+      <i>Applied Time Series Analysis with R</i>
+      are in the <pkg>tswge</pkg> package.
+  </li>
+  <li><pkg>AER</pkg> and <pkg>Ecdat</pkg>
+    both contain many data sets (including time series data) from many econometrics text books
   </li>
   <li>Data from the M-competition and M3-competition
       are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
-  <li><pkg>pdfetch</pkg>
-    provides facilities for downloading economic and financial time series from public sources.
-  </li>
-  <li>Data from the <a href="http://www.quandl.com">Quandl</a> online portal
-      to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
+  <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
   </li>
   <li>Data from the <a href="http://datamarket.com/data/">Datamarket</a> online portal
       can be fetched using the <pkg>rdatamarket</pkg> package.
@@ -546,28 +567,20 @@
   <li>Data from Switzerland via <a href="http://dataseries.org">dataseries.org</a>
       can be downloaded and imported using <pkg>dataseries</pkg>.
   </li>
-  <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
-  </li>
-  <li>Data from Cryer and Chan (2010)
-  	  are in the <pkg>TSA</pkg> package.
-  </li>
-  <li>Data from Shumway and Stoffer (2011)
-  	  are in the <pkg>astsa</pkg> package.
-  </li>
-  <li><pkg>tswge</pkg>
-      accompanies the text <i>Applied Time Series Analysis with R</i>, 2nd edition by Woodward, Gray, and Elliott.
-  </li>
-  <li><pkg>TSdbi</pkg>
-    provides a common interface to time series databases.
-  </li>
   <li><pkg>fame</pkg>
     provides an interface for FAME time series databases
   </li>
   <li><pkg>influxdbr</pkg>
     provides an interface to the InfluxDB time series database.
   </li>
-  <li><pkg>AER</pkg> and <pkg>Ecdat</pkg>
-    both contain many data sets (including time series data) from many econometrics text books
+  <li><pkg>pdfetch</pkg>
+    provides facilities for downloading economic and financial time series from public sources.
+  </li>
+  <li>Data from the <a href="http://www.quandl.com">Quandl</a> online portal
+      to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
+  </li>
+  <li><pkg>TSdbi</pkg>
+    provides a common interface to time series databases.
   </li>
 </ul>
 
@@ -716,6 +729,7 @@
   <pkg>fanplot</pkg>
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
+  <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
   <pkg>FKF</pkg>
@@ -800,6 +814,7 @@
   <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
+  <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
@@ -836,6 +851,7 @@
   <pkg>rts</pkg>
   <pkg>rucrdtw</pkg>
   <pkg>rugarch</pkg>
+  <pkg>runstats</pkg>
   <pkg>rwt</pkg>
   <pkg>sae2</pkg>
   <pkg>scoringRules</pkg>
