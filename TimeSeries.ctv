@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-04-14</version>
+<version>2019-04-27</version>
 
 <info>
 <p>
@@ -336,7 +336,6 @@
   <li><i>Local stationarity</i>:
     <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance.
     Time series costationarity determination is provided by <pkg>costat</pkg>.
-    <pkg>LSTS</pkg> has functions for locally stationary time series analysis.
     Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectra).
   </li>
   <li><i>Cointegration</i>:
@@ -429,7 +428,6 @@
     <pkg>graphicalVAR</pkg> estimates graphical VAR models.
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
-    <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
     <pkg>mgm</pkg> estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
@@ -560,9 +558,6 @@
       are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
   <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
-  </li>
-  <li>Data from the <a href="http://datamarket.com/data/">Datamarket</a> online portal
-      can be fetched using the <pkg>rdatamarket</pkg> package.
   </li>
   <li>Data from Switzerland via <a href="http://dataseries.org">dataseries.org</a>
       can be downloaded and imported using <pkg>dataseries</pkg>.
@@ -779,7 +774,6 @@
   <pkg>lomb</pkg>
   <pkg>LongMemoryTS</pkg>
   <pkg>LPStimeSeries</pkg>
-  <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
   <pkg>mafs</pkg>
@@ -811,7 +805,6 @@
   <pkg>npst</pkg>
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
-  <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>
@@ -832,7 +825,6 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
-  <pkg>rdatamarket</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>RJDemetra</pkg>
