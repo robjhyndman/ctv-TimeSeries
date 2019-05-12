@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-04-27</version>
+<version>2019-05-12</version>
 
 <info>
 <p>
@@ -304,7 +304,7 @@
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
     An alternative interface is provided by <pkg>x12</pkg>, with an associated alternative GUI provided by <pkg>x12GUI</pkg>.
   </li>
-  <li>An interface to the JDemetra+ seasonal adjustment software is provided by <pkg>RJDemetra</pkg>.
+  <li>An interface to the JDemetra+ seasonal adjustment software is provided by <pkg>RJDemetra</pkg>. <pkg>ggdemetra</pkg> provides associated ggplot2 functions.
   </li>
   <li>Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by <pkg>dsa</pkg>.
   </li>
@@ -360,6 +360,7 @@
   </li>
   <li><pkg>tseriesChaos</pkg>
     provides an R implementation of the algorithms from the <i><a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN</a> project</i>.
+    <pkg>DChaos</pkg> provides several algorithms for detecting chaotic signals inside univariate time series.
   </li>
   <li>Autoregression Markov switching models
     are provided in <pkg>MSwM</pkg>,
@@ -421,6 +422,7 @@
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
+    <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
@@ -428,6 +430,7 @@
     <pkg>graphicalVAR</pkg> estimates graphical VAR models.
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
+    <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
     <pkg>mgm</pkg> estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
@@ -684,6 +687,7 @@
   <pkg>bspec</pkg>
   <pkg>bssm</pkg>
   <pkg>bsts</pkg>
+  <pkg>BVAR</pkg>
   <pkg>CADFtest</pkg>
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
@@ -696,6 +700,7 @@
   <pkg>costat</pkg>
   <pkg>cts</pkg>
   <pkg>dataseries</pkg>
+  <pkg>DChaos</pkg>
   <pkg>dCovTS</pkg>
   <pkg>depmix</pkg>
   <pkg>depmixS4</pkg>
@@ -747,6 +752,7 @@
   <pkg>funtimes</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
+  <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
   <pkg>ggTimeSeries</pkg>
   <pkg>glarma</pkg>
@@ -805,6 +811,7 @@
   <pkg>npst</pkg>
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
+  <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>

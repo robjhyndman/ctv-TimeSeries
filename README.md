@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-04-14                                     
+**Version:**    2019-05-12                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -424,6 +424,8 @@ list, please let us know.
     GUI provided by [x12GUI](https://cran.r-project.org/package=x12GUI).
   - An interface to the JDemetra+ seasonal adjustment software is
     provided by [RJDemetra](https://cran.r-project.org/package=RJDemetra).
+    [ggdemetra](https://cran.r-project.org/package=ggdemetra) provides associated
+    ggplot2 functions.
   - Seasonal adjustment of daily time series, allowing for day-of-week,
     time-of-month, time-of-year and holiday effects is provided by
     [dsa](https://cran.r-project.org/package=dsa).
@@ -459,10 +461,8 @@ list, please let us know.
   - *Local stationarity* : [locits](https://cran.r-project.org/package=locits)
     provides a test of local stationarity and computes the localized
     autocovariance. Time series costationarity determination is provided
-    by [costat](https://cran.r-project.org/package=costat).
-    [LSTS](https://cran.r-project.org/package=LSTS) has functions for locally
-    stationary time series analysis. Locally stationary wavelet models
-    for nonstationary time series are implemented in
+    by [costat](https://cran.r-project.org/package=costat). Locally stationary
+    wavelet models for nonstationary time series are implemented in
     [wavethresh](https://cran.r-project.org/package=wavethresh) (including
     estimation, plotting, and simulation functionality for time-varying
     spectra).
@@ -502,6 +502,8 @@ list, please let us know.
   - [tseriesChaos](https://cran.r-project.org/package=tseriesChaos) provides an R
     implementation of the algorithms from the
     *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project* .
+    [DChaos](https://cran.r-project.org/package=DChaos) provides several algorithms
+    for detecting chaotic signals inside univariate time series.
   - Autoregression Markov switching models are provided in
     [MSwM](https://cran.r-project.org/package=MSwM), while dependent mixtures of
     latent Markov models are given in
@@ -584,6 +586,8 @@ list, please let us know.
     [dse](https://cran.r-project.org/package=dse). Another implementation with
     bootstrapped prediction intervals is given in
     [VAR.etp](https://cran.r-project.org/package=VAR.etp).
+    [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
+    hierarchical Bayesian VAR models.
     [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
     autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
     routines for identifying structural shocks in VAR models using sign
@@ -738,9 +742,6 @@ list, please let us know.
     IJF Tourism Forecasting Competition.
   - [BETS](https://cran.r-project.org/package=BETS) provides access to the most
     important economic time series in Brazil.
-  - Data from the [Datamarket](http://datamarket.com/data/) online
-    portal can be fetched using the
-    [rdatamarket](https://cran.r-project.org/package=rdatamarket) package.
   - Data from Switzerland via [dataseries.org](http://dataseries.org)
     can be downloaded and imported using
     [dataseries](https://cran.r-project.org/package=dataseries).
@@ -844,6 +845,7 @@ list, please let us know.
   - [bspec](https://cran.r-project.org/package=bspec)
   - [bssm](https://cran.r-project.org/package=bssm)
   - [bsts](https://cran.r-project.org/package=bsts)
+  - [BVAR](https://cran.r-project.org/package=BVAR)
   - [CADFtest](https://cran.r-project.org/package=CADFtest)
   - [carfima](https://cran.r-project.org/package=carfima)
   - [carx](https://cran.r-project.org/package=carx)
@@ -856,6 +858,7 @@ list, please let us know.
   - [costat](https://cran.r-project.org/package=costat)
   - [cts](https://cran.r-project.org/package=cts)
   - [dataseries](https://cran.r-project.org/package=dataseries)
+  - [DChaos](https://cran.r-project.org/package=DChaos)
   - [dCovTS](https://cran.r-project.org/package=dCovTS)
   - [depmix](https://cran.r-project.org/package=depmix)
   - [depmixS4](https://cran.r-project.org/package=depmixS4)
@@ -907,6 +910,7 @@ list, please let us know.
   - [funtimes](https://cran.r-project.org/package=funtimes)
   - [GAS](https://cran.r-project.org/package=GAS)
   - [gdpc](https://cran.r-project.org/package=gdpc)
+  - [ggdemetra](https://cran.r-project.org/package=ggdemetra)
   - [ggseas](https://cran.r-project.org/package=ggseas)
   - [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries)
   - [glarma](https://cran.r-project.org/package=glarma)
@@ -934,7 +938,6 @@ list, please let us know.
   - [lomb](https://cran.r-project.org/package=lomb)
   - [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS)
   - [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries)
-  - [LSTS](https://cran.r-project.org/package=LSTS)
   - [ltsa](https://cran.r-project.org/package=ltsa)
   - [lubridate](https://cran.r-project.org/package=lubridate)
   - [mafs](https://cran.r-project.org/package=mafs)
@@ -987,7 +990,6 @@ list, please let us know.
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
-  - [rdatamarket](https://cran.r-project.org/package=rdatamarket)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
