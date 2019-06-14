@@ -1128,8 +1128,6 @@ list, please let us know.
   - CRAN Task View: [Finance](Finance.html)
   - CRAN Task View: [Econometrics](Econometrics.html)
   - CRAN Task View: [Environmetrics](Environmetrics.html)
-  - [Time Series Data Library](http://data.is/TSDLdemo)
   - [TISEAN Project](http://www.mpipks-dresden.mpg.de/~tisean/)
-  - [Quandl](http://www.quandl.com/)
   - [GitHub repository for this Task
     View](https://github.com/robjhyndman/ctv-TimeSeries)
