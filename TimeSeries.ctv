@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-05-12</version>
+<version>2019-06-14</version>
 
 <info>
 <p>
@@ -211,8 +211,10 @@
     and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
+    <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm, while
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
+    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
   </li>
   <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
   </li>
@@ -422,6 +424,7 @@
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
+    <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
@@ -452,6 +455,7 @@
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
+    <pkg>mssm</pkg> also provides methods for fitting multivariate state space models.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
   <li><i>Partially-observed Markov processes</i>
@@ -479,6 +483,7 @@
   </li>
   <li><pkg>rucrdtw</pkg>
     provides R bindings for functions from the UCR Suite to enable ultrafast subsequence search for a best match under Dynamic Time Warping and Euclidean Distance.
+    <pkg>IncDTW</pkg> provides incremental calculation of dynamic time warping for streaming time series.
   </li>
   <li>Methods for plotting and forecasting collections of hierarchical and grouped time series
     are provided by <pkg>hts</pkg>.
@@ -561,6 +566,8 @@
       are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
   <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
+  </li>
+  <li><pkg>bundesbank</pkg> allows access to the time series databases of the German central bank.
   </li>
   <li>Data from Switzerland via <a href="http://dataseries.org">dataseries.org</a>
       can be downloaded and imported using <pkg>dataseries</pkg>.
@@ -687,12 +694,15 @@
   <pkg>bspec</pkg>
   <pkg>bssm</pkg>
   <pkg>bsts</pkg>
+  <pkg>bundesbank</pkg>
   <pkg>BVAR</pkg>
+  <pkg>bvartools</pkg>
   <pkg>CADFtest</pkg>
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.mv</pkg>
+  <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
@@ -769,6 +779,7 @@
   <pkg>imputePSF</pkg>
   <pkg>imputeTestbench</pkg>
   <pkg>imputeTS</pkg>
+  <pkg>IncDTW</pkg>
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>itsmr</pkg>
@@ -794,6 +805,7 @@
   <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
+  <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
@@ -832,6 +844,7 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
+  <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>RJDemetra</pkg>
@@ -839,6 +852,7 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
+  <pkg>robcp</pkg>
   <pkg>robets</pkg>
   <pkg>robfilter</pkg>
   <pkg>robustarima</pkg>
@@ -943,8 +957,8 @@
   <pkg>xts</pkg>
   <pkg>yuima</pkg>
   <pkg>ZIM</pkg>
-  <pkg>ZRA</pkg>
   <pkg priority="core">zoo</pkg>
+  <pkg>ZRA</pkg>
 </packagelist>
 
 <links>

@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-05-12                                     
+**Version:**    2019-06-14                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -284,11 +284,16 @@ list, please let us know.
     many popular changepoint methods, and
     [ecp](https://cran.r-project.org/package=ecp) does nonparametric changepoint
     detection for univariate and multivariate series.
+    [changepoint.np](https://cran.r-project.org/package=changepoint.np) implements
+    the nonparametric PELT algorithm, while
     [changepoint.mv](https://cran.r-project.org/package=changepoint.mv) detects
     changepoints in multivariate time series.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
-    series.
+    series. [robcp](https://cran.r-project.org/package=robcp) provides robust
+    change-point detection using Huberized cusum tests, and
+    [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
+    change-point detection and time series decomposition.
   - Tests for possibly non-monotonic trends are provided by
     [funtimes](https://cran.r-project.org/package=funtimes).
   - *Time series imputation* is provided by the
@@ -586,8 +591,9 @@ list, please let us know.
     [dse](https://cran.r-project.org/package=dse). Another implementation with
     bootstrapped prediction intervals is given in
     [VAR.etp](https://cran.r-project.org/package=VAR.etp).
-    [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
-    hierarchical Bayesian VAR models.
+    [bvartools](https://cran.r-project.org/package=bvartools) assists in the set-up
+    of Bayesian VAR models, while [BVAR](https://cran.r-project.org/package=BVAR)
+    provides a toolkit for hierarchical Bayesian VAR models.
     [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
     autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
     routines for identifying structural shocks in VAR models using sign
@@ -634,8 +640,10 @@ list, please let us know.
     for converting other multivariate models into state space form.
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
     unconstrained multivariate autoregressive state-space models using
-    an EM algorithm. All of these packages assume the observational and
-    state error terms are uncorrelated.
+    an EM algorithm. [mssm](https://cran.r-project.org/package=mssm) also provides
+    methods for fitting multivariate state space models. All of these
+    packages assume the observational and state error terms are
+    uncorrelated.
   - *Partially-observed Markov processes* are a generalization of the
     usual linear multivariate state space models, allowing non-Gaussian
     and nonlinear models. These are implemented in the
@@ -665,6 +673,8 @@ list, please let us know.
   - [rucrdtw](https://cran.r-project.org/package=rucrdtw) provides R bindings for
     functions from the UCR Suite to enable ultrafast subsequence search
     for a best match under Dynamic Time Warping and Euclidean Distance.
+    [IncDTW](https://cran.r-project.org/package=IncDTW) provides incremental
+    calculation of dynamic time warping for streaming time series.
   - Methods for plotting and forecasting collections of hierarchical and
     grouped time series are provided by
     [hts](https://cran.r-project.org/package=hts).
@@ -742,6 +752,8 @@ list, please let us know.
     IJF Tourism Forecasting Competition.
   - [BETS](https://cran.r-project.org/package=BETS) provides access to the most
     important economic time series in Brazil.
+  - [bundesbank](https://cran.r-project.org/package=bundesbank) allows access to the
+    time series databases of the German central bank.
   - Data from Switzerland via [dataseries.org](http://dataseries.org)
     can be downloaded and imported using
     [dataseries](https://cran.r-project.org/package=dataseries).
@@ -845,13 +857,16 @@ list, please let us know.
   - [bspec](https://cran.r-project.org/package=bspec)
   - [bssm](https://cran.r-project.org/package=bssm)
   - [bsts](https://cran.r-project.org/package=bsts)
+  - [bundesbank](https://cran.r-project.org/package=bundesbank)
   - [BVAR](https://cran.r-project.org/package=BVAR)
+  - [bvartools](https://cran.r-project.org/package=bvartools)
   - [CADFtest](https://cran.r-project.org/package=CADFtest)
   - [carfima](https://cran.r-project.org/package=carfima)
   - [carx](https://cran.r-project.org/package=carx)
   - [cents](https://cran.r-project.org/package=cents)
   - [changepoint](https://cran.r-project.org/package=changepoint)
   - [changepoint.mv](https://cran.r-project.org/package=changepoint.mv)
+  - [changepoint.np](https://cran.r-project.org/package=changepoint.np)
   - [chron](https://cran.r-project.org/package=chron)
   - [cointReg](https://cran.r-project.org/package=cointReg)
   - [CommonTrend](https://cran.r-project.org/package=CommonTrend)
@@ -927,6 +942,7 @@ list, please let us know.
   - [imputePSF](https://cran.r-project.org/package=imputePSF)
   - [imputeTestbench](https://cran.r-project.org/package=imputeTestbench)
   - [imputeTS](https://cran.r-project.org/package=imputeTS)
+  - [IncDTW](https://cran.r-project.org/package=IncDTW)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint)
   - [itsmr](https://cran.r-project.org/package=itsmr)
@@ -952,6 +968,7 @@ list, please let us know.
   - [mgm](https://cran.r-project.org/package=mgm)
   - [mlVAR](https://cran.r-project.org/package=mlVAR)
   - [mondate](https://cran.r-project.org/package=mondate)
+  - [mssm](https://cran.r-project.org/package=mssm)
   - [MSwM](https://cran.r-project.org/package=MSwM)
   - [MTS](https://cran.r-project.org/package=MTS)
   - [mtsdi](https://cran.r-project.org/package=mtsdi)
@@ -990,6 +1007,7 @@ list, please let us know.
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
+  - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
@@ -997,6 +1015,7 @@ list, please let us know.
   - [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
   - [rmaf](https://cran.r-project.org/package=rmaf)
   - [RMAWGEN](https://cran.r-project.org/package=RMAWGEN)
+  - [robcp](https://cran.r-project.org/package=robcp)
   - [robets](https://cran.r-project.org/package=robets)
   - [robfilter](https://cran.r-project.org/package=robfilter)
   - [robustarima](https://cran.r-project.org/package=robustarima)
