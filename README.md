@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-06-14                                     
+**Version:**    2019-07-14                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -53,6 +53,8 @@ list, please let us know.
     of time series. Seasonal displays are obtained using `monthplot()`
     in stats and `seasonplot` in
     [forecast](https://cran.r-project.org/package=forecast).
+    [tstools](https://cran.r-project.org/package=tstools) provides plotting tools
+    designed for official statistics.
     [Wats](https://cran.r-project.org/package=Wats) implements wrap-around time
     series graphics. Some facilities for ggplot2 graphics are provided
     in [forecast](https://cran.r-project.org/package=forecast) including
@@ -160,6 +162,9 @@ list, please let us know.
     time series with `"ti"` time stamps.
   - The package [tframe](https://cran.r-project.org/package=tframe) contains
     infrastructure for setting time frames in different formats.
+  - [timeseriesdb](https://cran.r-project.org/package=timeseriesdb) manages time
+    series for official statistics by mapping `ts` objects to PostgreSQL
+    relations.
 
 **Forecasting and Univariate Modeling**
 
@@ -692,6 +697,8 @@ list, please let us know.
   - [freqdom.fda](https://cran.r-project.org/package=freqdom.fda) provides
     implements of dynamical functional principal components for
     functional time series.
+  - [wwntests](https://cran.r-project.org/package=wwntests) provides an array of
+    white noise hypothesis tests for functional data.
 
 **Continuous time models**
 
@@ -769,6 +776,9 @@ list, please let us know.
     package.
   - [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common interface to
     time series databases.
+  - Various data sets in [tsibble](https://cran.r-project.org/package=tsibble)
+    format are provided by
+    [tsibbledata](https://cran.r-project.org/package=tsibbledata).
 
 **Miscellaneous**
 
@@ -1069,6 +1079,7 @@ list, please let us know.
   - [TimeProjection](https://cran.r-project.org/package=TimeProjection)
   - [timesboot](https://cran.r-project.org/package=timesboot)
   - [timeSeries](https://cran.r-project.org/package=timeSeries)
+  - [timeseriesdb](https://cran.r-project.org/package=timeseriesdb)
   - [timetk](https://cran.r-project.org/package=timetk)
   - [timsac](https://cran.r-project.org/package=timsac)
   - [tis](https://cran.r-project.org/package=tis)
@@ -1091,6 +1102,7 @@ list, please let us know.
   - [tsfeatures](https://cran.r-project.org/package=tsfeatures)
   - [tsfknn](https://cran.r-project.org/package=tsfknn)
   - [tsibble](https://cran.r-project.org/package=tsibble) (core)
+  - [tsibbledata](https://cran.r-project.org/package=tsibbledata)
   - [tsintermittent](https://cran.r-project.org/package=tsintermittent)
   - [TSMining](https://cran.r-project.org/package=TSMining)
   - [tsModel](https://cran.r-project.org/package=tsModel)
@@ -1098,6 +1110,7 @@ list, please let us know.
   - [tsPI](https://cran.r-project.org/package=tsPI)
   - [TSrepr](https://cran.r-project.org/package=TSrepr)
   - [TSstudio](https://cran.r-project.org/package=TSstudio)
+  - [tstools](https://cran.r-project.org/package=tstools)
   - [TSTutorial](https://cran.r-project.org/package=TSTutorial)
   - [tswge](https://cran.r-project.org/package=tswge)
   - [urca](https://cran.r-project.org/package=urca)
@@ -1114,6 +1127,7 @@ list, please let us know.
   - [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest)
   - [wktmo](https://cran.r-project.org/package=wktmo)
   - [wmtsa](https://cran.r-project.org/package=wmtsa)
+  - [wwntests](https://cran.r-project.org/package=wwntests)
   - [x12](https://cran.r-project.org/package=x12)
   - [x12GUI](https://cran.r-project.org/package=x12GUI)
   - [x13binary](https://cran.r-project.org/package=x13binary)

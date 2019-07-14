@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-06-14</version>
+<version>2019-07-14</version>
 
 <info>
 <p>
@@ -28,6 +28,7 @@
     (Partial) autocorrelation functions plots are implemented in <code>acf()</code> and <code>pacf()</code>. Alternative versions are provided by <code>Acf()</code> and <code>Pacf()</code> in <pkg>forecast</pkg>, along with a combination display using <code>tsdisplay()</code>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
+    <pkg>tstools</pkg> provides plotting tools designed for official statistics.
     <pkg>Wats</pkg> implements wrap-around time series graphics.
     Some facilities for ggplot2 graphics are provided in <pkg>forecast</pkg> including <code>autoplot()</code>, <code>ggAcf()</code>, <code>ggPacf()</code>, <code>ggseasonplot()</code> and <code>ggsubseriesplot</code>.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
@@ -62,7 +63,7 @@
     However, the time zone computations require some care and might be system-dependent.
     Internally, <code>"POSIXct"</code> objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations.
-    <pkg>timechange</pkg> allows for efficient manipulation of date-times  accounting for time zones and daylight saving times.
+    <pkg>timechange</pkg> allows for efficient manipulation of date-times accounting for time zones and daylight saving times.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
   </li>
   <li>Several packages aim to handle time-based tibbles:
@@ -119,6 +120,8 @@
   </li>
   <li>The package <pkg>tframe</pkg>
     contains infrastructure for setting time frames in different formats.
+  </li>
+  <li><pkg>timeseriesdb</pkg> manages time series for official statistics by mapping <code>ts</code> objects to PostgreSQL relations.
   </li>
 </ul>
 
@@ -498,6 +501,8 @@
   </li>
   <li><pkg>freqdom.fda</pkg> provides implements of dynamical functional principal components for functional time series.
   </li>
+  <li><pkg>wwntests</pkg> provides an array of white noise hypothesis tests for functional data.
+  </li>
 </ul>
 
 <p><strong>Continuous time models</strong></p>
@@ -586,6 +591,8 @@
   </li>
   <li><pkg>TSdbi</pkg>
     provides a common interface to time series databases.
+  </li>
+  <li>Various data sets in <pkg>tsibble</pkg> format are provided by <pkg>tsibbledata</pkg>.
   </li>
 </ul>
 
@@ -906,6 +913,7 @@
   <pkg>TimeProjection</pkg>
   <pkg>timesboot</pkg>
   <pkg>timeSeries</pkg>
+  <pkg>timeseriesdb</pkg>
   <pkg>timetk</pkg>
   <pkg>timsac</pkg>
   <pkg>tis</pkg>
@@ -928,6 +936,7 @@
   <pkg>tsfeatures</pkg>
   <pkg>tsfknn</pkg>
   <pkg priority='core'>tsibble</pkg>
+  <pkg>tsibbledata</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>TSMining</pkg>
   <pkg>tsModel</pkg>
@@ -935,6 +944,7 @@
   <pkg>tsPI</pkg>
   <pkg>TSrepr</pkg>
   <pkg>TSstudio</pkg>
+  <pkg>tstools</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tswge</pkg>
   <pkg>urca</pkg>
@@ -951,6 +961,7 @@
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
   <pkg>wmtsa</pkg>
+  <pkg>wwntests</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>x13binary</pkg>
