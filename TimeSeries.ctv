@@ -456,6 +456,7 @@
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
+    <pkg>mssm</pkg> also provides methods for fitting multivariate state space models.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
   <li><i>Partially-observed Markov processes</i>
@@ -809,6 +810,7 @@
   <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
+  <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
