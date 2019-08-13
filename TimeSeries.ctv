@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-07-14</version>
+<version>2019-08-04</version>
 
 <info>
 <p>
@@ -29,8 +29,6 @@
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
     <pkg>tstools</pkg> provides plotting tools designed for official statistics.
-    <pkg>Wats</pkg> implements wrap-around time series graphics.
-    Some facilities for ggplot2 graphics are provided in <pkg>forecast</pkg> including <code>autoplot()</code>, <code>ggAcf()</code>, <code>ggPacf()</code>, <code>ggseasonplot()</code> and <code>ggsubseriesplot</code>.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
@@ -217,7 +215,7 @@
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm, while
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
-    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
+    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests.
   </li>
   <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
   </li>
@@ -458,7 +456,6 @@
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
-    <pkg>mssm</pkg> also provides methods for fitting multivariate state space models.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
   <li><i>Partially-observed Markov processes</i>
@@ -812,7 +809,6 @@
   <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
-  <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
@@ -851,7 +847,6 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
-  <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>RJDemetra</pkg>
@@ -952,7 +947,6 @@
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
   <pkg>VARsignR</pkg>
-  <pkg>Wats</pkg>
   <pkg>WaveletComp</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
