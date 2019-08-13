@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-07-14                                     
+**Version:**    2019-08-04                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -55,13 +55,8 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast).
     [tstools](https://cran.r-project.org/package=tstools) provides plotting tools
     designed for official statistics.
-    [Wats](https://cran.r-project.org/package=Wats) implements wrap-around time
-    series graphics. Some facilities for ggplot2 graphics are provided
-    in [forecast](https://cran.r-project.org/package=forecast) including
-    `autoplot()`, `ggAcf()`, `ggPacf()`, `ggseasonplot()` and
-    `ggsubseriesplot`. [ggseas](https://cran.r-project.org/package=ggseas) provides
-    additional ggplot2 graphics for seasonally adjusted series and
-    rolling statistics.
+    [ggseas](https://cran.r-project.org/package=ggseas) provides additional ggplot2
+    graphics for seasonally adjusted series and rolling statistics.
     [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries) provides further
     visualizations including calendar heat maps, while calendar plots
     are implemented in [sugrrants](https://cran.r-project.org/package=sugrrants).
@@ -83,7 +78,7 @@ list, please let us know.
     classes are available for storing time/date information and
     computing with it. For an overview see *R Help Desk: Date and Time
     Classes in R* by Gabor Grothendieck and Thomas Petzoldt in [R
-    News 4(1)](http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf),
+    News 4(1)](http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf) ,
     29-32.
   - Classes `"yearmon"` and `"yearqtr"` from
     [zoo](https://cran.r-project.org/package=zoo) allow for more convenient
@@ -296,9 +291,7 @@ list, please let us know.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series. [robcp](https://cran.r-project.org/package=robcp) provides robust
-    change-point detection using Huberized cusum tests, and
-    [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
-    change-point detection and time series decomposition.
+    change-point detection using Huberized cusum tests.
   - Tests for possibly non-monotonic trends are provided by
     [funtimes](https://cran.r-project.org/package=funtimes).
   - *Time series imputation* is provided by the
@@ -1017,7 +1010,6 @@ list, please let us know.
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
-  - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
@@ -1118,7 +1110,6 @@ list, please let us know.
   - [VAR.etp](https://cran.r-project.org/package=VAR.etp)
   - [vars](https://cran.r-project.org/package=vars)
   - [VARsignR](https://cran.r-project.org/package=VARsignR)
-  - [Wats](https://cran.r-project.org/package=Wats)
   - [WaveletComp](https://cran.r-project.org/package=WaveletComp)
   - [wavelets](https://cran.r-project.org/package=wavelets)
   - [waveslim](https://cran.r-project.org/package=waveslim)
