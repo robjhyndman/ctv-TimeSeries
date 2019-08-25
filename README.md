@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-08-04                                     
+**Version:**    2019-08-25                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -291,7 +291,9 @@ list, please let us know.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series. [robcp](https://cran.r-project.org/package=robcp) provides robust
-    change-point detection using Huberized cusum tests.
+    change-point detection using Huberized cusum tests, and
+    [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
+    change-point detection and time series decomposition.
   - Tests for possibly non-monotonic trends are provided by
     [funtimes](https://cran.r-project.org/package=funtimes).
   - *Time series imputation* is provided by the

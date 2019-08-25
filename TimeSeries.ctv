@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-08-04</version>
+<version>2019-08-25</version>
 
 <info>
 <p>
@@ -215,7 +215,7 @@
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm, while
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
-    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests.
+    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
   </li>
   <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
   </li>
