@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-08-25</version>
+<version>2019-09-25</version>
 
 <info>
 <p>
@@ -164,6 +164,7 @@
   <li><i>ARFIMA models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
     The <pkg>arfima</pkg> package has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic regression (transfer function) models.
+    Additional methods for fitting and simulating non-stationary ARFIMA models are in <pkg>nsarfima</pkg>.
     <pkg>LongMemoryTS</pkg> provides a collection of functions for analysing long memory time series.
   </li>
   <li><i>Transfer function</i> models
@@ -826,6 +827,7 @@
   <pkg>nnfor</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
+  <pkg>nsarfima</pkg>
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>

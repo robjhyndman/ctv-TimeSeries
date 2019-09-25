@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-08-04                                     
+**Version:**    2019-09-25                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -218,7 +218,9 @@ list, please let us know.
     [fracdiff](https://cran.r-project.org/package=fracdiff) package. The
     [arfima](https://cran.r-project.org/package=arfima) package has more advanced
     and general facilities for ARFIMA and ARIMA models, including
-    dynamic regression (transfer function) models.
+    dynamic regression (transfer function) models. Additional methods
+    for fitting and simulating non-stationary ARFIMA models are in
+    [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
   - *Transfer function* models are provided by the `arimax` function in
@@ -989,6 +991,7 @@ list, please let us know.
   - [nnfor](https://cran.r-project.org/package=nnfor)
   - [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries)
   - [npst](https://cran.r-project.org/package=npst)
+  - [nsarfima](https://cran.r-project.org/package=nsarfima)
   - [NTS](https://cran.r-project.org/package=NTS)
   - [odpc](https://cran.r-project.org/package=odpc)
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
