@@ -291,7 +291,9 @@ list, please let us know.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series. [robcp](https://cran.r-project.org/package=robcp) provides robust
-    change-point detection using Huberized cusum tests.
+    change-point detection using Huberized cusum tests, and
+    [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
+    change-point detection and time series decomposition.
   - Tests for possibly non-monotonic trends are provided by
     [funtimes](https://cran.r-project.org/package=funtimes).
   - *Time series imputation* is provided by the
@@ -1010,6 +1012,7 @@ list, please let us know.
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
+  - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
