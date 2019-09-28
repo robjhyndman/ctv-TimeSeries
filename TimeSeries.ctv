@@ -26,8 +26,9 @@
   <li><i>Graphics</i>:
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
     (Partial) autocorrelation functions plots are implemented in <code>acf()</code> and <code>pacf()</code>. Alternative versions are provided by <code>Acf()</code> and <code>Pacf()</code> in <pkg>forecast</pkg>, along with a combination display using <code>tsdisplay()</code>.
-    <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
+    <pkg>feasts</pkg> provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
+    <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     <pkg>tstools</pkg> provides plotting tools designed for official statistics.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
@@ -64,12 +65,6 @@
     <pkg>timechange</pkg> allows for efficient manipulation of date-times accounting for time zones and daylight saving times.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
   </li>
-  <li>Several packages aim to handle time-based tibbles:
-    <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
-    <pkg>tibbletime</pkg> handles time aware tibbles;
-    <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
-    <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
-  </li>
   <li>Class <code>"timeDate"</code>
     is provided in the <pkg>timeDate</pkg> package (previously: fCalendar).
     It is aimed at financial time/date information and deals with time zones and daylight savings times via a new concept of "financial centers".
@@ -105,6 +100,11 @@
   <li>The package <pkg>xts</pkg>
     is based on <pkg>zoo</pkg> and provides uniform handling of R's different time-based data classes.
   </li>
+  <li>Several packages aim to handle time-based tibbles:
+    <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
+    <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
+    <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
+  </li>
   <li>Various packages implement irregular time series
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
     <code>"irts"</code> from <pkg>tseries</pkg>,
@@ -125,12 +125,13 @@
 
 <p><strong>Forecasting and Univariate Modeling</strong></p>
 <ul>
-  <li>The <pkg>forecast</pkg> package
-    provides a class and methods for univariate time series forecasts, and provides many functions implementing different forecasting models including all those in the stats package.
+  <li>The <pkg>fable</pkg> package provies tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models. It also provides many functions for computing and analysing forecasts. The time series must be in the <code>tsibble</code> format.
+  </li>
+  <li>The <pkg>forecast</pkg> package provides similar tools for <code>ts</code> objects.
   </li>
   <li><i>Exponential smoothing</i>:
     <code>HoltWinters()</code> in stats provides some basic models with partial optimization,
-    <code>ets()</code> from the <pkg>forecast</pkg> package provides a larger set of models and facilities with full optimization.
+    <code>ETS()</code> from <pkg>fable</pkg> and <code>ets()</code> from <pkg>forecast</pkg> provide a larger set of models and facilities with full optimization.
     <pkg>robets</pkg> provides a robust alternative to the <code>ets()</code> function.
     <pkg>smooth</pkg> implements some generalizations of exponential smoothing.
     The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
@@ -140,7 +141,7 @@
     forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
   </li>
   <li>The theta method
-    is implemented in the <code>thetaf</code> function from the <pkg>forecast</pkg> package.
+    is implemented in the <code>THETA()</code> function from <pkg>fable</pkg> and <code>thetaf()</code> function from <pkg>forecast</pkg>.
     An alternative and extended implementation is provided in <pkg>forecTheta</pkg>.
   </li>
   <li><i>Autoregressive models</i>:
@@ -148,7 +149,7 @@
   </li>
   <li><i>ARIMA models</i>:
     <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models.
-    It is enhanced in the <pkg>forecast</pkg> package via the function <code>Arima()</code> along with <code>auto.arima()</code> for automatic order selection.
+    It is enhanced in the <pkg>fable</pkg> package via the <code>ARIMA()</code> function which allows for automatic modelling. Similar functionality is provided in  the <pkg>forecast</pkg> package via the <code>auto.arima()</code> function.
     <code>arma()</code> in the <pkg>tseries</pkg> package provides different algorithms for ARMA and subset ARMA models.
     Other estimation methods including the innovations algorithm are provided by <pkg>itsmr</pkg>.
     <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
@@ -538,13 +539,13 @@
       <i>Time series analysis with applications in R</i>
       are in the <pkg>TSA</pkg> package.
   </li>
-  <li>Data from Hyndman and Athanasopoulos (2013)
-      <i>Forecasting: principles and practice</i>
-      are in the <pkg>fpp</pkg> package.
-  </li>
   <li>Data from Hyndman and Athanasopoulos (2018, 2nd ed)
       <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp2</pkg> package.
+  </li>
+  <li>Data from Hyndman and Athanasopoulos (2020, 3rd ed)
+      <i>Forecasting: principles and practice</i>
+      are in the <pkg>fpp3</pkg> package.
   </li>
   <li>Data from Hyndman, Koehler, Ord and Snyder (2008)
       <i>Forecasting with exponential smoothing</i>
@@ -743,9 +744,11 @@
   <pkg>EvalEst</pkg>
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
+  <pkg priority="core">fable</pkg>
   <pkg>factorstochvol</pkg>
   <pkg>fame</pkg>
   <pkg>fanplot</pkg>
+  <pkg priority="core">feasts</pkg>
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
@@ -755,12 +758,12 @@
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
-  <pkg priority="core">forecast</pkg>
+  <pkg>forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
   <pkg>forecTheta</pkg>
   <pkg>fpp2</pkg>
-  <pkg>fpp</pkg>
+  <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
   <pkg>fractalrock</pkg>
@@ -909,7 +912,6 @@
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
-  <pkg>tibbletime</pkg>
   <pkg>Tides</pkg>
   <pkg>tiger</pkg>
   <pkg>timechange</pkg>
@@ -974,6 +976,7 @@
   <pkg priority="core">zoo</pkg>
   <pkg>ZRA</pkg>
 </packagelist>
+
 
 <links>
     <view>Finance</view>
