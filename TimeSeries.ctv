@@ -325,6 +325,9 @@
   <li><pkg>deseasonalize</pkg>:
     Optimal deseasonalization for geophysical time series using AR fitting.
   </li>
+  <li><pkg>sazedR</pkg>:
+    Method to estimate the season length of a seasonal time series.
+  </li>
 </ul>
 
 
