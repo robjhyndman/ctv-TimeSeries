@@ -46,15 +46,17 @@ list, please let us know.
     implemented in `acf()` and `pacf()`. Alternative versions are
     provided by `Acf()` and `Pacf()` in
     [forecast](https://cran.r-project.org/package=forecast), along with a
-    combination display using `tsdisplay()`.
+    combination display using `tsdisplay()`. Seasonal displays are
+    obtained using `monthplot()` in stats and `seasonplot` in
+    [forecast](https://cran.r-project.org/package=forecast).
+    [feasts](https://cran.r-project.org/package=feasts) provides various time series
+    graphics for tsibble objects including time plots, season plots,
+    subseries plots, ACF and PACF plots, and some combination displays.
     [SDD](https://cran.r-project.org/package=SDD) provides more general serial
     dependence diagrams, while [dCovTS](https://cran.r-project.org/package=dCovTS)
     computes and plots the distance covariance and correlation functions
-    of time series. Seasonal displays are obtained using `monthplot()`
-    in stats and `seasonplot` in
-    [forecast](https://cran.r-project.org/package=forecast).
-    [tstools](https://cran.r-project.org/package=tstools) provides plotting tools
-    designed for official statistics.
+    of time series. [tstools](https://cran.r-project.org/package=tstools) provides
+    plotting tools designed for official statistics.
     [ggseas](https://cran.r-project.org/package=ggseas) provides additional ggplot2
     graphics for seasonally adjusted series and rolling statistics.
     [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries) provides further
@@ -102,14 +104,6 @@ list, please let us know.
     manipulation of date-times accounting for time zones and daylight
     saving times. [wktmo](https://cran.r-project.org/package=wktmo) converts weekly
     data to monthly data in several different ways.
-  - Several packages aim to handle time-based tibbles:
-    [tsibble](https://cran.r-project.org/package=tsibble) provides tidy temporal
-    data frames and associated tools;
-    [tibbletime](https://cran.r-project.org/package=tibbletime) handles time aware
-    tibbles; [timetk](https://cran.r-project.org/package=timetk) contains tools for
-    working with and coercing between time-based tibbles, xts, zoo and
-    ts objects. [tsbox](https://cran.r-project.org/package=tsbox) is another toolkit
-    for converting between various time series data classes.
   - Class `"timeDate"` is provided in the
     [timeDate](https://cran.r-project.org/package=timeDate) package (previously:
     fCalendar). It is aimed at financial time/date information and deals
@@ -145,6 +139,13 @@ list, please let us know.
   - The package [xts](https://cran.r-project.org/package=xts) is based on
     [zoo](https://cran.r-project.org/package=zoo) and provides uniform handling of
     R's different time-based data classes.
+  - Several packages aim to handle time-based tibbles:
+    [tsibble](https://cran.r-project.org/package=tsibble) provides tidy temporal
+    data frames and associated tools;
+    [timetk](https://cran.r-project.org/package=timetk) contains tools for working
+    with and coercing between time-based tibbles, xts, zoo and ts
+    objects. [tsbox](https://cran.r-project.org/package=tsbox) is another toolkit
+    for converting between various time series data classes.
   - Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
@@ -163,14 +164,18 @@ list, please let us know.
 
 **Forecasting and Univariate Modeling**
 
-  - The [forecast](https://cran.r-project.org/package=forecast) package provides a
-    class and methods for univariate time series forecasts, and provides
-    many functions implementing different forecasting models including
-    all those in the stats package.
+  - The [fable](https://cran.r-project.org/package=fable) package provies tools for
+    fitting univariate time series models to many series simultaneously
+    including ETS, ARIMA, TSLM and other models. It also provides many
+    functions for computing and analysing forecasts. The time series
+    must be in the `tsibble` format.
+  - The [forecast](https://cran.r-project.org/package=forecast) package provides
+    similar tools for `ts` objects.
   - *Exponential smoothing* : `HoltWinters()` in stats provides some
-    basic models with partial optimization, `ets()` from the
-    [forecast](https://cran.r-project.org/package=forecast) package provides a
-    larger set of models and facilities with full optimization.
+    basic models with partial optimization, `ETS()` from
+    [fable](https://cran.r-project.org/package=fable) and `ets()` from
+    [forecast](https://cran.r-project.org/package=forecast) provide a larger set of
+    models and facilities with full optimization.
     [robets](https://cran.r-project.org/package=robets) provides a robust
     alternative to the `ets()` function.
     [smooth](https://cran.r-project.org/package=smooth) implements some
@@ -183,20 +188,23 @@ list, please let us know.
     based on an additive model where nonlinear trends are fit with
     yearly and weekly seasonality, plus holidays. It works best with
     daily data.
-  - The theta method is implemented in the `thetaf` function from the
-    [forecast](https://cran.r-project.org/package=forecast) package. An alternative
-    and extended implementation is provided in
+  - The theta method is implemented in the `THETA()` function from
+    [fable](https://cran.r-project.org/package=fable) and `thetaf()` function from
+    [forecast](https://cran.r-project.org/package=forecast). An alternative and
+    extended implementation is provided in
     [forecTheta](https://cran.r-project.org/package=forecTheta).
   - *Autoregressive models* : `ar()` in stats (with model selection) and
     [FitAR](https://cran.r-project.org/package=FitAR) for subset AR models.
   - *ARIMA models* : `arima()` in stats is the basic function for ARIMA,
     SARIMA, ARIMAX, and subset ARIMA models. It is enhanced in the
-    [forecast](https://cran.r-project.org/package=forecast) package via the function
-    `Arima()` along with `auto.arima()` for automatic order selection.
-    `arma()` in the [tseries](https://cran.r-project.org/package=tseries) package
-    provides different algorithms for ARMA and subset ARMA models. Other
-    estimation methods including the innovations algorithm are provided
-    by [itsmr](https://cran.r-project.org/package=itsmr).
+    [fable](https://cran.r-project.org/package=fable) package via the `ARIMA()`
+    function which allows for automatic modelling. Similar functionality
+    is provided in the [forecast](https://cran.r-project.org/package=forecast)
+    package via the `auto.arima()` function. `arma()` in the
+    [tseries](https://cran.r-project.org/package=tseries) package provides different
+    algorithms for ARMA and subset ARMA models. Other estimation methods
+    including the innovations algorithm are provided by
+    [itsmr](https://cran.r-project.org/package=itsmr).
     [FitARMA](https://cran.r-project.org/package=FitARMA) implements a fast MLE
     algorithm for ARMA models. Package
     [gsarima](https://cran.r-project.org/package=gsarima) contains functionality for
@@ -730,11 +738,12 @@ list, please let us know.
   - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
     applications in R* are in the [TSA](https://cran.r-project.org/package=TSA)
     package.
-  - Data from Hyndman and Athanasopoulos (2013) *Forecasting: principles
-    and practice* are in the [fpp](https://cran.r-project.org/package=fpp) package.
   - Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
     principles and practice* are in the
     [fpp2](https://cran.r-project.org/package=fpp2) package.
+  - Data from Hyndman and Athanasopoulos (2020, 3rd ed) *Forecasting:
+    principles and practice* are in the
+    [fpp3](https://cran.r-project.org/package=fpp3) package.
   - Data from Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with
     exponential smoothing* are in the
     [expsmooth](https://cran.r-project.org/package=expsmooth) package.
@@ -906,9 +915,11 @@ list, please let us know.
   - [EvalEst](https://cran.r-project.org/package=EvalEst)
   - [events](https://cran.r-project.org/package=events)
   - [expsmooth](https://cran.r-project.org/package=expsmooth)
+  - [fable](https://cran.r-project.org/package=fable) (core)
   - [factorstochvol](https://cran.r-project.org/package=factorstochvol)
   - [fame](https://cran.r-project.org/package=fame)
   - [fanplot](https://cran.r-project.org/package=fanplot)
+  - [feasts](https://cran.r-project.org/package=feasts) (core)
   - [FeedbackTS](https://cran.r-project.org/package=FeedbackTS)
   - [fGarch](https://cran.r-project.org/package=fGarch)
   - [FinTS](https://cran.r-project.org/package=FinTS)
@@ -918,12 +929,12 @@ list, please let us know.
   - [fma](https://cran.r-project.org/package=fma)
   - [fNonlinear](https://cran.r-project.org/package=fNonlinear)
   - [ForeCA](https://cran.r-project.org/package=ForeCA)
-  - [forecast](https://cran.r-project.org/package=forecast) (core)
+  - [forecast](https://cran.r-project.org/package=forecast)
   - [ForecastComb](https://cran.r-project.org/package=ForecastComb)
   - [forecastHybrid](https://cran.r-project.org/package=forecastHybrid)
   - [forecTheta](https://cran.r-project.org/package=forecTheta)
-  - [fpp](https://cran.r-project.org/package=fpp)
   - [fpp2](https://cran.r-project.org/package=fpp2)
+  - [fpp3](https://cran.r-project.org/package=fpp3)
   - [fracdiff](https://cran.r-project.org/package=fracdiff)
   - [fractal](https://cran.r-project.org/package=fractal)
   - [fractalrock](https://cran.r-project.org/package=fractalrock)
@@ -1072,7 +1083,6 @@ list, please let us know.
   - [tempdisagg](https://cran.r-project.org/package=tempdisagg)
   - [tframe](https://cran.r-project.org/package=tframe)
   - [thief](https://cran.r-project.org/package=thief)
-  - [tibbletime](https://cran.r-project.org/package=tibbletime)
   - [Tides](https://cran.r-project.org/package=Tides)
   - [tiger](https://cran.r-project.org/package=tiger)
   - [timechange](https://cran.r-project.org/package=timechange)
