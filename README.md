@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-08-25                                     
+**Version:**    2019-09-28                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -218,7 +218,9 @@ list, please let us know.
     [fracdiff](https://cran.r-project.org/package=fracdiff) package. The
     [arfima](https://cran.r-project.org/package=arfima) package has more advanced
     and general facilities for ARFIMA and ARIMA models, including
-    dynamic regression (transfer function) models.
+    dynamic regression (transfer function) models. Additional methods
+    for fitting and simulating non-stationary ARFIMA models are in
+    [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
   - *Transfer function* models are provided by the `arimax` function in
@@ -447,6 +449,8 @@ list, please let us know.
     especially for climatology.
   - [deseasonalize](https://cran.r-project.org/package=deseasonalize): Optimal
     deseasonalization for geophysical time series using AR fitting.
+  - [sazedR](https://cran.r-project.org/package=sazedR): Method to estimate the
+    period of a seasonal time series.
 
 **Stationarity, Unit Roots, and Cointegration**
 
@@ -989,6 +993,7 @@ list, please let us know.
   - [nnfor](https://cran.r-project.org/package=nnfor)
   - [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries)
   - [npst](https://cran.r-project.org/package=npst)
+  - [nsarfima](https://cran.r-project.org/package=nsarfima)
   - [NTS](https://cran.r-project.org/package=NTS)
   - [odpc](https://cran.r-project.org/package=odpc)
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
@@ -1012,6 +1017,7 @@ list, please let us know.
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
+  - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
@@ -1034,6 +1040,7 @@ list, please let us know.
   - [runstats](https://cran.r-project.org/package=runstats)
   - [rwt](https://cran.r-project.org/package=rwt)
   - [sae2](https://cran.r-project.org/package=sae2)
+  - [sazedR](https://cran.r-project.org/package=sazedR)
   - [scoringRules](https://cran.r-project.org/package=scoringRules)
   - [SDD](https://cran.r-project.org/package=SDD)
   - [sde](https://cran.r-project.org/package=sde)
