@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-09-28</version>
+<version>2019-09-29</version>
 
 <info>
 <p>
@@ -184,7 +184,7 @@
   </li>
   <li>Non-Gaussian time series
     can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
-    Conditional Auto-Regression models  using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
+    Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
   </li>
   <li><i>GARCH models</i>:
@@ -227,14 +227,14 @@
     <pkg>imputeTestbench</pkg> provides tools for testing and comparing imputation methods.
     <pkg>mtsdi</pkg> implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
   </li>
-  <li>Forecasts can be combined
-    using <pkg>ForecastComb</pkg> which supports many forecast combination methods including simple, geometric and regression-based combinations.
+  <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
+    <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
     <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Forecast evaluation
-    is provided in the <code>accuracy()</code> function from <pkg>forecast</pkg>.
+    is provided in the <code>accuracy()</code> function from the <pkg>fable</pkg> and <pkg>forecast</pkg> packages.
     Distributional forecast evaluation using scoring rules is available in <pkg>scoringRules</pkg>.
     The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>. A multivariate version of the Diebold-Mariano test is provided by <pkg>multDM</pkg>.
   </li>
@@ -269,7 +269,7 @@
   </li>
   <li><i>Harmonic regression</i>
     using Fourier terms is implemented in <pkg>HarmonicRegression</pkg>.
-    The <pkg>forecast</pkg> package also provides some simple harmonic regression facilities via the <code>fourier</code> function.
+    The <pkg>fable</pkg> and <pkg>forecast</pkg> packages also provide some simple harmonic regression facilities via the <code>fourier</code> function.
   </li>
 </ul>
 
@@ -475,7 +475,7 @@
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
 	<li><i>Time series features</i>
-	  are computed from a list or matrix of time series using <pkg>tsfeatures</pkg>. Many built-in feature functions are included, and users can add their own.
+	  are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own.
 	</li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.

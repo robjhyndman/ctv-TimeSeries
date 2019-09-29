@@ -13,8 +13,8 @@ htmlfile <- paste0(ctv, ".html")
 mdfile <- "README.md"
 
 ## load packages
-suppressMessages(library(XML)) # called by ctv
-suppressMessages(library(ctv))
+suppressMessages(base::library(XML)) # called by ctv
+suppressMessages(base::library(ctv))
 
 r <- getOption("repos") # set CRAN mirror
 r["CRAN"] <- "https://cloud.r-project.org"

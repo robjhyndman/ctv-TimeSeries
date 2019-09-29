@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-09-28                                     
+**Version:**    2019-09-29                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -315,10 +315,11 @@ list, please let us know.
     [mtsdi](https://cran.r-project.org/package=mtsdi) implements an EM algorithm for
     imputing missing values in multivariate normal time series,
     accounting for spatial and temporal correlations.
-  - Forecasts can be combined using
-    [ForecastComb](https://cran.r-project.org/package=ForecastComb) which supports
-    many forecast combination methods including simple, geometric and
-    regression-based combinations.
+  - Forecasts can be combined in the
+    [fable](https://cran.r-project.org/package=fable) package using simple linear
+    expressions. [ForecastComb](https://cran.r-project.org/package=ForecastComb)
+    supports many forecast combination methods including simple,
+    geometric and regression-based combinations.
     [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) provides
     functions for ensemble forecasts, combining approaches from the
     [forecast](https://cran.r-project.org/package=forecast) package.
@@ -327,8 +328,9 @@ list, please let us know.
     [mafs](https://cran.r-project.org/package=mafs) fits several forecast models and
     selects the best one according to an error metric.
   - Forecast evaluation is provided in the `accuracy()` function from
-    [forecast](https://cran.r-project.org/package=forecast). Distributional forecast
-    evaluation using scoring rules is available in
+    the [fable](https://cran.r-project.org/package=fable) and
+    [forecast](https://cran.r-project.org/package=forecast) packages. Distributional
+    forecast evaluation using scoring rules is available in
     [scoringRules](https://cran.r-project.org/package=scoringRules). The
     Diebold-Mariano test for comparing the forecast accuracy of two
     models is implemented in the `dm.test()` function in
@@ -387,7 +389,8 @@ list, please let us know.
     [mvcwt](https://cran.r-project.org/package=mvcwt).
   - *Harmonic regression* using Fourier terms is implemented in
     [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression). The
-    [forecast](https://cran.r-project.org/package=forecast) package also provides
+    [fable](https://cran.r-project.org/package=fable) and
+    [forecast](https://cran.r-project.org/package=forecast) packages also provide
     some simple harmonic regression facilities via the `fourier`
     function.
 
@@ -665,10 +668,12 @@ list, please let us know.
 
 **Analysis of large groups of time series**
 
-  - *Time series features* are computed from a list or matrix of time
-    series using [tsfeatures](https://cran.r-project.org/package=tsfeatures). Many
-    built-in feature functions are included, and users can add their
-    own.
+  - *Time series features* are computed in
+    [feasts](https://cran.r-project.org/package=feasts) for time series in `tsibble`
+    format. They are computed using
+    [tsfeatures](https://cran.r-project.org/package=tsfeatures) for a list or matrix
+    of time series in `ts` format. In both packages, many built-in
+    feature functions are included, and users can add their own.
   - *Time series clustering* is implemented in
     [TSclust](https://cran.r-project.org/package=TSclust),
     [dtwclust](https://cran.r-project.org/package=dtwclust),
