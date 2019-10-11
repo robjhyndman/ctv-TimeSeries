@@ -171,12 +171,6 @@
   <li><i>Transfer function</i> models
     are provided by the <code>arimax</code> function in the <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.
   </li>
-  <li>Outlier detection
-    following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
-    The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
-    <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
-    <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
-  </li>
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
@@ -208,6 +202,12 @@
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
     Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.
+  </li>
+  <li>Outlier detection
+    following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
+    The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
+    <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
+    <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
   </li>
   <li><i>Change point detection</i>
     is provided in <pkg>strucchange</pkg> (using linear regression models),
