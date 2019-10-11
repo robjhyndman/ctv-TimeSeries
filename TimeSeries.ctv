@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-09-29</version>
+<version>2019-10-11</version>
 
 <info>
 <p>
@@ -240,6 +240,7 @@
   </li>
   <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
   <li>Multi-step-ahead direct forecasting with several machine learning approaches are provided in <pkg>forecastML</pkg>.
+  </li>
   <li><i>Miscellaneous</i>:
     <pkg>ltsa</pkg> contains methods for linear time series analysis,
     <pkg>timsac</pkg> for time series analysis and control.

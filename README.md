@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-09-29                                     
+**Version:**    2019-10-11                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -234,15 +234,6 @@ list, please let us know.
   - *Transfer function* models are provided by the `arimax` function in
     the [TSA](https://cran.r-project.org/package=TSA) package, and the `arfima`
     function in the [arfima](https://cran.r-project.org/package=arfima) package.
-  - Outlier detection following the Chen-Liu approach is provided by
-    [tsoutliers](https://cran.r-project.org/package=tsoutliers). The `tsoutliers`
-    and `tsclean` functions in the
-    [forecast](https://cran.r-project.org/package=forecast) package provide some
-    simple heuristic methods for identifying and correcting outliers.
-    [anomalize](https://cran.r-project.org/package=anomalize) provides some
-    additional outlier detection methods in a tidy data framework.
-    [otsad](https://cran.r-project.org/package=otsad) implements a set of online
-    anomaly detectors for time series.
   - *Structural models* are implemented in `StructTS()` in stats, and in
     [stsm](https://cran.r-project.org/package=stsm) and
     [stsm.class](https://cran.r-project.org/package=stsm.class).
@@ -286,6 +277,15 @@ list, please let us know.
     package. Additional tests are given by
     [portes](https://cran.r-project.org/package=portes) and
     [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest).
+  - Outlier detection following the Chen-Liu approach is provided by
+    [tsoutliers](https://cran.r-project.org/package=tsoutliers). The `tsoutliers`
+    and `tsclean` functions in the
+    [forecast](https://cran.r-project.org/package=forecast) package provide some
+    simple heuristic methods for identifying and correcting outliers.
+    [anomalize](https://cran.r-project.org/package=anomalize) provides some
+    additional outlier detection methods in a tidy data framework.
+    [otsad](https://cran.r-project.org/package=otsad) implements a set of online
+    anomaly detectors for time series.
   - *Change point detection* is provided in
     [strucchange](https://cran.r-project.org/package=strucchange) (using linear
     regression models), and in [trend](https://cran.r-project.org/package=trend)
@@ -341,6 +341,9 @@ list, please let us know.
     [sweep](https://cran.r-project.org/package=sweep), converting objects produced
     in [forecast](https://cran.r-project.org/package=forecast) to "tidy" data
     frames.
+  - Multi-step-ahead direct forecasting with several machine learning
+    approaches are provided in
+    [forecastML](https://cran.r-project.org/package=forecastML).
   - *Miscellaneous* : [ltsa](https://cran.r-project.org/package=ltsa) contains
     methods for linear time series analysis,
     [timsac](https://cran.r-project.org/package=timsac) for time series analysis and
@@ -599,7 +602,9 @@ list, please let us know.
     [BigVAR](https://cran.r-project.org/package=BigVAR) estimates VAR and VARX
     models with structured lasso penalties and
     [svars](https://cran.r-project.org/package=svars) implements data-driven
-    structural VARs. Automated VAR models and networks are available in
+    structural VARs. Shrinkage estimation methods for VARs are
+    implemented in [VARshrink](https://cran.r-project.org/package=VARshrink).
+    Automated VAR models and networks are available in
     [autovarCore](https://cran.r-project.org/package=autovarCore). More elaborate
     models are provided in package [vars](https://cran.r-project.org/package=vars),
     [tsDyn](https://cran.r-project.org/package=tsDyn), `estVARXls()` in
@@ -934,9 +939,10 @@ list, please let us know.
   - [fma](https://cran.r-project.org/package=fma)
   - [fNonlinear](https://cran.r-project.org/package=fNonlinear)
   - [ForeCA](https://cran.r-project.org/package=ForeCA)
-  - [forecast](https://cran.r-project.org/package=forecast)
+  - [forecast](https://cran.r-project.org/package=forecast) (core)
   - [ForecastComb](https://cran.r-project.org/package=ForecastComb)
   - [forecastHybrid](https://cran.r-project.org/package=forecastHybrid)
+  - [forecastML](https://cran.r-project.org/package=forecastML)
   - [forecTheta](https://cran.r-project.org/package=forecTheta)
   - [fpp2](https://cran.r-project.org/package=fpp2)
   - [fpp3](https://cran.r-project.org/package=fpp3)
@@ -1133,6 +1139,7 @@ list, please let us know.
   - [uroot](https://cran.r-project.org/package=uroot)
   - [VAR.etp](https://cran.r-project.org/package=VAR.etp)
   - [vars](https://cran.r-project.org/package=vars)
+  - [VARshrink](https://cran.r-project.org/package=VARshrink)
   - [VARsignR](https://cran.r-project.org/package=VARsignR)
   - [WaveletComp](https://cran.r-project.org/package=WaveletComp)
   - [wavelets](https://cran.r-project.org/package=wavelets)
