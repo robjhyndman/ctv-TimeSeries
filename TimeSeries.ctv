@@ -428,6 +428,7 @@
     <pkg>sparsevar</pkg> allows estimation of sparse VAR and VECM models,
     <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
     while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties and  <pkg>svars</pkg> implements data-driven structural VARs.
+    Shrinkage estimation methods for VARs are implemented in <pkg>VARshrink</pkg>.
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
@@ -959,6 +960,7 @@
   <pkg>uroot</pkg>
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
+  <pkg>VARshrink</pkg>
   <pkg>VARsignR</pkg>
   <pkg>WaveletComp</pkg>
   <pkg>wavelets</pkg>
