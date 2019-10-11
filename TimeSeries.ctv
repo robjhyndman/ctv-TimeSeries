@@ -219,7 +219,7 @@
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
   </li>
-  <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
+   <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
   </li>
   <li><i>Time series imputation</i>
     is provided by the <pkg>imputeTS</pkg> package.
@@ -476,9 +476,9 @@
 
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
-	<li><i>Time series features</i>
-	  are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own.
-	</li>
+  <li><i>Time series features</i>
+    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own.
+  </li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
   </li>
@@ -512,7 +512,7 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
-	<li><i>Continuous time autoregressive modelling</i>
+  <li><i>Continuous time autoregressive modelling</i>
     is provided in <pkg>cts</pkg>, while <pkg>carfima</pkg> allows for continuous-time ARFIMA models.
   </li>
   <li><pkg>Sim.DiffProc</pkg>
@@ -760,7 +760,7 @@
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
-  <pkg>forecast</pkg>
+  <pkg priority="core">forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
   <pkg>forecastML</pkg>
@@ -944,7 +944,7 @@
   <pkg>tsfa</pkg>
   <pkg>tsfeatures</pkg>
   <pkg>tsfknn</pkg>
-  <pkg priority='core'>tsibble</pkg>
+  <pkg priority="core">tsibble</pkg>
   <pkg>tsibbledata</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>TSMining</pkg>
