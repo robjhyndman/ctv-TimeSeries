@@ -239,6 +239,7 @@
     The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>. A multivariate version of the Diebold-Mariano test is provided by <pkg>multDM</pkg>.
   </li>
   <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
+  <li>Multi-step-ahead direct forecasting with several machine learning approaches are provided in <pkg>forecastML</pkg>.
   <li><i>Miscellaneous</i>:
     <pkg>ltsa</pkg> contains methods for linear time series analysis,
     <pkg>timsac</pkg> for time series analysis and control.
@@ -761,6 +762,7 @@
   <pkg>forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
+  <pkg>forecastML</pkg>
   <pkg>forecTheta</pkg>
   <pkg>fpp2</pkg>
   <pkg>fpp3</pkg>
