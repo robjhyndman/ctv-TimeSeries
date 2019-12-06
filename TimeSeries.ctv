@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-10-11</version>
+<version>2019-12-02</version>
 
 <info>
 <p>
@@ -20,7 +20,6 @@
     <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
     <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
     <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
-    Fast rolling and expanding window regressions are provided by <pkg>rollRegres</pkg>.
     <pkg>runstats</pkg> provides fast computational methods for some running sample statistics.
   </li>
   <li><i>Graphics</i>:
@@ -464,7 +463,6 @@
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
-    <pkg>mssm</pkg> also provides methods for fitting multivariate state space models.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
   <li><i>Partially-observed Markov processes</i>
@@ -487,9 +485,6 @@
     provides distance measures for time series data.
   </li>
   <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
-  <li><pkg>jmotif</pkg>
-    implements tools based on time series symbolic discretization for finding motifs in time series and facilitates interpretable time series classification.
-  </li>
   <li><pkg>rucrdtw</pkg>
     provides R bindings for functions from the UCR Suite to enable ultrafast subsequence search for a best match under Dynamic Time Warping and Euclidean Distance.
     <pkg>IncDTW</pkg> provides incremental calculation of dynamic time warping for streaming time series.
@@ -513,8 +508,7 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
-  <li><i>Continuous time autoregressive modelling</i>
-    is provided in <pkg>cts</pkg>, while <pkg>carfima</pkg> allows for continuous-time ARFIMA models.
+  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
   </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
@@ -721,7 +715,6 @@
   <pkg>cointReg</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
-  <pkg>cts</pkg>
   <pkg>dataseries</pkg>
   <pkg>DChaos</pkg>
   <pkg>dCovTS</pkg>
@@ -799,7 +792,6 @@
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>itsmr</pkg>
-  <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
@@ -821,7 +813,6 @@
   <pkg>mgm</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
-  <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
@@ -874,7 +865,6 @@
   <pkg>robfilter</pkg>
   <pkg>robustarima</pkg>
   <pkg>roll</pkg>
-  <pkg>rollRegres</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
   <pkg>RTransferEntropy</pkg>
