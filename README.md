@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-10-11                                     
+**Version:**    2019-12-02                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -36,9 +36,7 @@ list, please let us know.
     windows. [tbrf](https://cran.r-project.org/package=tbrf) provides rolling
     functions based on date and time windows instead of n-lagged
     observations. [roll](https://cran.r-project.org/package=roll) provides parallel
-    functions for computing rolling statistics. Fast rolling and
-    expanding window regressions are provided by
-    [rollRegres](https://cran.r-project.org/package=rollRegres).
+    functions for computing rolling statistics.
     [runstats](https://cran.r-project.org/package=runstats) provides fast
     computational methods for some running sample statistics.
   - *Graphics* : Time series plots are obtained with `plot()` applied to
@@ -660,10 +658,8 @@ list, please let us know.
     for converting other multivariate models into state space form.
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
     unconstrained multivariate autoregressive state-space models using
-    an EM algorithm. [mssm](https://cran.r-project.org/package=mssm) also provides
-    methods for fitting multivariate state space models. All of these
-    packages assume the observational and state error terms are
-    uncorrelated.
+    an EM algorithm. All of these packages assume the observational and
+    state error terms are uncorrelated.
   - *Partially-observed Markov processes* are a generalization of the
     usual linear multivariate state space models, allowing non-Gaussian
     and nonlinear models. These are implemented in the
@@ -689,9 +685,6 @@ list, please let us know.
   - [TSrepr](https://cran.r-project.org/package=TSrepr) includes methods for
     representing time series using dimension reduction and feature
     extraction.
-  - [jmotif](https://cran.r-project.org/package=jmotif) implements tools based on
-    time series symbolic discretization for finding motifs in time
-    series and facilitates interpretable time series classification.
   - [rucrdtw](https://cran.r-project.org/package=rucrdtw) provides R bindings for
     functions from the UCR Suite to enable ultrafast subsequence search
     for a best match under Dynamic Time Warping and Euclidean Distance.
@@ -719,9 +712,7 @@ list, please let us know.
 
 **Continuous time models**
 
-  - *Continuous time autoregressive modelling* is provided in
-    [cts](https://cran.r-project.org/package=cts), while
-    [carfima](https://cran.r-project.org/package=carfima) allows for continuous-time
+  - [carfima](https://cran.r-project.org/package=carfima) allows for continuous-time
     ARFIMA models.
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc) simulates and
     models stochastic differential equations.
@@ -899,7 +890,6 @@ list, please let us know.
   - [cointReg](https://cran.r-project.org/package=cointReg)
   - [CommonTrend](https://cran.r-project.org/package=CommonTrend)
   - [costat](https://cran.r-project.org/package=costat)
-  - [cts](https://cran.r-project.org/package=cts)
   - [dataseries](https://cran.r-project.org/package=dataseries)
   - [DChaos](https://cran.r-project.org/package=DChaos)
   - [dCovTS](https://cran.r-project.org/package=dCovTS)
@@ -977,7 +967,6 @@ list, please let us know.
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint)
   - [itsmr](https://cran.r-project.org/package=itsmr)
-  - [jmotif](https://cran.r-project.org/package=jmotif)
   - [KFAS](https://cran.r-project.org/package=KFAS)
   - [KFKSDS](https://cran.r-project.org/package=KFKSDS)
   - [kza](https://cran.r-project.org/package=kza)
@@ -999,7 +988,6 @@ list, please let us know.
   - [mgm](https://cran.r-project.org/package=mgm)
   - [mlVAR](https://cran.r-project.org/package=mlVAR)
   - [mondate](https://cran.r-project.org/package=mondate)
-  - [mssm](https://cran.r-project.org/package=mssm)
   - [MSwM](https://cran.r-project.org/package=MSwM)
   - [MTS](https://cran.r-project.org/package=MTS)
   - [mtsdi](https://cran.r-project.org/package=mtsdi)
@@ -1052,7 +1040,6 @@ list, please let us know.
   - [robfilter](https://cran.r-project.org/package=robfilter)
   - [robustarima](https://cran.r-project.org/package=robustarima)
   - [roll](https://cran.r-project.org/package=roll)
-  - [rollRegres](https://cran.r-project.org/package=rollRegres)
   - [RSEIS](https://cran.r-project.org/package=RSEIS)
   - [Rssa](https://cran.r-project.org/package=Rssa)
   - [RTransferEntropy](https://cran.r-project.org/package=RTransferEntropy)
