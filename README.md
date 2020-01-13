@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2019-12-02                                     
+**Version:**    2020-01-14                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -60,9 +60,11 @@ list, please let us know.
     [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries) provides further
     visualizations including calendar heat maps, while calendar plots
     are implemented in [sugrrants](https://cran.r-project.org/package=sugrrants).
-    [dygraphs](https://cran.r-project.org/package=dygraphs) provides an interface to
-    the Dygraphs interactive time series charting library.
-    [TSstudio](https://cran.r-project.org/package=TSstudio) provides some
+    [gravitas](https://cran.r-project.org/package=gravitas) allows for visualizing
+    probability distributions conditional on bivariate temporal
+    granularities. [dygraphs](https://cran.r-project.org/package=dygraphs) provides
+    an interface to the Dygraphs interactive time series charting
+    library. [TSstudio](https://cran.r-project.org/package=TSstudio) provides some
     interactive visualization tools for time series.
     [ZRA](https://cran.r-project.org/package=ZRA) plots forecast objects from the
     [forecast](https://cran.r-project.org/package=forecast) package using dygraphs.
@@ -217,8 +219,8 @@ list, please let us know.
   - *Periodic ARMA models* : [pear](https://cran.r-project.org/package=pear) and
     [partsm](https://cran.r-project.org/package=partsm) for periodic autoregressive
     time series models, and [perARMA](https://cran.r-project.org/package=perARMA)
-    for periodic ARMA modelling and other procedures for periodic time
-    series analysis.
+    and [pcts](https://cran.r-project.org/package=pcts) for periodic ARMA modelling
+    and other procedures for periodic time series analysis.
   - *ARFIMA models* : Some facilities for fractional differenced ARFIMA
     models are provided in the
     [fracdiff](https://cran.r-project.org/package=fracdiff) package. The
@@ -386,8 +388,7 @@ list, please let us know.
     [brainwaver](https://cran.r-project.org/package=brainwaver),
     [rwt](https://cran.r-project.org/package=rwt),
     [waveslim](https://cran.r-project.org/package=waveslim),
-    [wavethresh](https://cran.r-project.org/package=wavethresh) and
-    [mvcwt](https://cran.r-project.org/package=mvcwt).
+    [wavethresh](https://cran.r-project.org/package=wavethresh).
   - *Harmonic regression* using Fourier terms is implemented in
     [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression). The
     [fable](https://cran.r-project.org/package=fable) and
@@ -407,7 +408,8 @@ list, please let us know.
     twice smoothing method. [mFilter](https://cran.r-project.org/package=mFilter)
     implements several filters for smoothing and extracting trend and
     cyclical components including Hodrick-Prescott and Butterworth
-    filters.
+    filters. [smoots](https://cran.r-project.org/package=smoots) provides
+    nonparametric estimation of the time trend and its derivatives.
   - *Decomposition* : Seasonal decomposition is discussed below.
     Autoregressive-based decomposition is provided by
     [ArDec](https://cran.r-project.org/package=ArDec).
@@ -601,10 +603,9 @@ list, please let us know.
     models with structured lasso penalties and
     [svars](https://cran.r-project.org/package=svars) implements data-driven
     structural VARs. Shrinkage estimation methods for VARs are
-    implemented in [VARshrink](https://cran.r-project.org/package=VARshrink).
-    Automated VAR models and networks are available in
-    [autovarCore](https://cran.r-project.org/package=autovarCore). More elaborate
-    models are provided in package [vars](https://cran.r-project.org/package=vars),
+    implemented in [VARshrink](https://cran.r-project.org/package=VARshrink). More
+    elaborate models are provided in package
+    [vars](https://cran.r-project.org/package=vars),
     [tsDyn](https://cran.r-project.org/package=tsDyn), `estVARXls()` in
     [dse](https://cran.r-project.org/package=dse). Another implementation with
     bootstrapped prediction intervals is given in
@@ -712,8 +713,6 @@ list, please let us know.
 
 **Continuous time models**
 
-  - [carfima](https://cran.r-project.org/package=carfima) allows for continuous-time
-    ARFIMA models.
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc) simulates and
     models stochastic differential equations.
   - Simulation and inference for stochastic differential equations is
@@ -861,7 +860,6 @@ list, please let us know.
   - [arfima](https://cran.r-project.org/package=arfima)
   - [ASSA](https://cran.r-project.org/package=ASSA)
   - [astsa](https://cran.r-project.org/package=astsa)
-  - [autovarCore](https://cran.r-project.org/package=autovarCore)
   - [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
   - [bentcableAR](https://cran.r-project.org/package=bentcableAR)
   - [BETS](https://cran.r-project.org/package=BETS)
@@ -880,7 +878,6 @@ list, please let us know.
   - [BVAR](https://cran.r-project.org/package=BVAR)
   - [bvartools](https://cran.r-project.org/package=bvartools)
   - [CADFtest](https://cran.r-project.org/package=CADFtest)
-  - [carfima](https://cran.r-project.org/package=carfima)
   - [carx](https://cran.r-project.org/package=carx)
   - [cents](https://cran.r-project.org/package=cents)
   - [changepoint](https://cran.r-project.org/package=changepoint)
@@ -954,6 +951,7 @@ list, please let us know.
   - [gmvarkit](https://cran.r-project.org/package=gmvarkit)
   - [GNAR](https://cran.r-project.org/package=GNAR)
   - [graphicalVAR](https://cran.r-project.org/package=graphicalVAR)
+  - [gravitas](https://cran.r-project.org/package=gravitas)
   - [gsarima](https://cran.r-project.org/package=gsarima)
   - [gtop](https://cran.r-project.org/package=gtop)
   - [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression)
@@ -994,7 +992,6 @@ list, please let us know.
   - [multDM](https://cran.r-project.org/package=multDM)
   - [MultipleBubbles](https://cran.r-project.org/package=MultipleBubbles)
   - [multitaper](https://cran.r-project.org/package=multitaper)
-  - [mvcwt](https://cran.r-project.org/package=mvcwt)
   - [mvLSW](https://cran.r-project.org/package=mvLSW)
   - [nardl](https://cran.r-project.org/package=nardl)
   - [nets](https://cran.r-project.org/package=nets)
@@ -1015,6 +1012,7 @@ list, please let us know.
   - [pastecs](https://cran.r-project.org/package=pastecs)
   - [PCA4TS](https://cran.r-project.org/package=PCA4TS)
   - [pcdpca](https://cran.r-project.org/package=pcdpca)
+  - [pcts](https://cran.r-project.org/package=pcts)
   - [pdc](https://cran.r-project.org/package=pdc)
   - [pdfetch](https://cran.r-project.org/package=pdfetch)
   - [pear](https://cran.r-project.org/package=pear)
@@ -1060,6 +1058,7 @@ list, please let us know.
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc)
   - [sleekts](https://cran.r-project.org/package=sleekts)
   - [smooth](https://cran.r-project.org/package=smooth)
+  - [smoots](https://cran.r-project.org/package=smoots)
   - [sparsevar](https://cran.r-project.org/package=sparsevar)
   - [spectral](https://cran.r-project.org/package=spectral)
   - [spectral.methods](https://cran.r-project.org/package=spectral.methods)

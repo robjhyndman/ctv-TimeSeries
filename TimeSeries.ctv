@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-12</version>
+<version>2020-01-14</version>
 
 <info>
 <p>
@@ -32,6 +32,7 @@
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
+    <pkg>gravitas</pkg> allows for visualizing probability distributions conditional on bivariate temporal granularities.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
@@ -159,7 +160,7 @@
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
   </li>
   <li><i>Periodic ARMA models</i>:
-    <pkg>pear</pkg> and <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
+    <pkg>pear</pkg> and <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
   </li>
   <li><i>ARFIMA models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
@@ -282,6 +283,7 @@
     <code>smooth()</code> from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
     <pkg>sleekts</pkg> computes the 4253H twice smoothing method.
     <pkg>mFilter</pkg> implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
+    <pkg>smoots</pkg> provides nonparametric estimation of the time trend and its derivatives.
   </li>
   <li><i>Decomposition</i>:
     Seasonal decomposition is discussed below.
@@ -774,6 +776,7 @@
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
   <pkg>graphicalVAR</pkg>
+  <pkg>gravitas</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
@@ -834,6 +837,7 @@
   <pkg>pastecs</pkg>
   <pkg>PCA4TS</pkg>
   <pkg>pcdpca</pkg>
+  <pkg>pcts</pkg>
   <pkg>pdc</pkg>
   <pkg>pdfetch</pkg>
   <pkg>pear</pkg>
@@ -879,6 +883,7 @@
   <pkg>Sim.DiffProc</pkg>
   <pkg>sleekts</pkg>
   <pkg>smooth</pkg>
+  <pkg>smoots</pkg>
   <pkg>sparsevar</pkg>
   <pkg>spectral.methods</pkg>
   <pkg>spectral</pkg>
