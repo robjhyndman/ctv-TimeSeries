@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-12-02</version>
+<version>2020-01-12</version>
 
 <info>
 <p>
@@ -266,7 +266,7 @@
     Multivariate, locally stationary wavelet analysis tools are provided by <pkg>mvLSW</pkg>.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Wavelet scalogram tools are contained in <pkg>wavScalogram</pkg>.
-    Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg> and <pkg>mvcwt</pkg>.
+    Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg>.
   </li>
   <li><i>Harmonic regression</i>
     using Fourier terms is implemented in <pkg>HarmonicRegression</pkg>.
@@ -429,7 +429,6 @@
     <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
     while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties and  <pkg>svars</pkg> implements data-driven structural VARs.
     Shrinkage estimation methods for VARs are implemented in <pkg>VARshrink</pkg>.
-    Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
@@ -508,8 +507,6 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
-  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
-  </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
   </li>
@@ -686,7 +683,6 @@
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
-  <pkg>autovarCore</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
@@ -705,7 +701,6 @@
   <pkg>BVAR</pkg>
   <pkg>bvartools</pkg>
   <pkg>CADFtest</pkg>
-  <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.mv</pkg>
@@ -819,7 +814,6 @@
   <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
-  <pkg>mvcwt</pkg>
   <pkg>mvLSW</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
