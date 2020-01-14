@@ -38,7 +38,9 @@ list, please let us know.
     observations. [roll](https://cran.r-project.org/package=roll) provides parallel
     functions for computing rolling statistics.
     [runstats](https://cran.r-project.org/package=runstats) provides fast
-    computational methods for some running sample statistics.
+    computational methods for some running sample statistics. For
+    [data.table](https://cran.r-project.org/package=data.table), `froll()` can be
+    used for high-performance rolling statistics.
   - *Graphics* : Time series plots are obtained with `plot()` applied to
     `ts` objects. (Partial) autocorrelation functions plots are
     implemented in `acf()` and `pacf()`. Alternative versions are
@@ -146,6 +148,9 @@ list, please let us know.
     with and coercing between time-based tibbles, xts, zoo and ts
     objects. [tsbox](https://cran.r-project.org/package=tsbox) is another toolkit
     for converting between various time series data classes.
+  - Some manipulation tools for time series are available in
+    [data.table](https://cran.r-project.org/package=data.table) including `shift()`
+    for lead/lag operations.
   - Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
@@ -887,6 +892,7 @@ list, please let us know.
   - [cointReg](https://cran.r-project.org/package=cointReg)
   - [CommonTrend](https://cran.r-project.org/package=CommonTrend)
   - [costat](https://cran.r-project.org/package=costat)
+  - [data.table](https://cran.r-project.org/package=data.table)
   - [dataseries](https://cran.r-project.org/package=dataseries)
   - [DChaos](https://cran.r-project.org/package=DChaos)
   - [dCovTS](https://cran.r-project.org/package=dCovTS)

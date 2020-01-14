@@ -19,8 +19,9 @@
     Moving averages are computed by <code>ma</code> from <pkg>forecast</pkg>, and <code>rollmean</code> from <pkg>zoo</pkg>. The latter also provides a general function <code>rollapply</code>, along with other specific rolling statistics functions.
     <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
     <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
-    <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
+    <pkg>roll</pkg> provides parallel functions for computing rolling statistics.
     <pkg>runstats</pkg> provides fast computational methods for some running sample statistics.
+    For <pkg>data.table</pkg>, <code>froll()</code> can be used for high-performance rolling statistics.
   </li>
   <li><i>Graphics</i>:
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
@@ -104,6 +105,8 @@
     <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
     <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
     <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
+  </li>
+  <li>Some manipulation tools for time series are available in <pkg>data.table</pkg> including <code>shift()</code> for lead/lag operations.
   </li>
   <li>Various packages implement irregular time series
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
@@ -712,6 +715,7 @@
   <pkg>cointReg</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
+  <pkg>data.table</pkg>
   <pkg>dataseries</pkg>
   <pkg>DChaos</pkg>
   <pkg>dCovTS</pkg>
