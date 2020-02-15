@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-14</version>
+<version>2020-01-22</version>
 
 <info>
 <p>
@@ -233,7 +233,6 @@
   <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
-    <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Forecast evaluation
@@ -657,9 +656,6 @@
   <li><pkg>surveillance</pkg>:
     Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.
   </li>
-  <li><pkg>TED</pkg>:
-    Turbulence time series Event Detection and classification.
-  </li>
   <li><pkg>Tides</pkg>:
     Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
   </li>
@@ -833,7 +829,6 @@
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
-  <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
@@ -905,7 +900,6 @@
   <pkg>sym.arma</pkg>
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
-  <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
