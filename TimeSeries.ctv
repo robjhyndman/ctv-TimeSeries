@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-22</version>
+<version>2020-02-15</version>
 
 <info>
 <p>
@@ -17,9 +17,11 @@
   </li>
   <li><i>Rolling statistics</i>:
     Moving averages are computed by <code>ma</code> from <pkg>forecast</pkg>, and <code>rollmean</code> from <pkg>zoo</pkg>. The latter also provides a general function <code>rollapply</code>, along with other specific rolling statistics functions.
+    <pkg>slider</pkg> calculates a diverse and comprehensive set of type-stable running functions for any R data types.
     <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
     <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
     <pkg>roll</pkg> provides parallel functions for computing rolling statistics.
+    <pkg>runner</pkg> provides tools for running any R function in rolling windows or date windows.
     <pkg>runstats</pkg> provides fast computational methods for some running sample statistics.
     For <pkg>data.table</pkg>, <code>froll()</code> can be used for high-performance rolling statistics.
   </li>
@@ -183,6 +185,7 @@
     can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
+    Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
   </li>
   <li><i>GARCH models</i>:
     <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models.
@@ -466,6 +469,7 @@
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
+    <pkg>mbsts</pkg> provides tools for multivariate Bayesian structural time series models.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
   <li><i>Partially-observed Markov processes</i>
@@ -501,7 +505,9 @@
 
 <p><strong>Functional time series</strong></p>
 <ul>
-  <li>Tools for visualizing, modeling, forecasting and analysis of functional time series are implemented in <pkg>ftsa</pkg>.
+  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>.
+  </li>
+  <li><pkg>fdaACF</pkg> estimates the autocorrelation function for functional time series.
   </li>
   <li><pkg>freqdom.fda</pkg> provides implements of dynamical functional principal components for functional time series.
   </li>
@@ -741,6 +747,7 @@
   <pkg>factorstochvol</pkg>
   <pkg>fame</pkg>
   <pkg>fanplot</pkg>
+  <pkg>fdaACF</pkg>
   <pkg priority="core">feasts</pkg>
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
@@ -804,6 +811,7 @@
   <pkg>mar1s</pkg>
   <pkg>mAr</pkg>
   <pkg>MARSS</pkg>
+  <pkg>mbsts</pkg>
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
@@ -820,6 +828,7 @@
   <pkg>mvLSW</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
+  <pkg>NGSSEML</pkg>
   <pkg>NlinTS</pkg>
   <pkg>nlts</pkg>
   <pkg>nnfor</pkg>
@@ -868,6 +877,7 @@
   <pkg>rts</pkg>
   <pkg>rucrdtw</pkg>
   <pkg>rugarch</pkg>
+  <pkg>runner</pkg>
   <pkg>runstats</pkg>
   <pkg>rwt</pkg>
   <pkg>sae2</pkg>
@@ -881,6 +891,7 @@
   <pkg>seasonalview</pkg>
   <pkg>Sim.DiffProc</pkg>
   <pkg>sleekts</pkg>
+  <pkg>slider</pkg>
   <pkg>smooth</pkg>
   <pkg>smoots</pkg>
   <pkg>sparsevar</pkg>

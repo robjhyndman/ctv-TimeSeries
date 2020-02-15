@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-01-14                                     
+**Version:**    2020-02-15                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -30,13 +30,18 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast), and `rollmean` from
     [zoo](https://cran.r-project.org/package=zoo). The latter also provides a
     general function `rollapply`, along with other specific rolling
-    statistics functions. [tsibble](https://cran.r-project.org/package=tsibble)
-    provides `slide()` for rolling statistics, `tile()` for
-    non-overlapping sliding windows, and `stretch()` for expanding
-    windows. [tbrf](https://cran.r-project.org/package=tbrf) provides rolling
-    functions based on date and time windows instead of n-lagged
-    observations. [roll](https://cran.r-project.org/package=roll) provides parallel
-    functions for computing rolling statistics.
+    statistics functions. [slider](https://cran.r-project.org/package=slider)
+    calculates a diverse and comprehensive set of type-stable running
+    functions for any R data types.
+    [tsibble](https://cran.r-project.org/package=tsibble) provides `slide()` for
+    rolling statistics, `tile()` for non-overlapping sliding windows,
+    and `stretch()` for expanding windows.
+    [tbrf](https://cran.r-project.org/package=tbrf) provides rolling functions based
+    on date and time windows instead of n-lagged observations.
+    [roll](https://cran.r-project.org/package=roll) provides parallel functions for
+    computing rolling statistics.
+    [runner](https://cran.r-project.org/package=runner) provides tools for running
+    any R function in rolling windows or date windows.
     [runstats](https://cran.r-project.org/package=runstats) provides fast
     computational methods for some running sample statistics. For
     [data.table](https://cran.r-project.org/package=data.table), `froll()` can be
@@ -253,7 +258,9 @@ list, please let us know.
     Auto-Regression models using Monte Carlo Likelihood methods are
     implemented in [mclcar](https://cran.r-project.org/package=mclcar). Efficient
     Bayesian inference for nonlinear and non-Gaussian state space models
-    is provided in [bssm](https://cran.r-project.org/package=bssm).
+    is provided in [bssm](https://cran.r-project.org/package=bssm). Non-Gaussian
+    state space models with exact marginal likelihood are given by
+    [NGSSEML](https://cran.r-project.org/package=NGSSEML).
   - *GARCH models* : `garch()` from
     [tseries](https://cran.r-project.org/package=tseries) fits basic GARCH models.
     Many variations on GARCH models are provided by
@@ -328,8 +335,6 @@ list, please let us know.
     [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) provides
     functions for ensemble forecasts, combining approaches from the
     [forecast](https://cran.r-project.org/package=forecast) package.
-    [opera](https://cran.r-project.org/package=opera) has facilities for online
-    predictions based on combinations of forecasts provided by the user.
     [mafs](https://cran.r-project.org/package=mafs) fits several forecast models and
     selects the best one according to an error metric.
   - Forecast evaluation is provided in the `accuracy()` function from
@@ -664,8 +669,10 @@ list, please let us know.
     for converting other multivariate models into state space form.
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
     unconstrained multivariate autoregressive state-space models using
-    an EM algorithm. All of these packages assume the observational and
-    state error terms are uncorrelated.
+    an EM algorithm. [mbsts](https://cran.r-project.org/package=mbsts) provides
+    tools for multivariate Bayesian structural time series models. All
+    of these packages assume the observational and state error terms are
+    uncorrelated.
   - *Partially-observed Markov processes* are a generalization of the
     usual linear multivariate state space models, allowing non-Gaussian
     and nonlinear models. These are implemented in the
@@ -707,9 +714,11 @@ list, please let us know.
 
 **Functional time series**
 
-  - Tools for visualizing, modeling, forecasting and analysis of
+  - Tools for visualizing, modeling, forecasting and analysing
     functional time series are implemented in
     [ftsa](https://cran.r-project.org/package=ftsa).
+  - [fdaACF](https://cran.r-project.org/package=fdaACF) estimates the
+    autocorrelation function for functional time series.
   - [freqdom.fda](https://cran.r-project.org/package=freqdom.fda) provides
     implements of dynamical functional principal components for
     functional time series.
@@ -838,8 +847,6 @@ list, please let us know.
     modelling.
   - [surveillance](https://cran.r-project.org/package=surveillance): Temporal and
     spatio-temporal modeling and monitoring of epidemic phenomena.
-  - [TED](https://cran.r-project.org/package=TED): Turbulence time series Event
-    Detection and classification.
   - [Tides](https://cran.r-project.org/package=Tides): Functions to calculate
     characteristics of quasi periodic time series, e.g. observed
     estuarine water levels.
@@ -922,6 +929,7 @@ list, please let us know.
   - [factorstochvol](https://cran.r-project.org/package=factorstochvol)
   - [fame](https://cran.r-project.org/package=fame)
   - [fanplot](https://cran.r-project.org/package=fanplot)
+  - [fdaACF](https://cran.r-project.org/package=fdaACF)
   - [feasts](https://cran.r-project.org/package=feasts) (core)
   - [FeedbackTS](https://cran.r-project.org/package=FeedbackTS)
   - [fGarch](https://cran.r-project.org/package=fGarch)
@@ -985,6 +993,7 @@ list, please let us know.
   - [mAr](https://cran.r-project.org/package=mAr)
   - [mar1s](https://cran.r-project.org/package=mar1s)
   - [MARSS](https://cran.r-project.org/package=MARSS)
+  - [mbsts](https://cran.r-project.org/package=mbsts)
   - [mclcar](https://cran.r-project.org/package=mclcar)
   - [Mcomp](https://cran.r-project.org/package=Mcomp)
   - [meboot](https://cran.r-project.org/package=meboot)
@@ -1001,6 +1010,7 @@ list, please let us know.
   - [mvLSW](https://cran.r-project.org/package=mvLSW)
   - [nardl](https://cran.r-project.org/package=nardl)
   - [nets](https://cran.r-project.org/package=nets)
+  - [NGSSEML](https://cran.r-project.org/package=NGSSEML)
   - [NlinTS](https://cran.r-project.org/package=NlinTS)
   - [nlts](https://cran.r-project.org/package=nlts)
   - [nnfor](https://cran.r-project.org/package=nnfor)
@@ -1010,7 +1020,6 @@ list, please let us know.
   - [NTS](https://cran.r-project.org/package=NTS)
   - [odpc](https://cran.r-project.org/package=odpc)
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
-  - [opera](https://cran.r-project.org/package=opera)
   - [orderedLasso](https://cran.r-project.org/package=orderedLasso)
   - [otsad](https://cran.r-project.org/package=otsad)
   - [paleoTS](https://cran.r-project.org/package=paleoTS)
@@ -1050,6 +1059,7 @@ list, please let us know.
   - [rts](https://cran.r-project.org/package=rts)
   - [rucrdtw](https://cran.r-project.org/package=rucrdtw)
   - [rugarch](https://cran.r-project.org/package=rugarch)
+  - [runner](https://cran.r-project.org/package=runner)
   - [runstats](https://cran.r-project.org/package=runstats)
   - [rwt](https://cran.r-project.org/package=rwt)
   - [sae2](https://cran.r-project.org/package=sae2)
@@ -1063,6 +1073,7 @@ list, please let us know.
   - [seasonalview](https://cran.r-project.org/package=seasonalview)
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc)
   - [sleekts](https://cran.r-project.org/package=sleekts)
+  - [slider](https://cran.r-project.org/package=slider)
   - [smooth](https://cran.r-project.org/package=smooth)
   - [smoots](https://cran.r-project.org/package=smoots)
   - [sparsevar](https://cran.r-project.org/package=sparsevar)
@@ -1082,7 +1093,6 @@ list, please let us know.
   - [sym.arma](https://cran.r-project.org/package=sym.arma)
   - [tbrf](https://cran.r-project.org/package=tbrf)
   - [Tcomp](https://cran.r-project.org/package=Tcomp)
-  - [TED](https://cran.r-project.org/package=TED)
   - [tempdisagg](https://cran.r-project.org/package=tempdisagg)
   - [tframe](https://cran.r-project.org/package=tframe)
   - [thief](https://cran.r-project.org/package=thief)
