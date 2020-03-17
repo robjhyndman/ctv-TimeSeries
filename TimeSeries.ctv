@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-02-15</version>
+<version>2020-03-09</version>
 
 <info>
 <p>
@@ -182,7 +182,7 @@
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
   </li>
   <li>Non-Gaussian time series
-    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
+    can be handled with GLARMA state space models via <pkg>glarma</pkg>.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
     Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
@@ -197,7 +197,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
+    are handled in the <pkg>acp</pkg> package.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -257,7 +257,6 @@
   <li><i>Spectral density estimation</i>
     is provided by <code>spectrum()</code> in the stats package, including the periodogram, smoothed periodogram and AR estimates.
     Bayesian spectral inference is provided by <pkg>bspec</pkg> and <pkg>regspec</pkg>.
-    <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
     The Lomb-Scargle periodogram for unevenly sampled time series is computed by <pkg>lomb</pkg>.
     <pkg>spectral</pkg> uses Fourier and Hilbert transforms for spectral filtering.
     <pkg>psd</pkg> produces adaptive, sine-multitaper spectral density estimates.
@@ -420,9 +419,6 @@
   </li>
   <li><i>Time-varying parameter</i> models
     can be fitted using the <pkg>tpr</pkg> package.
-  </li>
-  <li><pkg>orderedLasso</pkg>
-    fits a sparse linear model with an order constraint on the coefficients in order to handle lagged regressors where the coefficients decay as the lag increases.
   </li>
 </ul>
 
@@ -653,9 +649,6 @@
   <li><pkg>rts</pkg>:
     Raster time series analysis (e.g., time series of satellite images).
   </li>
-  <li><pkg>sae2</pkg>:
-    Time series models for small area estimation.
-  </li>
   <li><pkg>spTimer</pkg>:
     Spatio-temporal Bayesian modelling.
   </li>
@@ -773,7 +766,6 @@
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
-  <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
@@ -838,7 +830,6 @@
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
-  <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
@@ -857,7 +848,6 @@
   <pkg>PSF</pkg>
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
-  <pkg>quantspec</pkg>
   <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
@@ -880,7 +870,6 @@
   <pkg>runner</pkg>
   <pkg>runstats</pkg>
   <pkg>rwt</pkg>
-  <pkg>sae2</pkg>
   <pkg>sazedR</pkg>
   <pkg>scoringRules</pkg>
   <pkg>SDD</pkg>
@@ -930,7 +919,6 @@
   <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
-  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
