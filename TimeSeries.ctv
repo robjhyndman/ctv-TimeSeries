@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-03-09</version>
+<version>2020-03-18</version>
 
 <info>
 <p>
@@ -197,7 +197,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>acp</pkg> package.
+    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -232,6 +232,8 @@
     Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.
     <pkg>imputeTestbench</pkg> provides tools for testing and comparing imputation methods.
     <pkg>mtsdi</pkg> implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
+  </li>
+  <li>The <pkg>seer</pkg> package implements a framework for feature-based forecast model selection.
   </li>
   <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
@@ -878,6 +880,7 @@
   <pkg>season</pkg>
   <pkg>seasonal</pkg>
   <pkg>seasonalview</pkg>
+  <pkg>seer</pkg>
   <pkg>Sim.DiffProc</pkg>
   <pkg>sleekts</pkg>
   <pkg>slider</pkg>
@@ -919,6 +922,7 @@
   <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
+  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
