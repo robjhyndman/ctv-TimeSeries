@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-02-15                                     
+**Version:**    2020-03-18                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -252,9 +252,7 @@ list, please let us know.
     state space models. Bayesian structural time series models are
     implemented in [bsts](https://cran.r-project.org/package=bsts)
   - Non-Gaussian time series can be handled with GLARMA state space
-    models via [glarma](https://cran.r-project.org/package=glarma), and using
-    Generalized Autoregressive Score models in the
-    [GAS](https://cran.r-project.org/package=GAS) package. Conditional
+    models via [glarma](https://cran.r-project.org/package=glarma). Conditional
     Auto-Regression models using Monte Carlo Likelihood methods are
     implemented in [mclcar](https://cran.r-project.org/package=mclcar). Efficient
     Bayesian inference for nonlinear and non-Gaussian state space models
@@ -327,6 +325,8 @@ list, please let us know.
     [mtsdi](https://cran.r-project.org/package=mtsdi) implements an EM algorithm for
     imputing missing values in multivariate normal time series,
     accounting for spatial and temporal correlations.
+  - The [seer](https://cran.r-project.org/package=seer) package implements a
+    framework for feature-based forecast model selection.
   - Forecasts can be combined in the
     [fable](https://cran.r-project.org/package=fable) package using simple linear
     expressions. [ForecastComb](https://cran.r-project.org/package=ForecastComb)
@@ -365,11 +365,9 @@ list, please let us know.
     stats package, including the periodogram, smoothed periodogram and
     AR estimates. Bayesian spectral inference is provided by
     [bspec](https://cran.r-project.org/package=bspec) and
-    [regspec](https://cran.r-project.org/package=regspec).
-    [quantspec](https://cran.r-project.org/package=quantspec) includes methods to
-    compute and plot Laplace periodograms for univariate time series.
-    The Lomb-Scargle periodogram for unevenly sampled time series is
-    computed by [lomb](https://cran.r-project.org/package=lomb).
+    [regspec](https://cran.r-project.org/package=regspec). The Lomb-Scargle
+    periodogram for unevenly sampled time series is computed by
+    [lomb](https://cran.r-project.org/package=lomb).
     [spectral](https://cran.r-project.org/package=spectral) uses Fourier and Hilbert
     transforms for spectral filtering. [psd](https://cran.r-project.org/package=psd)
     produces adaptive, sine-multitaper spectral density estimates.
@@ -589,10 +587,6 @@ list, please let us know.
     symmetric distribution.
   - *Time-varying parameter* models can be fitted using the
     [tpr](https://cran.r-project.org/package=tpr) package.
-  - [orderedLasso](https://cran.r-project.org/package=orderedLasso) fits a sparse
-    linear model with an order constraint on the coefficients in order
-    to handle lagged regressors where the coefficients decay as the lag
-    increases.
 
 **Multivariate Time Series Models**
 
@@ -841,8 +835,6 @@ list, please let us know.
     tools.
   - [rts](https://cran.r-project.org/package=rts): Raster time series analysis
     (e.g., time series of satellite images).
-  - [sae2](https://cran.r-project.org/package=sae2): Time series models for small
-    area estimation.
   - [spTimer](https://cran.r-project.org/package=spTimer): Spatio-temporal Bayesian
     modelling.
   - [surveillance](https://cran.r-project.org/package=surveillance): Temporal and
@@ -955,7 +947,6 @@ list, please let us know.
   - [fts](https://cran.r-project.org/package=fts)
   - [ftsa](https://cran.r-project.org/package=ftsa)
   - [funtimes](https://cran.r-project.org/package=funtimes)
-  - [GAS](https://cran.r-project.org/package=GAS)
   - [gdpc](https://cran.r-project.org/package=gdpc)
   - [ggdemetra](https://cran.r-project.org/package=ggdemetra)
   - [ggseas](https://cran.r-project.org/package=ggseas)
@@ -1020,7 +1011,6 @@ list, please let us know.
   - [NTS](https://cran.r-project.org/package=NTS)
   - [odpc](https://cran.r-project.org/package=odpc)
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
-  - [orderedLasso](https://cran.r-project.org/package=orderedLasso)
   - [otsad](https://cran.r-project.org/package=otsad)
   - [paleoTS](https://cran.r-project.org/package=paleoTS)
   - [partsm](https://cran.r-project.org/package=partsm)
@@ -1039,7 +1029,6 @@ list, please let us know.
   - [PSF](https://cran.r-project.org/package=PSF)
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
-  - [quantspec](https://cran.r-project.org/package=quantspec)
   - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
@@ -1062,7 +1051,6 @@ list, please let us know.
   - [runner](https://cran.r-project.org/package=runner)
   - [runstats](https://cran.r-project.org/package=runstats)
   - [rwt](https://cran.r-project.org/package=rwt)
-  - [sae2](https://cran.r-project.org/package=sae2)
   - [sazedR](https://cran.r-project.org/package=sazedR)
   - [scoringRules](https://cran.r-project.org/package=scoringRules)
   - [SDD](https://cran.r-project.org/package=SDD)
@@ -1071,6 +1059,7 @@ list, please let us know.
   - [season](https://cran.r-project.org/package=season)
   - [seasonal](https://cran.r-project.org/package=seasonal)
   - [seasonalview](https://cran.r-project.org/package=seasonalview)
+  - [seer](https://cran.r-project.org/package=seer)
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc)
   - [sleekts](https://cran.r-project.org/package=sleekts)
   - [slider](https://cran.r-project.org/package=slider)
