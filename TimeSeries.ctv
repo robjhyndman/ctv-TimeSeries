@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-03-18</version>
+<version>2020-05-17</version>
 
 <info>
 <p>
@@ -174,7 +174,7 @@
     <pkg>LongMemoryTS</pkg> provides a collection of functions for analysing long memory time series.
   </li>
   <li><i>Transfer function</i> models
-    are provided by the <code>arimax</code> function in the <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.
+    are provided by the the <code>arfima</code> function in the <pkg>arfima</pkg> package.
   </li>
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
@@ -207,7 +207,7 @@
   </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
-    Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.
+    Additional tests are given by <pkg>WeightedPortTest</pkg>.
   </li>
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
@@ -392,7 +392,6 @@
   </li>
   <li>Fractal time series modeling and analysis
     is provided by <pkg>fractal</pkg>.
-    <pkg>fractalrock</pkg> generates fractal time series with non-normal returns distributions.
   </li>
 </ul>
 
@@ -537,10 +536,6 @@
 
 <p><strong>Time Series Data</strong></p>
 <ul>
-  <li>Data from Cryer and Chan (2010, 2nd ed)
-      <i>Time series analysis with applications in R</i>
-      are in the <pkg>TSA</pkg> package.
-  </li>
   <li>Data from Hyndman and Athanasopoulos (2018, 2nd ed)
       <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp2</pkg> package.
@@ -762,7 +757,6 @@
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
-  <pkg>fractalrock</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
   <pkg>fts</pkg>
@@ -844,7 +838,6 @@
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
-  <pkg>portes</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
   <pkg>PSF</pkg>
@@ -919,7 +912,6 @@
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
-  <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
