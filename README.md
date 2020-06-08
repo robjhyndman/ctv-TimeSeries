@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-05-17                                     
+**Version:**    2020-06-08                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -155,7 +155,12 @@ list, please let us know.
     for converting between various time series data classes.
   - Some manipulation tools for time series are available in
     [data.table](https://cran.r-project.org/package=data.table) including `shift()`
-    for lead/lag operations.
+    for lead/lag operations. Further basic time series functionalities
+    are offered by [DTSg](https://cran.r-project.org/package=DTSg) which is based on
+    [data.table](https://cran.r-project.org/package=data.table).
+  - [collapse](https://cran.r-project.org/package=collapse) provides fast
+    computation of several time series functions such as lead/lag
+    operations and ACF/PACF/CCF estimation.
   - Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
@@ -206,7 +211,7 @@ list, please let us know.
   - *Autoregressive models* : `ar()` in stats (with model selection) and
     [FitAR](https://cran.r-project.org/package=FitAR) for subset AR models.
   - *ARIMA models* : `arima()` in stats is the basic function for ARIMA,
-    SARIMA, ARIMAX, and subset ARIMA models. It is enhanced in the
+    SARIMA, RegARIMA, and subset ARIMA models. It is enhanced in the
     [fable](https://cran.r-project.org/package=fable) package via the `ARIMA()`
     function which allows for automatic modelling. Similar functionality
     is provided in the [forecast](https://cran.r-project.org/package=forecast)
@@ -220,8 +225,10 @@ list, please let us know.
     [gsarima](https://cran.r-project.org/package=gsarima) contains functionality for
     Generalized SARIMA time series simulation. Robust ARIMA modeling is
     provided in the [robustarima](https://cran.r-project.org/package=robustarima)
-    package. The [mar1s](https://cran.r-project.org/package=mar1s) package handles
-    multiplicative AR(1) with seasonal processes.
+    package. [BayesARIMAX](https://cran.r-project.org/package=BayesARIMAX)
+    implements Bayesian estimation of ARIMAX models. The
+    [mar1s](https://cran.r-project.org/package=mar1s) package handles multiplicative
+    AR(1) with seasonal processes.
     [TSTutorial](https://cran.r-project.org/package=TSTutorial) provides an
     interactive tutorial for Box-Jenkins modelling. Improved prediction
     intervals for ARIMA and structural time series models are provided
@@ -248,8 +255,11 @@ list, please let us know.
     [stsm.class](https://cran.r-project.org/package=stsm.class).
     [KFKSDS](https://cran.r-project.org/package=KFKSDS) provides a naive
     implementation of the Kalman filter and smoothers for univariate
-    state space models. Bayesian structural time series models are
-    implemented in [bsts](https://cran.r-project.org/package=bsts)
+    state space models.
+    [statespacer](https://cran.r-project.org/package=statespacer) implements
+    univariate state space models including structural and SARIMA
+    models. Bayesian structural time series models are implemented in
+    [bsts](https://cran.r-project.org/package=bsts)
   - Non-Gaussian time series can be handled with GLARMA state space
     models via [glarma](https://cran.r-project.org/package=glarma), and using
     Generalized Autoregressive Score models in the
@@ -286,7 +296,8 @@ list, please let us know.
     censored regression models with autoregressive errors.
   - *Portmanteau tests* are provided via `Box.test()` in the stats
     package. Additional tests are given by
-    [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest).
+    [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest) and
+    [testcorr](https://cran.r-project.org/package=testcorr).
   - Outlier detection following the Chen-Liu approach is provided by
     [tsoutliers](https://cran.r-project.org/package=tsoutliers). The `tsoutliers`
     and `tsclean` functions in the
@@ -305,9 +316,11 @@ list, please let us know.
     [ecp](https://cran.r-project.org/package=ecp) does nonparametric changepoint
     detection for univariate and multivariate series.
     [changepoint.np](https://cran.r-project.org/package=changepoint.np) implements
-    the nonparametric PELT algorithm, while
+    the nonparametric PELT algorithm,
     [changepoint.mv](https://cran.r-project.org/package=changepoint.mv) detects
-    changepoints in multivariate time series.
+    changepoints in multivariate time series, while
+    [changepoint.geo](https://cran.r-project.org/package=changepoint.geo) implements
+    the high-dimensional changepoint detection method GeomCP.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series. [robcp](https://cran.r-project.org/package=robcp) provides robust
@@ -684,6 +697,8 @@ list, please let us know.
     [tsfeatures](https://cran.r-project.org/package=tsfeatures) for a list or matrix
     of time series in `ts` format. In both packages, many built-in
     feature functions are included, and users can add their own.
+    [fsMTS](https://cran.r-project.org/package=fsMTS) implements feature selection
+    routines for multivariate time series.
   - *Time series clustering* is implemented in
     [TSclust](https://cran.r-project.org/package=TSclust),
     [dtwclust](https://cran.r-project.org/package=dtwclust),
@@ -801,6 +816,9 @@ list, please let us know.
 
   - [dtw](https://cran.r-project.org/package=dtw): Dynamic time warping algorithms
     for computing and plotting pairwise alignments between time series.
+  - [EBMAforecast](https://cran.r-project.org/package=EBMAforecast): Ensemble
+    Bayesian model averaging forecasts using Gibbs sampling or EM
+    algorithms.
   - [ensembleBMA](https://cran.r-project.org/package=ensembleBMA): Bayesian Model
     Averaging to create probabilistic forecasts from ensemble forecasts
     and weather observations.
@@ -865,6 +883,7 @@ list, please let us know.
   - [arfima](https://cran.r-project.org/package=arfima)
   - [ASSA](https://cran.r-project.org/package=ASSA)
   - [astsa](https://cran.r-project.org/package=astsa)
+  - [BayesARIMAX](https://cran.r-project.org/package=BayesARIMAX)
   - [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
   - [bentcableAR](https://cran.r-project.org/package=bentcableAR)
   - [BETS](https://cran.r-project.org/package=BETS)
@@ -887,10 +906,12 @@ list, please let us know.
   - [carx](https://cran.r-project.org/package=carx)
   - [cents](https://cran.r-project.org/package=cents)
   - [changepoint](https://cran.r-project.org/package=changepoint)
+  - [changepoint.geo](https://cran.r-project.org/package=changepoint.geo)
   - [changepoint.mv](https://cran.r-project.org/package=changepoint.mv)
   - [changepoint.np](https://cran.r-project.org/package=changepoint.np)
   - [chron](https://cran.r-project.org/package=chron)
   - [cointReg](https://cran.r-project.org/package=cointReg)
+  - [collapse](https://cran.r-project.org/package=collapse)
   - [CommonTrend](https://cran.r-project.org/package=CommonTrend)
   - [costat](https://cran.r-project.org/package=costat)
   - [data.table](https://cran.r-project.org/package=data.table)
@@ -905,12 +926,14 @@ list, please let us know.
   - [dlnm](https://cran.r-project.org/package=dlnm)
   - [dsa](https://cran.r-project.org/package=dsa)
   - [dse](https://cran.r-project.org/package=dse)
+  - [DTSg](https://cran.r-project.org/package=DTSg)
   - [dtw](https://cran.r-project.org/package=dtw)
   - [dtwclust](https://cran.r-project.org/package=dtwclust)
   - [dygraphs](https://cran.r-project.org/package=dygraphs)
   - [dyn](https://cran.r-project.org/package=dyn)
   - [dynlm](https://cran.r-project.org/package=dynlm)
   - [earlywarnings](https://cran.r-project.org/package=earlywarnings)
+  - [EBMAforecast](https://cran.r-project.org/package=EBMAforecast)
   - [Ecdat](https://cran.r-project.org/package=Ecdat)
   - [ecm](https://cran.r-project.org/package=ecm)
   - [ecp](https://cran.r-project.org/package=ecp)
@@ -945,6 +968,7 @@ list, please let us know.
   - [fractal](https://cran.r-project.org/package=fractal)
   - [freqdom](https://cran.r-project.org/package=freqdom)
   - [freqdom.fda](https://cran.r-project.org/package=freqdom.fda)
+  - [fsMTS](https://cran.r-project.org/package=fsMTS)
   - [fts](https://cran.r-project.org/package=fts)
   - [ftsa](https://cran.r-project.org/package=ftsa)
   - [funtimes](https://cran.r-project.org/package=funtimes)
@@ -1072,6 +1096,7 @@ list, please let us know.
   - [spectral](https://cran.r-project.org/package=spectral)
   - [spectral.methods](https://cran.r-project.org/package=spectral.methods)
   - [spTimer](https://cran.r-project.org/package=spTimer)
+  - [statespacer](https://cran.r-project.org/package=statespacer)
   - [stlplus](https://cran.r-project.org/package=stlplus)
   - [stochvol](https://cran.r-project.org/package=stochvol)
   - [stR](https://cran.r-project.org/package=stR)
@@ -1086,6 +1111,7 @@ list, please let us know.
   - [tbrf](https://cran.r-project.org/package=tbrf)
   - [Tcomp](https://cran.r-project.org/package=Tcomp)
   - [tempdisagg](https://cran.r-project.org/package=tempdisagg)
+  - [testcorr](https://cran.r-project.org/package=testcorr)
   - [tframe](https://cran.r-project.org/package=tframe)
   - [thief](https://cran.r-project.org/package=thief)
   - [Tides](https://cran.r-project.org/package=Tides)
