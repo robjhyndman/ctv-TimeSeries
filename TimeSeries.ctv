@@ -182,7 +182,7 @@
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
   </li>
   <li>Non-Gaussian time series
-    can be handled with GLARMA state space models via <pkg>glarma</pkg>.
+    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
     Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
@@ -238,6 +238,7 @@
   <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
+    <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Forecast evaluation
@@ -259,6 +260,7 @@
   <li><i>Spectral density estimation</i>
     is provided by <code>spectrum()</code> in the stats package, including the periodogram, smoothed periodogram and AR estimates.
     Bayesian spectral inference is provided by <pkg>bspec</pkg> and <pkg>regspec</pkg>.
+    <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
     The Lomb-Scargle periodogram for unevenly sampled time series is computed by <pkg>lomb</pkg>.
     <pkg>spectral</pkg> uses Fourier and Hilbert transforms for spectral filtering.
     <pkg>psd</pkg> produces adaptive, sine-multitaper spectral density estimates.
@@ -514,6 +516,8 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
+  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
+  </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
   </li>
@@ -698,6 +702,7 @@
   <pkg>BVAR</pkg>
   <pkg>bvartools</pkg>
   <pkg>CADFtest</pkg>
+  <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.mv</pkg>
@@ -762,6 +767,7 @@
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
+  <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
@@ -826,6 +832,7 @@
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
+  <pkg>opera</pkg>
   <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
@@ -843,6 +850,7 @@
   <pkg>PSF</pkg>
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
+  <pkg>quantspec</pkg>
   <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>

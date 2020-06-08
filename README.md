@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-03-18                                     
+**Version:**    2020-05-17                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -241,9 +241,8 @@ list, please let us know.
     [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
-  - *Transfer function* models are provided by the `arimax` function in
-    the [TSA](https://cran.r-project.org/package=TSA) package, and the `arfima`
-    function in the [arfima](https://cran.r-project.org/package=arfima) package.
+  - *Transfer function* models are provided by the the `arfima` function
+    in the [arfima](https://cran.r-project.org/package=arfima) package.
   - *Structural models* are implemented in `StructTS()` in stats, and in
     [stsm](https://cran.r-project.org/package=stsm) and
     [stsm.class](https://cran.r-project.org/package=stsm.class).
@@ -252,7 +251,9 @@ list, please let us know.
     state space models. Bayesian structural time series models are
     implemented in [bsts](https://cran.r-project.org/package=bsts)
   - Non-Gaussian time series can be handled with GLARMA state space
-    models via [glarma](https://cran.r-project.org/package=glarma). Conditional
+    models via [glarma](https://cran.r-project.org/package=glarma), and using
+    Generalized Autoregressive Score models in the
+    [GAS](https://cran.r-project.org/package=GAS) package. Conditional
     Auto-Regression models using Monte Carlo Likelihood methods are
     implemented in [mclcar](https://cran.r-project.org/package=mclcar). Efficient
     Bayesian inference for nonlinear and non-Gaussian state space models
@@ -285,7 +286,6 @@ list, please let us know.
     censored regression models with autoregressive errors.
   - *Portmanteau tests* are provided via `Box.test()` in the stats
     package. Additional tests are given by
-    [portes](https://cran.r-project.org/package=portes) and
     [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest).
   - Outlier detection following the Chen-Liu approach is provided by
     [tsoutliers](https://cran.r-project.org/package=tsoutliers). The `tsoutliers`
@@ -335,6 +335,8 @@ list, please let us know.
     [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) provides
     functions for ensemble forecasts, combining approaches from the
     [forecast](https://cran.r-project.org/package=forecast) package.
+    [opera](https://cran.r-project.org/package=opera) has facilities for online
+    predictions based on combinations of forecasts provided by the user.
     [mafs](https://cran.r-project.org/package=mafs) fits several forecast models and
     selects the best one according to an error metric.
   - Forecast evaluation is provided in the `accuracy()` function from
@@ -365,9 +367,11 @@ list, please let us know.
     stats package, including the periodogram, smoothed periodogram and
     AR estimates. Bayesian spectral inference is provided by
     [bspec](https://cran.r-project.org/package=bspec) and
-    [regspec](https://cran.r-project.org/package=regspec). The Lomb-Scargle
-    periodogram for unevenly sampled time series is computed by
-    [lomb](https://cran.r-project.org/package=lomb).
+    [regspec](https://cran.r-project.org/package=regspec).
+    [quantspec](https://cran.r-project.org/package=quantspec) includes methods to
+    compute and plot Laplace periodograms for univariate time series.
+    The Lomb-Scargle periodogram for unevenly sampled time series is
+    computed by [lomb](https://cran.r-project.org/package=lomb).
     [spectral](https://cran.r-project.org/package=spectral) uses Fourier and Hilbert
     transforms for spectral filtering. [psd](https://cran.r-project.org/package=psd)
     produces adaptive, sine-multitaper spectral density estimates.
@@ -550,8 +554,6 @@ list, please let us know.
     [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries).
   - Fractal time series modeling and analysis is provided by
     [fractal](https://cran.r-project.org/package=fractal).
-    [fractalrock](https://cran.r-project.org/package=fractalrock) generates fractal
-    time series with non-normal returns distributions.
 
 **Entropy**
 
@@ -721,6 +723,8 @@ list, please let us know.
 
 **Continuous time models**
 
+  - [carfima](https://cran.r-project.org/package=carfima) allows for continuous-time
+    ARFIMA models.
   - [Sim.DiffProc](https://cran.r-project.org/package=Sim.DiffProc) simulates and
     models stochastic differential equations.
   - Simulation and inference for stochastic differential equations is
@@ -743,9 +747,6 @@ list, please let us know.
 
 **Time Series Data**
 
-  - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
-    applications in R* are in the [TSA](https://cran.r-project.org/package=TSA)
-    package.
   - Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
     principles and practice* are in the
     [fpp2](https://cran.r-project.org/package=fpp2) package.
@@ -882,6 +883,7 @@ list, please let us know.
   - [BVAR](https://cran.r-project.org/package=BVAR)
   - [bvartools](https://cran.r-project.org/package=bvartools)
   - [CADFtest](https://cran.r-project.org/package=CADFtest)
+  - [carfima](https://cran.r-project.org/package=carfima)
   - [carx](https://cran.r-project.org/package=carx)
   - [cents](https://cran.r-project.org/package=cents)
   - [changepoint](https://cran.r-project.org/package=changepoint)
@@ -941,12 +943,12 @@ list, please let us know.
   - [fpp3](https://cran.r-project.org/package=fpp3)
   - [fracdiff](https://cran.r-project.org/package=fracdiff)
   - [fractal](https://cran.r-project.org/package=fractal)
-  - [fractalrock](https://cran.r-project.org/package=fractalrock)
   - [freqdom](https://cran.r-project.org/package=freqdom)
   - [freqdom.fda](https://cran.r-project.org/package=freqdom.fda)
   - [fts](https://cran.r-project.org/package=fts)
   - [ftsa](https://cran.r-project.org/package=ftsa)
   - [funtimes](https://cran.r-project.org/package=funtimes)
+  - [GAS](https://cran.r-project.org/package=GAS)
   - [gdpc](https://cran.r-project.org/package=gdpc)
   - [ggdemetra](https://cran.r-project.org/package=ggdemetra)
   - [ggseas](https://cran.r-project.org/package=ggseas)
@@ -1011,6 +1013,7 @@ list, please let us know.
   - [NTS](https://cran.r-project.org/package=NTS)
   - [odpc](https://cran.r-project.org/package=odpc)
   - [onlineVAR](https://cran.r-project.org/package=onlineVAR)
+  - [opera](https://cran.r-project.org/package=opera)
   - [otsad](https://cran.r-project.org/package=otsad)
   - [paleoTS](https://cran.r-project.org/package=paleoTS)
   - [partsm](https://cran.r-project.org/package=partsm)
@@ -1023,12 +1026,12 @@ list, please let us know.
   - [pear](https://cran.r-project.org/package=pear)
   - [perARMA](https://cran.r-project.org/package=perARMA)
   - [pomp](https://cran.r-project.org/package=pomp)
-  - [portes](https://cran.r-project.org/package=portes)
   - [prophet](https://cran.r-project.org/package=prophet)
   - [psd](https://cran.r-project.org/package=psd)
   - [PSF](https://cran.r-project.org/package=PSF)
   - [ptw](https://cran.r-project.org/package=ptw)
   - [Quandl](https://cran.r-project.org/package=Quandl)
+  - [quantspec](https://cran.r-project.org/package=quantspec)
   - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
@@ -1098,7 +1101,6 @@ list, please let us know.
   - [tis](https://cran.r-project.org/package=tis)
   - [tpr](https://cran.r-project.org/package=tpr)
   - [trend](https://cran.r-project.org/package=trend)
-  - [TSA](https://cran.r-project.org/package=TSA)
   - [tsbox](https://cran.r-project.org/package=tsbox)
   - [TSclust](https://cran.r-project.org/package=TSclust)
   - [tscount](https://cran.r-project.org/package=tscount)
