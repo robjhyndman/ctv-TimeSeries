@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-05-17</version>
+<version>2020-06-08</version>
 
 <info>
 <p>
@@ -109,6 +109,9 @@
     <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
   </li>
   <li>Some manipulation tools for time series are available in <pkg>data.table</pkg> including <code>shift()</code> for lead/lag operations.
+  Further basic time series functionalities are offered by <pkg>DTSg</pkg> which is based on <pkg>data.table</pkg>.
+  </li>
+  <li><pkg>collapse</pkg> provides fast computation of several time series functions such as lead/lag operations and ACF/PACF/CCF estimation.
   </li>
   <li>Various packages implement irregular time series
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
@@ -153,13 +156,14 @@
     <code>ar()</code> in stats (with model selection) and <pkg>FitAR</pkg> for subset AR models.
   </li>
   <li><i>ARIMA models</i>:
-    <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models.
+    <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, RegARIMA, and subset ARIMA models.
     It is enhanced in the <pkg>fable</pkg> package via the <code>ARIMA()</code> function which allows for automatic modelling. Similar functionality is provided in  the <pkg>forecast</pkg> package via the <code>auto.arima()</code> function.
     <code>arma()</code> in the <pkg>tseries</pkg> package provides different algorithms for ARMA and subset ARMA models.
     Other estimation methods including the innovations algorithm are provided by <pkg>itsmr</pkg>.
     <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
     Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series simulation.
     Robust ARIMA modeling is provided in the <pkg>robustarima</pkg> package.
+    <pkg>BayesARIMAX</pkg> implements Bayesian estimation of ARIMAX models.
     The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes.
     <pkg>TSTutorial</pkg> provides an interactive tutorial for Box-Jenkins modelling.
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
@@ -179,6 +183,7 @@
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
+    <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
   </li>
   <li>Non-Gaussian time series
@@ -684,6 +689,7 @@
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
+  <pkg>BayesARIMAX</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
@@ -710,6 +716,7 @@
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
+  <pkg>collapse</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
   <pkg>data.table</pkg>
@@ -724,6 +731,7 @@
   <pkg>dlnm</pkg>
   <pkg>dsa</pkg>
   <pkg>dse</pkg>
+  <pkg>DTSg</pkg>
   <pkg>dtw</pkg>
   <pkg>dtwclust</pkg>
   <pkg>dygraphs</pkg>
@@ -891,6 +899,7 @@
   <pkg>spectral.methods</pkg>
   <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
+  <pkg>statespacer</pkg>
   <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
