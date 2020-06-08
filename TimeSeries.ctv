@@ -212,7 +212,7 @@
   </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
-    Additional tests are given by <pkg>WeightedPortTest</pkg>.
+    Additional tests are given by <pkg>WeightedPortTest</pkg> and <pkg>testcorr</pkg>.
   </li>
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
@@ -225,8 +225,9 @@
     and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
-    <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm, while
-    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
+    <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
+    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
+    <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
   </li>
@@ -487,7 +488,7 @@
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
   <li><i>Time series features</i>
-    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own.
+    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
   </li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
@@ -610,6 +611,9 @@
   <li><pkg>dtw</pkg>:
     Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.
   </li>
+  <li><pkg>EBMAforecast</pkg>:
+    Ensemble Bayesian model averaging forecasts using Gibbs sampling or EM algorithms.
+  </li>
   <li><pkg>ensembleBMA</pkg>:
     Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.
   </li>
@@ -711,6 +715,7 @@
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
+  <pkg>changepoint.geo</pkg>
   <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
@@ -738,6 +743,7 @@
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
   <pkg>earlywarnings</pkg>
+  <pkg>EBMAforecast</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ecm</pkg>
   <pkg>ecp</pkg>
@@ -772,6 +778,7 @@
   <pkg>fractal</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
+  <pkg>fsMTS</pkg>
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
@@ -914,6 +921,7 @@
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>tempdisagg</pkg>
+  <pkg>testcorr</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
   <pkg>Tides</pkg>
