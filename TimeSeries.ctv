@@ -35,6 +35,7 @@
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
+    <pkg>gravitas</pkg> allows for visualizing probability distributions conditional on bivariate temporal granularities.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
@@ -456,6 +457,7 @@
   </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
+    <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
@@ -482,7 +484,7 @@
     are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
   </li>
   <li><i>Time series clustering</i>
-    is implemented in <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
+    is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
   </li>
   <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
   <li><pkg>rucrdtw</pkg>
@@ -752,6 +754,7 @@
   <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
+  <pkg>ForeCA</pkg>
   <pkg priority="core">forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
@@ -776,6 +779,7 @@
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
   <pkg>graphicalVAR</pkg>
+  <pkg>gravitas</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
@@ -920,6 +924,7 @@
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
   <pkg>tsbox</pkg>
+  <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
