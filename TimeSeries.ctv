@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-06-10</version>
+<version>2020-07-06</version>
 
 <info>
 <p>
@@ -35,7 +35,6 @@
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
-    <pkg>gravitas</pkg> allows for visualizing probability distributions conditional on bivariate temporal granularities.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
@@ -217,7 +216,6 @@
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
     The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
-    <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
     <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
   </li>
   <li><i>Change point detection</i>
@@ -275,7 +273,6 @@
   </li>
   <li><i>Wavelet methods</i>:
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
-    Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
     Multivariate, locally stationary wavelet analysis tools are provided by <pkg>mvLSW</pkg>.
@@ -306,7 +303,7 @@
     <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
   </li>
   <li><i>Singular Spectrum Analysis</i>
-    is implemented in <pkg>Rssa</pkg>, <pkg>ASSA</pkg> and <pkg>spectral.methods</pkg>.
+    is implemented in <pkg>Rssa</pkg> and <pkg>ASSA</pkg>.
   </li>
   <li><i>Empirical Mode Decomposition</i> (EMD)
     and Hilbert spectral analysis is provided by <pkg>EMD</pkg>.
@@ -367,7 +364,6 @@
     The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in <pkg>tseries</pkg>
     and <pkg>urca</pkg>. The latter additionally contains functionality for the Johansen trace and lambda-max tests.
     <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
-    <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.
     Parameter estimation and inference in a cointegrating regression are implemented in <pkg>cointReg</pkg>.
     <pkg>nardl</pkg> estimates nonlinear cointegrating autoregressive distributed lag models.
   </li>
@@ -398,14 +394,10 @@
   <li>Additional functions for nonlinear time series
     are available in <pkg>nlts</pkg> and <pkg>nonlinearTseries</pkg>.
   </li>
-  <li>Fractal time series modeling and analysis
-    is provided by <pkg>fractal</pkg>.
-  </li>
 </ul>
 
 <p><strong>Entropy</strong></p>
 <ul>
-  <li>Shannon entropy based on the spectral density is computed using <pkg>ForeCA</pkg>. </li>
   <li><pkg>RTransferEntropy</pkg> measures information flow between time series with Shannon and Renyi transfer entropy.
   </li>
   <li>An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in <pkg>tseriesEntropy</pkg>.
@@ -464,7 +456,6 @@
   </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
-    <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
@@ -491,10 +482,7 @@
     are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
   </li>
   <li><i>Time series clustering</i>
-    is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
-  </li>
-  <li><pkg>TSdist</pkg>
-    provides distance measures for time series data.
+    is implemented in <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
   </li>
   <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
   <li><pkg>rucrdtw</pkg>
@@ -687,7 +675,6 @@
 <packagelist>
   <pkg>acp</pkg>
   <pkg>AER</pkg>
-  <pkg>anomalize</pkg>
   <pkg>ARCensReg</pkg>
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
@@ -722,7 +709,6 @@
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
   <pkg>collapse</pkg>
-  <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
   <pkg>data.table</pkg>
   <pkg>dataseries</pkg>
@@ -766,7 +752,6 @@
   <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
-  <pkg>ForeCA</pkg>
   <pkg priority="core">forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
@@ -775,7 +760,6 @@
   <pkg>fpp2</pkg>
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
-  <pkg>fractal</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
   <pkg>fsMTS</pkg>
@@ -792,7 +776,6 @@
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
   <pkg>graphicalVAR</pkg>
-  <pkg>gravitas</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
@@ -903,7 +886,6 @@
   <pkg>smooth</pkg>
   <pkg>smoots</pkg>
   <pkg>sparsevar</pkg>
-  <pkg>spectral.methods</pkg>
   <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
   <pkg>statespacer</pkg>
@@ -938,12 +920,10 @@
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
   <pkg>tsbox</pkg>
-  <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
-  <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
   <pkg>TSEntropies</pkg>
@@ -977,7 +957,6 @@
   <pkg>wavScalogram</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
-  <pkg>wmtsa</pkg>
   <pkg>wwntests</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
