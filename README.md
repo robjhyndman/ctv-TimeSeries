@@ -1,10 +1,10 @@
 ## CRAN Task View: Time Series Analysis
 
-                                                               
+   
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-06-10                                     
+**Version:**    2020-07-26                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -252,9 +252,11 @@ list, please let us know.
     collection of functions for analysing long memory time series.
   - *Transfer function* models are provided by the the `arfima` function
     in the [arfima](https://cran.r-project.org/package=arfima) package.
-  - *Structural models* are implemented in `StructTS()` in stats, and in
-    [stsm](https://cran.r-project.org/package=stsm) and
-    [stsm.class](https://cran.r-project.org/package=stsm.class).
+  - *Structural (or unobserved component) models* are implemented in
+    `StructTS()` in stats, and in [stsm](https://cran.r-project.org/package=stsm)
+    and [stsm.class](https://cran.r-project.org/package=stsm.class), while automatic
+    modelling and forecasting are provided by
+    [UComp](https://cran.r-project.org/package=UComp).
     [KFKSDS](https://cran.r-project.org/package=KFKSDS) provides a naive
     implementation of the Kalman filter and smoothers for univariate
     state space models.
@@ -305,8 +307,6 @@ list, please let us know.
     and `tsclean` functions in the
     [forecast](https://cran.r-project.org/package=forecast) package provide some
     simple heuristic methods for identifying and correcting outliers.
-    [anomalize](https://cran.r-project.org/package=anomalize) provides some
-    additional outlier detection methods in a tidy data framework.
     [otsad](https://cran.r-project.org/package=otsad) implements a set of online
     anomaly detectors for time series.
   - *Change point detection* is provided in
@@ -354,11 +354,13 @@ list, please let us know.
     predictions based on combinations of forecasts provided by the user.
     [mafs](https://cran.r-project.org/package=mafs) fits several forecast models and
     selects the best one according to an error metric.
-  - Forecast evaluation is provided in the `accuracy()` function from
-    the [fable](https://cran.r-project.org/package=fable) and
+  - Point forecast evaluation is provided in the `accuracy()` function
+    from the [fable](https://cran.r-project.org/package=fable) and
     [forecast](https://cran.r-project.org/package=forecast) packages. Distributional
     forecast evaluation using scoring rules is available in
-    [scoringRules](https://cran.r-project.org/package=scoringRules). The
+    [fable](https://cran.r-project.org/package=fable),
+    [scoringRules](https://cran.r-project.org/package=scoringRules) and
+    [scoringutils](https://cran.r-project.org/package=scoringutils). The
     Diebold-Mariano test for comparing the forecast accuracy of two
     models is implemented in the `dm.test()` function in
     [forecast](https://cran.r-project.org/package=forecast). A multivariate version
@@ -397,9 +399,7 @@ list, please let us know.
     multitaper spectral analysis tools.
   - *Wavelet methods* : The [wavelets](https://cran.r-project.org/package=wavelets)
     package includes computing wavelet filters, wavelet transforms and
-    multiresolution analyses. Wavelet methods for time series analysis
-    based on Percival and Walden (2000) are given in
-    [wmtsa](https://cran.r-project.org/package=wmtsa).
+    multiresolution analyses.
     [WaveletComp](https://cran.r-project.org/package=WaveletComp) provides some
     tools for wavelet-based analysis of univariate and bivariate time
     series including cross-wavelets, phase-difference and significance
@@ -445,9 +445,8 @@ list, please let us know.
     [rmaf](https://cran.r-project.org/package=rmaf) uses a refined moving average
     filter for decomposition.
   - *Singular Spectrum Analysis* is implemented in
-    [Rssa](https://cran.r-project.org/package=Rssa),
-    [ASSA](https://cran.r-project.org/package=ASSA) and
-    [spectral.methods](https://cran.r-project.org/package=spectral.methods).
+    [Rssa](https://cran.r-project.org/package=Rssa) and
+    [ASSA](https://cran.r-project.org/package=ASSA).
   - *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis
     is provided by [EMD](https://cran.r-project.org/package=EMD). Additional tools,
     including ensemble EMD, are available in
@@ -522,11 +521,9 @@ list, please let us know.
     [urca](https://cran.r-project.org/package=urca). The latter additionally
     contains functionality for the Johansen trace and lambda-max tests.
     [tsDyn](https://cran.r-project.org/package=tsDyn) provides Johansen's test and
-    AIC/BIC simultaneous rank-lag selection.
-    [CommonTrend](https://cran.r-project.org/package=CommonTrend) provides tools to
-    extract and plot common trends from a cointegration system.
-    Parameter estimation and inference in a cointegrating regression are
-    implemented in [cointReg](https://cran.r-project.org/package=cointReg).
+    AIC/BIC simultaneous rank-lag selection. Parameter estimation and
+    inference in a cointegrating regression are implemented in
+    [cointReg](https://cran.r-project.org/package=cointReg).
     [nardl](https://cran.r-project.org/package=nardl) estimates nonlinear
     cointegrating autoregressive distributed lag models.
 
@@ -549,6 +546,8 @@ list, please let us know.
     [bentcableAR](https://cran.r-project.org/package=bentcableAR) implements
     Bent-Cable autoregression. [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
     provides Bayesian analysis of threshold autoregressive models.
+    Mixture AR models are implemented in
+    [mixAR](https://cran.r-project.org/package=mixAR).
   - [tseriesChaos](https://cran.r-project.org/package=tseriesChaos) provides an R
     implementation of the algorithms from the
     *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project* .
@@ -567,13 +566,9 @@ list, please let us know.
   - Additional functions for nonlinear time series are available in
     [nlts](https://cran.r-project.org/package=nlts) and
     [nonlinearTseries](https://cran.r-project.org/package=nonlinearTseries).
-  - Fractal time series modeling and analysis is provided by
-    [fractal](https://cran.r-project.org/package=fractal).
 
 **Entropy**
 
-  - Shannon entropy based on the spectral density is computed using
-    [ForeCA](https://cran.r-project.org/package=ForeCA).
   - [RTransferEntropy](https://cran.r-project.org/package=RTransferEntropy) measures
     information flow between time series with Shannon and Renyi transfer
     entropy.
@@ -632,14 +627,18 @@ list, please let us know.
     bootstrapped prediction intervals is given in
     [VAR.etp](https://cran.r-project.org/package=VAR.etp).
     [bvartools](https://cran.r-project.org/package=bvartools) assists in the set-up
-    of Bayesian VAR models, while [BVAR](https://cran.r-project.org/package=BVAR)
-    provides a toolkit for hierarchical Bayesian VAR models.
-    [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
-    autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
-    routines for identifying structural shocks in VAR models using sign
-    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
-    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
-    provides methods for fitting network AR models, while
+    of Bayesian VAR models, while [BMTAR](https://cran.r-project.org/package=BMTAR)
+    implements Baysian Multivariate Threshold AR models with missing
+    data. [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
+    hierarchical Bayesian VAR models.
+    [BGVAR](https://cran.r-project.org/package=BGVAR) implements Bayesian Global VAR
+    models. [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level
+    vector autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR)
+    provides routines for identifying structural shocks in VAR models
+    using sign restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit)
+    estimates Gaussian mixture VAR models.
+    [GNAR](https://cran.r-project.org/package=GNAR) provides methods for fitting
+    network AR models, while
     [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
     graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.
@@ -706,8 +705,6 @@ list, please let us know.
     [dtwclust](https://cran.r-project.org/package=dtwclust),
     [BNPTSclust](https://cran.r-project.org/package=BNPTSclust) and
     [pdc](https://cran.r-project.org/package=pdc).
-  - [TSdist](https://cran.r-project.org/package=TSdist) provides distance measures
-    for time series data.
   - [TSrepr](https://cran.r-project.org/package=TSrepr) includes methods for
     representing time series using dimension reduction and feature
     extraction.
@@ -760,7 +757,8 @@ list, please let us know.
     CI for the sample ACF and periodogram.
     [BootPR](https://cran.r-project.org/package=BootPR) computes bias-corrected
     forecasting and bootstrap prediction intervals for autoregressive
-    time series.
+    time series. [bootUR](https://cran.r-project.org/package=bootUR) implements
+    bootstrap unit root tests.
 
 **Time Series Data**
 
@@ -879,7 +877,6 @@ list, please let us know.
 
   - [acp](https://cran.r-project.org/package=acp)
   - [AER](https://cran.r-project.org/package=AER)
-  - [anomalize](https://cran.r-project.org/package=anomalize)
   - [ARCensReg](https://cran.r-project.org/package=ARCensReg)
   - [ArDec](https://cran.r-project.org/package=ArDec)
   - [arfima](https://cran.r-project.org/package=arfima)
@@ -890,12 +887,15 @@ list, please let us know.
   - [bentcableAR](https://cran.r-project.org/package=bentcableAR)
   - [BETS](https://cran.r-project.org/package=BETS)
   - [bfast](https://cran.r-project.org/package=bfast)
+  - [BGVAR](https://cran.r-project.org/package=BGVAR)
   - [bigtime](https://cran.r-project.org/package=bigtime)
   - [BigVAR](https://cran.r-project.org/package=BigVAR)
   - [biwavelet](https://cran.r-project.org/package=biwavelet)
+  - [BMTAR](https://cran.r-project.org/package=BMTAR)
   - [BNPTSclust](https://cran.r-project.org/package=BNPTSclust)
   - [boot](https://cran.r-project.org/package=boot)
   - [BootPR](https://cran.r-project.org/package=BootPR)
+  - [bootUR](https://cran.r-project.org/package=bootUR)
   - [brainwaver](https://cran.r-project.org/package=brainwaver)
   - [bspec](https://cran.r-project.org/package=bspec)
   - [bssm](https://cran.r-project.org/package=bssm)
@@ -914,7 +914,6 @@ list, please let us know.
   - [chron](https://cran.r-project.org/package=chron)
   - [cointReg](https://cran.r-project.org/package=cointReg)
   - [collapse](https://cran.r-project.org/package=collapse)
-  - [CommonTrend](https://cran.r-project.org/package=CommonTrend)
   - [costat](https://cran.r-project.org/package=costat)
   - [data.table](https://cran.r-project.org/package=data.table)
   - [dataseries](https://cran.r-project.org/package=dataseries)
@@ -967,7 +966,6 @@ list, please let us know.
   - [fpp2](https://cran.r-project.org/package=fpp2)
   - [fpp3](https://cran.r-project.org/package=fpp3)
   - [fracdiff](https://cran.r-project.org/package=fracdiff)
-  - [fractal](https://cran.r-project.org/package=fractal)
   - [freqdom](https://cran.r-project.org/package=freqdom)
   - [freqdom.fda](https://cran.r-project.org/package=freqdom.fda)
   - [fsMTS](https://cran.r-project.org/package=fsMTS)
@@ -1018,6 +1016,7 @@ list, please let us know.
   - [meboot](https://cran.r-project.org/package=meboot)
   - [mFilter](https://cran.r-project.org/package=mFilter)
   - [mgm](https://cran.r-project.org/package=mgm)
+  - [mixAR](https://cran.r-project.org/package=mixAR)
   - [mlVAR](https://cran.r-project.org/package=mlVAR)
   - [mondate](https://cran.r-project.org/package=mondate)
   - [MSwM](https://cran.r-project.org/package=MSwM)
@@ -1082,6 +1081,7 @@ list, please let us know.
   - [rwt](https://cran.r-project.org/package=rwt)
   - [sazedR](https://cran.r-project.org/package=sazedR)
   - [scoringRules](https://cran.r-project.org/package=scoringRules)
+  - [scoringutils](https://cran.r-project.org/package=scoringutils)
   - [SDD](https://cran.r-project.org/package=SDD)
   - [sde](https://cran.r-project.org/package=sde)
   - [seas](https://cran.r-project.org/package=seas)
@@ -1096,7 +1096,6 @@ list, please let us know.
   - [smoots](https://cran.r-project.org/package=smoots)
   - [sparsevar](https://cran.r-project.org/package=sparsevar)
   - [spectral](https://cran.r-project.org/package=spectral)
-  - [spectral.methods](https://cran.r-project.org/package=spectral.methods)
   - [spTimer](https://cran.r-project.org/package=spTimer)
   - [statespacer](https://cran.r-project.org/package=statespacer)
   - [stlplus](https://cran.r-project.org/package=stlplus)
@@ -1135,7 +1134,6 @@ list, please let us know.
   - [TSdbi](https://cran.r-project.org/package=TSdbi)
   - [tsdecomp](https://cran.r-project.org/package=tsdecomp)
   - [tsdisagg2](https://cran.r-project.org/package=tsdisagg2)
-  - [TSdist](https://cran.r-project.org/package=TSdist)
   - [tsDyn](https://cran.r-project.org/package=tsDyn)
   - [TSEntropies](https://cran.r-project.org/package=TSEntropies)
   - [tseries](https://cran.r-project.org/package=tseries) (core)
@@ -1156,6 +1154,7 @@ list, please let us know.
   - [tstools](https://cran.r-project.org/package=tstools)
   - [TSTutorial](https://cran.r-project.org/package=TSTutorial)
   - [tswge](https://cran.r-project.org/package=tswge)
+  - [UComp](https://cran.r-project.org/package=UComp)
   - [urca](https://cran.r-project.org/package=urca)
   - [uroot](https://cran.r-project.org/package=uroot)
   - [VAR.etp](https://cran.r-project.org/package=VAR.etp)
@@ -1169,7 +1168,6 @@ list, please let us know.
   - [wavScalogram](https://cran.r-project.org/package=wavScalogram)
   - [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest)
   - [wktmo](https://cran.r-project.org/package=wktmo)
-  - [wmtsa](https://cran.r-project.org/package=wmtsa)
   - [wwntests](https://cran.r-project.org/package=wwntests)
   - [x12](https://cran.r-project.org/package=x12)
   - [x12GUI](https://cran.r-project.org/package=x12GUI)
