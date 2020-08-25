@@ -83,7 +83,7 @@
   <li>The <pkg>tempdisagg</pkg> package
     includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
   </li>
-  <li>Time series disaggregation is also provided by <pkg>tsdisagg2</pkg>.
+  <li>Time series disaggregation is also provided by <pkg>tsdisagg2</pkg> and <pkg>disaggR</pkg>.
   </li>
   <li><pkg>TimeProjection</pkg>
     extracts useful time components of a date object, such as day of week, weekend, holiday, day of month, etc, and put it in a data frame.
@@ -98,15 +98,14 @@
   <li>The <pkg>zoo</pkg> package
     provides infrastructure for regularly and irregularly spaced time series using arbitrary classes for the time stamps (i.e., allowing all classes from the previous section).
     It is designed to be as consistent as possible with <code>"ts"</code>.
-    Coercion from and to <code>"zoo"</code> is available for all other classes mentioned in this section.
   </li>
   <li>The package <pkg>xts</pkg>
     is based on <pkg>zoo</pkg> and provides uniform handling of R's different time-based data classes.
   </li>
   <li>Several packages aim to handle time-based tibbles:
     <pkg>tsibble</pkg> provides tidy temporal data frames and associated tools;
-    <pkg>timetk</pkg> contains tools for working with and coercing between time-based tibbles, xts, zoo and ts objects.
-    <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
+    <pkg>tsbox</pkg> contains tools for working with and coercing between many time series classes including tsibble, ts, xts, zoo and more.
+    <pkg>timetk</pkg> is another toolkit for converting between various time series data classes.
   </li>
   <li>Some manipulation tools for time series are available in <pkg>data.table</pkg> including <code>shift()</code> for lead/lag operations.
   Further basic time series functionalities are offered by <pkg>DTSg</pkg> which is based on <pkg>data.table</pkg>.
@@ -133,7 +132,7 @@
 
 <p><strong>Forecasting and Univariate Modeling</strong></p>
 <ul>
-  <li>The <pkg>fable</pkg> package provies tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models. It also provides many functions for computing and analysing forecasts. The time series must be in the <code>tsibble</code> format.
+  <li>The <pkg>fable</pkg> package provides tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models. It also provides many functions for computing and analysing forecasts. The time series must be in the <code>tsibble</code> format. <pkg>fabletools</pkg> provides tools for extending the <pkg>fable</pkg> framework.
   </li>
   <li>The <pkg>forecast</pkg> package provides similar tools for <code>ts</code> objects.
   </li>
@@ -146,7 +145,7 @@
     Some Bayesian extensions of exponential smoothing are contained in <pkg>Rlgt</pkg>.
   </li>
   <li><pkg>prophet</pkg>
-    forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
+    forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data. <pkg>fable.prophet</pkg> allows prophet models to be used in the <pkg>fable</pkg> framework.
   </li>
   <li>The theta method
     is implemented in the <code>THETA()</code> function from <pkg>fable</pkg> and <code>thetaf()</code> function from <pkg>forecast</pkg>.
@@ -171,11 +170,12 @@
   <li><i>Periodic ARMA models</i>:
     <pkg>pear</pkg> and <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
   </li>
-  <li><i>ARFIMA models</i>:
+  <li><i>Long memory models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
     The <pkg>arfima</pkg> package has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic regression (transfer function) models.
     Additional methods for fitting and simulating non-stationary ARFIMA models are in <pkg>nsarfima</pkg>.
     <pkg>LongMemoryTS</pkg> provides a collection of functions for analysing long memory time series.
+    Fractionally differenced Gegenbaur ARMA processes are handled in <pkg>garma</pkg>.
   </li>
   <li><i>Transfer function</i> models
     are provided by the the <code>arfima</code> function in the <pkg>arfima</pkg> package.
@@ -226,6 +226,7 @@
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
+    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
@@ -271,6 +272,7 @@
     <pkg>psd</pkg> produces adaptive, sine-multitaper spectral density estimates.
     <pkg>kza</pkg> provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, wavelets and KZ Fourier Transforms.
     <pkg>multitaper</pkg> also provides some multitaper spectral analysis tools.
+    Higher-order spectral analysis is implemented in <pkg>rhosa</pkg>, including bispectrum, bicoherence, cross-bispectrum and cross-bicoherence.
   </li>
   <li><i>Wavelet methods</i>:
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
@@ -497,7 +499,8 @@
   <li>Methods for plotting and forecasting collections of hierarchical and grouped time series
     are provided by <pkg>hts</pkg>.
     <pkg>thief</pkg> uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
-    An alternative approach to reconciling forecasts of hierarchical time series is provided by <pkg>gtop</pkg>. <pkg>thief</pkg>
+    An alternative approach to reconciling forecasts of hierarchical time series is provided by <pkg>gtop</pkg>.
+    <pkg>ProbReco</pkg> provides tools to train forecast reconciliation weights by optimizing probability scoring functions.
   </li>
 </ul>
 
@@ -597,6 +600,8 @@
     provides a common interface to time series databases.
   </li>
   <li>Various data sets in <pkg>tsibble</pkg> format are provided by <pkg>tsibbledata</pkg>.
+  </li>
+  <li><pkg>gratis</pkg> generates new time series with diverse and controllable characteristics using mixture autoregression models.
   </li>
 </ul>
 
@@ -711,6 +716,7 @@
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.geo</pkg>
+  <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
@@ -724,6 +730,7 @@
   <pkg>depmix</pkg>
   <pkg>depmixS4</pkg>
   <pkg>deseasonalize</pkg>
+  <pkg>disaggR</pkg>
   <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
@@ -746,6 +753,8 @@
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg priority="core">fable</pkg>
+  <pkg>fable.prophet</pkg>
+  <pkg>fabletools</pkg>
   <pkg>factorstochvol</pkg>
   <pkg>fame</pkg>
   <pkg>fanplot</pkg>
@@ -774,6 +783,7 @@
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
+  <pkg>garma</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
@@ -784,6 +794,7 @@
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
   <pkg>graphicalVAR</pkg>
+  <pkg>gratis</pkg>
   <pkg>gravitas</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
@@ -853,6 +864,7 @@
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
+  <pkg>ProbReco</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
   <pkg>PSF</pkg>
@@ -862,6 +874,7 @@
   <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
+  <pkg>rhosa</pkg>
   <pkg>RJDemetra</pkg>
   <pkg>Rlgt</pkg>
   <pkg>Rlibeemd</pkg>

@@ -4,7 +4,7 @@
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-07-26                                     
+**Version:**    2020-08-04                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -128,7 +128,8 @@ list, please let us know.
     methods for temporal disaggregation and interpolation of a low
     frequency time series to a higher frequency series.
   - Time series disaggregation is also provided by
-    [tsdisagg2](https://cran.r-project.org/package=tsdisagg2).
+    [tsdisagg2](https://cran.r-project.org/package=tsdisagg2) and
+    [disaggR](https://cran.r-project.org/package=disaggR).
   - [TimeProjection](https://cran.r-project.org/package=TimeProjection) extracts
     useful time components of a date object, such as day of week,
     weekend, holiday, day of month, etc, and put it in a data frame.
@@ -141,18 +142,18 @@ list, please let us know.
     infrastructure for regularly and irregularly spaced time series
     using arbitrary classes for the time stamps (i.e., allowing all
     classes from the previous section). It is designed to be as
-    consistent as possible with `"ts"`. Coercion from and to `"zoo"` is
-    available for all other classes mentioned in this section.
+    consistent as possible with `"ts"`.
   - The package [xts](https://cran.r-project.org/package=xts) is based on
     [zoo](https://cran.r-project.org/package=zoo) and provides uniform handling of
     R's different time-based data classes.
   - Several packages aim to handle time-based tibbles:
     [tsibble](https://cran.r-project.org/package=tsibble) provides tidy temporal
     data frames and associated tools;
-    [timetk](https://cran.r-project.org/package=timetk) contains tools for working
-    with and coercing between time-based tibbles, xts, zoo and ts
-    objects. [tsbox](https://cran.r-project.org/package=tsbox) is another toolkit
-    for converting between various time series data classes.
+    [tsbox](https://cran.r-project.org/package=tsbox) contains tools for working
+    with and coercing between many time series classes including
+    tsibble, ts, xts, zoo and more.
+    [timetk](https://cran.r-project.org/package=timetk) is another toolkit for
+    converting between various time series data classes.
   - Some manipulation tools for time series are available in
     [data.table](https://cran.r-project.org/package=data.table) including `shift()`
     for lead/lag operations. Further basic time series functionalities
@@ -181,11 +182,13 @@ list, please let us know.
 
 **Forecasting and Univariate Modeling**
 
-  - The [fable](https://cran.r-project.org/package=fable) package provies tools for
+  - The [fable](https://cran.r-project.org/package=fable) package provides tools for
     fitting univariate time series models to many series simultaneously
     including ETS, ARIMA, TSLM and other models. It also provides many
     functions for computing and analysing forecasts. The time series
     must be in the `tsibble` format.
+    [fabletools](https://cran.r-project.org/package=fabletools) provides tools for
+    extending the [fable](https://cran.r-project.org/package=fable) framework.
   - The [forecast](https://cran.r-project.org/package=forecast) package provides
     similar tools for `ts` objects.
   - *Exponential smoothing* : `HoltWinters()` in stats provides some
@@ -204,7 +207,9 @@ list, please let us know.
   - [prophet](https://cran.r-project.org/package=prophet) forecasts time series
     based on an additive model where nonlinear trends are fit with
     yearly and weekly seasonality, plus holidays. It works best with
-    daily data.
+    daily data. [fable.prophet](https://cran.r-project.org/package=fable.prophet)
+    allows prophet models to be used in the
+    [fable](https://cran.r-project.org/package=fable) framework.
   - The theta method is implemented in the `THETA()` function from
     [fable](https://cran.r-project.org/package=fable) and `thetaf()` function from
     [forecast](https://cran.r-project.org/package=forecast). An alternative and
@@ -240,8 +245,8 @@ list, please let us know.
     time series models, and [perARMA](https://cran.r-project.org/package=perARMA)
     and [pcts](https://cran.r-project.org/package=pcts) for periodic ARMA modelling
     and other procedures for periodic time series analysis.
-  - *ARFIMA models* : Some facilities for fractional differenced ARFIMA
-    models are provided in the
+  - *Long memory models* : Some facilities for fractional differenced
+    ARFIMA models are provided in the
     [fracdiff](https://cran.r-project.org/package=fracdiff) package. The
     [arfima](https://cran.r-project.org/package=arfima) package has more advanced
     and general facilities for ARFIMA and ARIMA models, including
@@ -250,6 +255,8 @@ list, please let us know.
     [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
+    Fractionally differenced Gegenbaur ARMA processes are handled in
+    [garma](https://cran.r-project.org/package=garma).
   - *Transfer function* models are provided by the the `arfima` function
     in the [arfima](https://cran.r-project.org/package=arfima) package.
   - *Structural (or unobserved component) models* are implemented in
@@ -396,7 +403,9 @@ list, please let us know.
     Adaptive Filters including break detection, spectral analysis,
     wavelets and KZ Fourier Transforms.
     [multitaper](https://cran.r-project.org/package=multitaper) also provides some
-    multitaper spectral analysis tools.
+    multitaper spectral analysis tools. Higher-order spectral analysis
+    is implemented in [rhosa](https://cran.r-project.org/package=rhosa), including
+    bispectrum, bicoherence, cross-bispectrum and cross-bicoherence.
   - *Wavelet methods* : The [wavelets](https://cran.r-project.org/package=wavelets)
     package includes computing wavelet filters, wavelet transforms and
     multiresolution analyses.
@@ -412,7 +421,6 @@ list, please let us know.
     are contained in
     [wavScalogram](https://cran.r-project.org/package=wavScalogram). Further wavelet
     methods can be found in the packages
-    [brainwaver](https://cran.r-project.org/package=brainwaver),
     [rwt](https://cran.r-project.org/package=rwt),
     [waveslim](https://cran.r-project.org/package=waveslim),
     [wavethresh](https://cran.r-project.org/package=wavethresh).
@@ -720,7 +728,9 @@ list, please let us know.
     reconcile forecasts of temporally aggregated time series. An
     alternative approach to reconciling forecasts of hierarchical time
     series is provided by [gtop](https://cran.r-project.org/package=gtop).
-    [thief](https://cran.r-project.org/package=thief)
+    [ProbReco](https://cran.r-project.org/package=ProbReco) provides tools to train
+    forecast reconciliation weights by optimizing probability scoring
+    functions.
 
 **Functional time series**
 
@@ -811,6 +821,9 @@ list, please let us know.
   - Various data sets in [tsibble](https://cran.r-project.org/package=tsibble)
     format are provided by
     [tsibbledata](https://cran.r-project.org/package=tsibbledata).
+  - [gratis](https://cran.r-project.org/package=gratis) generates new time series
+    with diverse and controllable characteristics using mixture
+    autoregression models.
 
 **Miscellaneous**
 
@@ -896,7 +909,6 @@ list, please let us know.
   - [boot](https://cran.r-project.org/package=boot)
   - [BootPR](https://cran.r-project.org/package=BootPR)
   - [bootUR](https://cran.r-project.org/package=bootUR)
-  - [brainwaver](https://cran.r-project.org/package=brainwaver)
   - [bspec](https://cran.r-project.org/package=bspec)
   - [bssm](https://cran.r-project.org/package=bssm)
   - [bsts](https://cran.r-project.org/package=bsts)
@@ -922,6 +934,7 @@ list, please let us know.
   - [depmix](https://cran.r-project.org/package=depmix)
   - [depmixS4](https://cran.r-project.org/package=depmixS4)
   - [deseasonalize](https://cran.r-project.org/package=deseasonalize)
+  - [disaggR](https://cran.r-project.org/package=disaggR)
   - [dLagM](https://cran.r-project.org/package=dLagM)
   - [dlm](https://cran.r-project.org/package=dlm)
   - [dlnm](https://cran.r-project.org/package=dlnm)
@@ -944,6 +957,8 @@ list, please let us know.
   - [events](https://cran.r-project.org/package=events)
   - [expsmooth](https://cran.r-project.org/package=expsmooth)
   - [fable](https://cran.r-project.org/package=fable) (core)
+  - [fable.prophet](https://cran.r-project.org/package=fable.prophet)
+  - [fabletools](https://cran.r-project.org/package=fabletools)
   - [factorstochvol](https://cran.r-project.org/package=factorstochvol)
   - [fame](https://cran.r-project.org/package=fame)
   - [fanplot](https://cran.r-project.org/package=fanplot)
@@ -972,6 +987,7 @@ list, please let us know.
   - [fts](https://cran.r-project.org/package=fts)
   - [ftsa](https://cran.r-project.org/package=ftsa)
   - [funtimes](https://cran.r-project.org/package=funtimes)
+  - [garma](https://cran.r-project.org/package=garma)
   - [GAS](https://cran.r-project.org/package=GAS)
   - [gdpc](https://cran.r-project.org/package=gdpc)
   - [ggdemetra](https://cran.r-project.org/package=ggdemetra)
@@ -982,6 +998,7 @@ list, please let us know.
   - [gmvarkit](https://cran.r-project.org/package=gmvarkit)
   - [GNAR](https://cran.r-project.org/package=GNAR)
   - [graphicalVAR](https://cran.r-project.org/package=graphicalVAR)
+  - [gratis](https://cran.r-project.org/package=gratis)
   - [gravitas](https://cran.r-project.org/package=gravitas)
   - [gsarima](https://cran.r-project.org/package=gsarima)
   - [gtop](https://cran.r-project.org/package=gtop)
@@ -1051,6 +1068,7 @@ list, please let us know.
   - [pear](https://cran.r-project.org/package=pear)
   - [perARMA](https://cran.r-project.org/package=perARMA)
   - [pomp](https://cran.r-project.org/package=pomp)
+  - [ProbReco](https://cran.r-project.org/package=ProbReco)
   - [prophet](https://cran.r-project.org/package=prophet)
   - [psd](https://cran.r-project.org/package=psd)
   - [PSF](https://cran.r-project.org/package=PSF)
@@ -1060,6 +1078,7 @@ list, please let us know.
   - [Rbeast](https://cran.r-project.org/package=Rbeast)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
+  - [rhosa](https://cran.r-project.org/package=rhosa)
   - [RJDemetra](https://cran.r-project.org/package=RJDemetra)
   - [Rlgt](https://cran.r-project.org/package=Rlgt)
   - [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
