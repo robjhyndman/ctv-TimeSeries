@@ -203,7 +203,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>acp</pkg> package.
+    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -490,7 +490,9 @@
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
   </li>
-  <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
+  <li><pkg>TSdist</pkg>
+    provides distance measures for time series data.
+  </li>  <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
   <li><pkg>rucrdtw</pkg>
     provides R bindings for functions from the UCR Suite to enable ultrafast subsequence search for a best match under Dynamic Time Warping and Euclidean Distance.
     <pkg>IncDTW</pkg> provides incremental calculation of dynamic time warping for streaming time series.
@@ -542,6 +544,10 @@
 
 <p><strong>Time Series Data</strong></p>
 <ul>
+  <li>Data from Cryer and Chan (2010, 2nd ed)
+      <i>Time series analysis with applications in R</i>
+      are in the <pkg>TSA</pkg> package.
+  </li>
   <li>Data from Hyndman and Athanasopoulos (2018, 2nd ed)
       <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp2</pkg> package.
@@ -941,11 +947,14 @@
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
+  <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
+  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
+  <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
   <pkg>TSEntropies</pkg>
