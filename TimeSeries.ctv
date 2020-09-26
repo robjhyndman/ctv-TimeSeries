@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-09-04</version>
+<version>2020-09-26</version>
 
 <info>
 <p>
@@ -186,6 +186,7 @@
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
     <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
+    Robust Kalman filtering is provided by <pkg>RobKF</pkg>.
   </li>
   <li>Non-Gaussian time series
     can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
@@ -884,6 +885,7 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
+  <pkg>RobKF</pkg>
   <pkg>robcp</pkg>
   <pkg>robets</pkg>
   <pkg>robfilter</pkg>

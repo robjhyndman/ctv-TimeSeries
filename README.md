@@ -1,10 +1,10 @@
 ## CRAN Task View: Time Series Analysis
 
-   
+                                                               
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-08-26                                     
+**Version:**    2020-09-26                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -270,7 +270,8 @@ list, please let us know.
     [statespacer](https://cran.r-project.org/package=statespacer) implements
     univariate state space models including structural and SARIMA
     models. Bayesian structural time series models are implemented in
-    [bsts](https://cran.r-project.org/package=bsts)
+    [bsts](https://cran.r-project.org/package=bsts) Robust Kalman filtering is
+    provided by [RobKF](https://cran.r-project.org/package=RobKF).
   - Non-Gaussian time series can be handled with GLARMA state space
     models via [glarma](https://cran.r-project.org/package=glarma), and using
     Generalized Autoregressive Score models in the
@@ -359,8 +360,6 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast) package.
     [opera](https://cran.r-project.org/package=opera) has facilities for online
     predictions based on combinations of forecasts provided by the user.
-    [mafs](https://cran.r-project.org/package=mafs) fits several forecast models and
-    selects the best one according to an error metric.
   - Point forecast evaluation is provided in the `accuracy()` function
     from the [fable](https://cran.r-project.org/package=fable) and
     [forecast](https://cran.r-project.org/package=forecast) packages. Distributional
@@ -713,6 +712,8 @@ list, please let us know.
     [dtwclust](https://cran.r-project.org/package=dtwclust),
     [BNPTSclust](https://cran.r-project.org/package=BNPTSclust) and
     [pdc](https://cran.r-project.org/package=pdc).
+  - [TSdist](https://cran.r-project.org/package=TSdist) provides distance measures
+    for time series data.
   - [TSrepr](https://cran.r-project.org/package=TSrepr) includes methods for
     representing time series using dimension reduction and feature
     extraction.
@@ -772,6 +773,9 @@ list, please let us know.
 
 **Time Series Data**
 
+  - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
+    applications in R* are in the [TSA](https://cran.r-project.org/package=TSA)
+    package.
   - Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
     principles and practice* are in the
     [fpp2](https://cran.r-project.org/package=fpp2) package.
@@ -1022,7 +1026,6 @@ list, please let us know.
   - [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries)
   - [ltsa](https://cran.r-project.org/package=ltsa)
   - [lubridate](https://cran.r-project.org/package=lubridate)
-  - [mafs](https://cran.r-project.org/package=mafs)
   - [MAPA](https://cran.r-project.org/package=MAPA)
   - [mAr](https://cran.r-project.org/package=mAr)
   - [mar1s](https://cran.r-project.org/package=mar1s)
@@ -1087,6 +1090,7 @@ list, please let us know.
   - [robcp](https://cran.r-project.org/package=robcp)
   - [robets](https://cran.r-project.org/package=robets)
   - [robfilter](https://cran.r-project.org/package=robfilter)
+  - [RobKF](https://cran.r-project.org/package=RobKF)
   - [robustarima](https://cran.r-project.org/package=robustarima)
   - [roll](https://cran.r-project.org/package=roll)
   - [RSEIS](https://cran.r-project.org/package=RSEIS)
@@ -1147,12 +1151,14 @@ list, please let us know.
   - [tis](https://cran.r-project.org/package=tis)
   - [tpr](https://cran.r-project.org/package=tpr)
   - [trend](https://cran.r-project.org/package=trend)
+  - [TSA](https://cran.r-project.org/package=TSA)
   - [tsbox](https://cran.r-project.org/package=tsbox)
   - [TSclust](https://cran.r-project.org/package=TSclust)
   - [tscount](https://cran.r-project.org/package=tscount)
   - [TSdbi](https://cran.r-project.org/package=TSdbi)
   - [tsdecomp](https://cran.r-project.org/package=tsdecomp)
   - [tsdisagg2](https://cran.r-project.org/package=tsdisagg2)
+  - [TSdist](https://cran.r-project.org/package=TSdist)
   - [tsDyn](https://cran.r-project.org/package=tsDyn)
   - [TSEntropies](https://cran.r-project.org/package=TSEntropies)
   - [tseries](https://cran.r-project.org/package=tseries) (core)
