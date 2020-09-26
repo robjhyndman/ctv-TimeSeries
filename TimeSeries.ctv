@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-08-26</version>
+<version>2020-09-04</version>
 
 <info>
 <p>
@@ -203,7 +203,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
+    are handled in the <pkg>acp</pkg> package.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -245,7 +245,6 @@
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
     <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
-    <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Point forecast evaluation
     is provided in the <code>accuracy()</code> function from the <pkg>fable</pkg> and <pkg>forecast</pkg> packages.
@@ -818,7 +817,6 @@
   <pkg>LPStimeSeries</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
-  <pkg>mafs</pkg>
   <pkg>MAPA</pkg>
   <pkg>mar1s</pkg>
   <pkg>mAr</pkg>
@@ -945,7 +943,6 @@
   <pkg>trend</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
-  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
