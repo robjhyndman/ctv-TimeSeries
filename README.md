@@ -1,10 +1,10 @@
 ## CRAN Task View: Time Series Analysis
 
-                                                               
+   
 --------------- --------------------------------------------   
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-09-26                                     
+**Version:**    2020-10-24                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -57,6 +57,8 @@ list, please let us know.
     [feasts](https://cran.r-project.org/package=feasts) provides various time series
     graphics for tsibble objects including time plots, season plots,
     subseries plots, ACF and PACF plots, and some combination displays.
+    Interactive graphics for tsibbles using htmlwidgets are provided by
+    [tsibbletalk](https://cran.r-project.org/package=tsibbletalk).
     [SDD](https://cran.r-project.org/package=SDD) provides more general serial
     dependence diagrams, while [dCovTS](https://cran.r-project.org/package=dCovTS)
     computes and plots the distance covariance and correlation functions
@@ -190,7 +192,11 @@ list, please let us know.
     [fabletools](https://cran.r-project.org/package=fabletools) provides tools for
     extending the [fable](https://cran.r-project.org/package=fable) framework.
   - The [forecast](https://cran.r-project.org/package=forecast) package provides
-    similar tools for `ts` objects.
+    similar tools for `ts` objects, while
+    [modeltime](https://cran.r-project.org/package=modeltime) and
+    [modeltime.ensemble](https://cran.r-project.org/package=modeltime.ensemble)
+    provides time series forecasting tools for use with the 'tidymodels'
+    ecosystem.
   - *Exponential smoothing* : `HoltWinters()` in stats provides some
     basic models with partial optimization, `ETS()` from
     [fable](https://cran.r-project.org/package=fable) and `ets()` from
@@ -724,11 +730,15 @@ list, please let us know.
     calculation of dynamic time warping for streaming time series.
   - Methods for plotting and forecasting collections of hierarchical and
     grouped time series are provided by
+    [fable](https://cran.r-project.org/package=fable) and
     [hts](https://cran.r-project.org/package=hts).
     [thief](https://cran.r-project.org/package=thief) uses hierarchical methods to
-    reconcile forecasts of temporally aggregated time series. An
-    alternative approach to reconciling forecasts of hierarchical time
-    series is provided by [gtop](https://cran.r-project.org/package=gtop).
+    reconcile forecasts of temporally aggregated time series.
+    [FoReco](https://cran.r-project.org/package=FoReco) provides various forecast
+    reconciliation methods for cross-sectional, temporal, and
+    cross-temporal constrained time series. An alternative approach to
+    reconciling forecasts of hierarchical time series is provided by
+    [gtop](https://cran.r-project.org/package=gtop).
     [ProbReco](https://cran.r-project.org/package=ProbReco) provides tools to train
     forecast reconciliation weights by optimizing probability scoring
     functions.
@@ -820,6 +830,9 @@ list, please let us know.
     financial, economical and social datasets can be queried
     interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
     package.
+  - [readabs](https://cran.r-project.org/package=readabs) downloads, imports and
+    tidies time series data from the [Australian Bureau of
+    Statistics](https://www.abs.gov.au) .
   - [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common interface to
     time series databases.
   - Various data sets in [tsibble](https://cran.r-project.org/package=tsibble)
@@ -981,6 +994,7 @@ list, please let us know.
   - [ForecastComb](https://cran.r-project.org/package=ForecastComb)
   - [forecastHybrid](https://cran.r-project.org/package=forecastHybrid)
   - [forecastML](https://cran.r-project.org/package=forecastML)
+  - [FoReco](https://cran.r-project.org/package=FoReco)
   - [forecTheta](https://cran.r-project.org/package=forecTheta)
   - [fpp2](https://cran.r-project.org/package=fpp2)
   - [fpp3](https://cran.r-project.org/package=fpp3)
@@ -1038,6 +1052,8 @@ list, please let us know.
   - [mgm](https://cran.r-project.org/package=mgm)
   - [mixAR](https://cran.r-project.org/package=mixAR)
   - [mlVAR](https://cran.r-project.org/package=mlVAR)
+  - [modeltime](https://cran.r-project.org/package=modeltime)
+  - [modeltime.ensemble](https://cran.r-project.org/package=modeltime.ensemble)
   - [mondate](https://cran.r-project.org/package=mondate)
   - [MSwM](https://cran.r-project.org/package=MSwM)
   - [MTS](https://cran.r-project.org/package=MTS)
@@ -1079,6 +1095,7 @@ list, please let us know.
   - [Quandl](https://cran.r-project.org/package=Quandl)
   - [quantspec](https://cran.r-project.org/package=quantspec)
   - [Rbeast](https://cran.r-project.org/package=Rbeast)
+  - [readabs](https://cran.r-project.org/package=readabs)
   - [regspec](https://cran.r-project.org/package=regspec)
   - [RGENERATE](https://cran.r-project.org/package=RGENERATE)
   - [rhosa](https://cran.r-project.org/package=rhosa)
@@ -1169,6 +1186,7 @@ list, please let us know.
   - [tsfknn](https://cran.r-project.org/package=tsfknn)
   - [tsibble](https://cran.r-project.org/package=tsibble) (core)
   - [tsibbledata](https://cran.r-project.org/package=tsibbledata)
+  - [tsibbletalk](https://cran.r-project.org/package=tsibbletalk)
   - [tsintermittent](https://cran.r-project.org/package=tsintermittent)
   - [TSMining](https://cran.r-project.org/package=TSMining)
   - [tsModel](https://cran.r-project.org/package=tsModel)
