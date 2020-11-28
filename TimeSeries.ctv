@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-11-27</version>
+<version>2020-11-29</version>
 
 <info>
 <p>
@@ -168,6 +168,8 @@
     <pkg>TSTutorial</pkg> provides an interactive tutorial for Box-Jenkins modelling.
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
   </li>
+  <li>ARIMA models with multiple seasonal periods can be handled with <pkg>tfarima</pkg> and <pkg>smooth</pkg>.
+  </li>
   <li><i>Periodic ARMA models</i>:
     <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
   </li>
@@ -179,7 +181,7 @@
     Fractionally differenced Gegenbaur ARMA processes are handled in <pkg>garma</pkg>.
   </li>
   <li><i>Transfer function</i> models
-    are provided by the the <code>arfima</code> function in the <pkg>arfima</pkg> package.
+    are provided by the <code>arfima</code> function in the <pkg>arfima</pkg> and the <pkg>tfarima</pkg> packages.
   </li>
   <li><i>Structural (or unobserved component) models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>, while
@@ -232,6 +234,7 @@
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
+    <pkg>breakfast</pkg> includes methods for fast multiple change-point detection and estimation.
   </li>
    <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
   </li>
@@ -443,6 +446,7 @@
     <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
     <pkg>BMTAR</pkg> implements Baysian Multivariate Threshold AR models with missing data.
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
+    <pkg>BGVAR</pkg> implements Bayesian Global VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
@@ -594,6 +598,8 @@
   <li><pkg>fame</pkg>
     provides an interface for FAME time series databases
   </li>
+  <li>Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using <pkg>fredr</pkg>.
+  </li>
   <li><pkg>influxdbr</pkg>
     provides an interface to the InfluxDB time series database.
   </li>
@@ -705,6 +711,7 @@
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
   <pkg>bfast</pkg>
+  <pkg>BGVAR</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
@@ -713,6 +720,7 @@
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
   <pkg>bootUR</pkg>
+  <pkg>breakfast</pkg>
   <pkg>bspec</pkg>
   <pkg>bssm</pkg>
   <pkg>bsts</pkg>
@@ -785,6 +793,7 @@
   <pkg>fpp2</pkg>
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
+  <pkg>fredr</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
   <pkg>fsMTS</pkg>
@@ -938,6 +947,7 @@
   <pkg>Tcomp</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>testcorr</pkg>
+  <pkg>tfarima</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
   <pkg>Tides</pkg>
