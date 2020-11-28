@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-10-24</version>
+<version>2020-11-27</version>
 
 <info>
 <p>
@@ -169,7 +169,7 @@
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
   </li>
   <li><i>Periodic ARMA models</i>:
-    <pkg>pear</pkg> and <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
+    <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
   </li>
   <li><i>Long memory models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
@@ -210,7 +210,7 @@
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
   <li><i>Censored time series</i>
-   can be modelled using <pkg>cents</pkg> and <pkg>carx</pkg>.
+   can be modelled using <pkg>carx</pkg>.
    <pkg>ARCensReg</pkg> fits univariate censored regression models with autoregressive errors.
   </li>
   <li><i>Portmanteau tests</i>
@@ -443,7 +443,6 @@
     <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
     <pkg>BMTAR</pkg> implements Baysian Multivariate Threshold AR models with missing data.
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
-    <pkg>BGVAR</pkg> implements Bayesian Global VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
@@ -706,7 +705,6 @@
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
   <pkg>bfast</pkg>
-  <pkg>BGVAR</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
@@ -724,7 +722,6 @@
   <pkg>CADFtest</pkg>
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
-  <pkg>cents</pkg>
   <pkg>changepoint.geo</pkg>
   <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
@@ -873,7 +870,6 @@
   <pkg>pcts</pkg>
   <pkg>pdc</pkg>
   <pkg>pdfetch</pkg>
-  <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
   <pkg>ProbReco</pkg>
