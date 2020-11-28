@@ -640,6 +640,8 @@
   <li><pkg>FeedbackTS</pkg>:
     Analysis of fragmented time directionality to investigate feedback in time series.
   </li>
+  <li><pkg>ifultools</pkg> is a collection of efficient signal processing, image processing, and time series modeling routines.
+  </li>
   <li><pkg>imputePSF</pkg>:
     imputes missing data using pattern sequences.
   </li>
@@ -819,6 +821,7 @@
   <pkg>hht</pkg>
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
+  <pkg>ifultools</pkg>
   <pkg>imputePSF</pkg>
   <pkg>imputeTestbench</pkg>
   <pkg>imputeTS</pkg>

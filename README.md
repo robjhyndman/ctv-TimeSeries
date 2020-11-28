@@ -867,6 +867,9 @@ list, please let us know.
 -   [FeedbackTS](https://cran.r-project.org/package=FeedbackTS): Analysis of
     fragmented time directionality to investigate feedback in time
     series.
+-   [ifultools](https://cran.r-project.org/package=ifultools) is a collection of
+    efficient signal processing, image processing, and time series
+    modeling routines.
 -   [imputePSF](https://cran.r-project.org/package=imputePSF): imputes missing data
     using pattern sequences.
 -   [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries) aims to find
@@ -1032,6 +1035,7 @@ list, please let us know.
 -   [hht](https://cran.r-project.org/package=hht)
 -   [hts](https://cran.r-project.org/package=hts)
 -   [hwwntest](https://cran.r-project.org/package=hwwntest)
+-   [ifultools](https://cran.r-project.org/package=ifultools)
 -   [imputePSF](https://cran.r-project.org/package=imputePSF)
 -   [imputeTestbench](https://cran.r-project.org/package=imputeTestbench)
 -   [imputeTS](https://cran.r-project.org/package=imputeTS)
