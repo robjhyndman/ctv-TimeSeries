@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-11-29</version>
+<version>2020-12-20</version>
 
 <info>
 <p>
@@ -110,8 +110,6 @@
   </li>
   <li>Some manipulation tools for time series are available in <pkg>data.table</pkg> including <code>shift()</code> for lead/lag operations.
   Further basic time series functionalities are offered by <pkg>DTSg</pkg> which is based on <pkg>data.table</pkg>.
-  </li>
-  <li><pkg>collapse</pkg> provides fast computation of several time series functions such as lead/lag operations, (quasi-, log-) differences and growth rates on time-series and panel data, and ACF/PACF/CCF estimation for panel data.
   </li>
   <li>Various packages implement irregular time series
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
@@ -738,7 +736,6 @@
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
-  <pkg>collapse</pkg>
   <pkg>costat</pkg>
   <pkg>data.table</pkg>
   <pkg>dataseries</pkg>
