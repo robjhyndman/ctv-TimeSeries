@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-12-20</version>
+<version>2020-12-23</version>
 
 <info>
 <p>
@@ -28,7 +28,7 @@
   <li><i>Graphics</i>:
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
     (Partial) autocorrelation functions plots are implemented in <code>acf()</code> and <code>pacf()</code>. Alternative versions are provided by <code>Acf()</code> and <code>Pacf()</code> in <pkg>forecast</pkg>, along with a combination display using <code>tsdisplay()</code>.
-    Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
+    Seasonal displays are obtained using <code>monthplot()</code> in stats, <code>seasonplot</code> in <pkg>forecast</pkg>, and <code>seasplot</code> in <pkg>tsutils</pkg>.
     <pkg>feasts</pkg> provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
     Interactive graphics for tsibbles using htmlwidgets are provided by <pkg>tsibbletalk</pkg>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
@@ -147,7 +147,7 @@
     forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data. <pkg>fable.prophet</pkg> allows prophet models to be used in the <pkg>fable</pkg> framework.
   </li>
   <li>The theta method
-    is implemented in the <code>THETA()</code> function from <pkg>fable</pkg> and <code>thetaf()</code> function from <pkg>forecast</pkg>.
+    is implemented in the <code>THETA()</code> function from <pkg>fable</pkg>, <code>thetaf()</code> function from <pkg>forecast</pkg>, and <code>theta()</code> from <pkg>tsutils</pkg>.
     An alternative and extended implementation is provided in <pkg>forecTheta</pkg>.
   </li>
   <li><i>Autoregressive models</i>:
@@ -213,9 +213,11 @@
    can be modelled using <pkg>carx</pkg>.
    <pkg>ARCensReg</pkg> fits univariate censored regression models with autoregressive errors.
   </li>
+  <li><i>Diffusion models</i> such as Bass and Gompertz curves are provided by <pkg>diffusion</pkg>.
+  </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
-    Additional tests are given by <pkg>WeightedPortTest</pkg> and <pkg>testcorr</pkg>.
+    Additional tests are given by <pkg>portes</pkg>, <pkg>WeightedPortTest</pkg> and <pkg>testcorr</pkg>.
   </li>
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
@@ -253,6 +255,8 @@
     is provided in the <code>accuracy()</code> function from the <pkg>fable</pkg> and <pkg>forecast</pkg> packages.
     Distributional forecast evaluation using scoring rules is available in <pkg>fable</pkg>, <pkg>scoringRules</pkg> and <pkg>scoringutils</pkg>.
     The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>. A multivariate version of the Diebold-Mariano test is provided by <pkg>multDM</pkg>.
+    <pkg>tsutils</pkg> implements the Nemenyi test for comparing forecasts.
+    <pkg>greybox</pkg> provides <code>ro()</code> for general rolling origin evaluation of forecasts.
   </li>
   <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
   <li>Multi-step-ahead direct forecasting with several machine learning approaches are provided in <pkg>forecastML</pkg>.
@@ -323,6 +327,7 @@
     the stats package provides classical decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>.
     Enhanced STL decomposition is available in <pkg>stlplus</pkg>.
     <pkg>stR</pkg> provides Seasonal-Trend decomposition based on Regression.
+    <pkg>smooth</pkg> and <pkg>tsutils</pkg> implement extended versions of classical decomposition.
   </li>
   <li>X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
@@ -427,6 +432,8 @@
   <li><i>Time-varying parameter</i> models
     can be fitted using the <pkg>tpr</pkg> package.
   </li>
+  <li><pkg>greybox</pkg> provides several tools for modelling and forecasting with dynamic regression models.
+  </li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -462,6 +469,8 @@
   <li><i>Vector error correction models</i>
     are available via the <pkg>urca</pkg>, <pkg>ecm</pkg>, <pkg>vars</pkg>, <pkg>tsDyn</pkg> packages, including versions with structural constraints and thresholding.
   </li>
+  <li><i>Vector exponential smoothing</i> is provided by <pkg>smooth</pkg>.
+  </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
     <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
@@ -472,7 +481,9 @@
   <li><i>Multivariate state space models</i>
     An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
     <pkg>FKF</pkg> provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
-    Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
+    <pkg>FKF.SP</pkg> implements fast Kalman filtering through sequential processing.
+    Another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
+    <pkg>mssm</pkg> also provides methods for multivariate state space models.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
     <pkg>mbsts</pkg> provides tools for multivariate Bayesian structural time series models.
     All of these packages assume the observational and state error terms are uncorrelated.
@@ -744,6 +755,7 @@
   <pkg>depmix</pkg>
   <pkg>depmixS4</pkg>
   <pkg>deseasonalize</pkg>
+  <pkg>diffusion</pkg>
   <pkg>disaggR</pkg>
   <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
@@ -780,6 +792,7 @@
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
   <pkg>FKF</pkg>
+  <pkg>FKF.SP</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
@@ -812,6 +825,7 @@
   <pkg>graphicalVAR</pkg>
   <pkg>gratis</pkg>
   <pkg>gravitas</pkg>
+  <pkg>greybox</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
@@ -850,6 +864,7 @@
   <pkg>modeltime</pkg>
   <pkg>modeltime.ensemble</pkg>
   <pkg>mondate</pkg>
+  <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
@@ -881,6 +896,7 @@
   <pkg>pdfetch</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
+  <pkg>portes</pkg>
   <pkg>ProbReco</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
@@ -888,8 +904,8 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
-  <pkg>readabs</pkg>
   <pkg>Rbeast</pkg>
+  <pkg>readabs</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>rhosa</pkg>
@@ -898,10 +914,10 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
-  <pkg>RobKF</pkg>
   <pkg>robcp</pkg>
   <pkg>robets</pkg>
   <pkg>robfilter</pkg>
+  <pkg>RobKF</pkg>
   <pkg>robustarima</pkg>
   <pkg>roll</pkg>
   <pkg>RSEIS</pkg>
@@ -991,6 +1007,7 @@
   <pkg>TSstudio</pkg>
   <pkg>tstools</pkg>
   <pkg>TSTutorial</pkg>
+  <pkg>tsutils</pkg>
   <pkg>tswge</pkg>
   <pkg>UComp</pkg>
   <pkg>urca</pkg>
