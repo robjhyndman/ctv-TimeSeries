@@ -4,7 +4,7 @@ CRAN Task View: Time Series Analysis
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-11-29                                     
+**Version:**    2020-12-23                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -52,8 +52,9 @@ list, please let us know.
     provided by `Acf()` and `Pacf()` in
     [forecast](https://cran.r-project.org/package=forecast), along with a
     combination display using `tsdisplay()`. Seasonal displays are
-    obtained using `monthplot()` in stats and `seasonplot` in
-    [forecast](https://cran.r-project.org/package=forecast).
+    obtained using `monthplot()` in stats, `seasonplot` in
+    [forecast](https://cran.r-project.org/package=forecast), and `seasplot` in
+    [tsutils](https://cran.r-project.org/package=tsutils).
     [feasts](https://cran.r-project.org/package=feasts) provides various time series
     graphics for tsibble objects including time plots, season plots,
     subseries plots, ACF and PACF plots, and some combination displays.
@@ -160,11 +161,6 @@ list, please let us know.
     for lead/lag operations. Further basic time series functionalities
     are offered by [DTSg](https://cran.r-project.org/package=DTSg) which is based on
     [data.table](https://cran.r-project.org/package=data.table).
--   [collapse](https://cran.r-project.org/package=collapse) provides fast
-    computation of several time series functions such as lead/lag
-    operations, (quasi-, log-) differences and growth rates on
-    time-series and panel data, and ACF/PACF/CCF estimation for panel
-    data.
 -   Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
@@ -216,8 +212,9 @@ list, please let us know.
     allows prophet models to be used in the
     [fable](https://cran.r-project.org/package=fable) framework.
 -   The theta method is implemented in the `THETA()` function from
-    [fable](https://cran.r-project.org/package=fable) and `thetaf()` function from
-    [forecast](https://cran.r-project.org/package=forecast). An alternative and
+    [fable](https://cran.r-project.org/package=fable), `thetaf()` function from
+    [forecast](https://cran.r-project.org/package=forecast), and `theta()` from
+    [tsutils](https://cran.r-project.org/package=tsutils). An alternative and
     extended implementation is provided in
     [forecTheta](https://cran.r-project.org/package=forecTheta).
 -   *Autoregressive models* : `ar()` in stats (with model selection) and
@@ -314,8 +311,11 @@ list, please let us know.
     [carx](https://cran.r-project.org/package=carx).
     [ARCensReg](https://cran.r-project.org/package=ARCensReg) fits univariate
     censored regression models with autoregressive errors.
+-   *Diffusion models* such as Bass and Gompertz curves are provided by
+    [diffusion](https://cran.r-project.org/package=diffusion).
 -   *Portmanteau tests* are provided via `Box.test()` in the stats
     package. Additional tests are given by
+    [portes](https://cran.r-project.org/package=portes),
     [WeightedPortTest](https://cran.r-project.org/package=WeightedPortTest) and
     [testcorr](https://cran.r-project.org/package=testcorr).
 -   Outlier detection following the Chen-Liu approach is provided by
@@ -382,6 +382,10 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast). A multivariate version
     of the Diebold-Mariano test is provided by
     [multDM](https://cran.r-project.org/package=multDM).
+    [tsutils](https://cran.r-project.org/package=tsutils) implements the Nemenyi
+    test for comparing forecasts.
+    [greybox](https://cran.r-project.org/package=greybox) provides `ro()` for
+    general rolling origin evaluation of forecasts.
 -   Tidy tools for forecasting are provided by
     [sweep](https://cran.r-project.org/package=sweep), converting objects produced
     in [forecast](https://cran.r-project.org/package=forecast) to "tidy" data
@@ -479,6 +483,9 @@ list, please let us know.
     [stlplus](https://cran.r-project.org/package=stlplus).
     [stR](https://cran.r-project.org/package=stR) provides Seasonal-Trend
     decomposition based on Regression.
+    [smooth](https://cran.r-project.org/package=smooth) and
+    [tsutils](https://cran.r-project.org/package=tsutils) implement extended
+    versions of classical decomposition.
 -   X-13-ARIMA-SEATS binaries are provided in the
     [x13binary](https://cran.r-project.org/package=x13binary) package, with
     [seasonal](https://cran.r-project.org/package=seasonal) providing an R interface
@@ -616,6 +623,8 @@ list, please let us know.
     symmetric distribution.
 -   *Time-varying parameter* models can be fitted using the
     [tpr](https://cran.r-project.org/package=tpr) package.
+-   [greybox](https://cran.r-project.org/package=greybox) provides several tools for
+    modelling and forecasting with dynamic regression models.
 
 **Multivariate Time Series Models**
 
@@ -675,6 +684,8 @@ list, please let us know.
     [vars](https://cran.r-project.org/package=vars),
     [tsDyn](https://cran.r-project.org/package=tsDyn) packages, including versions
     with structural constraints and thresholding.
+-   *Vector exponential smoothing* is provided by
+    [smooth](https://cran.r-project.org/package=smooth).
 -   *Time series component analysis* : Time series factor analysis is
     provided in [tsfa](https://cran.r-project.org/package=tsfa).
     [ForeCA](https://cran.r-project.org/package=ForeCA) implements forecastable
@@ -691,9 +702,12 @@ list, please let us know.
     fast multivariate Kalman filter, smoother, simulation smoother and
     forecasting. [FKF](https://cran.r-project.org/package=FKF) provides a fast and
     flexible implementation of the Kalman filter, which can deal with
-    missing values. Yet another implementation is given in the
-    [dlm](https://cran.r-project.org/package=dlm) package which also contains tools
-    for converting other multivariate models into state space form.
+    missing values. [FKF.SP](https://cran.r-project.org/package=FKF.SP) implements
+    fast Kalman filtering through sequential processing. Another
+    implementation is given in the [dlm](https://cran.r-project.org/package=dlm)
+    package which also contains tools for converting other multivariate
+    models into state space form. [mssm](https://cran.r-project.org/package=mssm)
+    also provides methods for multivariate state space models.
     [MARSS](https://cran.r-project.org/package=MARSS) fits constrained and
     unconstrained multivariate autoregressive state-space models using
     an EM algorithm. [mbsts](https://cran.r-project.org/package=mbsts) provides
@@ -952,7 +966,6 @@ list, please let us know.
 -   [changepoint.np](https://cran.r-project.org/package=changepoint.np)
 -   [chron](https://cran.r-project.org/package=chron)
 -   [cointReg](https://cran.r-project.org/package=cointReg)
--   [collapse](https://cran.r-project.org/package=collapse)
 -   [costat](https://cran.r-project.org/package=costat)
 -   [data.table](https://cran.r-project.org/package=data.table)
 -   [dataseries](https://cran.r-project.org/package=dataseries)
@@ -961,6 +974,7 @@ list, please let us know.
 -   [depmix](https://cran.r-project.org/package=depmix)
 -   [depmixS4](https://cran.r-project.org/package=depmixS4)
 -   [deseasonalize](https://cran.r-project.org/package=deseasonalize)
+-   [diffusion](https://cran.r-project.org/package=diffusion)
 -   [disaggR](https://cran.r-project.org/package=disaggR)
 -   [dLagM](https://cran.r-project.org/package=dLagM)
 -   [dlm](https://cran.r-project.org/package=dlm)
@@ -997,6 +1011,7 @@ list, please let us know.
 -   [FitAR](https://cran.r-project.org/package=FitAR)
 -   [FitARMA](https://cran.r-project.org/package=FitARMA)
 -   [FKF](https://cran.r-project.org/package=FKF)
+-   [FKF.SP](https://cran.r-project.org/package=FKF.SP)
 -   [fma](https://cran.r-project.org/package=fma)
 -   [fNonlinear](https://cran.r-project.org/package=fNonlinear)
 -   [ForeCA](https://cran.r-project.org/package=ForeCA)
@@ -1029,6 +1044,7 @@ list, please let us know.
 -   [graphicalVAR](https://cran.r-project.org/package=graphicalVAR)
 -   [gratis](https://cran.r-project.org/package=gratis)
 -   [gravitas](https://cran.r-project.org/package=gravitas)
+-   [greybox](https://cran.r-project.org/package=greybox)
 -   [gsarima](https://cran.r-project.org/package=gsarima)
 -   [gtop](https://cran.r-project.org/package=gtop)
 -   [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression)
@@ -1067,6 +1083,7 @@ list, please let us know.
 -   [modeltime](https://cran.r-project.org/package=modeltime)
 -   [modeltime.ensemble](https://cran.r-project.org/package=modeltime.ensemble)
 -   [mondate](https://cran.r-project.org/package=mondate)
+-   [mssm](https://cran.r-project.org/package=mssm)
 -   [MSwM](https://cran.r-project.org/package=MSwM)
 -   [MTS](https://cran.r-project.org/package=MTS)
 -   [mtsdi](https://cran.r-project.org/package=mtsdi)
@@ -1098,6 +1115,7 @@ list, please let us know.
 -   [pdfetch](https://cran.r-project.org/package=pdfetch)
 -   [perARMA](https://cran.r-project.org/package=perARMA)
 -   [pomp](https://cran.r-project.org/package=pomp)
+-   [portes](https://cran.r-project.org/package=portes)
 -   [ProbReco](https://cran.r-project.org/package=ProbReco)
 -   [prophet](https://cran.r-project.org/package=prophet)
 -   [psd](https://cran.r-project.org/package=psd)
@@ -1208,6 +1226,7 @@ list, please let us know.
 -   [TSstudio](https://cran.r-project.org/package=TSstudio)
 -   [tstools](https://cran.r-project.org/package=tstools)
 -   [TSTutorial](https://cran.r-project.org/package=TSTutorial)
+-   [tsutils](https://cran.r-project.org/package=tsutils)
 -   [tswge](https://cran.r-project.org/package=tswge)
 -   [UComp](https://cran.r-project.org/package=UComp)
 -   [urca](https://cran.r-project.org/package=urca)
