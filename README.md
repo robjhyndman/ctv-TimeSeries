@@ -4,7 +4,7 @@ CRAN Task View: Time Series Analysis
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2020-12-23                                     
+**Version:**    2021-01-10                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -161,6 +161,11 @@ list, please let us know.
     for lead/lag operations. Further basic time series functionalities
     are offered by [DTSg](https://cran.r-project.org/package=DTSg) which is based on
     [data.table](https://cran.r-project.org/package=data.table).
+-   [collapse](https://cran.r-project.org/package=collapse) provides fast
+    computation of several time series functions such as lead/lag
+    operations, (quasi-, log-) differences and growth rates on
+    time-series and panel data, and ACF/PACF/CCF estimation for panel
+    data.
 -   Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
@@ -966,6 +971,7 @@ list, please let us know.
 -   [changepoint.np](https://cran.r-project.org/package=changepoint.np)
 -   [chron](https://cran.r-project.org/package=chron)
 -   [cointReg](https://cran.r-project.org/package=cointReg)
+-   [collapse](https://cran.r-project.org/package=collapse)
 -   [costat](https://cran.r-project.org/package=costat)
 -   [data.table](https://cran.r-project.org/package=data.table)
 -   [dataseries](https://cran.r-project.org/package=dataseries)
