@@ -525,7 +525,7 @@
 
 <p><strong>Functional time series</strong></p>
 <ul>
-  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>.
+  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>. <pkg>NTS</pkg> also implements functional autoregressive models.
   </li>
   <li><pkg>fdaACF</pkg> estimates the autocorrelation function for functional time series.
   </li>
