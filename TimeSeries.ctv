@@ -201,7 +201,7 @@
     <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models.
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>.
     Other univariate GARCH packages include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations. 
-    <pkg>bayesforecasts</pkg> fits Bayesian time series models including several variations of GARCH models.
+    <pkg>bayesforecast</pkg> fits Bayesian time series models including several variations of GARCH models.
     There are many more GARCH packages described in the <view>Finance</view> task view.
   </li>
   <li><i>Stochastic volatility</i> models
