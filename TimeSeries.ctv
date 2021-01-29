@@ -185,7 +185,7 @@
   </li>
   <li><i>Structural (or unobserved component) models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>, while
-    automatic modelling and forecasting are provided by <pkg>UComp</pkg>.
+    automatic modelling and forecasting are provided by <pkg>UComp</pkg> and <pkg>autostsm</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
     <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
@@ -720,6 +720,7 @@
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
+  <pkg>autostsm</pkg>
   <pkg>BayesARIMAX</pkg>
   <pkg>bayesforecast</pkg>
   <pkg>BAYSTAR</pkg>
