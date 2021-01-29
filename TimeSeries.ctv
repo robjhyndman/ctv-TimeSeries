@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-01-10</version>
+<version>2021-01-29</version>
 
 <info>
 <p>
@@ -162,6 +162,7 @@
     <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
     Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series simulation.
     Robust ARIMA modeling is provided in the <pkg>robustarima</pkg> package.
+    <pkg>bayesforecast</pkg> fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
     <pkg>BayesARIMAX</pkg> implements Bayesian estimation of ARIMAX models.
     The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes.
     <pkg>TSTutorial</pkg> provides an interactive tutorial for Box-Jenkins modelling.
@@ -199,7 +200,8 @@
   <li><i>GARCH models</i>:
     <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models.
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>.
-    Other univariate GARCH packages include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations.
+    Other univariate GARCH packages include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations. 
+    <pkg>bayesforecasts</pkg> fits Bayesian time series models including several variations of GARCH models.
     There are many more GARCH packages described in the <view>Finance</view> task view.
   </li>
   <li><i>Stochastic volatility</i> models
@@ -719,6 +721,7 @@
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
   <pkg>BayesARIMAX</pkg>
+  <pkg>bayesforecast</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
