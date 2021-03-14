@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-03-01</version>
+<version>2021-03-14</version>
 
 <info>
 <p>
@@ -199,7 +199,7 @@
   <li><i>GARCH models</i>:
     <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models.
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>.
-    Other univariate GARCH packages include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations. 
+    Other univariate GARCH packages include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations.
     <pkg>bayesforecast</pkg> fits Bayesian time series models including several variations of GARCH models.
     There are many more GARCH packages described in the <view>Finance</view> task view.
   </li>
@@ -452,6 +452,7 @@
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
     <pkg>BMTAR</pkg> implements Baysian Multivariate Threshold AR models with missing data.
+    <pkg>mfbvar</pkg> includes tools for estimating mixed-frequency Bayesian VAR models.
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
     <pkg>BGVAR</pkg> implements Bayesian Global VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
@@ -548,6 +549,7 @@
 <ul>
   <li><i>Bootstrapping</i>:
     The <pkg>boot</pkg> package provides function <code>tsboot()</code> for time series bootstrapping, including block bootstrap with several variants.
+    <pkg>blocklength</pkg> allows for selecting the optimal block-length for a dependent bootstrap.
     <code>tsbootstrap()</code> from <pkg>tseries</pkg> provides fast stationary and block bootstrapping.
     Maximum entropy bootstrap for time series is available in <pkg>meboot</pkg>.
     <pkg>timesboot</pkg> computes the bootstrap CI for the sample ACF and periodogram.
@@ -728,6 +730,7 @@
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
+  <pkg>blocklength</pkg>
   <pkg>BMTAR</pkg>
   <pkg>BNPTSclust</pkg>
   <pkg>boot</pkg>
@@ -859,6 +862,7 @@
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
+  <pkg>mfbvar</pkg>
   <pkg>mFilter</pkg>
   <pkg>mgm</pkg>
   <pkg>mixAR</pkg>
