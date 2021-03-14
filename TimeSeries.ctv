@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-01-29</version>
+<version>2021-03-01</version>
 
 <info>
 <p>
@@ -32,7 +32,6 @@
     <pkg>feasts</pkg> provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
     Interactive graphics for tsibbles using htmlwidgets are provided by <pkg>tsibbletalk</pkg>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
-    <pkg>tstools</pkg> provides plotting tools designed for official statistics.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
@@ -184,7 +183,7 @@
     are provided by the <code>arfima</code> function in the <pkg>arfima</pkg> and the <pkg>tfarima</pkg> packages.
   </li>
   <li><i>Structural (or unobserved component) models</i>
-    are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>, while
+    are implemented in <code>StructTS()</code> in stats and in <pkg>stsm</pkg>, while
     automatic modelling and forecasting are provided by <pkg>UComp</pkg> and <pkg>autostsm</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
     <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
@@ -467,7 +466,6 @@
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
     are provided in the <pkg>dse</pkg> package.
-    <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to evaluate the associated estimation methods.
   </li>
   <li><i>Vector error correction models</i>
     are available via the <pkg>urca</pkg>, <pkg>ecm</pkg>, <pkg>vars</pkg>, <pkg>tsDyn</pkg> packages, including versions with structural constraints and thresholding.
@@ -475,7 +473,6 @@
   <li><i>Vector exponential smoothing</i> is provided by <pkg>smooth</pkg>.
   </li>
   <li><i>Time series component analysis</i>:
-    Time series factor analysis is provided in <pkg>tsfa</pkg>.
     <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
@@ -781,7 +778,6 @@
   <pkg>ecp</pkg>
   <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
-  <pkg>EvalEst</pkg>
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg priority="core">fable</pkg>
@@ -958,7 +954,6 @@
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
   <pkg>strucchange</pkg>
-  <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
   <pkg>sugrrants</pkg>
   <pkg>surveillance</pkg>
@@ -998,7 +993,6 @@
   <pkg>TSEntropies</pkg>
   <pkg>tseriesChaos</pkg>
   <pkg>tseriesEntropy</pkg>
-  <pkg>tsfa</pkg>
   <pkg>tsfeatures</pkg>
   <pkg>tsfknn</pkg>
   <pkg priority="core">tsibble</pkg>
@@ -1011,7 +1005,6 @@
   <pkg>tsPI</pkg>
   <pkg>TSrepr</pkg>
   <pkg>TSstudio</pkg>
-  <pkg>tstools</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tsutils</pkg>
   <pkg>tswge</pkg>
@@ -1039,7 +1032,6 @@
   <pkg priority="core">zoo</pkg>
   <pkg>ZRA</pkg>
 </packagelist>
-
 
 <links>
     <view>Finance</view>
