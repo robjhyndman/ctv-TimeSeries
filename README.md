@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-03-14                                     
+**Version:**    2021-03-17                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -632,6 +632,10 @@ list, please let us know.
     [tpr](https://cran.r-project.org/package=tpr) package.
 -   [greybox](https://cran.r-project.org/package=greybox) provides several tools for
     modelling and forecasting with dynamic regression models.
+-   Dynamic modeling of various kinds is available in
+    [dynr](https://cran.r-project.org/package=dynr) including discrete and
+    continuous time, linear and nonlinear models, and different types of
+    latent variables.
 
 **Multivariate Time Series Models**
 
@@ -1002,6 +1006,7 @@ list, please let us know.
 -   [dygraphs](https://cran.r-project.org/package=dygraphs)
 -   [dyn](https://cran.r-project.org/package=dyn)
 -   [dynlm](https://cran.r-project.org/package=dynlm)
+-   [dynr](https://cran.r-project.org/package=dynr)
 -   [earlywarnings](https://cran.r-project.org/package=earlywarnings)
 -   [EBMAforecast](https://cran.r-project.org/package=EBMAforecast)
 -   [Ecdat](https://cran.r-project.org/package=Ecdat)
