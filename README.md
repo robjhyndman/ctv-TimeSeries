@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-03-17                                     
+**Version:**    2021-04-11                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -106,11 +106,14 @@ list, please let us know.
     some care and might be system-dependent. Internally, `"POSIXct"`
     objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package [lubridate](https://cran.r-project.org/package=lubridate) provides
-    functions that facilitate certain POSIX-based computations.
-    [timechange](https://cran.r-project.org/package=timechange) allows for efficient
-    manipulation of date-times accounting for time zones and daylight
-    saving times. [wktmo](https://cran.r-project.org/package=wktmo) converts weekly
-    data to monthly data in several different ways.
+    functions that facilitate certain POSIX-based computations, while
+    [clock](https://cran.r-project.org/package=clock) provides a comprehensive
+    library for date-time manipulations using a new family of orthogonal
+    date-time classes (durations, time points, zoned-times, and
+    calendars). [timechange](https://cran.r-project.org/package=timechange) allows
+    for efficient manipulation of date-times accounting for time zones
+    and daylight saving times. [wktmo](https://cran.r-project.org/package=wktmo)
+    converts weekly data to monthly data in several different ways.
 -   Class `"timeDate"` is provided in the
     [timeDate](https://cran.r-project.org/package=timeDate) package (previously:
     fCalendar). It is aimed at financial time/date information and deals
@@ -333,11 +336,12 @@ list, please let us know.
     [otsad](https://cran.r-project.org/package=otsad) implements a set of online
     anomaly detectors for time series.
 -   *Change point detection* is provided in
-    [strucchange](https://cran.r-project.org/package=strucchange) (using linear
-    regression models), and in [trend](https://cran.r-project.org/package=trend)
-    (using nonparametric tests). The
-    [changepoint](https://cran.r-project.org/package=changepoint) package provides
-    many popular changepoint methods, and
+    [strucchange](https://cran.r-project.org/package=strucchange) and
+    [strucchangeRcpp](https://cran.r-project.org/package=strucchangeRcpp) (using
+    linear regression models) and in
+    [trend](https://cran.r-project.org/package=trend) (using nonparametric tests).
+    The [changepoint](https://cran.r-project.org/package=changepoint) package
+    provides many popular changepoint methods, and
     [ecp](https://cran.r-project.org/package=ecp) does nonparametric changepoint
     detection for univariate and multivariate series.
     [changepoint.np](https://cran.r-project.org/package=changepoint.np) implements
@@ -983,6 +987,7 @@ list, please let us know.
 -   [changepoint.mv](https://cran.r-project.org/package=changepoint.mv)
 -   [changepoint.np](https://cran.r-project.org/package=changepoint.np)
 -   [chron](https://cran.r-project.org/package=chron)
+-   [clock](https://cran.r-project.org/package=clock)
 -   [cointReg](https://cran.r-project.org/package=cointReg)
 -   [collapse](https://cran.r-project.org/package=collapse)
 -   [costat](https://cran.r-project.org/package=costat)
@@ -1191,6 +1196,7 @@ list, please let us know.
 -   [stochvol](https://cran.r-project.org/package=stochvol)
 -   [stR](https://cran.r-project.org/package=stR)
 -   [strucchange](https://cran.r-project.org/package=strucchange)
+-   [strucchangeRcpp](https://cran.r-project.org/package=strucchangeRcpp)
 -   [stsm](https://cran.r-project.org/package=stsm)
 -   [sugrrants](https://cran.r-project.org/package=sugrrants)
 -   [surveillance](https://cran.r-project.org/package=surveillance)

@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-03-17</version>
+<version>2021-04-11</version>
 
 <info>
 <p>
@@ -64,7 +64,7 @@
     implement the POSIX standard for date/time (intra-day) information and also support time zones and daylight savings time.
     However, the time zone computations require some care and might be system-dependent.
     Internally, <code>"POSIXct"</code> objects are the number of seconds since 1970-01-01 00:00:00 GMT.
-    Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations.
+    Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations, while <pkg>clock</pkg> provides a comprehensive library for date-time manipulations using a new family of orthogonal date-time classes (durations, time points, zoned-times, and calendars).
     <pkg>timechange</pkg> allows for efficient manipulation of date-times accounting for time zones and daylight saving times.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
   </li>
@@ -227,8 +227,7 @@
     <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
   </li>
   <li><i>Change point detection</i>
-    is provided in <pkg>strucchange</pkg> (using linear regression models),
-    and in <pkg>trend</pkg> (using nonparametric tests).
+    is provided in <pkg>strucchange</pkg> and <pkg>strucchangeRcpp</pkg> (using linear regression models) and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
@@ -753,6 +752,7 @@
   <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
+  <pkg>clock</pkg>
   <pkg>cointReg</pkg>
   <pkg>collapse</pkg>
   <pkg>costat</pkg>
@@ -961,6 +961,7 @@
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
   <pkg>strucchange</pkg>
+  <pkg>strucchangeRcpp</pkg>
   <pkg>stsm</pkg>
   <pkg>sugrrants</pkg>
   <pkg>surveillance</pkg>
