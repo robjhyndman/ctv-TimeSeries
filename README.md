@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-04-11                                     
+**Version:**    2021-04-19                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -352,9 +352,7 @@ list, please let us know.
     the high-dimensional changepoint detection method GeomCP.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
-    series. [robcp](https://cran.r-project.org/package=robcp) provides robust
-    change-point detection using Huberized cusum tests, and
-    [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
+    series. [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
     change-point detection and time series decomposition.
     [breakfast](https://cran.r-project.org/package=breakfast) includes methods for
     fast multiple change-point detection and estimation.
@@ -545,8 +543,10 @@ list, please let us know.
 -   *Local stationarity* : [locits](https://cran.r-project.org/package=locits)
     provides a test of local stationarity and computes the localized
     autocovariance. Time series costationarity determination is provided
-    by [costat](https://cran.r-project.org/package=costat). Locally stationary
-    wavelet models for nonstationary time series are implemented in
+    by [costat](https://cran.r-project.org/package=costat).
+    [LSTS](https://cran.r-project.org/package=LSTS) has functions for locally
+    stationary time series analysis. Locally stationary wavelet models
+    for nonstationary time series are implemented in
     [wavethresh](https://cran.r-project.org/package=wavethresh) (including
     estimation, plotting, and simulation functionality for time-varying
     spectra).
@@ -1090,6 +1090,7 @@ list, please let us know.
 -   [lomb](https://cran.r-project.org/package=lomb)
 -   [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS)
 -   [LPStimeSeries](https://cran.r-project.org/package=LPStimeSeries)
+-   [LSTS](https://cran.r-project.org/package=LSTS)
 -   [ltsa](https://cran.r-project.org/package=ltsa)
 -   [lubridate](https://cran.r-project.org/package=lubridate)
 -   [MAPA](https://cran.r-project.org/package=MAPA)
@@ -1158,7 +1159,6 @@ list, please let us know.
 -   [Rlibeemd](https://cran.r-project.org/package=Rlibeemd)
 -   [rmaf](https://cran.r-project.org/package=rmaf)
 -   [RMAWGEN](https://cran.r-project.org/package=RMAWGEN)
--   [robcp](https://cran.r-project.org/package=robcp)
 -   [robets](https://cran.r-project.org/package=robets)
 -   [robfilter](https://cran.r-project.org/package=robfilter)
 -   [RobKF](https://cran.r-project.org/package=RobKF)
