@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-04-11</version>
+<version>2021-04-15</version>
 
 <info>
 <p>
@@ -234,7 +234,7 @@
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
-    <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
+    <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
     <pkg>breakfast</pkg> includes methods for fast multiple change-point detection and estimation.
   </li>
    <li>Tests for possibly non-monotonic trends are provided by <pkg>funtimes</pkg>.
@@ -923,7 +923,6 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
-  <pkg>robcp</pkg>
   <pkg>robets</pkg>
   <pkg>robfilter</pkg>
   <pkg>RobKF</pkg>
