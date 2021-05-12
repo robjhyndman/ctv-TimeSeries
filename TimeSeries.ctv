@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-04-19</version>
+<version>2021-04-21</version>
 
 <info>
 <p>
@@ -33,8 +33,7 @@
     Interactive graphics for tsibbles using htmlwidgets are provided by <pkg>tsibbletalk</pkg>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
-    <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
-    calendar plots are implemented in <pkg>sugrrants</pkg>.
+    Calendar plots are implemented in <pkg>sugrrants</pkg>.
     <pkg>gravitas</pkg> allows for visualizing probability distributions conditional on bivariate temporal granularities.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
@@ -826,7 +825,6 @@
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
-  <pkg>ggTimeSeries</pkg>
   <pkg>glarma</pkg>
   <pkg>GMDH</pkg>
   <pkg>gmvarkit</pkg>
