@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-04-19                                     
+**Version:**    2021-05-12                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -64,10 +64,8 @@ list, please let us know.
     computes and plots the distance covariance and correlation functions
     of time series. [ggseas](https://cran.r-project.org/package=ggseas) provides
     additional ggplot2 graphics for seasonally adjusted series and
-    rolling statistics.
-    [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries) provides further
-    visualizations including calendar heat maps, while calendar plots
-    are implemented in [sugrrants](https://cran.r-project.org/package=sugrrants).
+    rolling statistics. Calendar plots are implemented in
+    [sugrrants](https://cran.r-project.org/package=sugrrants).
     [gravitas](https://cran.r-project.org/package=gravitas) allows for visualizing
     probability distributions conditional on bivariate temporal
     granularities. [dygraphs](https://cran.r-project.org/package=dygraphs) provides
@@ -335,6 +333,8 @@ list, please let us know.
     simple heuristic methods for identifying and correcting outliers.
     [otsad](https://cran.r-project.org/package=otsad) implements a set of online
     anomaly detectors for time series.
+    [tsrobprep](https://cran.r-project.org/package=tsrobprep) provides methods for
+    replacing missing values and outliers using a model-based approach.
 -   *Change point detection* is provided in
     [strucchange](https://cran.r-project.org/package=strucchange) and
     [strucchangeRcpp](https://cran.r-project.org/package=strucchangeRcpp) (using
@@ -781,7 +781,8 @@ list, please let us know.
     functional time series are implemented in
     [ftsa](https://cran.r-project.org/package=ftsa).
     [NTS](https://cran.r-project.org/package=NTS) also implements functional
-    autoregressive models.
+    autoregressive models. Seasonal functional autoregression models are
+    provided by [Rsfar](https://cran.r-project.org/package=Rsfar).
 -   [fdaACF](https://cran.r-project.org/package=fdaACF) estimates the
     autocorrelation function for functional time series.
 -   [freqdom.fda](https://cran.r-project.org/package=freqdom.fda) provides
@@ -789,6 +790,12 @@ list, please let us know.
     functional time series.
 -   [wwntests](https://cran.r-project.org/package=wwntests) provides an array of
     white noise hypothesis tests for functional data.
+
+**Matrix and tensor-valued time series**
+
+-   [tensorTS](https://cran.r-project.org/package=tensorTS) provides functions for
+    estimation, simulation and prediction of factor and autoregressive
+    models for matrix and tensor valued time series.
 
 **Continuous time models**
 
@@ -1060,7 +1067,6 @@ list, please let us know.
 -   [gdpc](https://cran.r-project.org/package=gdpc)
 -   [ggdemetra](https://cran.r-project.org/package=ggdemetra)
 -   [ggseas](https://cran.r-project.org/package=ggseas)
--   [ggTimeSeries](https://cran.r-project.org/package=ggTimeSeries)
 -   [glarma](https://cran.r-project.org/package=glarma)
 -   [GMDH](https://cran.r-project.org/package=GMDH)
 -   [gmvarkit](https://cran.r-project.org/package=gmvarkit)
@@ -1165,6 +1171,7 @@ list, please let us know.
 -   [robustarima](https://cran.r-project.org/package=robustarima)
 -   [roll](https://cran.r-project.org/package=roll)
 -   [RSEIS](https://cran.r-project.org/package=RSEIS)
+-   [Rsfar](https://cran.r-project.org/package=Rsfar)
 -   [Rssa](https://cran.r-project.org/package=Rssa)
 -   [RTransferEntropy](https://cran.r-project.org/package=RTransferEntropy)
 -   [rts](https://cran.r-project.org/package=rts)
@@ -1206,6 +1213,7 @@ list, please let us know.
 -   [tbrf](https://cran.r-project.org/package=tbrf)
 -   [Tcomp](https://cran.r-project.org/package=Tcomp)
 -   [tempdisagg](https://cran.r-project.org/package=tempdisagg)
+-   [tensorTS](https://cran.r-project.org/package=tensorTS)
 -   [testcorr](https://cran.r-project.org/package=testcorr)
 -   [tfarima](https://cran.r-project.org/package=tfarima)
 -   [tframe](https://cran.r-project.org/package=tframe)
@@ -1247,6 +1255,7 @@ list, please let us know.
 -   [tsoutliers](https://cran.r-project.org/package=tsoutliers)
 -   [tsPI](https://cran.r-project.org/package=tsPI)
 -   [TSrepr](https://cran.r-project.org/package=TSrepr)
+-   [tsrobprep](https://cran.r-project.org/package=tsrobprep)
 -   [TSstudio](https://cran.r-project.org/package=TSstudio)
 -   [TSTutorial](https://cran.r-project.org/package=TSTutorial)
 -   [tsutils](https://cran.r-project.org/package=tsutils)

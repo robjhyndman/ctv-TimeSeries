@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-04-21</version>
+<version>2021-05-12</version>
 
 <info>
 <p>
@@ -224,6 +224,7 @@
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
     The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
     <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
+    <pkg>tsrobprep</pkg> provides methods for replacing missing values and outliers using a model-based approach.
   </li>
   <li><i>Change point detection</i>
     is provided in <pkg>strucchange</pkg> and <pkg>strucchangeRcpp</pkg> (using linear regression models) and in <pkg>trend</pkg> (using nonparametric tests).
@@ -524,7 +525,7 @@
 
 <p><strong>Functional time series</strong></p>
 <ul>
-  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>. <pkg>NTS</pkg> also implements functional autoregressive models.
+  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>. <pkg>NTS</pkg> also implements functional autoregressive models. Seasonal functional autoregression models are provided by <pkg>Rsfar</pkg>.
   </li>
   <li><pkg>fdaACF</pkg> estimates the autocorrelation function for functional time series.
   </li>
@@ -532,6 +533,12 @@
   </li>
   <li><pkg>wwntests</pkg> provides an array of white noise hypothesis tests for functional data.
   </li>
+</ul>
+
+<p><strong>Matrix and tensor-valued time series</strong></p>
+<ul>
+  <li><pkg>tensorTS</pkg> provides functions for estimation, simulation and prediction of factor and autoregressive models for matrix and tensor valued time series.
+</li>
 </ul>
 
 <p><strong>Continuous time models</strong></p>
@@ -929,6 +936,7 @@
   <pkg>robustarima</pkg>
   <pkg>roll</pkg>
   <pkg>RSEIS</pkg>
+  <pkg>Rsfar</pkg>
   <pkg>Rssa</pkg>
   <pkg>RTransferEntropy</pkg>
   <pkg>rts</pkg>
@@ -970,6 +978,7 @@
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>tempdisagg</pkg>
+  <pkg>tensorTS</pkg>
   <pkg>testcorr</pkg>
   <pkg>tfarima</pkg>
   <pkg>tframe</pkg>
@@ -1011,6 +1020,7 @@
   <pkg>tsoutliers</pkg>
   <pkg>tsPI</pkg>
   <pkg>TSrepr</pkg>
+  <pkg>tsrobprep</pkg>
   <pkg>TSstudio</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tsutils</pkg>
