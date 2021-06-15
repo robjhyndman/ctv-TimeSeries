@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-05-12</version>
+<version>2021-06-02</version>
 
 <info>
 <p>
@@ -285,7 +285,6 @@
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
-    Multivariate, locally stationary wavelet analysis tools are provided by <pkg>mvLSW</pkg>.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Wavelet scalogram tools are contained in <pkg>wavScalogram</pkg>.
     Further wavelet methods can be found in the packages <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg>.
@@ -456,7 +455,6 @@
     <pkg>BMTAR</pkg> implements Baysian Multivariate Threshold AR models with missing data.
     <pkg>mfbvar</pkg> includes tools for estimating mixed-frequency Bayesian VAR models.
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
-    <pkg>BGVAR</pkg> implements Bayesian Global VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
@@ -734,7 +732,6 @@
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
   <pkg>bfast</pkg>
-  <pkg>BGVAR</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
@@ -887,7 +884,6 @@
   <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
-  <pkg>mvLSW</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
   <pkg>NGSSEML</pkg>
