@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-06-02</version>
+<version>2021-06-15</version>
 
 <info>
 <p>
@@ -139,6 +139,7 @@
     <code>ETS()</code> from <pkg>fable</pkg> and <code>ets()</code> from <pkg>forecast</pkg> provide a larger set of models and facilities with full optimization.
     <pkg>robets</pkg> provides a robust alternative to the <code>ets()</code> function.
     <pkg>smooth</pkg> implements some generalizations of exponential smoothing.
+    <pkg>legion</pkg> implements multivariate versions of exponential smoothing.
     The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
     Some Bayesian extensions of exponential smoothing are contained in <pkg>Rlgt</pkg>.
   </li>
@@ -233,6 +234,7 @@
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
+    <pkg>VARDetect</pkg> implements algorithms for detecting multiple changes in structural VAR models.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
     <pkg>breakfast</pkg> includes methods for fast multiple change-point detection and estimation.
@@ -476,6 +478,7 @@
   <li><i>Time series component analysis</i>:
     <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
+    <pkg>HDTSA</pkg> provides procedures for several high-dimensional time series analysis tools.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
   </li>
@@ -500,7 +503,7 @@
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
   <li><i>Time series features</i>
-    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
+    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>Rcatch22</pkg> provides fast computation of 22 features identified as particularly useful. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
   </li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
@@ -523,7 +526,7 @@
 
 <p><strong>Functional time series</strong></p>
 <ul>
-  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>. <pkg>NTS</pkg> also implements functional autoregressive models. Seasonal functional autoregression models are provided by <pkg>Rsfar</pkg>.
+  <li>Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in <pkg>ftsa</pkg>. <pkg>NTS</pkg> also implements functional autoregressive models. Seasonal functional autoregression models are provided by <pkg>Rsfar</pkg>. <pkg>fpcb</pkg> implements predictive confidence bands for functional time series.
   </li>
   <li><pkg>fdaACF</pkg> estimates the autocorrelation function for functional time series.
   </li>
@@ -656,6 +659,8 @@
   </li>
   <li><pkg>FeedbackTS</pkg>:
     Analysis of fragmented time directionality to investigate feedback in time series.
+  </li>
+  <li><pkg>gsignal</pkg> is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
   </li>
   <li><pkg>ifultools</pkg> is a collection of efficient signal processing, image processing, and time series modeling routines.
   </li>
@@ -814,6 +819,7 @@
   <pkg>forecastHybrid</pkg>
   <pkg>forecastML</pkg>
   <pkg>forecTheta</pkg>
+  <pkg>fpcb</pkg>
   <pkg>fpp2</pkg>
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
@@ -838,8 +844,10 @@
   <pkg>gravitas</pkg>
   <pkg>greybox</pkg>
   <pkg>gsarima</pkg>
+  <pkg>gsignal</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
+  <pkg>HDTSA</pkg>
   <pkg>hht</pkg>
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
@@ -854,6 +862,7 @@
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
+  <pkg>legion</pkg>
   <pkg>locits</pkg>
   <pkg>lomb</pkg>
   <pkg>LongMemoryTS</pkg>
@@ -917,6 +926,7 @@
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
   <pkg>Rbeast</pkg>
+  <pkg>Rcatch22</pkg>
   <pkg>readabs</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
@@ -1026,6 +1036,7 @@
   <pkg>uroot</pkg>
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
+  <pkg>VARDetect</pkg>
   <pkg>VARshrink</pkg>
   <pkg>VARsignR</pkg>
   <pkg>WaveletComp</pkg>

@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-05-12                                     
+**Version:**    2021-06-15                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -204,7 +204,9 @@ list, please let us know.
     [robets](https://cran.r-project.org/package=robets) provides a robust
     alternative to the `ets()` function.
     [smooth](https://cran.r-project.org/package=smooth) implements some
-    generalizations of exponential smoothing. The
+    generalizations of exponential smoothing.
+    [legion](https://cran.r-project.org/package=legion) implements multivariate
+    versions of exponential smoothing. The
     [MAPA](https://cran.r-project.org/package=MAPA) package combines exponential
     smoothing models at different levels of temporal aggregation to
     improve forecast accuracy. Some Bayesian extensions of exponential
@@ -350,6 +352,8 @@ list, please let us know.
     changepoints in multivariate time series, while
     [changepoint.geo](https://cran.r-project.org/package=changepoint.geo) implements
     the high-dimensional changepoint detection method GeomCP.
+    [VARDetect](https://cran.r-project.org/package=VARDetect) implements algorithms
+    for detecting multiple changes in structural VAR models.
     [InspectChangepoint](https://cran.r-project.org/package=InspectChangepoint) uses
     sparse projection to estimate changepoints in high-dimensional time
     series. [Rbeast](https://cran.r-project.org/package=Rbeast) provides Bayesian
@@ -436,9 +440,7 @@ list, please let us know.
     series including cross-wavelets, phase-difference and significance
     tests. [biwavelet](https://cran.r-project.org/package=biwavelet) is a port of
     the WTC Matlab package for univariate and bivariate wavelet
-    analyses. Multivariate, locally stationary wavelet analysis tools
-    are provided by [mvLSW](https://cran.r-project.org/package=mvLSW). Tests of
-    white noise using wavelets are provided by
+    analyses. Tests of white noise using wavelets are provided by
     [hwwntest](https://cran.r-project.org/package=hwwntest). Wavelet scalogram tools
     are contained in
     [wavScalogram](https://cran.r-project.org/package=wavScalogram). Further wavelet
@@ -674,14 +676,12 @@ list, please let us know.
     estimating mixed-frequency Bayesian VAR models.
     [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
     hierarchical Bayesian VAR models.
-    [BGVAR](https://cran.r-project.org/package=BGVAR) implements Bayesian Global VAR
-    models. [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level
-    vector autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR)
-    provides routines for identifying structural shocks in VAR models
-    using sign restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit)
-    estimates Gaussian mixture VAR models.
-    [GNAR](https://cran.r-project.org/package=GNAR) provides methods for fitting
-    network AR models, while
+    [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
+    autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
+    routines for identifying structural shocks in VAR models using sign
+    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
+    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
+    provides methods for fitting network AR models, while
     [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
     graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.
@@ -708,7 +708,9 @@ list, please let us know.
     [PCA4TS](https://cran.r-project.org/package=PCA4TS) finds a linear
     transformation of a multivariate time series giving
     lower-dimensional subseries that are uncorrelated with each other.
-    One-sided dynamic principal components are computed in
+    [HDTSA](https://cran.r-project.org/package=HDTSA) provides procedures for
+    several high-dimensional time series analysis tools. One-sided
+    dynamic principal components are computed in
     [odpc](https://cran.r-project.org/package=odpc). Frequency-domain-based dynamic
     PCA is implemented in [freqdom](https://cran.r-project.org/package=freqdom).
 -   *Multivariate state space models* An implementation is provided by
@@ -743,6 +745,8 @@ list, please let us know.
     [tsfeatures](https://cran.r-project.org/package=tsfeatures) for a list or matrix
     of time series in `ts` format. In both packages, many built-in
     feature functions are included, and users can add their own.
+    [Rcatch22](https://cran.r-project.org/package=Rcatch22) provides fast
+    computation of 22 features identified as particularly useful.
     [fsMTS](https://cran.r-project.org/package=fsMTS) implements feature selection
     routines for multivariate time series.
 -   *Time series clustering* is implemented in
@@ -783,6 +787,8 @@ list, please let us know.
     [NTS](https://cran.r-project.org/package=NTS) also implements functional
     autoregressive models. Seasonal functional autoregression models are
     provided by [Rsfar](https://cran.r-project.org/package=Rsfar).
+    [fpcb](https://cran.r-project.org/package=fpcb) implements predictive confidence
+    bands for functional time series.
 -   [fdaACF](https://cran.r-project.org/package=fdaACF) estimates the
     autocorrelation function for functional time series.
 -   [freqdom.fda](https://cran.r-project.org/package=freqdom.fda) provides
@@ -907,6 +913,9 @@ list, please let us know.
 -   [FeedbackTS](https://cran.r-project.org/package=FeedbackTS): Analysis of
     fragmented time directionality to investigate feedback in time
     series.
+-   [gsignal](https://cran.r-project.org/package=gsignal) is an R implementation of
+    the Octave package "signal", containing a variety of signal
+    processing tools.
 -   [ifultools](https://cran.r-project.org/package=ifultools) is a collection of
     efficient signal processing, image processing, and time series
     modeling routines.
@@ -969,7 +978,6 @@ list, please let us know.
 -   [bentcableAR](https://cran.r-project.org/package=bentcableAR)
 -   [BETS](https://cran.r-project.org/package=BETS)
 -   [bfast](https://cran.r-project.org/package=bfast)
--   [BGVAR](https://cran.r-project.org/package=BGVAR)
 -   [bigtime](https://cran.r-project.org/package=bigtime)
 -   [BigVAR](https://cran.r-project.org/package=BigVAR)
 -   [biwavelet](https://cran.r-project.org/package=biwavelet)
@@ -1052,6 +1060,7 @@ list, please let us know.
 -   [forecastML](https://cran.r-project.org/package=forecastML)
 -   [FoReco](https://cran.r-project.org/package=FoReco)
 -   [forecTheta](https://cran.r-project.org/package=forecTheta)
+-   [fpcb](https://cran.r-project.org/package=fpcb)
 -   [fpp2](https://cran.r-project.org/package=fpp2)
 -   [fpp3](https://cran.r-project.org/package=fpp3)
 -   [fracdiff](https://cran.r-project.org/package=fracdiff)
@@ -1076,8 +1085,10 @@ list, please let us know.
 -   [gravitas](https://cran.r-project.org/package=gravitas)
 -   [greybox](https://cran.r-project.org/package=greybox)
 -   [gsarima](https://cran.r-project.org/package=gsarima)
+-   [gsignal](https://cran.r-project.org/package=gsignal)
 -   [gtop](https://cran.r-project.org/package=gtop)
 -   [HarmonicRegression](https://cran.r-project.org/package=HarmonicRegression)
+-   [HDTSA](https://cran.r-project.org/package=HDTSA)
 -   [hht](https://cran.r-project.org/package=hht)
 -   [hts](https://cran.r-project.org/package=hts)
 -   [hwwntest](https://cran.r-project.org/package=hwwntest)
@@ -1092,6 +1103,7 @@ list, please let us know.
 -   [KFAS](https://cran.r-project.org/package=KFAS)
 -   [KFKSDS](https://cran.r-project.org/package=KFKSDS)
 -   [kza](https://cran.r-project.org/package=kza)
+-   [legion](https://cran.r-project.org/package=legion)
 -   [locits](https://cran.r-project.org/package=locits)
 -   [lomb](https://cran.r-project.org/package=lomb)
 -   [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS)
@@ -1122,7 +1134,6 @@ list, please let us know.
 -   [multDM](https://cran.r-project.org/package=multDM)
 -   [MultipleBubbles](https://cran.r-project.org/package=MultipleBubbles)
 -   [multitaper](https://cran.r-project.org/package=multitaper)
--   [mvLSW](https://cran.r-project.org/package=mvLSW)
 -   [nardl](https://cran.r-project.org/package=nardl)
 -   [nets](https://cran.r-project.org/package=nets)
 -   [NGSSEML](https://cran.r-project.org/package=NGSSEML)
@@ -1156,6 +1167,7 @@ list, please let us know.
 -   [Quandl](https://cran.r-project.org/package=Quandl)
 -   [quantspec](https://cran.r-project.org/package=quantspec)
 -   [Rbeast](https://cran.r-project.org/package=Rbeast)
+-   [Rcatch22](https://cran.r-project.org/package=Rcatch22)
 -   [readabs](https://cran.r-project.org/package=readabs)
 -   [regspec](https://cran.r-project.org/package=regspec)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
@@ -1264,6 +1276,7 @@ list, please let us know.
 -   [urca](https://cran.r-project.org/package=urca)
 -   [uroot](https://cran.r-project.org/package=uroot)
 -   [VAR.etp](https://cran.r-project.org/package=VAR.etp)
+-   [VARDetect](https://cran.r-project.org/package=VARDetect)
 -   [vars](https://cran.r-project.org/package=vars)
 -   [VARshrink](https://cran.r-project.org/package=VARshrink)
 -   [VARsignR](https://cran.r-project.org/package=VARsignR)
