@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-06-15</version>
+<version>2021-07-06</version>
 
 <info>
 <p>
@@ -638,6 +638,8 @@
   </li>
   <li><pkg>gratis</pkg> generates new time series with diverse and controllable characteristics using mixture autoregression models.
   </li>
+  <li><pkg>synthesis</pkg> generate synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
+  </li>
 </ul>
 
 <p><strong>Miscellaneous</strong></p>
@@ -977,6 +979,7 @@
   <pkg>svars</pkg>
   <pkg>sweep</pkg>
   <pkg>sym.arma</pkg>
+  <pkg>synthesis</pkg>
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>tempdisagg</pkg>

@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-06-15                                     
+**Version:**    2021-07-06                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -894,6 +894,9 @@ list, please let us know.
 -   [gratis](https://cran.r-project.org/package=gratis) generates new time series
     with diverse and controllable characteristics using mixture
     autoregression models.
+-   [synthesis](https://cran.r-project.org/package=synthesis) generate synthetic
+    time series from commonly used statistical models, including linear,
+    nonlinear and chaotic systems.
 
 **Miscellaneous**
 
@@ -908,8 +911,6 @@ list, please let us know.
 -   [earlywarnings](https://cran.r-project.org/package=earlywarnings): Early
     warnings signals toolbox for detecting critical transitions in time
     series
--   [events](https://cran.r-project.org/package=events): turns machine-extracted
-    event data into regular aggregated multivariate time series.
 -   [FeedbackTS](https://cran.r-project.org/package=FeedbackTS): Analysis of
     fragmented time directionality to investigate feedback in time
     series.
@@ -1034,7 +1035,6 @@ list, please let us know.
 -   [ecp](https://cran.r-project.org/package=ecp)
 -   [EMD](https://cran.r-project.org/package=EMD)
 -   [ensembleBMA](https://cran.r-project.org/package=ensembleBMA)
--   [events](https://cran.r-project.org/package=events)
 -   [expsmooth](https://cran.r-project.org/package=expsmooth)
 -   [fable](https://cran.r-project.org/package=fable) (core)
 -   [fable.prophet](https://cran.r-project.org/package=fable.prophet)
@@ -1222,6 +1222,7 @@ list, please let us know.
 -   [svars](https://cran.r-project.org/package=svars)
 -   [sweep](https://cran.r-project.org/package=sweep)
 -   [sym.arma](https://cran.r-project.org/package=sym.arma)
+-   [synthesis](https://cran.r-project.org/package=synthesis)
 -   [tbrf](https://cran.r-project.org/package=tbrf)
 -   [Tcomp](https://cran.r-project.org/package=Tcomp)
 -   [tempdisagg](https://cran.r-project.org/package=tempdisagg)
