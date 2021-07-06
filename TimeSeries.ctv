@@ -654,9 +654,6 @@
   <li><pkg>earlywarnings</pkg>:
     Early warnings signals toolbox for detecting critical transitions in time series
   </li>
-  <li><pkg>events</pkg>:
-    turns machine-extracted event data into regular aggregated multivariate time series.
-  </li>
   <li><pkg>FeedbackTS</pkg>:
     Analysis of fragmented time directionality to investigate feedback in time series.
   </li>
@@ -793,7 +790,6 @@
   <pkg>ecp</pkg>
   <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
-  <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg priority="core">fable</pkg>
   <pkg>fable.prophet</pkg>
