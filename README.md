@@ -678,12 +678,14 @@ list, please let us know.
     estimating mixed-frequency Bayesian VAR models.
     [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
     hierarchical Bayesian VAR models.
-    [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
-    autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
-    routines for identifying structural shocks in VAR models using sign
-    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
-    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
-    provides methods for fitting network AR models, while
+    [BGVAR](https://cran.r-project.org/package=BGVAR) implements Bayesian Global VAR
+    models. [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level
+    vector autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR)
+    provides routines for identifying structural shocks in VAR models
+    using sign restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit)
+    estimates Gaussian mixture VAR models.
+    [GNAR](https://cran.r-project.org/package=GNAR) provides methods for fitting
+    network AR models, while
     [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
     graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.
@@ -896,9 +898,11 @@ list, please let us know.
     interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
     package. [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common
     interface to time series databases.
--   *Synthetic data* are produced by
-    [gratis](https://cran.r-project.org/package=gratis) which generates new time
-    series with diverse and controllable characteristics using mixture
+-   *Synthetic data* are produced by `simulate()` in
+    [forecast](https://cran.r-project.org/package=forecast) package or `generate()`
+    in [fable](https://cran.r-project.org/package=fable), given a specific model.
+    [gratis](https://cran.r-project.org/package=gratis) generates new time series
+    with diverse and controllable characteristics using mixture
     autoregression models. [synthesis](https://cran.r-project.org/package=synthesis)
     generates synthetic time series from commonly used statistical
     models, including linear, nonlinear and chaotic systems.

@@ -629,7 +629,7 @@
     <pkg>TSdbi</pkg>
     provides a common interface to time series databases.
   </li>
-  <li><i>Synthetic data</i> are produced by <pkg>gratis</pkg> which generates new time series with diverse and controllable characteristics using mixture autoregression models. <pkg>synthesis</pkg> generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems. <pkg>tssim</pkg> flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
+  <li><i>Synthetic data</i> are produced by <code>simulate()</code> in <pkg>forecast</pkg> package or <code>generate()</code> in <pkg>fable</pkg>, given a specific model. <pkg>gratis</pkg> generates new time series with diverse and controllable characteristics using mixture autoregression models. <pkg>synthesis</pkg> generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems. <pkg>tssim</pkg> flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
   </li>
 </ul>
 
