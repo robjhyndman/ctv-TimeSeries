@@ -383,6 +383,8 @@ list, please let us know.
     [forecast](https://cran.r-project.org/package=forecast) package.
     [opera](https://cran.r-project.org/package=opera) has facilities for online
     predictions based on combinations of forecasts provided by the user.
+    [profoc](https://cran.r-project.org/package=profoc) combines probabilistic
+    forecasts using CRPS learning.
 -   Point forecast evaluation is provided in the `accuracy()` function
     from the [fable](https://cran.r-project.org/package=fable) and
     [forecast](https://cran.r-project.org/package=forecast) packages. Distributional
@@ -676,14 +678,12 @@ list, please let us know.
     estimating mixed-frequency Bayesian VAR models.
     [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
     hierarchical Bayesian VAR models.
-    [BGVAR](https://cran.r-project.org/package=BGVAR) implements Bayesian Global VAR
-    models. [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level
-    vector autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR)
-    provides routines for identifying structural shocks in VAR models
-    using sign restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit)
-    estimates Gaussian mixture VAR models.
-    [GNAR](https://cran.r-project.org/package=GNAR) provides methods for fitting
-    network AR models, while
+    [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
+    autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
+    routines for identifying structural shocks in VAR models using sign
+    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
+    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
+    provides methods for fitting network AR models, while
     [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
     graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.
@@ -715,6 +715,8 @@ list, please let us know.
     dynamic principal components are computed in
     [odpc](https://cran.r-project.org/package=odpc). Frequency-domain-based dynamic
     PCA is implemented in [freqdom](https://cran.r-project.org/package=freqdom).
+    [tsBSS](https://cran.r-project.org/package=tsBSS) provides blind source
+    separation and supervised dimension reduction for time series.
 -   *Multivariate state space models* An implementation is provided by
     the [KFAS](https://cran.r-project.org/package=KFAS) package which provides a
     fast multivariate Kalman filter, smoother, simulation smoother and
@@ -835,13 +837,16 @@ list, please let us know.
 
 **Time Series Data**
 
+-   Various data sets in [tsibble](https://cran.r-project.org/package=tsibble)
+    format are provided by
+    [tsibbledata](https://cran.r-project.org/package=tsibbledata).
 -   Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
     applications in R* are in the [TSA](https://cran.r-project.org/package=TSA)
     package.
 -   Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
     principles and practice* are in the
     [fpp2](https://cran.r-project.org/package=fpp2) package.
--   Data from Hyndman and Athanasopoulos (2020, 3rd ed) *Forecasting:
+-   Data from Hyndman and Athanasopoulos (2021, 3rd ed) *Forecasting:
     principles and practice* are in the
     [fpp3](https://cran.r-project.org/package=fpp3) package.
 -   Data from Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with
@@ -865,40 +870,41 @@ list, please let us know.
     [Mcomp](https://cran.r-project.org/package=Mcomp) package.
     [Tcomp](https://cran.r-project.org/package=Tcomp) provides data from the 2010
     IJF Tourism Forecasting Competition.
--   [BETS](https://cran.r-project.org/package=BETS) provides access to the most
-    important economic time series in Brazil.
--   [bundesbank](https://cran.r-project.org/package=bundesbank) allows access to the
-    time series databases of the German central bank.
--   Data from Switzerland via [dataseries.org](http://dataseries.org)
-    can be downloaded and imported using
+-   *National time series data:*
+    [readabs](https://cran.r-project.org/package=readabs) downloads, imports and
+    tidies time series data from the [*Australian* Bureau of
+    Statistics](https://www.abs.gov.au) .
+    [BETS](https://cran.r-project.org/package=BETS) provides access to the most
+    important economic time series in *Brazil* .
+    [bundesbank](https://cran.r-project.org/package=bundesbank) allows access to the
+    time series databases of the *German* central bank. Data from
+    *Switzerland* via [dataseries.org](http://dataseries.org) can be
+    downloaded and imported using
     [dataseries](https://cran.r-project.org/package=dataseries).
--   [fame](https://cran.r-project.org/package=fame) provides an interface for FAME
-    time series databases
--   Economic time series and other data from FRED (the Federal Reserve
-    Economic Data) can be retrieved using
-    [fredr](https://cran.r-project.org/package=fredr).
--   [influxdbr](https://cran.r-project.org/package=influxdbr) provides an interface
+    [ugatsdb](https://cran.r-project.org/package=ugatsdb) provides an API to access
+    time series data for *Uganda* .
+-   *Time series data bases:* [fame](https://cran.r-project.org/package=fame)
+    provides an interface for FAME time series databases. Economic time
+    series and other data from FRED (the Federal Reserve Economic Data)
+    can be retrieved using [fredr](https://cran.r-project.org/package=fredr).
+    [influxdbr](https://cran.r-project.org/package=influxdbr) provides an interface
     to the InfluxDB time series database.
--   [pdfetch](https://cran.r-project.org/package=pdfetch) provides facilities for
+    [pdfetch](https://cran.r-project.org/package=pdfetch) provides facilities for
     downloading economic and financial time series from public sources.
--   Data from the [Quandl](http://www.quandl.com) online portal to
+    Data from the [Quandl](http://www.quandl.com) online portal to
     financial, economical and social datasets can be queried
     interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
-    package.
--   [readabs](https://cran.r-project.org/package=readabs) downloads, imports and
-    tidies time series data from the [Australian Bureau of
-    Statistics](https://www.abs.gov.au) .
--   [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common interface to
-    time series databases.
--   Various data sets in [tsibble](https://cran.r-project.org/package=tsibble)
-    format are provided by
-    [tsibbledata](https://cran.r-project.org/package=tsibbledata).
--   [gratis](https://cran.r-project.org/package=gratis) generates new time series
-    with diverse and controllable characteristics using mixture
-    autoregression models.
--   [synthesis](https://cran.r-project.org/package=synthesis) generate synthetic
-    time series from commonly used statistical models, including linear,
-    nonlinear and chaotic systems.
+    package. [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common
+    interface to time series databases.
+-   *Synthetic data* are produced by
+    [gratis](https://cran.r-project.org/package=gratis) which generates new time
+    series with diverse and controllable characteristics using mixture
+    autoregression models. [synthesis](https://cran.r-project.org/package=synthesis)
+    generates synthetic time series from commonly used statistical
+    models, including linear, nonlinear and chaotic systems.
+    [tssim](https://cran.r-project.org/package=tssim) flexibly simulates daily or
+    monthly time series using seasonal, calendar, and outlier
+    components.
 
 **Miscellaneous**
 
@@ -981,6 +987,7 @@ list, please let us know.
 -   [bentcableAR](https://cran.r-project.org/package=bentcableAR)
 -   [BETS](https://cran.r-project.org/package=BETS)
 -   [bfast](https://cran.r-project.org/package=bfast)
+-   [BGVAR](https://cran.r-project.org/package=BGVAR)
 -   [bigtime](https://cran.r-project.org/package=bigtime)
 -   [BigVAR](https://cran.r-project.org/package=BigVAR)
 -   [biwavelet](https://cran.r-project.org/package=biwavelet)
@@ -1162,6 +1169,7 @@ list, please let us know.
 -   [pomp](https://cran.r-project.org/package=pomp)
 -   [portes](https://cran.r-project.org/package=portes)
 -   [ProbReco](https://cran.r-project.org/package=ProbReco)
+-   [profoc](https://cran.r-project.org/package=profoc)
 -   [prophet](https://cran.r-project.org/package=prophet)
 -   [psd](https://cran.r-project.org/package=psd)
 -   [PSF](https://cran.r-project.org/package=PSF)
@@ -1248,6 +1256,7 @@ list, please let us know.
 -   [trend](https://cran.r-project.org/package=trend)
 -   [TSA](https://cran.r-project.org/package=TSA)
 -   [tsbox](https://cran.r-project.org/package=tsbox)
+-   [tsBSS](https://cran.r-project.org/package=tsBSS)
 -   [TSclust](https://cran.r-project.org/package=TSclust)
 -   [tscount](https://cran.r-project.org/package=tscount)
 -   [TSdbi](https://cran.r-project.org/package=TSdbi)
@@ -1271,11 +1280,13 @@ list, please let us know.
 -   [tsPI](https://cran.r-project.org/package=tsPI)
 -   [TSrepr](https://cran.r-project.org/package=TSrepr)
 -   [tsrobprep](https://cran.r-project.org/package=tsrobprep)
+-   [tssim](https://cran.r-project.org/package=tssim)
 -   [TSstudio](https://cran.r-project.org/package=TSstudio)
 -   [TSTutorial](https://cran.r-project.org/package=TSTutorial)
 -   [tsutils](https://cran.r-project.org/package=tsutils)
 -   [tswge](https://cran.r-project.org/package=tswge)
 -   [UComp](https://cran.r-project.org/package=UComp)
+-   [ugatsdb](https://cran.r-project.org/package=ugatsdb)
 -   [urca](https://cran.r-project.org/package=urca)
 -   [uroot](https://cran.r-project.org/package=uroot)
 -   [VAR.etp](https://cran.r-project.org/package=VAR.etp)

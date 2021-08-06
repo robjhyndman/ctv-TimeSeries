@@ -573,6 +573,8 @@
 
 <p><strong>Time Series Data</strong></p>
 <ul>
+  <li>Various data sets in <pkg>tsibble</pkg> format are provided by <pkg>tsibbledata</pkg>.
+  </li>
   <li>Data from Cryer and Chan (2010, 2nd ed)
       <i>Time series analysis with applications in R</i>
       are in the <pkg>TSA</pkg> package.
@@ -581,7 +583,7 @@
       <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp2</pkg> package.
   </li>
-  <li>Data from Hyndman and Athanasopoulos (2020, 3rd ed)
+  <li>Data from Hyndman and Athanasopoulos (2021, 3rd ed)
       <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp3</pkg> package.
   </li>
@@ -611,37 +613,23 @@
   <li>Data from the M-competition and M3-competition
       are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
-  <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
+  <li><i>National time series data:</i>
+  <pkg>readabs</pkg> downloads, imports and tidies time series data from the <a href="https://www.abs.gov.au"><i>Australian</i> Bureau of Statistics</a>.
+  <pkg>BETS</pkg> provides access to the most important economic time series in <i>Brazil</i>.
+  <pkg>bundesbank</pkg> allows access to the time series databases of the <i>German</i> central bank.
+  Data from <i>Switzerland</i> via <a href="http://dataseries.org">dataseries.org</a> can be downloaded and imported using <pkg>dataseries</pkg>.
+  <pkg>ugatsdb</pkg> provides an API to access time series data for <i>Uganda</i>.
   </li>
-  <li><pkg>bundesbank</pkg> allows access to the time series databases of the German central bank.
-  </li>
-  <li>Data from Switzerland via <a href="http://dataseries.org">dataseries.org</a>
-      can be downloaded and imported using <pkg>dataseries</pkg>.
-  </li>
-  <li><pkg>fame</pkg>
-    provides an interface for FAME time series databases
-  </li>
-  <li>Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using <pkg>fredr</pkg>.
-  </li>
-  <li><pkg>influxdbr</pkg>
-    provides an interface to the InfluxDB time series database.
-  </li>
-  <li><pkg>pdfetch</pkg>
-    provides facilities for downloading economic and financial time series from public sources.
-  </li>
-  <li>Data from the <a href="http://www.quandl.com">Quandl</a> online portal
-      to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
-  </li>
-  <li><pkg>readabs</pkg> downloads, imports and tidies time series data from the <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a>.
-  </li>
-  <li><pkg>TSdbi</pkg>
+  <li><i>Time series data bases:</i> <pkg>fame</pkg>
+    provides an interface for FAME time series databases.
+    Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using <pkg>fredr</pkg>.
+    <pkg>influxdbr</pkg> provides an interface to the InfluxDB time series database.
+    <pkg>pdfetch</pkg> provides facilities for downloading economic and financial time series from public sources.
+    Data from the <a href="http://www.quandl.com">Quandl</a> online portal to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
+    <pkg>TSdbi</pkg>
     provides a common interface to time series databases.
   </li>
-  <li>Various data sets in <pkg>tsibble</pkg> format are provided by <pkg>tsibbledata</pkg>.
-  </li>
-  <li><pkg>gratis</pkg> generates new time series with diverse and controllable characteristics using mixture autoregression models.
-  </li>
-  <li><pkg>synthesis</pkg> generate synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
+  <li><i>Synthetic data</i> are produced by <pkg>gratis</pkg> which generates new time series with diverse and controllable characteristics using mixture autoregression models. <pkg>synthesis</pkg> generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems. <pkg>tssim</pkg> flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
   </li>
 </ul>
 
@@ -1032,11 +1020,13 @@
   <pkg>tsPI</pkg>
   <pkg>TSrepr</pkg>
   <pkg>tsrobprep</pkg>
+  <pkg>tssim</pkg>
   <pkg>TSstudio</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tsutils</pkg>
   <pkg>tswge</pkg>
   <pkg>UComp</pkg>
+  <pkg>ugatsdb</pkg>
   <pkg>urca</pkg>
   <pkg>uroot</pkg>
   <pkg>VAR.etp</pkg>
