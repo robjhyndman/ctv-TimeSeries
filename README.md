@@ -676,12 +676,14 @@ list, please let us know.
     estimating mixed-frequency Bayesian VAR models.
     [BVAR](https://cran.r-project.org/package=BVAR) provides a toolkit for
     hierarchical Bayesian VAR models.
-    [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level vector
-    autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR) provides
-    routines for identifying structural shocks in VAR models using sign
-    restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit) estimates
-    Gaussian mixture VAR models. [GNAR](https://cran.r-project.org/package=GNAR)
-    provides methods for fitting network AR models, while
+    [BGVAR](https://cran.r-project.org/package=BGVAR) implements Bayesian Global VAR
+    models. [mlVAR](https://cran.r-project.org/package=mlVAR) provides multi-level
+    vector autoregression. [VARsignR](https://cran.r-project.org/package=VARsignR)
+    provides routines for identifying structural shocks in VAR models
+    using sign restrictions. [gmvarkit](https://cran.r-project.org/package=gmvarkit)
+    estimates Gaussian mixture VAR models.
+    [GNAR](https://cran.r-project.org/package=GNAR) provides methods for fitting
+    network AR models, while
     [graphicalVAR](https://cran.r-project.org/package=graphicalVAR) estimates
     graphical VAR models. [gdpc](https://cran.r-project.org/package=gdpc) implements
     generalized dynamic principal components.

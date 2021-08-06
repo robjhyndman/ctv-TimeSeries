@@ -457,6 +457,7 @@
     <pkg>BMTAR</pkg> implements Baysian Multivariate Threshold AR models with missing data.
     <pkg>mfbvar</pkg> includes tools for estimating mixed-frequency Bayesian VAR models.
     <pkg>BVAR</pkg> provides a toolkit for hierarchical Bayesian VAR models.
+    <pkg>BGVAR</pkg> implements Bayesian Global VAR models.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression.
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     <pkg>gmvarkit</pkg> estimates Gaussian mixture VAR models.
@@ -736,6 +737,7 @@
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
   <pkg>bfast</pkg>
+  <pkg>BGVAR</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
