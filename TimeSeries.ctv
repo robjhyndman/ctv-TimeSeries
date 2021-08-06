@@ -253,6 +253,7 @@
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
     <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
+    <pkg>profoc</pkg> combines probabilistic forecasts using CRPS learning.
   </li>
   <li>Point forecast evaluation
     is provided in the <code>accuracy()</code> function from the <pkg>fable</pkg> and <pkg>forecast</pkg> packages.
@@ -482,6 +483,7 @@
     <pkg>HDTSA</pkg> provides procedures for several high-dimensional time series analysis tools.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
+    <pkg>tsBSS</pkg> provides blind source separation and supervised dimension reduction for time series.
   </li>
   <li><i>Multivariate state space models</i>
     An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
@@ -919,6 +921,7 @@
   <pkg>pomp</pkg>
   <pkg>portes</pkg>
   <pkg>ProbReco</pkg>
+  <pkg>profoc</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
   <pkg>PSF</pkg>
@@ -1005,6 +1008,7 @@
   <pkg>trend</pkg>
   <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
+  <pkg>tsBSS</pkg>
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
