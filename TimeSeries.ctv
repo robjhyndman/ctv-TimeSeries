@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-07-06</version>
+<version>2021-09-10</version>
 
 <info>
 <p>
@@ -29,7 +29,7 @@
     Time series plots are obtained with <code>plot()</code> applied to <code>ts</code> objects.
     (Partial) autocorrelation functions plots are implemented in <code>acf()</code> and <code>pacf()</code>. Alternative versions are provided by <code>Acf()</code> and <code>Pacf()</code> in <pkg>forecast</pkg>, along with a combination display using <code>tsdisplay()</code>.
     Seasonal displays are obtained using <code>monthplot()</code> in stats, <code>seasonplot</code> in <pkg>forecast</pkg>, and <code>seasplot</code> in <pkg>tsutils</pkg>.
-    <pkg>feasts</pkg> provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
+    <pkg>feasts</pkg> and <pkg>brolgar</pkg> provide various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
     Interactive graphics for tsibbles using htmlwidgets are provided by <pkg>tsibbletalk</pkg>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
@@ -288,6 +288,7 @@
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
+    <pkg>mvLSW</pkg> provides tools for multivariate locally stationary wavelet processes.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Wavelet scalogram tools are contained in <pkg>wavScalogram</pkg>.
     Further wavelet methods can be found in the packages <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg>.
@@ -392,7 +393,7 @@
     <pkg>NlinTS</pkg> includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
     <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
     <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
-    Mixture AR models are implemented in <pkg>mixAR</pkg>.
+    Mixture AR models are implemented in <pkg>mixAR</pkg> and <pkg>uGMAR</pkg>.
   </li>
   <li><pkg>tseriesChaos</pkg>
     provides an R implementation of the algorithms from the <i><a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN</a> project</i>.
@@ -534,6 +535,8 @@
   <li><pkg>fdaACF</pkg> estimates the autocorrelation function for functional time series.
   </li>
   <li><pkg>freqdom.fda</pkg> provides implements of dynamical functional principal components for functional time series.
+  </li>
+  <li><pkg>STFTS</pkg> contains stationarity, trend and unit root tests for functional time series.
   </li>
   <li><pkg>wwntests</pkg> provides an array of white noise hypothesis tests for functional data.
   </li>
@@ -738,6 +741,7 @@
   <pkg>BootPR</pkg>
   <pkg>bootUR</pkg>
   <pkg>breakfast</pkg>
+  <pkg>brolgar</pkg>
   <pkg>bspec</pkg>
   <pkg>bssm</pkg>
   <pkg>bsts</pkg>
@@ -883,6 +887,7 @@
   <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
+  <pkg>mvLSW</pkg>
   <pkg>nardl</pkg>
   <pkg>nets</pkg>
   <pkg>NGSSEML</pkg>
@@ -961,6 +966,7 @@
   <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
   <pkg>statespacer</pkg>
+  <pkg>STFTS</pkg>
   <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
@@ -1027,6 +1033,7 @@
   <pkg>tswge</pkg>
   <pkg>UComp</pkg>
   <pkg>ugatsdb</pkg>
+  <pkg>uGMAR</pkg>
   <pkg>urca</pkg>
   <pkg>uroot</pkg>
   <pkg>VAR.etp</pkg>

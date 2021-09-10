@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-07-06                                     
+**Version:**    2021-09-10                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -54,11 +54,12 @@ list, please let us know.
     obtained using `monthplot()` in stats, `seasonplot` in
     [forecast](https://cran.r-project.org/package=forecast), and `seasplot` in
     [tsutils](https://cran.r-project.org/package=tsutils).
-    [feasts](https://cran.r-project.org/package=feasts) provides various time series
-    graphics for tsibble objects including time plots, season plots,
-    subseries plots, ACF and PACF plots, and some combination displays.
-    Interactive graphics for tsibbles using htmlwidgets are provided by
-    [tsibbletalk](https://cran.r-project.org/package=tsibbletalk).
+    [feasts](https://cran.r-project.org/package=feasts) and
+    [brolgar](https://cran.r-project.org/package=brolgar) provide various time
+    series graphics for tsibble objects including time plots, season
+    plots, subseries plots, ACF and PACF plots, and some combination
+    displays. Interactive graphics for tsibbles using htmlwidgets are
+    provided by [tsibbletalk](https://cran.r-project.org/package=tsibbletalk).
     [SDD](https://cran.r-project.org/package=SDD) provides more general serial
     dependence diagrams, while [dCovTS](https://cran.r-project.org/package=dCovTS)
     computes and plots the distance covariance and correlation functions
@@ -442,7 +443,9 @@ list, please let us know.
     series including cross-wavelets, phase-difference and significance
     tests. [biwavelet](https://cran.r-project.org/package=biwavelet) is a port of
     the WTC Matlab package for univariate and bivariate wavelet
-    analyses. Tests of white noise using wavelets are provided by
+    analyses. [mvLSW](https://cran.r-project.org/package=mvLSW) provides tools for
+    multivariate locally stationary wavelet processes. Tests of white
+    noise using wavelets are provided by
     [hwwntest](https://cran.r-project.org/package=hwwntest). Wavelet scalogram tools
     are contained in
     [wavScalogram](https://cran.r-project.org/package=wavScalogram). Further wavelet
@@ -586,7 +589,8 @@ list, please let us know.
     Bent-Cable autoregression. [BAYSTAR](https://cran.r-project.org/package=BAYSTAR)
     provides Bayesian analysis of threshold autoregressive models.
     Mixture AR models are implemented in
-    [mixAR](https://cran.r-project.org/package=mixAR).
+    [mixAR](https://cran.r-project.org/package=mixAR) and
+    [uGMAR](https://cran.r-project.org/package=uGMAR).
 -   [tseriesChaos](https://cran.r-project.org/package=tseriesChaos) provides an R
     implementation of the algorithms from the
     *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project* .
@@ -800,6 +804,8 @@ list, please let us know.
 -   [freqdom.fda](https://cran.r-project.org/package=freqdom.fda) provides
     implements of dynamical functional principal components for
     functional time series.
+-   [STFTS](https://cran.r-project.org/package=STFTS) contains stationarity, trend
+    and unit root tests for functional time series.
 -   [wwntests](https://cran.r-project.org/package=wwntests) provides an array of
     white noise hypothesis tests for functional data.
 
@@ -1002,6 +1008,7 @@ list, please let us know.
 -   [BootPR](https://cran.r-project.org/package=BootPR)
 -   [bootUR](https://cran.r-project.org/package=bootUR)
 -   [breakfast](https://cran.r-project.org/package=breakfast)
+-   [brolgar](https://cran.r-project.org/package=brolgar)
 -   [bspec](https://cran.r-project.org/package=bspec)
 -   [bssm](https://cran.r-project.org/package=bssm)
 -   [bsts](https://cran.r-project.org/package=bsts)
@@ -1147,6 +1154,7 @@ list, please let us know.
 -   [multDM](https://cran.r-project.org/package=multDM)
 -   [MultipleBubbles](https://cran.r-project.org/package=MultipleBubbles)
 -   [multitaper](https://cran.r-project.org/package=multitaper)
+-   [mvLSW](https://cran.r-project.org/package=mvLSW)
 -   [nardl](https://cran.r-project.org/package=nardl)
 -   [nets](https://cran.r-project.org/package=nets)
 -   [NGSSEML](https://cran.r-project.org/package=NGSSEML)
@@ -1225,6 +1233,7 @@ list, please let us know.
 -   [spectral](https://cran.r-project.org/package=spectral)
 -   [spTimer](https://cran.r-project.org/package=spTimer)
 -   [statespacer](https://cran.r-project.org/package=statespacer)
+-   [STFTS](https://cran.r-project.org/package=STFTS)
 -   [stlplus](https://cran.r-project.org/package=stlplus)
 -   [stochvol](https://cran.r-project.org/package=stochvol)
 -   [stR](https://cran.r-project.org/package=stR)
@@ -1291,6 +1300,7 @@ list, please let us know.
 -   [tswge](https://cran.r-project.org/package=tswge)
 -   [UComp](https://cran.r-project.org/package=UComp)
 -   [ugatsdb](https://cran.r-project.org/package=ugatsdb)
+-   [uGMAR](https://cran.r-project.org/package=uGMAR)
 -   [urca](https://cran.r-project.org/package=urca)
 -   [uroot](https://cran.r-project.org/package=uroot)
 -   [VAR.etp](https://cran.r-project.org/package=VAR.etp)
