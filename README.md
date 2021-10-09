@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-09-10                                     
+**Version:**    2021-10-09                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -269,8 +269,6 @@ list, please let us know.
     [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
-    Fractionally differenced Gegenbaur ARMA processes are handled in
-    [garma](https://cran.r-project.org/package=garma).
 -   *Transfer function* models are provided by the `arfima` function in
     the [arfima](https://cran.r-project.org/package=arfima) and the
     [tfarima](https://cran.r-project.org/package=tfarima) packages.
@@ -290,13 +288,15 @@ list, please let us know.
 -   Non-Gaussian time series can be handled with GLARMA state space
     models via [glarma](https://cran.r-project.org/package=glarma), and using
     Generalized Autoregressive Score models in the
-    [GAS](https://cran.r-project.org/package=GAS) package. Conditional
-    Auto-Regression models using Monte Carlo Likelihood methods are
-    implemented in [mclcar](https://cran.r-project.org/package=mclcar). Efficient
-    Bayesian inference for nonlinear and non-Gaussian state space models
-    is provided in [bssm](https://cran.r-project.org/package=bssm). Non-Gaussian
-    state space models with exact marginal likelihood are given by
-    [NGSSEML](https://cran.r-project.org/package=NGSSEML).
+    [GAS](https://cran.r-project.org/package=GAS) package.
+    [GlarmaVarSel](https://cran.r-project.org/package=GlarmaVarSel) provides
+    variable selection in high-dimensional sparse GLARMA models.
+    Conditional Auto-Regression models using Monte Carlo Likelihood
+    methods are implemented in [mclcar](https://cran.r-project.org/package=mclcar).
+    Efficient Bayesian inference for nonlinear and non-Gaussian state
+    space models is provided in [bssm](https://cran.r-project.org/package=bssm).
+    Non-Gaussian state space models with exact marginal likelihood are
+    given by [NGSSEML](https://cran.r-project.org/package=NGSSEML).
 -   *GARCH models* : `garch()` from
     [tseries](https://cran.r-project.org/package=tseries) fits basic GARCH models.
     Many variations on GARCH models are provided by
@@ -437,7 +437,8 @@ list, please let us know.
     bispectrum, bicoherence, cross-bispectrum and cross-bicoherence.
 -   *Wavelet methods* : The [wavelets](https://cran.r-project.org/package=wavelets)
     package includes computing wavelet filters, wavelet transforms and
-    multiresolution analyses.
+    multiresolution analyses. Multiresolution forecasting using wavelets
+    is also implemented in [mrf](https://cran.r-project.org/package=mrf).
     [WaveletComp](https://cran.r-project.org/package=WaveletComp) provides some
     tools for wavelet-based analysis of univariate and bivariate time
     series including cross-wavelets, phase-difference and significance
@@ -904,6 +905,8 @@ list, please let us know.
     interactively using the [Quandl](https://cran.r-project.org/package=Quandl)
     package. [TSdbi](https://cran.r-project.org/package=TSdbi) provides a common
     interface to time series databases.
+    [tsdb](https://cran.r-project.org/package=tsdb) implements a simple data base
+    for numerical time series.
 -   *Synthetic data* are produced by `simulate()` in
     [forecast](https://cran.r-project.org/package=forecast) package or `generate()`
     in [fable](https://cran.r-project.org/package=fable), given a specific model.
@@ -1091,12 +1094,12 @@ list, please let us know.
 -   [fts](https://cran.r-project.org/package=fts)
 -   [ftsa](https://cran.r-project.org/package=ftsa)
 -   [funtimes](https://cran.r-project.org/package=funtimes)
--   [garma](https://cran.r-project.org/package=garma)
 -   [GAS](https://cran.r-project.org/package=GAS)
 -   [gdpc](https://cran.r-project.org/package=gdpc)
 -   [ggdemetra](https://cran.r-project.org/package=ggdemetra)
 -   [ggseas](https://cran.r-project.org/package=ggseas)
 -   [glarma](https://cran.r-project.org/package=glarma)
+-   [GlarmaVarSel](https://cran.r-project.org/package=GlarmaVarSel)
 -   [GMDH](https://cran.r-project.org/package=GMDH)
 -   [gmvarkit](https://cran.r-project.org/package=gmvarkit)
 -   [GNAR](https://cran.r-project.org/package=GNAR)
@@ -1147,6 +1150,7 @@ list, please let us know.
 -   [modeltime](https://cran.r-project.org/package=modeltime)
 -   [modeltime.ensemble](https://cran.r-project.org/package=modeltime.ensemble)
 -   [mondate](https://cran.r-project.org/package=mondate)
+-   [mrf](https://cran.r-project.org/package=mrf)
 -   [mssm](https://cran.r-project.org/package=mssm)
 -   [MSwM](https://cran.r-project.org/package=MSwM)
 -   [MTS](https://cran.r-project.org/package=MTS)
@@ -1272,6 +1276,7 @@ list, please let us know.
 -   [tsBSS](https://cran.r-project.org/package=tsBSS)
 -   [TSclust](https://cran.r-project.org/package=TSclust)
 -   [tscount](https://cran.r-project.org/package=tscount)
+-   [tsdb](https://cran.r-project.org/package=tsdb)
 -   [TSdbi](https://cran.r-project.org/package=TSdbi)
 -   [tsdecomp](https://cran.r-project.org/package=tsdecomp)
 -   [tsdisagg2](https://cran.r-project.org/package=tsdisagg2)

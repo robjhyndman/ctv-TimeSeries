@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-10-07</version>
+<version>2021-10-09</version>
 
 <info>
 <p>
@@ -190,7 +190,7 @@
     Robust Kalman filtering is provided by <pkg>RobKF</pkg>.
   </li>
   <li>Non-Gaussian time series
-    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
+    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package. <pkg>GlarmaVarSel</pkg> provides variable selection in high-dimensional sparse GLARMA models.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
     Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
@@ -285,6 +285,7 @@
   </li>
   <li><i>Wavelet methods</i>:
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
+    Multiresolution forecasting using wavelets is also implemented in <pkg>mrf</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
     <pkg>mvLSW</pkg> provides tools for multivariate locally stationary wavelet processes.
@@ -630,6 +631,7 @@
     Data from the <a href="http://www.quandl.com">Quandl</a> online portal to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
     <pkg>TSdbi</pkg>
     provides a common interface to time series databases.
+    <pkg>tsdb</pkg> implements a simple data base for numerical time series.
   </li>
   <li><i>Synthetic data</i> are produced by <code>simulate()</code> in <pkg>forecast</pkg> package or <code>generate()</code> in <pkg>fable</pkg>, given a specific model. <pkg>gratis</pkg> generates new time series with diverse and controllable characteristics using mixture autoregression models. <pkg>synthesis</pkg> generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems. <pkg>tssim</pkg> flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
   </li>
@@ -828,6 +830,7 @@
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
   <pkg>glarma</pkg>
+  <pkg>GlarmaVarSel</pkg>
   <pkg>GMDH</pkg>
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
@@ -878,6 +881,7 @@
   <pkg>modeltime</pkg>
   <pkg>modeltime.ensemble</pkg>
   <pkg>mondate</pkg>
+  <pkg>mrf</pkg>
   <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
@@ -1003,6 +1007,7 @@
   <pkg>tsBSS</pkg>
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
+  <pkg>tsdb</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
