@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-09-10</version>
+<version>2021-10-07</version>
 
 <info>
 <p>
@@ -177,7 +177,6 @@
     The <pkg>arfima</pkg> package has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic regression (transfer function) models.
     Additional methods for fitting and simulating non-stationary ARFIMA models are in <pkg>nsarfima</pkg>.
     <pkg>LongMemoryTS</pkg> provides a collection of functions for analysing long memory time series.
-    Fractionally differenced Gegenbaur ARMA processes are handled in <pkg>garma</pkg>.
   </li>
   <li><i>Transfer function</i> models
     are provided by the <code>arfima</code> function in the <pkg>arfima</pkg> and the <pkg>tfarima</pkg> packages.
@@ -824,7 +823,6 @@
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
-  <pkg>garma</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
