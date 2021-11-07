@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-10-09                                     
+**Version:**    2021-11-08                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
@@ -269,6 +269,10 @@ list, please let us know.
     [nsarfima](https://cran.r-project.org/package=nsarfima).
     [LongMemoryTS](https://cran.r-project.org/package=LongMemoryTS) provides a
     collection of functions for analysing long memory time series.
+    Fractionally differenced Gegenbaur ARMA processes are handled by
+    [garma](https://cran.r-project.org/package=garma).
+    [esemifar](https://cran.r-project.org/package=esemifar) provides tools for
+    nonparametric smoothing of long-memory time series.
 -   *Transfer function* models are provided by the `arfima` function in
     the [arfima](https://cran.r-project.org/package=arfima) and the
     [tfarima](https://cran.r-project.org/package=tfarima) packages.
@@ -508,8 +512,7 @@ list, please let us know.
     [seasonal](https://cran.r-project.org/package=seasonal) providing an R interface
     and [seasonalview](https://cran.r-project.org/package=seasonalview) providing a
     GUI. An alternative interface is provided by
-    [x12](https://cran.r-project.org/package=x12), with an associated alternative
-    GUI provided by [x12GUI](https://cran.r-project.org/package=x12GUI).
+    [x12](https://cran.r-project.org/package=x12).
 -   An interface to the JDemetra+ seasonal adjustment software is
     provided by [RJDemetra](https://cran.r-project.org/package=RJDemetra).
     [ggdemetra](https://cran.r-project.org/package=ggdemetra) provides associated
@@ -1058,6 +1061,7 @@ list, please let us know.
 -   [ecp](https://cran.r-project.org/package=ecp)
 -   [EMD](https://cran.r-project.org/package=EMD)
 -   [ensembleBMA](https://cran.r-project.org/package=ensembleBMA)
+-   [esemifar](https://cran.r-project.org/package=esemifar)
 -   [expsmooth](https://cran.r-project.org/package=expsmooth)
 -   [fable](https://cran.r-project.org/package=fable) (core)
 -   [fable.prophet](https://cran.r-project.org/package=fable.prophet)
@@ -1094,6 +1098,7 @@ list, please let us know.
 -   [fts](https://cran.r-project.org/package=fts)
 -   [ftsa](https://cran.r-project.org/package=ftsa)
 -   [funtimes](https://cran.r-project.org/package=funtimes)
+-   [garma](https://cran.r-project.org/package=garma)
 -   [GAS](https://cran.r-project.org/package=GAS)
 -   [gdpc](https://cran.r-project.org/package=gdpc)
 -   [ggdemetra](https://cran.r-project.org/package=ggdemetra)
@@ -1322,7 +1327,6 @@ list, please let us know.
 -   [wktmo](https://cran.r-project.org/package=wktmo)
 -   [wwntests](https://cran.r-project.org/package=wwntests)
 -   [x12](https://cran.r-project.org/package=x12)
--   [x12GUI](https://cran.r-project.org/package=x12GUI)
 -   [x13binary](https://cran.r-project.org/package=x13binary)
 -   [xts](https://cran.r-project.org/package=xts)
 -   [yuima](https://cran.r-project.org/package=yuima)
