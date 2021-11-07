@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-10-09</version>
+<version>2021-10-13</version>
 
 <info>
 <p>
@@ -335,7 +335,7 @@
   </li>
   <li>X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
-    An alternative interface is provided by <pkg>x12</pkg>, with an associated alternative GUI provided by <pkg>x12GUI</pkg>.
+    An alternative interface is provided by <pkg>x12</pkg>.
   </li>
   <li>An interface to the JDemetra+ seasonal adjustment software is provided by <pkg>RJDemetra</pkg>. <pkg>ggdemetra</pkg> provides associated ggplot2 functions.
   </li>
@@ -1053,7 +1053,6 @@
   <pkg>wktmo</pkg>
   <pkg>wwntests</pkg>
   <pkg>x12</pkg>
-  <pkg>x12GUI</pkg>
   <pkg>x13binary</pkg>
   <pkg>xts</pkg>
   <pkg>yuima</pkg>
