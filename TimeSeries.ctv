@@ -626,6 +626,7 @@
   <li><i>Time series data bases:</i> <pkg>fame</pkg>
     provides an interface for FAME time series databases.
     Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using <pkg>fredr</pkg>.
+    <pkg>rdbnomics</pkg> provides access to hundreds of millions of time series from <a href="db.nomics.world">DBnomics</a>.
     <pkg>influxdbr</pkg> provides an interface to the InfluxDB time series database.
     <pkg>pdfetch</pkg> provides facilities for downloading economic and financial time series from public sources.
     Data from the <a href="http://www.quandl.com">Quandl</a> online portal to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
@@ -926,6 +927,7 @@
   <pkg>quantspec</pkg>
   <pkg>Rbeast</pkg>
   <pkg>Rcatch22</pkg>
+  <pkg>rdbnomics</pkg>
   <pkg>readabs</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>

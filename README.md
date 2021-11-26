@@ -648,10 +648,6 @@ list, please let us know.
     [tpr](https://cran.r-project.org/package=tpr) package.
 -   [greybox](https://cran.r-project.org/package=greybox) provides several tools for
     modelling and forecasting with dynamic regression models.
--   Dynamic modeling of various kinds is available in
-    [dynr](https://cran.r-project.org/package=dynr) including discrete and
-    continuous time, linear and nonlinear models, and different types of
-    latent variables.
 
 **Multivariate Time Series Models**
 
@@ -899,8 +895,10 @@ list, please let us know.
     provides an interface for FAME time series databases. Economic time
     series and other data from FRED (the Federal Reserve Economic Data)
     can be retrieved using [fredr](https://cran.r-project.org/package=fredr).
-    [influxdbr](https://cran.r-project.org/package=influxdbr) provides an interface
-    to the InfluxDB time series database.
+    [rdbnomics](https://cran.r-project.org/package=rdbnomics) provides access to
+    hundreds of millions of time series from [DBnomics](db.nomics.world)
+    . [influxdbr](https://cran.r-project.org/package=influxdbr) provides an
+    interface to the InfluxDB time series database.
     [pdfetch](https://cran.r-project.org/package=pdfetch) provides facilities for
     downloading economic and financial time series from public sources.
     Data from the [Quandl](http://www.quandl.com) online portal to
@@ -1053,7 +1051,6 @@ list, please let us know.
 -   [dygraphs](https://cran.r-project.org/package=dygraphs)
 -   [dyn](https://cran.r-project.org/package=dyn)
 -   [dynlm](https://cran.r-project.org/package=dynlm)
--   [dynr](https://cran.r-project.org/package=dynr)
 -   [earlywarnings](https://cran.r-project.org/package=earlywarnings)
 -   [EBMAforecast](https://cran.r-project.org/package=EBMAforecast)
 -   [Ecdat](https://cran.r-project.org/package=Ecdat)
@@ -1199,6 +1196,7 @@ list, please let us know.
 -   [quantspec](https://cran.r-project.org/package=quantspec)
 -   [Rbeast](https://cran.r-project.org/package=Rbeast)
 -   [Rcatch22](https://cran.r-project.org/package=Rcatch22)
+-   [rdbnomics](https://cran.r-project.org/package=rdbnomics)
 -   [readabs](https://cran.r-project.org/package=readabs)
 -   [regspec](https://cran.r-project.org/package=regspec)
 -   [RGENERATE](https://cran.r-project.org/package=RGENERATE)
