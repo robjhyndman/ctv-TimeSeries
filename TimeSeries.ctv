@@ -441,8 +441,6 @@
   </li>
   <li><pkg>greybox</pkg> provides several tools for modelling and forecasting with dynamic regression models.
   </li>
-  <li>Dynamic modeling of various kinds is available in <pkg>dynr</pkg> including discrete and continuous time, linear and nonlinear models, and different types of latent variables.
-  </li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -783,7 +781,6 @@
   <pkg>dygraphs</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
-  <pkg>dynr</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>EBMAforecast</pkg>
   <pkg>Ecdat</pkg>
