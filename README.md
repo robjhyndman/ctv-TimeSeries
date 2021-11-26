@@ -3,7 +3,7 @@
                                                                
 **Maintainer:** Rob J Hyndman                                  
 **Contact:**    Rob.Hyndman at monash.edu                      
-**Version:**    2021-11-08                                     
+**Version:**    2021-11-26                                     
 **URL:**        <https://CRAN.R-project.org/view=TimeSeries>   
 
 <div>
